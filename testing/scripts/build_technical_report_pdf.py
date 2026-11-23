@@ -49,6 +49,7 @@ pre { background: #f3f5f9; border: 1px solid #d5dbe5; border-left: 3px solid #0b
       padding: 6px 8px; font-size: 8.2pt; line-height: 1.35; white-space: pre-wrap;
       page-break-inside: avoid; }
 pre code { background: none; padding: 0; }
+th code { background: transparent; color: #fff; padding: 0; }
 img { display: block; max-width: 88%; max-height: 95mm; margin: 6px auto 2px auto;
       border: 1px solid #c8d0dc; }
 img + em, p > em:only-child { display: block; text-align: center; font-size: 8.2pt; color: #46546a; }

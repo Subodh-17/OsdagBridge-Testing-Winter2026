@@ -1,0 +1,5 @@
+source : <f555075>/src
+input  : sample_24m_composite_plate_girder.osi 
+design : FAILED in 0.8 s -> ValueError: Point load coordinate [np.float64(-19.699999999999996), 0, np.float64(1.475)] does not lie within any mesh grid cell.
+grillage load cases: 7   output keys: 572
+exit:1

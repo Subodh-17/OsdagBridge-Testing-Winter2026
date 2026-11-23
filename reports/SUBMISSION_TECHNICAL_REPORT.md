@@ -19,7 +19,7 @@
 | Why does it matter? | Several defects change design-critical numbers: a buckling capacity overstated ≈3,384×, a barrier load reduced by 37.5 % in the FE model, load factors silently ignored | §4–§5 |
 | How were defects reproduced? | Each defect has a scripted test with an independently derived (hand-calculated) oracle; logs are sealed with HMAC-SHA256 manifests | §3 |
 | What was changed? | 5 defects fixed in 6 small commits (3 batches); 1 follow-up commit fixes a regression that Batch 2 introduced into moving-load analysis; 15 other register entries remain open, blocked or latent | §5 |
-| What proves the fix? | The same tests flip from `BASELINE_FAIL` to `PASS`. Phase 3 suites: 58/58 (17 + 11 + 5 + 15 + 10). Governance: 27/27 on Windows. Two live GUI design runs on the final code | §5–§6 |
+| What proves the fix? | The same tests flip from `BASELINE_FAIL` to `PASS`. 61 Phase 3 tests pass, including a full-pipeline check built from the sample project. The full design of the sample project completes on the final code, with the expected changes in results. Governance: 27/27 on Windows | §5–§6 |
 | What remains? | Open defects (e.g. barrier load missing from ULS combinations, section-property desync); no parametric sweep, custom-material or multi-run test campaign was completed | §7–§8 |
 | How to reproduce? | Unzip the package, activate the conda environment, run `run_submission_tests.bat` | §9 |
 
@@ -101,7 +101,7 @@ Four entries (DEF-05, -06, -08, -13) overlap issues already on the upstream trac
 | **DEF-12** stiffener buckling | Capacity **214,533.2 kN** vs IS 800 oracle **63.40 kN** (squash limit 1,918.8 kN) | Web-strip radius of gyration r = t<sub>w</sub>/√12, KL = 0.7d, IS 800 buckling curve c (`418fd75`) | Same test: **63.40 kN → PASS**; hand fixture 118.79 kN reproduced |
 | **DEF-08** report status | Hard-coded "pass" text; disagreed with actual status in **64 of 74** scenarios | Status derived from component DCRs (`12493c9`) | All 74 scenarios agree → **PASS** |
 | **DEF-11** girder count | Designer reports **6** girders for a 4-girder bridge | Count bound to physical girders (`eaba076`) | Count 4 = 4 → **PASS** |
-| **DEF-18** load conservation | 313.92 kN barrier load applied as 196.2 kN (**−117.72 kN, −37.5 %**); first end bay dropped; patch corner cells over-counted | Line load = mean intensity × segment length, centroid along the segment, z-index fix, out-of-mesh loads raise an error (`34cd4bf`); corner de-duplication, no list mutation while iterating (`9e0b588`) | Batch 2 suite **17/17**, incl. full-bridge barrier 313.920 kN in equilibrium; residuals ≤ 1.2×10<sup>−10</sup> N |
+| **DEF-18** load conservation | 313.92 kN barrier load applied as 196.2 kN (**−117.72 kN, −37.5 %**); first end bay dropped; patch corner cells over-counted | Line load = mean intensity × segment length, centroid along the segment, z-index fix, out-of-mesh loads raise an error (`34cd4bf`; relaxed for vehicle point loads in `bbfe14c`, §5.1); corner de-duplication, no list mutation while iterating (`9e0b588`) | Batch 2 suite **17/17**, incl. full-bridge barrier 313.920 kN in equilibrium; residuals ≤ 1.2×10<sup>−10</sup> N |
 | **DEF-01** load factors | `TC-REG-A01`: factored/unfactored force ratio **1.00000** (expected 1.35000) | Load factor from `LoadCase.add_load()` carried into point, line, patch and nodal distribution (`f555075`) | Ratio **1.35000 → PASS**; 9/9 factor oracles (incl. mixed, zero, negative and compounded factors) |
 
 **Why these matter.**
@@ -118,7 +118,7 @@ The three defects fixed in Batch 1 were re-run after Batches 2 and 3 and still p
 
 The Batch 2 and 3 acceptance suites test the load-distribution functions in isolation, so they did not catch it. It was found on 23 Nov 2026 when the design was re-run in the GUI.
 
-**The fix** is commit `bbfe14c` on `fix/moving-load-mesh-mapping`, parent `f555075`. It is not part of the three formal batches. It changes three things:
+**The fix** is commit `bbfe14c` on `fix/moving-load-mesh-mapping`, parent `f555075`. It is not part of the three formal batches. For point loads it restores the baseline behaviour, where an axle off the deck adds no force, but now explicitly. The fail-closed check from Batch 2 stays in place for line-load points and for direct calls. It changes three things:
 
 - **Vehicle point loads.** During load distribution, vehicle point loads outside the deck contribute zero force, since off-bridge axles do not load the superstructure. Direct calls and line-load points still raise an error.
 - **Boundary tolerance.** A 10<sup>−9</sup> tolerance lets points on a cell boundary map to that cell.
@@ -126,16 +126,33 @@ The Batch 2 and 3 acceptance suites test the load-distribution functions in isol
 
 **Verification.**
 
+- **Full-pipeline suite.** `test_full_pipeline_live_load_conservation.py` builds the bridge from the sample project through the GUI's design stages, for 24 m/0°, 30 m/+10° and 25 m/−10°. For every vehicle load case it checks that the force assigned to the grillage equals the sum of the on-deck axle loads times their factors. On-deck is decided independently of ospgrillage, from the convex hull of the mesh nodes. Results: 3/3 on `bbfe14c`; errors on `f555075`; fails on `d74f56d`, where the factors are ignored (DEF-01).
 - **New suite.** `test_moving_load_mesh_mapping.py` passes 10/10. It covers fail-closed behaviour by default, interior force conservation, boundary points, live-load generation for 24 m/0°, 30 m/10°, 25 m/10° with median and footpath, and 25 m/−10°, and a vehicle partly on the deck, where only the on-deck axle is applied.
 - **Same suite on `f555075`.** 8 of its 10 tests error.
 - **Existing suites.** All earlier suites pass on `bbfe14c`.
 - **Live GUI runs** on Windows, which completed design:
-  - 30 m, 7.5 m carriageway, 10° skew;
-  - 25 m, 7.5 m carriageway, 10° skew, with median and single footpath.
+    - 30 m, 7.5 m carriageway, 10° skew;
+    - 25 m, 7.5 m carriageway, 10° skew, with median and single footpath.
 
-  The screenshots are in `evidence/screenshots/live_gui_verification/`. They show the locked inputs and the geometry overlay. As in Figure 1, the window capture shows the OpenGL viewport black, so no rendered model image is claimed.
+    The screenshots are in `evidence/screenshots/live_gui_verification/`. They show the locked inputs and the geometry overlay. As in Figure 1, the window capture shows the OpenGL viewport black, so no rendered model image is claimed.
 
-**Trade-off.** An out-of-mesh *point* load that is not from a vehicle is now also dropped without an error during distribution. This is listed in §8.
+**Trade-off.** Any out-of-mesh *point* load is dropped during distribution, not just vehicle axles. In the current code every point load comes from the ospgrillage vehicle models; wind and seismic loads are nodal loads, which this change does not affect. A future non-vehicle point load placed off the deck would also be dropped without an error (§8).
+
+### 5.2 Effect on design results: same input, three code versions
+
+The sample project (24 m, 0°) was run through the complete `PlateGirderBridge.design()` pipeline with `testing/scripts/run_full_design_from_osi.py`. This was done headless on Linux, with the evidence in `testing/evidence/phase_3/full_design_check/`.
+
+| Quantity | `d74f56d` baseline | `f555075` | `bbfe14c` final | Explained by |
+|:--|--:|:-:|--:|:--|
+| Design run | completes | **fails** (§5.1) | completes | §5.1 |
+| Girder count used by designer | 6 | – | 4 | DEF-11 |
+| Factored moment Mu (kNm) | 1521.3 | – | 2136.3 (+40 %) | DEF-01 factors + DEF-18 barrier load |
+| Factored shear Vu (kN) | 225.3 | – | 314.4 (+40 %) | as above |
+| Bearing-stiffener web buckling capacity (kN) | 134,083 | – | 67.2 | DEF-12 |
+
+Two smaller changes are not attributed to a specific fix: fatigue utilisation (197 % → 182 %) and total deflection (22.15 → 22.10 mm).
+
+**Side effect of DEF-01.** Fixing DEF-01 makes the per-vehicle lane factor take effect. The second Class A vehicle is now scaled by 0.8, whereas IRC:6 applies lane reduction by the number of loaded lanes (DEF-19b, open). The overall demand still rose, as shown above. However, this part of the live load is now reduced by a factor that is itself an open defect.
 
 ## 6. Verification results
 
@@ -145,13 +162,19 @@ The Batch 2 and 3 acceptance suites test the load-distribution functions in isol
 | `test_batch_2_comprehensive.py` | Force, centroid and reaction equilibrium for uniform, partial, trapezoidal, skewed and zero-crossing line loads; patch loads; out-of-mesh handling; full-bridge barrier | **17/17 OK** |
 | `test_batch_3_factor_scaling.py` | Factor propagation for every load type, nine analytical oracles, no in-place mutation | **15/15 OK** |
 | `test_batch_2_line_loads.py`, `test_batch_2_patch_loads.py` | Focused line and patch cases (overlap in scope with the comprehensive suite) | **11/11**, **5/5 OK** |
-| `test_moving_load_mesh_mapping.py` | §5.1 regression fix | **10/10 OK** |
+| `test_moving_load_mesh_mapping.py` | §5.1 regression fix (unit level) | **10/10 OK** |
+| `test_full_pipeline_live_load_conservation.py` | Vehicle load conservation through the real design stages, from the sample `.osi` (integration) | **3/3 OK** |
+| `run_full_design_from_osi.py` | Complete `design()` of the sample project | completes; §5.2 |
 | `test_evidence_governance.py` | Write guards for protected evidence, seal and manifest tamper detection, database and trust-ledger hashes | **27/27 OK** (Windows) |
 
-**Clean-room re-check (23 Nov 2026).** The submission ZIP (source `bbfe14c`) was extracted into an empty directory and the suites were run from it with a fresh user profile, on Linux with Python 3.12 and the project dependencies installed. Imports were confirmed to resolve to the packaged source:
+**Clean-room re-check (23 Nov 2026).** The submission ZIP (source `bbfe14c`) was extracted into an empty directory and run with a fresh user profile on Linux, Python 3.12. It was run in two environments:
 
-- Phase 3 suites: **58/58**. The Batch 3 suite also re-runs the three Batch 1 regression tests, which all pass.
-- Governance: **24 passed, 3 skipped**. The skipped tests are Windows-only process-containment checks.
+1. **A brand-new venv** with only the eight packages in `testing/requirements-tests.txt`:
+    - 58/58 Phase 3 tests pass. The Batch 3 suite also re-runs the three Batch 1 regression tests.
+    - Governance passes 24, with 3 Windows-only skips.
+2. **A full environment** with the `osdag` conda package:
+    - the full-pipeline suite passes 3/3;
+    - `design()` of the sample project completes.
 
 The 27/27 governance figure is from Windows.
 
@@ -181,13 +204,18 @@ These suites verify the five fixed defects and the evidence controls. They are *
 - **Test coverage.** No parametric sweep (span, width, skew), custom-material state-retention test, consecutive three-run GUI test, or BMD/SFD verification was completed. Upstream issues #19 and #20 already report custom-material persistence problems.
 - **CAD image capture.** CAD output was checked programmatically, not visually captured (§2, §5.1).
 - **Out-of-mesh point loads.** Since `bbfe14c`, out-of-mesh point loads are dropped during distribution, which is correct for off-bridge vehicle axles. A misplaced non-vehicle point load would also be dropped without an error (§5.1).
-- **Integration testing.** The Batch 2 regression shows that the function-level acceptance suites do not exercise the full design pipeline. Full-pipeline checks are limited to the live GUI runs and the live-load generation tests in §5.1.
-- **Upstream contribution.** Issue drafts for the new findings are in `submission/GITHUB_ISSUE_DRAFTS.md`; at the time of writing they had not been filed. All fixes exist only on the local branch; no pull request has been opened.
+- **Integration testing.** The Batch 2 regression showed that function-level suites are not enough. Full-pipeline coverage is now three geometries for live-load conservation, plus one complete design of the sample project (§5.2). The design *results* are compared only across code versions, not against an independent hand design of the whole bridge.
+- **Upstream contribution.** Issue texts for the new findings (3 issues, plus 4 comments on existing issues) are in `submission/github_issues/`. At the time of writing they had not been filed; filing them is optional and not part of the submission requirements. All fixes exist only on the local branch; no pull request has been opened.
 - **Single-run baseline.** The end-to-end baseline is one design case (24 m, 0° skew). The DEF-18 equilibrium suite includes skewed-line fixtures, but the full design pipeline was not re-run on skewed bridges.
 
 ## 9. How to reproduce
 
-The ZIP contains the application source at `bbfe14c` (the Phase 3 commits plus the §5.1 follow-up), all test suites, sealed evidence and this report. It needs a Python 3.12 environment with OsdagBridge's dependencies. The upstream list is `source/OsdagBridge/environment.yml`; the exact `osdagbridge-py312` setup used here is in `documentation/PHASE_1C_ENVIRONMENT_MIGRATION_REPORT.md`. From the package root:
+The ZIP contains the application source at `bbfe14c` (the Phase 3 commits plus the §5.1 follow-up), all test suites, sealed evidence and this report.
+
+- **Function-level suites:** `pip install -r testing/requirements-tests.txt` (Python 3.12) is enough.
+- **Full-pipeline test, full design and GUI:** these need the conda environment. The upstream list is `source/OsdagBridge/environment.yml`; the exact setup used here is in `documentation/PHASE_1C_ENVIRONMENT_MIGRATION_REPORT.md`.
+
+From the package root, `run_submission_tests.bat` (Windows) or `run_submission_tests.sh` runs all suites:
 
 ```bat
 conda activate osdagbridge-py312
@@ -200,6 +228,8 @@ The script runs the following, each of which can also be run alone from the pack
 2. `python -m unittest testing\test_cases\phase_3\test_batch_2_comprehensive.py`
 3. `python -m unittest testing\test_cases\phase_3\test_batch_3_factor_scaling.py`
 4. `python -m unittest testing\test_cases\phase_3\test_moving_load_mesh_mapping.py`
+5. `python -m unittest testing\test_cases\phase_3\test_full_pipeline_live_load_conservation.py`
+6. `python testing\scripts\run_full_design_from_osi.py`, a complete design of the sample project
 
 To open the GUI on the packaged source: `cd source\OsdagBridge\src` then `python -m osdagbridge.desktop`.
 
@@ -209,7 +239,8 @@ To open the GUI on the packaged source: `cd source\OsdagBridge\src` then `python
 |:--|:--|
 | Baseline logs | `testing/evidence/phase_2_13/baseline/` |
 | Post-fix logs | `testing/evidence/phase_3/` |
-| Live GUI runs on the final code | `evidence/screenshots/live_gui_verification/` |
+| Full design, same input on three versions | `testing/evidence/phase_3/full_design_check/` |
+| Live GUI runs on the final code | `evidence/screenshots/live_gui_verification/` (with a README stating what the images show) |
 | Fix patches (7) | `patches/` in the GitHub repository |
 | End-to-end run | `testing/evidence/phase_1d/` (input `.osi`/YAML, output dictionary, design report PDF) |
 | Batch closure records | `reports/phase_3/` |

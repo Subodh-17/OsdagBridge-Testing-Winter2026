@@ -1,0 +1,15 @@
+source : <bbfe14c>/src
+input  : sample_24m_composite_plate_girder.osi 
+design : COMPLETED in 17.2 s
+grillage load cases: 46   output keys: 1062
+  design_results.n_girders = 4
+  steeldesign.details.moment.mu_applied = 2136.3
+  steeldesign.details.shear_check.vu_applied = 314.42
+  steeldesign.details.bearing_stiffener.fcdw_wb = 67.22
+  steeldesign.details.bearing_stiffener.reaction = 420.76
+  util.flexure = 32.89
+  util.shear = 68.35
+  util.fatigue = 181.56
+  util.deflection_crack = 55.25
+  steeldesign.deflection.total_mm = 22.101
+exit:0

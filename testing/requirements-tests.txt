@@ -1,0 +1,13 @@
+# Minimal pip environment for the function-level suites (Phase 3 suites and governance).
+# Tested on 23 Nov 2026 in a fresh Python 3.12 venv:
+#   58 Phase 3 tests passed; governance passed 24, with 3 Windows-only skips.
+# The full-pipeline test, run_full_design_from_osi.py and the GUI also need
+# PySide6, pythonocc-core and the `osdag` conda package: use source/OsdagBridge/environment.yml.
+openseespy==3.8.0.0
+opsvis==1.3.8
+numpy==2.5.5
+scipy==1.18.1
+pandas==3.1.1
+xarray==2026.9.0
+matplotlib==3.11.2
+PyYAML==6.0.4

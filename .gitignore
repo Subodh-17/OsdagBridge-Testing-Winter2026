@@ -1,3 +1,15 @@
+# Caches and bytecode
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 .pytest_cache/
+
+# Local runtime files generated during execution
+ResourceFiles/
+.env
+.env.*
+
+# Resume (submitted privately to FOSSEE portal, strictly excluded from git tracking)
+*resume*
+*Resume*
+submission/resume/
