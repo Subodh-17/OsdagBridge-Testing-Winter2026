@@ -1,0 +1,20 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-FS-CLEAN-WORKING-TREE
+DEFECT IDENTIFIER:      DEF-10 (Filesystem/Packaging)
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     14.814 s
+TIMESTAMP UTC:          2026-11-16T15:36:32.810075+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-10 Confirmed: Database.connect() writes weather.sqlite inside package tree when missing; Database() default constructor creates unanchored weather.sqlite in cwd
+
+EXECUTION DETAILS & TRACE:
+Real package data directory: F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\data\project_location
+Sandbox before files: ['database.py', 'india-osm.geojson', 'schema.sql', 'seismic.png', 'weather.sqlite', 'wind.png', 'zone_lookup.py']
+Production @_with_db read queries executed: 32 states, weather info retrieved.
+Package directory hash comparison verified identical: True
+Database.connect() creates weather.sqlite inside package directory when missing: True
+Database() default constructor created in cwd: True

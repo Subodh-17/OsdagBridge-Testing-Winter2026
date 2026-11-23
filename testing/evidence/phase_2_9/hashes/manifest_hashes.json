@@ -1,0 +1,507 @@
+{
+  "phase": "Phase 2.9 Evidence Manifest",
+  "timestamp_utc": "2026-11-17T10:09:46.380103+00:00",
+  "total_files": 100,
+  "files": [
+    {
+      "path": "baseline/baseline_exit_code.txt",
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "baseline/console_output.txt",
+      "size_bytes": 47600,
+      "sha256": "a968a7bda0c0669470fc40050ea696682134a77a74bc1f0af442d1cc7512817d"
+    },
+    {
+      "path": "baseline/phase_2_9_baseline_summary.json",
+      "size_bytes": 14605,
+      "sha256": "1d7bd0d464fb56cc2490794acab3a41d0b84797f758fefd9f1aa407943f66895"
+    },
+    {
+      "path": "baseline/tc_reg_a01_factor_scaling.log",
+      "size_bytes": 1079,
+      "sha256": "1e59ce9b328d07615cb88e135165a4a590c33e2ea9e4d725f0d0ade11df0a790"
+    },
+    {
+      "path": "baseline/tc_reg_a02_uls_combination_sum.log",
+      "size_bytes": 2563,
+      "sha256": "3549efcc7abcbb7f326cd096f2b174f9cc90e16f0411b3ae041308c9e5254f94"
+    },
+    {
+      "path": "baseline/tc_reg_b01_section_property_sync.log",
+      "size_bytes": 3130,
+      "sha256": "fbe27d1412b620d520cc36698b2ca874af9b2a3cdc0ace3e9df2fc1b1d5eca11"
+    },
+    {
+      "path": "baseline/tc_reg_c01_sectional_stress_range.log",
+      "size_bytes": 2345,
+      "sha256": "eeaa53391fe8f5ed7ab533a7afcef8d0578777b544487356c8239d989843be0d"
+    },
+    {
+      "path": "baseline/tc_reg_c02_fatigue_vehicle_analysis.log",
+      "size_bytes": 1715,
+      "sha256": "1feb7a3c4ff5eb8f8f767b27572122e6eb405f02e6dc16c846573e6575af3258"
+    },
+    {
+      "path": "baseline/tc_reg_cad_export_vs_screenshot.log",
+      "size_bytes": 963,
+      "sha256": "6502cdfaad60382b61a86747a5f1dfffe4e6dac21c41370636fee0f28d1281a8"
+    },
+    {
+      "path": "baseline/tc_reg_cap_stiffener_buckling.log",
+      "size_bytes": 1336,
+      "sha256": "c64234aaea1b96c0306f2c28ba6ef3472069983fcaf02b3a2c1561737f7a3145"
+    },
+    {
+      "path": "baseline/tc_reg_d01_wind_speed_propagation.log",
+      "size_bytes": 1317,
+      "sha256": "fe3777ccdc2e25a185b6725f08ff32a6dc3c555a1fa4bff2885c646fcf715656"
+    },
+    {
+      "path": "baseline/tc_reg_d02_temperature_propagation.log",
+      "size_bytes": 1394,
+      "sha256": "ab2e91fdbdf121fedb15bd3c44bf75b47fdec2df18d2b14e7908b601a8f15299"
+    },
+    {
+      "path": "baseline/tc_reg_eq_load_conservation.log",
+      "size_bytes": 5945,
+      "sha256": "3aa2b793995b7a776454c977259fd672a6fde6f2ad0f0cacfd1d059578423fe4"
+    },
+    {
+      "path": "baseline/tc_reg_fs_clean_working_tree.log",
+      "size_bytes": 2444,
+      "sha256": "e631e714f4be533023028d0312ed357093a23130960bcb62f955c663016e789c"
+    },
+    {
+      "path": "baseline/tc_reg_geo_girder_count_alignment.log",
+      "size_bytes": 996,
+      "sha256": "263776d985255fd6b6b0d746c2390c16cbd95500771a094b02fa52d394c63f20"
+    },
+    {
+      "path": "baseline/tc_reg_geo_slab_section_properties.log",
+      "size_bytes": 1491,
+      "sha256": "6d6e52526acab63d4c33bd8f20a5b2a1d0b631b34e29b5c135d9c7a72d539884"
+    },
+    {
+      "path": "baseline/tc_reg_mat_density_consistency.log",
+      "size_bytes": 1078,
+      "sha256": "3615a4cef2e208ed54592857e3529382d6a2a3a12f0b1b8e789696bc548a4e5c"
+    },
+    {
+      "path": "baseline/tc_reg_rpt_exec_summary_status.log",
+      "size_bytes": 3312,
+      "sha256": "09e9b08ceb167e8f45941abdddd5cabad72bd9cab21c5e7a69b96ba5ae634852"
+    },
+    {
+      "path": "candidates/tc_reg_a01_factor_scaling.log",
+      "size_bytes": 1079,
+      "sha256": "2299098688adb0384d7c9436b551a93f61463bfce4565ee3492cd988c804fb28"
+    },
+    {
+      "path": "candidates/tc_reg_a01_factor_scaling_a_baseline.log",
+      "size_bytes": 1079,
+      "sha256": "cc463046aa265529af65fcffc37b8fd54d768dea2bdcafc614f8033b286a3cad"
+    },
+    {
+      "path": "candidates/tc_reg_a01_factor_scaling_b_correct.log",
+      "size_bytes": 1057,
+      "sha256": "a99b67aa589785e787184a471b1289dcc7b8e341bb6769647b927aaa6ba1813e"
+    },
+    {
+      "path": "candidates/tc_reg_a01_factor_scaling_c_naive.log",
+      "size_bytes": 1079,
+      "sha256": "2299098688adb0384d7c9436b551a93f61463bfce4565ee3492cd988c804fb28"
+    },
+    {
+      "path": "candidates/tc_reg_a02_uls_combination_sum.log",
+      "size_bytes": 2565,
+      "sha256": "cf8b15a7fd72826f4b50eb73d6cf73abc8b0c9a26aacfb84802d9e4feca57971"
+    },
+    {
+      "path": "candidates/tc_reg_a02_uls_combination_sum_a_baseline.log",
+      "size_bytes": 2563,
+      "sha256": "edcaf225d36e68825ae81f1b0717bbdf846530b8de33d3935ffd49f70ff9d534"
+    },
+    {
+      "path": "candidates/tc_reg_a02_uls_combination_sum_b_correct.log",
+      "size_bytes": 2291,
+      "sha256": "da556167ef8a536af11bf8494e67b7a2c445c4a5bfa7606e895f6c55cc05e230"
+    },
+    {
+      "path": "candidates/tc_reg_a02_uls_combination_sum_c_naive.log",
+      "size_bytes": 2565,
+      "sha256": "cf8b15a7fd72826f4b50eb73d6cf73abc8b0c9a26aacfb84802d9e4feca57971"
+    },
+    {
+      "path": "candidates/tc_reg_b01_section_property_sync.log",
+      "size_bytes": 3130,
+      "sha256": "195998d94e151006449b0898ada51bec0f159304c96b740e9d0baf5c99b12e5e"
+    },
+    {
+      "path": "candidates/tc_reg_b01_section_property_sync_a_baseline.log",
+      "size_bytes": 3130,
+      "sha256": "680d297316a427fc6899e10327bffdd93adffcc04ab856609812453d3bebfb0d"
+    },
+    {
+      "path": "candidates/tc_reg_b01_section_property_sync_b_correct.log",
+      "size_bytes": 2997,
+      "sha256": "851a0c2bb9602cfe56449c83848cb60a5e72e305aa3cfbd3394ef3a50f8ec931"
+    },
+    {
+      "path": "candidates/tc_reg_b01_section_property_sync_c_naive.log",
+      "size_bytes": 3130,
+      "sha256": "195998d94e151006449b0898ada51bec0f159304c96b740e9d0baf5c99b12e5e"
+    },
+    {
+      "path": "candidates/tc_reg_c01_sectional_stress_range.log",
+      "size_bytes": 2338,
+      "sha256": "fa11727fd05dc5c4d840530b5156494a24abebd0ad90a08faa8c6105331bf3a1"
+    },
+    {
+      "path": "candidates/tc_reg_c01_sectional_stress_range_a_baseline.log",
+      "size_bytes": 2345,
+      "sha256": "14e9a3a4accdd539e33969f35b8cf359106914df1d6948b151527408cdaf53ea"
+    },
+    {
+      "path": "candidates/tc_reg_c01_sectional_stress_range_b_correct.log",
+      "size_bytes": 2308,
+      "sha256": "0afa0d5f2f6c019f3976fcbfd0f385ccbd4e475e6e848182bc06e09265b82fdf"
+    },
+    {
+      "path": "candidates/tc_reg_c01_sectional_stress_range_c_naive.log",
+      "size_bytes": 2338,
+      "sha256": "fa11727fd05dc5c4d840530b5156494a24abebd0ad90a08faa8c6105331bf3a1"
+    },
+    {
+      "path": "candidates/tc_reg_c02_fatigue_vehicle_analysis.log",
+      "size_bytes": 1715,
+      "sha256": "df2f78f5f5cace48d2e2b44d89e2f36a0fbba2fed2426acec0a5ac2f0a096e0d"
+    },
+    {
+      "path": "candidates/tc_reg_c02_fatigue_vehicle_analysis_a_baseline.log",
+      "size_bytes": 1715,
+      "sha256": "df2f78f5f5cace48d2e2b44d89e2f36a0fbba2fed2426acec0a5ac2f0a096e0d"
+    },
+    {
+      "path": "candidates/tc_reg_cad_export_vs_screenshot.log",
+      "size_bytes": 942,
+      "sha256": "58c1c6b89aa2c85eba210449c34a7a93a97e20cbd9abaa6100520114692ae451"
+    },
+    {
+      "path": "candidates/tc_reg_cad_export_vs_screenshot_a_baseline.log",
+      "size_bytes": 963,
+      "sha256": "74dcaf8e735af52e0639ece54704bcbbe823fd1ab077786022cafb4a3d46e05e"
+    },
+    {
+      "path": "candidates/tc_reg_cad_export_vs_screenshot_b_correct.log",
+      "size_bytes": 963,
+      "sha256": "b988deebb89a0cf02a5c04642c7cb58a0328e9e94741304c8877a0237388a0ec"
+    },
+    {
+      "path": "candidates/tc_reg_cad_export_vs_screenshot_c_naive.log",
+      "size_bytes": 942,
+      "sha256": "58c1c6b89aa2c85eba210449c34a7a93a97e20cbd9abaa6100520114692ae451"
+    },
+    {
+      "path": "candidates/tc_reg_cap_stiffener_buckling.log",
+      "size_bytes": 1328,
+      "sha256": "cf9a75c5bfea6dfc8ec7964e7b291d6f22ee0f38033126d873c7e790820c02fa"
+    },
+    {
+      "path": "candidates/tc_reg_cap_stiffener_buckling_a_baseline.log",
+      "size_bytes": 1336,
+      "sha256": "26af528e115c8f0322751c4b973f623923ed9e9e532d97db15daf5b864b549c2"
+    },
+    {
+      "path": "candidates/tc_reg_cap_stiffener_buckling_b_correct.log",
+      "size_bytes": 1226,
+      "sha256": "be61554b3f2857bbb17c04a0f9f674008f7ecedd5be717d3f36724078d02b79e"
+    },
+    {
+      "path": "candidates/tc_reg_cap_stiffener_buckling_c_naive.log",
+      "size_bytes": 1328,
+      "sha256": "cf9a75c5bfea6dfc8ec7964e7b291d6f22ee0f38033126d873c7e790820c02fa"
+    },
+    {
+      "path": "candidates/tc_reg_d01_wind_speed_propagation.log",
+      "size_bytes": 1317,
+      "sha256": "6304f5dd115b29f073ab3af1ae69289851a2ca5c0d439a814b276758fc567eae"
+    },
+    {
+      "path": "candidates/tc_reg_d01_wind_speed_propagation_a_baseline.log",
+      "size_bytes": 1317,
+      "sha256": "cd5fd5acebf4f85255845313f0894314aef0cf0bfb7f0919e4fd70166c266784"
+    },
+    {
+      "path": "candidates/tc_reg_d01_wind_speed_propagation_b_correct.log",
+      "size_bytes": 1188,
+      "sha256": "3a493c34eac71c133dc2d0c72314c27ea06d53f34ad6d8fc742fa69ba3ba6d66"
+    },
+    {
+      "path": "candidates/tc_reg_d01_wind_speed_propagation_c_naive.log",
+      "size_bytes": 1317,
+      "sha256": "6304f5dd115b29f073ab3af1ae69289851a2ca5c0d439a814b276758fc567eae"
+    },
+    {
+      "path": "candidates/tc_reg_d02_temperature_propagation.log",
+      "size_bytes": 1394,
+      "sha256": "6d622abe7201d954ec0e3b8d54196ad4d1a7c1a077624d94bfd60c5b217e2931"
+    },
+    {
+      "path": "candidates/tc_reg_d02_temperature_propagation_a_baseline.log",
+      "size_bytes": 1394,
+      "sha256": "6d622abe7201d954ec0e3b8d54196ad4d1a7c1a077624d94bfd60c5b217e2931"
+    },
+    {
+      "path": "candidates/tc_reg_eq_load_conservation.log",
+      "size_bytes": 5679,
+      "sha256": "213966a3d12f78767afde28df8c32490772be1acfa4d6c4cfd9f74e719abb8cd"
+    },
+    {
+      "path": "candidates/tc_reg_eq_load_conservation_a_baseline.log",
+      "size_bytes": 5945,
+      "sha256": "066a679c0a1f9fca8fc2005015c7b5ce4c6b095e46e88832cc4caf828efce865"
+    },
+    {
+      "path": "candidates/tc_reg_eq_load_conservation_b_correct.log",
+      "size_bytes": 5452,
+      "sha256": "638d35c4ecc644bf9d5f44a6beb67ea5be7368e211e08e09dbfbc1d7a1388e96"
+    },
+    {
+      "path": "candidates/tc_reg_eq_load_conservation_c_naive.log",
+      "size_bytes": 5679,
+      "sha256": "213966a3d12f78767afde28df8c32490772be1acfa4d6c4cfd9f74e719abb8cd"
+    },
+    {
+      "path": "candidates/tc_reg_fs_clean_working_tree.log",
+      "size_bytes": 1905,
+      "sha256": "ca892054df235f6e72edcfdd5912c074bb2871f368b878848ad792fef972e272"
+    },
+    {
+      "path": "candidates/tc_reg_fs_clean_working_tree_a_baseline.log",
+      "size_bytes": 2445,
+      "sha256": "3274347d27e80ea5c52347a4cd40827529995b0eea2ec3b3980f52ad778be325"
+    },
+    {
+      "path": "candidates/tc_reg_fs_clean_working_tree_b_correct.log",
+      "size_bytes": 2026,
+      "sha256": "ea2faeae64d48991657e9bb3d42f1d6d0563b981f111bb431a46ee2899720906"
+    },
+    {
+      "path": "candidates/tc_reg_fs_clean_working_tree_c_naive.log",
+      "size_bytes": 1905,
+      "sha256": "ca892054df235f6e72edcfdd5912c074bb2871f368b878848ad792fef972e272"
+    },
+    {
+      "path": "candidates/tc_reg_geo_girder_count_alignment.log",
+      "size_bytes": 996,
+      "sha256": "31f56844a09f765e32ebe7f11064630b5d078f8d2a3e3ac70881abb00145c23f"
+    },
+    {
+      "path": "candidates/tc_reg_geo_girder_count_alignment_a_baseline.log",
+      "size_bytes": 996,
+      "sha256": "585890dad9accf0d1c9bbf3a0e2ae65eae4691251e4379c4053d7008b6401cb5"
+    },
+    {
+      "path": "candidates/tc_reg_geo_girder_count_alignment_b_correct.log",
+      "size_bytes": 883,
+      "sha256": "96f4542969c0a2bad61fbec921b9a04ae7f2598b436bf70ec02d2b21cadf0e15"
+    },
+    {
+      "path": "candidates/tc_reg_geo_girder_count_alignment_c_naive.log",
+      "size_bytes": 996,
+      "sha256": "31f56844a09f765e32ebe7f11064630b5d078f8d2a3e3ac70881abb00145c23f"
+    },
+    {
+      "path": "candidates/tc_reg_geo_slab_section_properties.log",
+      "size_bytes": 1491,
+      "sha256": "60b3d421b0817b348a602348c852bee769b173066292b77bfaf6ec3772ee2a60"
+    },
+    {
+      "path": "candidates/tc_reg_geo_slab_section_properties_a_baseline.log",
+      "size_bytes": 1491,
+      "sha256": "60b3d421b0817b348a602348c852bee769b173066292b77bfaf6ec3772ee2a60"
+    },
+    {
+      "path": "candidates/tc_reg_mat_density_consistency.log",
+      "size_bytes": 1078,
+      "sha256": "82336e97b90d7c6f896cc532b842c251671c110fd2453d7e23808072dc626c34"
+    },
+    {
+      "path": "candidates/tc_reg_mat_density_consistency_a_baseline.log",
+      "size_bytes": 1078,
+      "sha256": "158766c0bb85301e7c9d31f899b4ab9acd1044e9611a30810a899eefdc3d580a"
+    },
+    {
+      "path": "candidates/tc_reg_mat_density_consistency_b_correct.log",
+      "size_bytes": 1008,
+      "sha256": "924b244a19eae298b99424f7570a5d39de068bac98a4bf218d939ab0214516cb"
+    },
+    {
+      "path": "candidates/tc_reg_mat_density_consistency_c_naive.log",
+      "size_bytes": 1078,
+      "sha256": "82336e97b90d7c6f896cc532b842c251671c110fd2453d7e23808072dc626c34"
+    },
+    {
+      "path": "candidates/tc_reg_rpt_exec_summary_status.log",
+      "size_bytes": 3014,
+      "sha256": "28453fe8e49b9f50cb4afddfd9d5b43110abcf97900da29d616ca9a101027583"
+    },
+    {
+      "path": "candidates/tc_reg_rpt_exec_summary_status_a_baseline.log",
+      "size_bytes": 3312,
+      "sha256": "20afc32a5e1d474ffe9dcd6565dc1dc1e2c9a69321bb57bf4484a1f43f82fe15"
+    },
+    {
+      "path": "candidates/tc_reg_rpt_exec_summary_status_b_correct.log",
+      "size_bytes": 1210,
+      "sha256": "fcfad16988b3d40322073a2db6711b41f52d41e6607391b8d79d4f38ad00ef80"
+    },
+    {
+      "path": "candidates/tc_reg_rpt_exec_summary_status_c_naive.log",
+      "size_bytes": 3014,
+      "sha256": "28453fe8e49b9f50cb4afddfd9d5b43110abcf97900da29d616ca9a101027583"
+    },
+    {
+      "path": "preservation/PHASE_2_6_2_7_RECOVERY_REPORT.md",
+      "size_bytes": 5473,
+      "sha256": "850d49efe3308bae78035b635f1a1e95b32fbbffac0544721afdc5d03fc68073"
+    },
+    {
+      "path": "preservation/evidence_recovery_manifest.json",
+      "size_bytes": 6776,
+      "sha256": "8621684ae805f2f8832e6aeb8dd8b6c0a59510e2e90977cce121f8590dd9f091"
+    },
+    {
+      "path": "preservation/manifest_preservation.json",
+      "size_bytes": 110222,
+      "sha256": "fb028e348ea74ad026bce653eba043fef20ffabadf637e90507b905437beb43d"
+    },
+    {
+      "path": "preservation/overwritten_versions/phase_2_6_tc_reg_a02_uls_combination_sum.log.overwritten",
+      "size_bytes": 2486,
+      "sha256": "0fecf5570bb56d70be4a4cdd397fe12da5d53f8725937e23b1b613ae31d12eef"
+    },
+    {
+      "path": "preservation/overwritten_versions/phase_2_6_tc_reg_b01_section_property_sync.log.overwritten",
+      "size_bytes": 2140,
+      "sha256": "7fe4da64dfeae5b0bb4420aa735931bd54d93a8cabc8a87f75a0f8e37db64897"
+    },
+    {
+      "path": "preservation/overwritten_versions/phase_2_6_tc_reg_c01_sectional_stress_range.log.overwritten",
+      "size_bytes": 2363,
+      "sha256": "83de7855dccf7a9d37764d7bc98cc5e6962e88fa2d89636c6b688d5acb4ff650"
+    },
+    {
+      "path": "preservation/overwritten_versions/phase_2_6_tc_reg_eq_load_conservation.log.overwritten",
+      "size_bytes": 3917,
+      "sha256": "40092b80eabf0e5b19eb241534dcb458c50ffdae07d4043af2df3ea87d43c32b"
+    },
+    {
+      "path": "preservation/overwritten_versions/phase_2_6_tc_reg_fs_clean_working_tree.log.overwritten",
+      "size_bytes": 1685,
+      "sha256": "c966fe8ec07aa4974d50d8e3dd6a60c55373210b0ae19cb4c261b0d2abe66824"
+    },
+    {
+      "path": "preservation/overwritten_versions/phase_2_6_tc_reg_rpt_exec_summary_status.log.overwritten",
+      "size_bytes": 2114,
+      "sha256": "d7ca1f685f7c5b1fb293bbffb1207dc9b13bd17dc703d1fdbc6729d4fceaf35a"
+    },
+    {
+      "path": "preservation/overwritten_versions/phase_2_7_tc_reg_eq_load_conservation.log.overwritten",
+      "size_bytes": 3917,
+      "sha256": "8476f0535f5810f732d1e60a66cbe0860eefc7a326053c61fcb675f405e3d3a6"
+    },
+    {
+      "path": "sensitivity/console_output.txt",
+      "size_bytes": 94050,
+      "sha256": "ece2ffd52e1b49bd0287f65dc4cc06a64614c77c768304ed9f507823bac0d3e3"
+    },
+    {
+      "path": "sensitivity/phase_2_9_sensitivity_matrix_summary.json",
+      "size_bytes": 29370,
+      "sha256": "a65c641a1f0351b6fb07c5086857d498f6344e675555c6aa961c636c4c67f170"
+    },
+    {
+      "path": "sensitivity/sensitivity_exit_code.txt",
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "sensitivity/tc_reg_a01_factor_scaling_sensitivity.json",
+      "size_bytes": 1357,
+      "sha256": "f08eabcf700cff721085d2fab78985dae17d349d0ac48fa8e30aa2b0283e734e"
+    },
+    {
+      "path": "sensitivity/tc_reg_a02_uls_combination_sum_sensitivity.json",
+      "size_bytes": 1846,
+      "sha256": "fffe11f43236472625eefb5b7cb35562800c3f55c28292095ef91391e520437b"
+    },
+    {
+      "path": "sensitivity/tc_reg_b01_section_property_sync_sensitivity.json",
+      "size_bytes": 1533,
+      "sha256": "e9da3fe30a50d1c45f0d6cfed5d64c61dcff48a1e26a90fd26f3dff2dc56f625"
+    },
+    {
+      "path": "sensitivity/tc_reg_c01_sectional_stress_range_sensitivity.json",
+      "size_bytes": 1703,
+      "sha256": "4dd6969875090482b881be713f9386690c292e3c03c5b00ba1fc3848f4b1f9e6"
+    },
+    {
+      "path": "sensitivity/tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json",
+      "size_bytes": 1348,
+      "sha256": "1678180c3959d773d414efbbda0b6579a0ee6a9db227990f4b43263073ddc839"
+    },
+    {
+      "path": "sensitivity/tc_reg_cad_export_vs_screenshot_sensitivity.json",
+      "size_bytes": 1310,
+      "sha256": "91c2c2d8ea425fdf2349ef1576108f81f41369697b046ab528845b2f351a0269"
+    },
+    {
+      "path": "sensitivity/tc_reg_cap_stiffener_buckling_sensitivity.json",
+      "size_bytes": 1571,
+      "sha256": "6009761aef441c6d3d32d2e1e53abcc616565f45fa22d1c11401b1291f71d17c"
+    },
+    {
+      "path": "sensitivity/tc_reg_d01_wind_speed_propagation_sensitivity.json",
+      "size_bytes": 1540,
+      "sha256": "10bdb2c66bcdf3445e4d462a142ecc03af57c8431c179758721aba04fac3b406"
+    },
+    {
+      "path": "sensitivity/tc_reg_d02_temperature_propagation_sensitivity.json",
+      "size_bytes": 1274,
+      "sha256": "41c59a3182d8c909c60fa0d12fe0771260570bf66c03206abae3f7750a2570c2"
+    },
+    {
+      "path": "sensitivity/tc_reg_eq_load_conservation_sensitivity.json",
+      "size_bytes": 2170,
+      "sha256": "a21cbe8923ecc68f21826fbdb364dee1d7fecdb83f4c0c20d6d52de20371c04a"
+    },
+    {
+      "path": "sensitivity/tc_reg_fs_clean_working_tree_sensitivity.json",
+      "size_bytes": 1689,
+      "sha256": "795c13225def18c6f97450679e9b59f285b63f044aaabac551219774eb03b964"
+    },
+    {
+      "path": "sensitivity/tc_reg_geo_girder_count_alignment_sensitivity.json",
+      "size_bytes": 1438,
+      "sha256": "acbb918fa2fd3769a7d61421042d4f51ac92b62edbb333f889f71eb8e10d7ca6"
+    },
+    {
+      "path": "sensitivity/tc_reg_geo_slab_section_properties_sensitivity.json",
+      "size_bytes": 1365,
+      "sha256": "8aa8043cb0f0dd6ad86b7ccbf51cdd1bc777a2d995a07fddd51fda5716e7f64f"
+    },
+    {
+      "path": "sensitivity/tc_reg_mat_density_consistency_sensitivity.json",
+      "size_bytes": 1450,
+      "sha256": "b997fc6d405dba6ef84f4706d02f80fa63ea49f80ff79f1b414cdc511657b0af"
+    },
+    {
+      "path": "sensitivity/tc_reg_rpt_exec_summary_status_sensitivity.json",
+      "size_bytes": 5500,
+      "sha256": "1bf4a0d3719d7284e0f6bead18b6ce3f5d8e34daefaefd798e4e95a13fb6418a"
+    }
+  ]
+}

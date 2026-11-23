@@ -1,0 +1,10 @@
+TEST IDENTIFIER: TC-REG-A01-FACTOR-SCALING
+DEFECT IDENTIFIER: DEF-01 (Upstream ospgrillage)
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.00000 (expected 1.35000).
+
+--- DETAILED EXECUTION LOG ---
+Max force Unfactored: 9634.6432 N
+Max force Factored (expected 1.35x): 9634.6432 N
+Force ratio (Factored / Unfactored): 1.00000

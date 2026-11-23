@@ -1,0 +1,27 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-FS-CLEAN-WORKING-TREE
+DEFECT IDENTIFIER:      DEF-10 (Filesystem/Packaging)
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     11.527 s
+TIMESTAMP UTC:          2026-11-17T14:37:14.983014+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-10 Confirmed: Production ui_loc.DB_PATH resolves inside the package tree; Database() default constructor creates unanchored weather.sqlite in cwd; Package tree mutated during production calls: created ['src/osdagbridge/core/data/project_location/weather.sqlite']; Production call vulnerable to read-only package installations (denied write causes OperationalError)
+
+EXECUTION DETAILS & TRACE:
+Application repository root: F:\FOSSEE internship\source\OsdagBridge
+Package root directory:      F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge
+Package data directory:      F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\data\project_location
+Current working directory:   F:\FOSSEE internship
+Mirrored sandbox initialized at 'C:\Users\Subodh\AppData\Local\Temp\fs_pkg_sb_iy3pygr4\source\OsdagBridge': 273 files.
+Check 1: Production DB_PATH: 'F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\data\project_location\weather.sqlite' (Inside package tree: True, Dir writable: True)
+Check 2: Default Database().db_name: 'weather.sqlite' (Unanchored in cwd: True, In package: False)
+Check 3: Sandbox tree mutated: True (New: ['src/osdagbridge/core/data/project_location/weather.sqlite'], Mutated: []) | Queries OK: True | Detached process detected: False | stdout: QUERY_OK: states=32, temp=48.2
+  Read-only execution denied write (OperationalError/PermissionError): Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "C:\Users\Subodh\Ap
+Check 4: Vulnerable to read-only package installation: True (Real OS permissions applied: True)
+Check 5: Real repository clean: True (New: [], Mutated: []) | CWD clean: True (New: [])

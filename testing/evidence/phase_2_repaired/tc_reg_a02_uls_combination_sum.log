@@ -1,0 +1,11 @@
+TEST IDENTIFIER: TC-REG-A02-ULS-COMBINATION-SUM
+DEFECT IDENTIFIER: DEF-01 / DEF-02
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-01 / DEF-02 Confirmed: create_sidl_combination() was never invoked (sidl_combination is None)
+
+--- DETAILED EXECUTION LOG ---
+Component Resultants: SW=169.8 kN, Deck=1275.0 kN, Surf=0.0 kN, SIDL=0.0 kN
+sidl_combination object: None
+BASIC_1 Total Resultant: 2378.9 kN
+Expected Factored Resultant (without live load): 1950.5 kN

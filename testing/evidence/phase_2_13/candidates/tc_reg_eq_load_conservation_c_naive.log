@@ -1,0 +1,82 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-EQ-LOAD-CONSERVATION
+DEFECT IDENTIFIER:      DEF-18
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     5.680 s
+TIMESTAMP UTC:          2026-11-17T17:39:21.055427+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-18 Confirmed: Static equilibrium and spatial load distribution violated in FE grillage: SW definition deviates from input oracle: applied=169.8kN vs exp=165.3kN; DD definition deviates from input oracle: applied=1275.0kN vs exp=1249.5kN (mag=6250.0N/m2 vs exp=6125.0N/m2); DW definition deviates from input oracle: applied=244.8kN vs exp=216.0kN; Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=+0.000m; Left Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; Right Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; DW distribution deviates: shares_ok=False, vector_ok=False (rel_err=17.02%)
+
+EXECUTION DETAILS & TRACE:
+SW Input Oracle: Expected 165.276 kN (rho=76.4 kN/m3), Applied: 169.819 kN -> Definition OK: False
+DD Input Oracle: Expected 1249.500 kN (mag=6125.0 N/m2, rho=24.5), Applied: 1275.000 kN (mag=6250.0 N/m2) -> Definition OK: False
+DW Input Oracle: Expected 216.000 kN (mag=1200.0 N/m2, W_cw=7.5m), Applied: 244.800 kN (mag=1200.0 N/m2) -> Definition OK: False
+Barrier Input Oracle: Expected 313.920 kN (z_left=0.250m, z_right=8.250m), Applied: 313.920 kN (x_bar=12.000m, z_bar=4.250m) -> Definition OK: True
+Static & Moment Equilibrium Audit (Support Reactions vs Applied Physical Loads):
+  [SW] Girder Self-Weight:
+      Applied Load:        169.819 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    169.819 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:     +0.000 kN ( +0.00%) -> Force OK: True
+      Centroid Shift:   dx=-0.000m, dz=-0.000m -> Centroid OK: True
+      Equilibrium OK:   True
+  [DD] Deck Slab:
+      Applied Load:       1275.000 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:   1275.000 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:     +0.000 kN ( +0.00%) -> Force OK: True
+      Centroid Shift:   dx=+0.000m, dz=+0.000m -> Centroid OK: True
+      Equilibrium OK:   True
+  [1.0 DW] Wearing Course:
+      Applied Load:        244.800 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    244.800 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:     +0.000 kN ( +0.00%) -> Force OK: True
+      Centroid Shift:   dx=-0.000m, dz=-0.000m -> Centroid OK: True
+      Equilibrium OK:   True
+  [Crash barrier load] Crash Barrier:
+      Applied Load:        313.920 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    196.200 kN (x_bar=12.750m, z_bar=4.250m)
+      Force Difference:   -117.720 kN (-37.50%) -> Force OK: False
+      Centroid Shift:   dx=+0.750m, dz=+0.000m -> Centroid OK: False
+      Equilibrium OK:   False
+  Total Dead Load Resultants:
+      Total Applied:      2003.539 kN
+      Total Reaction:     1885.819 kN
+      Net Shortfall:      -117.720 kN ( -5.88%)
+
+Individual Load Group, Transverse & Along-Span Distribution Audit:
+  [Left Barrier (exp z=0.250m, act z=0.250m)]:
+      Total Force:          98.100 kN (Expected: 156.960 kN) -> OK: False
+      Position Def OK:  True
+      Centroid (x, z):  x=12.750m, z=0.250m (Expected: x=12.000m, z=0.250m) -> OK: False
+      Line 0 (z=0.000m): 76.19% (Expected: 76.19%) -> OK: True
+      Line 1 (z=1.050m): 23.81% (Expected: 23.81%) -> OK: True
+      Tributary Nodal Load Vector: RelErr=12.08% -> OK: False
+      Overall Left Barrier Distribution OK: False
+  [Right Barrier (exp z=8.250m, act z=8.250m)]:
+      Total Force:          98.100 kN (Expected: 156.960 kN) -> OK: False
+      Position Def OK:  True
+      Centroid (x, z):  x=12.750m, z=8.250m (Expected: x=12.000m, z=8.250m) -> OK: False
+      Line 4 (z=7.450m): 23.81% (Expected: 23.81%) -> OK: True
+      Line 5 (z=8.500m): 76.19% (Expected: 76.19%) -> OK: True
+      Tributary Nodal Load Vector: RelErr=12.08% -> OK: False
+      Overall Right Barrier Distribution OK: False
+  [Right Barrier (z=8.250m)]:
+      Total Force:          98.100 kN (Expected: 156.960 kN) -> OK: False
+      Centroid (x, z):  x=12.750m, z=8.250m (Expected: x=12.000m, z=8.250m) -> OK: False
+      Line 4 (z=7.450m): 23.81% (Expected: 23.81%) -> OK: True
+      Line 5 (z=8.500m): 76.19% (Expected: 76.19%) -> OK: True
+      Tributary Nodal Load Vector: RelErr=12.08% -> OK: False
+      Overall Right Barrier Distribution OK: False
+  [Concrete Deck Slab (DD) Distribution]:
+      Total Force:        1275.000 kN (Expected: 1275.000 kN)
+      Tributary Shares: Line 0 (z=0.000m): 6.18% (exp 6.18%) -> True; Line 1 (z=1.050m): 18.73% (exp 18.73%) -> True; Line 2 (z=3.183m): 25.10% (exp 25.10%) -> True; Line 3 (z=5.317m): 25.10% (exp 25.10%) -> True; Line 4 (z=7.450m): 18.73% (exp 18.73%) -> True; Line 5 (z=8.500m): 6.18% (exp 6.18%) -> True
+      Tributary Nodal Load Vector: RelErr=0.00% -> OK: True
+      Overall DD Distribution OK: True
+  [Wearing Course (1.0 DW) Distribution]:
+      Total Force:         244.800 kN (Expected: 244.800 kN)
+      Tributary Shares: Line 0 (z=0.000m): 6.18% (exp 1.92%) -> False; Line 1 (z=1.050m): 18.73% (exp 19.63%) -> False; Line 2 (z=3.183m): 25.10% (exp 28.44%) -> False; Line 3 (z=5.317m): 25.10% (exp 28.44%) -> False; Line 4 (z=7.450m): 18.73% (exp 19.63%) -> False; Line 5 (z=8.500m): 6.18% (exp 1.92%) -> False
+      Tributary Nodal Load Vector: RelErr=17.02% -> OK: False
+      Overall DW Distribution OK: False

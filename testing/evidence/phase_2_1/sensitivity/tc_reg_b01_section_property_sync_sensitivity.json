@@ -1,0 +1,28 @@
+{
+  "test_id": "TC-REG-B01-SECTION-PROPERTY-SYNC",
+  "defect_id": "DEF-03",
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.045,
+      "reason": "DEF-03 Confirmed: Grillage retains preliminary sizing across all 4 girders (Iz gap ~7.40%, A gap ~10.55%); Post-snapping dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.047,
+      "reason": "All girder properties and dimensions synchronize with the designer checked section."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.045,
+      "reason": "DEF-03 Confirmed: Grillage retains preliminary sizing across all 4 girders (Iz gap ~7.40%, A gap ~10.55%); Post-snapping dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm"
+    }
+  },
+  "sensitivity_verified": true
+}

@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-CAP-STIFFENER-BUCKLING",
+  "defect_id": "DEF-12",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.271,
+      "reason": "DEF-12 Confirmed: Geometry 1 (Baseline Snapped): capacity 214533.2kN (fails oracle 63.4kN, squash=1918.8kN); Geometry 2 (Alternate Section): capacity 370184.0kN (fails oracle 158.5kN, squash=1909.1kN)"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "ee7d2205f4e3fac18f4f64b97f9067fb9ee39b1a81925f99b023ca7ab0264699",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.278,
+      "reason": "Web buckling capacity satisfies positive IS 800 Cl. 8.7.3.1 slenderness oracle across multiple geometries."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "d153f36a995395be7ab7359be96fb27344194732efef1e5dbd7f27b281a37124",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.276,
+      "reason": "DEF-12 Confirmed: Geometry 1 (Baseline Snapped): capacity 1918.8kN (fails oracle 63.4kN, squash=1918.8kN); Geometry 2 (Alternate Section): capacity 1909.1kN (fails oracle 158.5kN, squash=1909.1kN)"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

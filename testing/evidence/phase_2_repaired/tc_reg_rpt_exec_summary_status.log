@@ -1,0 +1,14 @@
+TEST IDENTIFIER: TC-REG-RPT-EXEC-SUMMARY-STATUS
+DEFECT IDENTIFIER: DEF-08
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-08 Confirmed: executive_summary() emits literal '\noindent Girder design pass' unconditionally despite failing design status in output dictionary.
+
+--- DETAILED EXECUTION LOG ---
+Generated Executive Summary LaTeX snippet:
+  \section*{Key Design Outcomes Summary}
+  \addcontentsline{toc}{section}{Key Design Outcomes Summary}
+  \noindent Girder design pass \\
+  Cross bracing design pass \\
+  End Diaphragm design pass \\
+  Deck design pass

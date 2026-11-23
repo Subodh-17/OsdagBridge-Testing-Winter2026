@@ -1,0 +1,2099 @@
+{
+  "metadata": {
+    "generated_utc": "2026-11-17T09:38:37.358495+00:00",
+    "phase": "2.9",
+    "purpose": "Authoritative historical evidence preservation catalog",
+    "verified_roots": [
+      "testing/evidence/phase_1d",
+      "testing/evidence/phase_2_3",
+      "testing/evidence/phase_2_4",
+      "testing/evidence/phase_2_5",
+      "testing/evidence/phase_2_6",
+      "testing/evidence/phase_2_7",
+      "testing/evidence/phase_2_8"
+    ],
+    "total_files": 520
+  },
+  "files": {
+    "testing\\evidence\\phase_1d\\01_end_to_end_design_full_window.png": {
+      "size_bytes": 79374,
+      "sha256": "bdf9141b8a8330560cfb88322482a6d8de0971d761b199d9656a95d909246f17"
+    },
+    "testing\\evidence\\phase_1d\\02_3d_cad_bridge_model.png": {
+      "size_bytes": 13485,
+      "sha256": "d8975350123784e2fc3af34c7ea800015f0fa396e6aaffee57465d37c1e941ac"
+    },
+    "testing\\evidence\\phase_1d\\execution.log": {
+      "size_bytes": 173835,
+      "sha256": "27d57835eabedd4a5fdb54900dcc137e0beed96f5dcb11392846f1d672036013"
+    },
+    "testing\\evidence\\phase_1d\\input_configuration.json": {
+      "size_bytes": 44653,
+      "sha256": "31ae62dc08a0de7797aa4ca6451a178fd46cc66bba4c00f7414021336fb10191"
+    },
+    "testing\\evidence\\phase_1d\\input_configuration.yaml": {
+      "size_bytes": 41320,
+      "sha256": "36e0e49edaa42f6b98aba06f32c2bcd8e73a668dc589fe0d80c8bd60163d19d8"
+    },
+    "testing\\evidence\\phase_1d\\output_dictionary_snapshot.json": {
+      "size_bytes": 3333439,
+      "sha256": "429a3198fc93c157a5bd5ee13c74b95612c3410d35a7be1f246867167991a5ab"
+    },
+    "testing\\evidence\\phase_1d\\phase_1d_design_report.pdf": {
+      "size_bytes": 402485,
+      "sha256": "8457482dbfee9265bf84cc6d42dad4e7ff767d2119d2ce330a8b449deb8e3695"
+    },
+    "testing\\evidence\\phase_1d\\phase_1d_design_report.tex": {
+      "size_bytes": 91775,
+      "sha256": "33f4e581f35a6d40098f5cf7cd4491d056af5e2cfd3dd1e70e221cee44d920ff"
+    },
+    "testing\\evidence\\phase_1d\\task_a_metadata.json": {
+      "size_bytes": 1479,
+      "sha256": "73f7d65901af396a4a304e642e8fc4db29c1222832746a4b3825149f5b7a83b9"
+    },
+    "testing\\evidence\\phase_1d\\task_b_database_audit.json": {
+      "size_bytes": 106119,
+      "sha256": "193a08e259ac77c9261b94741c6aad83b780a30d48f220f7091de19b730ba13c"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\baseline_exit_code.txt": {
+      "size_bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\baseline_run.log": {
+      "size_bytes": 40398,
+      "sha256": "bd8b6f71eceab9a3c4f26ed741f5e163d1e425143e69fae03700ce99c720bc7c"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\phase_2_3_baseline_summary.json": {
+      "size_bytes": 11205,
+      "sha256": "2570034a0e1cdee712027549341fa297ac707e9ece6aec31123517e343f58744"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "cd1e1b05ab58a2ce262502fdb29e1f6e91783cdedc535c82c90fe688170e2ff0"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 1715,
+      "sha256": "5528ec0258892c4a6f99d2254e291502410d90e08f858720e22ad93d351fd846"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 1845,
+      "sha256": "59d8820a7ed2e1cae2d1a3d8fccf8f61cc3fd741ae906c6501ca1af3f634fa78"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 1570,
+      "sha256": "78947be124341a99e9d5061278e5220f888dfd01815070668691bac5f921b991"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 948,
+      "sha256": "943502ede89177b599497f56f6f9cac7bebe4d1c60ae8c3d215d3c7b0066047c"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 963,
+      "sha256": "b93d3b79c5e956a975ec8f2a9fe0d7b72f0c68cf3b35913c96eb81192bc5d674"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1336,
+      "sha256": "c23da1170def8e405f63888b11d9cc138c760ca537690376d47c6b45167ed919"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "f9c67995d63afa89e27d15fde6fef7239881eb1435f7bb0d0a237e65be2c5357"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "ceab1efb5ab2bb209fb8686f0a61e997040f3da9573274e4dd960de7690bb314"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1570,
+      "sha256": "2504d92f6f0bf9ee959ee07a9da546bf5c28d5299e09a97ba168862e859dceaa"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "1d7f5477f052921d3d79dd8285c67dee2a9d297b5e3dbfcf3397767b32cdbaf2"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "1cb09e3035be50921cc19a856ca9f4ffdcf0ebf67371272869e81f03f4d2cb23"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "21483466d7d5a187558a64e669a915d50c7d4d9d3c49bf6cb0ad57082966353b"
+    },
+    "testing\\evidence\\phase_2_3\\baseline\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 1413,
+      "sha256": "7074334860256a298d45e2ddf0e40ef4341a94b3d247920d3fd8d4a0bbc093de"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "d64532dc649b0b086fbe642d571367de99db35d3b893d2c6a9659b539e59c41a"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 1660,
+      "sha256": "941f7260a599fb2e2e6bb1e3aa8542692a8ee5b216ac4d0222ed11f358f33567"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 1845,
+      "sha256": "1c5e092795292a8c547846aa14a4761d162a8d133faa77d2b45d2706fab390b7"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 1754,
+      "sha256": "e49dffccfaa2fd9414d8bc63f37d211acf291dfa0983bde9baa4f7aaa5daf780"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 964,
+      "sha256": "c7e83f29a72a0e4621609eaf7c0eb36c68d61fbb20c7d7b84ac6bd799c5eda40"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 942,
+      "sha256": "274f0425b3179b768accdc311155ac5f583ebfef27a14a656c177890382136f1"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1328,
+      "sha256": "fa7ff14b447c88585ec81675a731f23ca231d852a7bb08355f9af8d9a4b1f50e"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "fb5d661ca065f85fc0e6aaf5d8258a4dc40073d441d6555a4ad485174b5bb0b4"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "2cdc1d53cd625db6fd385f4fe1527ec733f3e60be589fe7a0b9d8cd8dc76d61a"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1478,
+      "sha256": "11da6549166621e16988b57a04fc37cc568210aaaf721d99345100d73c87d901"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "c7c8cb4a885e6c3cf59de74d85caa469b4a01811b4b62dafb7168443a4fefd6e"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "5994caece3c7134eec5b75acb1081615039863a0f273251bb8bcc9f050c1aae1"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "186cfeb48676f9c717499ac736900628dbe3c83331ad4bd864857feb7204c19d"
+    },
+    "testing\\evidence\\phase_2_3\\candidates\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 1413,
+      "sha256": "f6d9b305de78d07ba5dfd0b702d782eae50489cf6bd1d0a593e7ffc3fa061c73"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\sensitivity_exit_code.txt": {
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\sensitivity_matrix.log": {
+      "size_bytes": 90234,
+      "sha256": "7b8fa52de35ca0c37c0508adbc1f90ccfe43cbc058e25c244834ba35771d8d2b"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\sensitivity_matrix_summary.json": {
+      "size_bytes": 20313,
+      "sha256": "40a03e8b5187f86c0acc9c8120d6192c2650f7f3af5ab8ce5105d253d196cb4f"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_a01_factor_scaling_sensitivity.json": {
+      "size_bytes": 1167,
+      "sha256": "af4375cb13a6668212a30de6a8ed255acd2eeedf97586e153181354e37752472"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_a02_uls_combination_sum_sensitivity.json": {
+      "size_bytes": 1482,
+      "sha256": "835f204a551b867bb3fa464d2ee7d663c39c5ea03ce0ba79a8023e66908ddc16"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_b01_section_property_sync_sensitivity.json": {
+      "size_bytes": 1447,
+      "sha256": "09ac45626a7b12479f2221e296c182f59676caf52a5b35f47a226737964b948d"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_c01_sectional_stress_range_sensitivity.json": {
+      "size_bytes": 1442,
+      "sha256": "f1ec4dcb7162672707dbf89f6914792263aba2858dc49d6fef9582593eeb5535"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json": {
+      "size_bytes": 1201,
+      "sha256": "da7f484f8d37fa3154a5b244d0ba45c132ab75db7d957d20174265c48e09aa44"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_cad_export_vs_screenshot_sensitivity.json": {
+      "size_bytes": 1120,
+      "sha256": "2e150b834ebce9c31c29e4b63198c26a49c87b9ce87d71c7f5c47b106345033f"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_cap_stiffener_buckling_sensitivity.json": {
+      "size_bytes": 1381,
+      "sha256": "161f4dbeda7954ceeb2649a1dc42fa1e94bc00047dd77ab0e353eb9663b607cd"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_d01_wind_speed_propagation_sensitivity.json": {
+      "size_bytes": 1350,
+      "sha256": "e984e3a7e26d0e71145eeca2b1f1359bff7e123cc1ab4af6ed95a305ae0b2969"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_d02_temperature_propagation_sensitivity.json": {
+      "size_bytes": 1208,
+      "sha256": "2e5e6bbbfb8af3cc3da20b48b66695ada56f1125ea34f9e2e9a4402080c288fd"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_fs_clean_working_tree_sensitivity.json": {
+      "size_bytes": 1327,
+      "sha256": "e526b036ded8c6e6dc7ce059d74cef669677887de4d47c175b5ba88a8eaf1094"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_geo_girder_count_alignment_sensitivity.json": {
+      "size_bytes": 1250,
+      "sha256": "7060159f62e8fef47552c406692da5e3ecf25cc0794dff23f5317e5a454ac42c"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_geo_slab_section_properties_sensitivity.json": {
+      "size_bytes": 1297,
+      "sha256": "cf449051b4077bfb4c3d022c2d805015c0a39b8b3c22aba51a8455be6f9947cd"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_mat_density_consistency_sensitivity.json": {
+      "size_bytes": 1260,
+      "sha256": "323a128837b4582896fb7433c8f796fa101ca37b355dcae60ec645c5d3bf08a8"
+    },
+    "testing\\evidence\\phase_2_3\\sensitivity\\tc_reg_rpt_exec_summary_status_sensitivity.json": {
+      "size_bytes": 1349,
+      "sha256": "0a8014d24f7efeb5042dddc47f491bba1796ddbcf7d16eb660e79676e6333529"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\baseline_exit_code.txt": {
+      "size_bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\phase_2_4_baseline_summary.json": {
+      "size_bytes": 11991,
+      "sha256": "0583737a33e951fe8b365f4b6350532f1ccbde87ba04f998931862dda63f5102"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "5dda87b5d930b770bea7f125a5b34c31d450cbb5b8233bdf2052aec0ae569248"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 1659,
+      "sha256": "f4ff57a747c083c08962751a13b6d41baeadf4028327b6ed44a4f94e54a2678e"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 1977,
+      "sha256": "b806b2773be84150e49707b1eef17da9bcbbf482e8441b4bf4f21146da4afaa4"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 1760,
+      "sha256": "e5ff44284bbe41d8c58719acdeb1999e6beaac8ec5e3e60f7f7fa461b6f48816"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1724,
+      "sha256": "e3d81c13b25ea275bc6bc51a4e11c2fdb7865d2aae719686d7493f0d87366e77"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 963,
+      "sha256": "61ff8833a21d1759ed6c4284e331e58a7a896e984d970483ddf038b9a3baf205"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1336,
+      "sha256": "a8e4b35132025dc82c8b1e3aadd3e2f37c41c68f8f429570ce3b6e678325cabb"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "f42bef71ccdaa007ab5597b6795cba90e62c1aadcaadf6cc812efb7c118a13ce"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "fafe9359fd2a78b3867589748d65bc8a1c4ada079ea34fb9a3af1d271f8a5ed6"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 2040,
+      "sha256": "8451ee544a1fef8607e7c55b1c51cd5e3230b3df3b8c6c9d4de6ee728c6d0c16"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1477,
+      "sha256": "16254022d9fa47c3035d0802c34c1d80661e9a208214f5a927d8f34c19d80f63"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "0f529876f10e0d028ca88a18138d6f47b8c1011b252c6fc4a6346ee8c4510235"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "e12a705b27ba402293f9c97493630581769c9b305970a753bc1e246911d79290"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "63c949fa5f77d7edc3b89e746f75bb0583e26a732b56245d13bec4d07fe870fa"
+    },
+    "testing\\evidence\\phase_2_4\\baseline\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 1413,
+      "sha256": "644cd6b299ccb54edd75be0824184a9fbf750fbc0e3032133865e57a396d6ca7"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "4fc667ff2b988c51b7a92abe00b140b72b83657d2e00ad348f30da30d188ece0"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_a01_factor_scaling_a_baseline.log": {
+      "size_bytes": 1079,
+      "sha256": "90384cc75693c28a5f87e353323157a61d7e4ba816f1db8bb9f69717b3a9a821"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_a01_factor_scaling_b_correct.log": {
+      "size_bytes": 1057,
+      "sha256": "4fffce65087072307cbc72baa2370ab82e3e56e1f046f647bb64bebb00dae789"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_a01_factor_scaling_c_naive.log": {
+      "size_bytes": 1079,
+      "sha256": "4fc667ff2b988c51b7a92abe00b140b72b83657d2e00ad348f30da30d188ece0"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 1661,
+      "sha256": "87144823cebd6fee26be85e0d2a1c5b99426f64787e75b61c1858d4bd1aca594"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_a02_uls_combination_sum_a_baseline.log": {
+      "size_bytes": 1659,
+      "sha256": "b9c8bd513f6b1bb3bd8047ac0d9c48271f74027f717db8bee9deb3317c81c20b"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_a02_uls_combination_sum_b_correct.log": {
+      "size_bytes": 1482,
+      "sha256": "a41b4536a12eb6fbb0999df9a79471e8d72aa3d8aa8585d274bdaf73c86fb75c"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_a02_uls_combination_sum_c_naive.log": {
+      "size_bytes": 1661,
+      "sha256": "87144823cebd6fee26be85e0d2a1c5b99426f64787e75b61c1858d4bd1aca594"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 1977,
+      "sha256": "0a1a4f626e32858a8ab119a90fa99a1e3e1fb73904a4fa849ee41b2663163330"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_b01_section_property_sync_a_baseline.log": {
+      "size_bytes": 1977,
+      "sha256": "31cf7863634725134ee3e1ce39e04f2854ec12539e8c2d2fffb57d134f33d1d9"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_b01_section_property_sync_b_correct.log": {
+      "size_bytes": 1806,
+      "sha256": "e09b03adf7a7a0f50035867ae26257885efd7305072ef8f4ce80ac9a7aec5e1e"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_b01_section_property_sync_c_naive.log": {
+      "size_bytes": 1977,
+      "sha256": "0a1a4f626e32858a8ab119a90fa99a1e3e1fb73904a4fa849ee41b2663163330"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 1754,
+      "sha256": "69aa488430268771c69af24a27d4a97ee89be27f7d1273e223ffb13e608f083a"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_c01_sectional_stress_range_a_baseline.log": {
+      "size_bytes": 1760,
+      "sha256": "fea0faf1f916a70981c1143329df5929546564dba233cd053bc9f26682f5a897"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_c01_sectional_stress_range_b_correct.log": {
+      "size_bytes": 1650,
+      "sha256": "f1c252f823a3bd1dcc012e8af3754b132bfe2496c5e950ceddbfc51a4097ffa2"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_c01_sectional_stress_range_c_naive.log": {
+      "size_bytes": 1754,
+      "sha256": "69aa488430268771c69af24a27d4a97ee89be27f7d1273e223ffb13e608f083a"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1724,
+      "sha256": "befc04d012430bdf0a369a83dca9f1aca2c71646c9bc4b6b6ecb15ba898cb05a"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_c02_fatigue_vehicle_analysis_a_baseline.log": {
+      "size_bytes": 1724,
+      "sha256": "befc04d012430bdf0a369a83dca9f1aca2c71646c9bc4b6b6ecb15ba898cb05a"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 942,
+      "sha256": "9b0b380270097d15690e07cc4e943186f49a27e99084e62c25e80de41493bba1"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_cad_export_vs_screenshot_a_baseline.log": {
+      "size_bytes": 963,
+      "sha256": "96039691948c296b517a2c3555e1c53ca8048a2c792c51de9c7a99453d1c2e14"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_cad_export_vs_screenshot_b_correct.log": {
+      "size_bytes": 963,
+      "sha256": "64e773bac7da4e11ccb1b7da0cfa6e79b6463b44a02725b2976a6de3fad8f6f2"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_cad_export_vs_screenshot_c_naive.log": {
+      "size_bytes": 942,
+      "sha256": "9b0b380270097d15690e07cc4e943186f49a27e99084e62c25e80de41493bba1"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1328,
+      "sha256": "9959bb86df27ba7cfaa278e4b0597b134d00f34717e720b3b96aedb58f6f324e"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_cap_stiffener_buckling_a_baseline.log": {
+      "size_bytes": 1336,
+      "sha256": "c35dfaf021ddfffbf448b6fb0e94535ab72ab781b30bc171eff80f70192c24e2"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_cap_stiffener_buckling_b_correct.log": {
+      "size_bytes": 1226,
+      "sha256": "17a152456163a0ed0d5cd3bbd2e52fb697b4f6cd8131b6544b6ba402f5f13b5c"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_cap_stiffener_buckling_c_naive.log": {
+      "size_bytes": 1328,
+      "sha256": "9959bb86df27ba7cfaa278e4b0597b134d00f34717e720b3b96aedb58f6f324e"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "ec7b554c76101accd1b8f160d6154ac36be8eddd9623bd5a66f9b9ee27956e27"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_d01_wind_speed_propagation_a_baseline.log": {
+      "size_bytes": 1317,
+      "sha256": "5044e38baef6c342d0681a66937e8b4d8ea3d6ee0eb332c7c78eed52c3464b2e"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_d01_wind_speed_propagation_b_correct.log": {
+      "size_bytes": 1188,
+      "sha256": "441f3627b3f61a830787004219157af53ad516f8aae0011fb16627b22d45c6e9"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_d01_wind_speed_propagation_c_naive.log": {
+      "size_bytes": 1317,
+      "sha256": "ec7b554c76101accd1b8f160d6154ac36be8eddd9623bd5a66f9b9ee27956e27"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "3f4a9adfea90b78c570348883dd65f8c4211c5cb443c9171664cb523b2804705"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_d02_temperature_propagation_a_baseline.log": {
+      "size_bytes": 1394,
+      "sha256": "3f4a9adfea90b78c570348883dd65f8c4211c5cb443c9171664cb523b2804705"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 1901,
+      "sha256": "34884bbee656a82a62372b08b19f9e7f6e28d214ae4ab78bdb883eadd4f19ff1"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_eq_load_conservation_a_baseline.log": {
+      "size_bytes": 2040,
+      "sha256": "ea2a3741ca10ec3f19f57b56872bbb3687fbfcc6fe55d7d401939a6d389eefc3"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_eq_load_conservation_b_correct.log": {
+      "size_bytes": 1827,
+      "sha256": "8659535e07abead6f960c136d0c7e056b49c76646c29f76c4e64b73fbc55add6"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_eq_load_conservation_c_naive.log": {
+      "size_bytes": 1901,
+      "sha256": "34884bbee656a82a62372b08b19f9e7f6e28d214ae4ab78bdb883eadd4f19ff1"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1478,
+      "sha256": "3f38b0c5051c4cbbd8d8516e45bb1462ccfaa642cde1c346463fc5fc6e731614"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_fs_clean_working_tree_a_baseline.log": {
+      "size_bytes": 1478,
+      "sha256": "67c74cfbe1092b1ed9aefe09d88d9cf3b9aeaf956f5da4d1f10716065205c010"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_fs_clean_working_tree_b_correct.log": {
+      "size_bytes": 1402,
+      "sha256": "73f58cf2953732f88f8741a093996cadd682786a8b998efd64110bc67ba1aa0e"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_fs_clean_working_tree_c_naive.log": {
+      "size_bytes": 1478,
+      "sha256": "3f38b0c5051c4cbbd8d8516e45bb1462ccfaa642cde1c346463fc5fc6e731614"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "b4091a6c075ad7228e40bae65dcada854eea8e8c0a4c34493616885fc6e48efe"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_geo_girder_count_alignment_a_baseline.log": {
+      "size_bytes": 996,
+      "sha256": "7a0604afdaea45f201143d72fb0962133a9188fb66d168e48b742e423c971918"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_geo_girder_count_alignment_b_correct.log": {
+      "size_bytes": 883,
+      "sha256": "8dbb14047b181952229e89cbf850db319b1f2a93b5c14306a59be0962be190b5"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_geo_girder_count_alignment_c_naive.log": {
+      "size_bytes": 996,
+      "sha256": "b4091a6c075ad7228e40bae65dcada854eea8e8c0a4c34493616885fc6e48efe"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "3c1c1f63e7d1b29c9a831ef491bdc9af7e2f78407627423cfc02baeb74d06596"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_geo_slab_section_properties_a_baseline.log": {
+      "size_bytes": 1491,
+      "sha256": "3c1c1f63e7d1b29c9a831ef491bdc9af7e2f78407627423cfc02baeb74d06596"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "92fdaa027491e3dabd9fcd881c1affc03f5c16ef7804753824ed2e54bd186832"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_mat_density_consistency_a_baseline.log": {
+      "size_bytes": 1078,
+      "sha256": "547cff27798af07dbbd620ac0423719ac615edebd1302a562aad46fc337a9f1a"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_mat_density_consistency_b_correct.log": {
+      "size_bytes": 1008,
+      "sha256": "93b6ebb88e428c4a6064c49bcf8bb21fa6f3ecc98cdc509cff7a2525eb0112ce"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_mat_density_consistency_c_naive.log": {
+      "size_bytes": 1078,
+      "sha256": "92fdaa027491e3dabd9fcd881c1affc03f5c16ef7804753824ed2e54bd186832"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 1413,
+      "sha256": "f094a9012036cdee1ac0e1ecae3ee038c6a1020c1ef6dec5e9aa2dd82e268b8d"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_rpt_exec_summary_status_a_baseline.log": {
+      "size_bytes": 1413,
+      "sha256": "6f9d0358c353a33e1b2dba3609c248e2f8f6afd94dbb7ed39d71f1de19e22e70"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_rpt_exec_summary_status_b_correct.log": {
+      "size_bytes": 1326,
+      "sha256": "a8b5bf75c6dd3690a6d47d825714c67e232f0eec8c57d9eef2015840de3c8626"
+    },
+    "testing\\evidence\\phase_2_4\\candidates\\tc_reg_rpt_exec_summary_status_c_naive.log": {
+      "size_bytes": 1413,
+      "sha256": "f094a9012036cdee1ac0e1ecae3ee038c6a1020c1ef6dec5e9aa2dd82e268b8d"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\phase_2_4_sensitivity_matrix_summary.json": {
+      "size_bytes": 24545,
+      "sha256": "579007e87908d1d7b3713b89087ce43eed6d353da57c08ec3dd3870f41bc7740"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\sensitivity_exit_code.txt": {
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_a01_factor_scaling_sensitivity.json": {
+      "size_bytes": 1356,
+      "sha256": "dfeb3d30fb2e2698fe06fddc06719083e14afb3ed1a1509c5b161304d8b163c7"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_a02_uls_combination_sum_sensitivity.json": {
+      "size_bytes": 1675,
+      "sha256": "1a8f3cdaa7eedc9d6ff6e82856b87c495a286e604c6c64cbce946553d96dba62"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_b01_section_property_sync_sensitivity.json": {
+      "size_bytes": 1652,
+      "sha256": "6982210505613e7d3d267ff833365d2cf179616f9acab5ca044c75794bf8394a"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_c01_sectional_stress_range_sensitivity.json": {
+      "size_bytes": 1633,
+      "sha256": "9b4c417fa08f428b324ae8087fc4bffb59a80bfdfb355975eec73d4006afe56d"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json": {
+      "size_bytes": 1346,
+      "sha256": "2cf8cca1483815bde4125c3c0fd8c889b4e6021c75bf4e6cbfb166045a32e412"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_cad_export_vs_screenshot_sensitivity.json": {
+      "size_bytes": 1310,
+      "sha256": "0f80bf4e726983c8e63f1784e68dfcacb1f9d8452f23a00e41d8d5a760a11ffc"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_cap_stiffener_buckling_sensitivity.json": {
+      "size_bytes": 1570,
+      "sha256": "903f351da6b0e67243ab42d061f26e8c5e1702f9f43d606c328cd250177737e9"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_d01_wind_speed_propagation_sensitivity.json": {
+      "size_bytes": 1540,
+      "sha256": "2e5e4e655cfc1748805773427cf62dd418091ef25e4f49bd03053cde2eb42eb7"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_d02_temperature_propagation_sensitivity.json": {
+      "size_bytes": 1272,
+      "sha256": "ef5a34920f630145545c7b7ccce3db4c802581cee0a74ce8cf0116ac7cc95929"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_eq_load_conservation_sensitivity.json": {
+      "size_bytes": 1626,
+      "sha256": "4569d6763a97a5db61a1cdaf0844033dce74f3848ebbb1d4df566f6cc6cd39a7"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_fs_clean_working_tree_sensitivity.json": {
+      "size_bytes": 1494,
+      "sha256": "1f24caa63eb5ca1b282ebac9914240733315ff0c974802abad534646541d8bd6"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_geo_girder_count_alignment_sensitivity.json": {
+      "size_bytes": 1440,
+      "sha256": "2fa410566e39dd03c53cb5ea4b0e33c7c695bc9882aa0c6086cfee768789ce7c"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_geo_slab_section_properties_sensitivity.json": {
+      "size_bytes": 1365,
+      "sha256": "8aa8043cb0f0dd6ad86b7ccbf51cdd1bc777a2d995a07fddd51fda5716e7f64f"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_mat_density_consistency_sensitivity.json": {
+      "size_bytes": 1450,
+      "sha256": "56502158ac5ddb5edde9e83e07d47a72260a6a72773467f2416d367c8e22d65c"
+    },
+    "testing\\evidence\\phase_2_4\\sensitivity\\tc_reg_rpt_exec_summary_status_sensitivity.json": {
+      "size_bytes": 1539,
+      "sha256": "a91306814aaba899339366e1423629096c1917a59aa1d089d57c164651b861bc"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\baseline_exit_code.txt": {
+      "size_bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\console_output.txt": {
+      "size_bytes": 42848,
+      "sha256": "c771144619ab24279194b51af97bb74a3427d1ad6bef209d9216ba5269133b2f"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\phase_2_5_baseline_summary.json": {
+      "size_bytes": 12243,
+      "sha256": "7cb5929822a13d2a9890dcc0151512ef20f0cc66e6ff89ea81355f024a78b9a8"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\shell_exit_code.txt": {
+      "size_bytes": 8,
+      "sha256": "4af4aed4248c649ed7ae90eded643d8af8b56359361f7e856389976ac216cf6b"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "2964523dfea1fa475a34ad4a738ba5eccf126e7674a3939dcf7276fbc45cba24"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 1987,
+      "sha256": "e74acdf51025dd3ac09416185ffee45c00d7e973da67760e65045dfbe42f0f87"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 1977,
+      "sha256": "5716584aa20918a8309dee617b038b3e8ec6ba49fd64065db7af1472ac35291d"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 1778,
+      "sha256": "3c1069b30bcbb4f1885e96d86583357e06261ee6b6670bcf9e1ec4bf5fa649c0"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1715,
+      "sha256": "28d56b49416eab791b299dfeab758671f4b14e3e2be209893084fd813d670b8e"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 963,
+      "sha256": "7d71df9a2090356734a8bee4cf181ee8586aada935d457b9b285f794165b05c5"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1336,
+      "sha256": "8393a151db610f09067ac9b79b9d7ea2f5792d5e7c76a1677c40ca5a472cd101"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "b47c19a6f642978f328f03064e8914f5688a80e750dbf8913236295eec34ca95"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "cddb467afc539501d08ea8390334e301c22f203988ccbd7d354f5811548473b3"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 2638,
+      "sha256": "e01c7e64162b75174ccb88dc13b26dde8f1fbb677919aed259309e0bc30d005f"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1747,
+      "sha256": "5e18a3d1c1d8e1eafafc9ee3379d5df6427d2c45388f8e5e239ee15392387c6d"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "5c06178b497f875dbe741d230f04a3a43e86ea7741e7fc68c9eab0745f7cebeb"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "35479c0af13ad2c64d9a23dac13b8b5fd13eb3a4a909d6031cafa64fd155be38"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "3e3c669698545ee58a210a252126e223de63760bd7144889ec3df275724637f5"
+    },
+    "testing\\evidence\\phase_2_5\\baseline\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 1744,
+      "sha256": "bc36357b06664bdde0462d83c8a5070d872722f059d596b886519b661c572ad4"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "fcbcc0b57fb8858f06af67a249b3fef98ea500eda71ad1094d7ea2e75c888e2e"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_a01_factor_scaling_a_baseline.log": {
+      "size_bytes": 1079,
+      "sha256": "955a1b28ef39f3b71f01b7b6b9ba1a7fb0b6ac4d482b511535d15c1973f0ed5c"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_a01_factor_scaling_b_correct.log": {
+      "size_bytes": 1057,
+      "sha256": "61538ca6b448e32e260b77609bc906f78952fdd4f9c1ad54a8b29e08077acbe0"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_a01_factor_scaling_c_naive.log": {
+      "size_bytes": 1079,
+      "sha256": "fcbcc0b57fb8858f06af67a249b3fef98ea500eda71ad1094d7ea2e75c888e2e"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 1988,
+      "sha256": "49ed96692e8f1af2d03e00cf53c833cf963872710ab0c2bb725636ab02978c12"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_a02_uls_combination_sum_a_baseline.log": {
+      "size_bytes": 1987,
+      "sha256": "cb16013d9d122a99ab0893899d01b56ca13463bf5547aa79a3306e93f850d3a1"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_a02_uls_combination_sum_b_correct.log": {
+      "size_bytes": 1810,
+      "sha256": "d2522f8b048395fa4f80abcadf72688c3f323186b029d64f205c7a54c74556e6"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_a02_uls_combination_sum_c_naive.log": {
+      "size_bytes": 1988,
+      "sha256": "49ed96692e8f1af2d03e00cf53c833cf963872710ab0c2bb725636ab02978c12"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 1977,
+      "sha256": "ea44ba16263e49a0a15c2ce2ae8c495581dbf71469c0cb3e3a431030572414a1"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_b01_section_property_sync_a_baseline.log": {
+      "size_bytes": 1977,
+      "sha256": "4858fd6c44a5c6a532cc0f84b153e520b7fdb1b57a43fd0ca2037bd9adcbefa4"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_b01_section_property_sync_b_correct.log": {
+      "size_bytes": 1806,
+      "sha256": "4279fab5b7bb1d2d54a2ebb945c05811c9d163c2ae6a09c6426bc152512f3edc"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_b01_section_property_sync_c_naive.log": {
+      "size_bytes": 1977,
+      "sha256": "ea44ba16263e49a0a15c2ce2ae8c495581dbf71469c0cb3e3a431030572414a1"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 1772,
+      "sha256": "48b1a71d1cc0ae72a95844a7be8b32e7fefd27c161598088ea9767f2d579384d"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_c01_sectional_stress_range_a_baseline.log": {
+      "size_bytes": 1778,
+      "sha256": "257b7fc675890ce0778f1a4bfe5dd1dd26bf6bc3f51308705c9155ee2666ae48"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_c01_sectional_stress_range_b_correct.log": {
+      "size_bytes": 1668,
+      "sha256": "d169deb61becd1c3d511ba4133838f4be61c9a54acc0e05b7029cfaf4a5c6cdf"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_c01_sectional_stress_range_c_naive.log": {
+      "size_bytes": 1772,
+      "sha256": "48b1a71d1cc0ae72a95844a7be8b32e7fefd27c161598088ea9767f2d579384d"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1715,
+      "sha256": "478a0e609bc7e21f6feaff99e84a1f6fa80f6a7f138ba40a640bf62879862d82"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_c02_fatigue_vehicle_analysis_a_baseline.log": {
+      "size_bytes": 1715,
+      "sha256": "478a0e609bc7e21f6feaff99e84a1f6fa80f6a7f138ba40a640bf62879862d82"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 942,
+      "sha256": "4e51a23a17d7a9941520a25d86577dc0c51a3843b6eb3003afcfa9e51d4ca2fc"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_cad_export_vs_screenshot_a_baseline.log": {
+      "size_bytes": 963,
+      "sha256": "5844be02213f9581d0f9e537beff358dbfbbb3733e4dfc705ec990c3cbfeaa33"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_cad_export_vs_screenshot_b_correct.log": {
+      "size_bytes": 963,
+      "sha256": "c4175336f5ee4ef9b29f634c3638c7ecd8451cf3199923b3f80a487eb3230964"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_cad_export_vs_screenshot_c_naive.log": {
+      "size_bytes": 942,
+      "sha256": "4e51a23a17d7a9941520a25d86577dc0c51a3843b6eb3003afcfa9e51d4ca2fc"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1328,
+      "sha256": "d090448c6900a5770fe4153a2b0a8be6a5bef2d24f02ff1fcfc18d8dc18d362b"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_cap_stiffener_buckling_a_baseline.log": {
+      "size_bytes": 1336,
+      "sha256": "b72dbaed1df1165b945098997608549498abd8a2cb05610c3414dd9cabdee63b"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_cap_stiffener_buckling_b_correct.log": {
+      "size_bytes": 1226,
+      "sha256": "c6c6497e4d71d0373fac327bcfa66d68958a7cf486ba9272bc021fe77dec88e9"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_cap_stiffener_buckling_c_naive.log": {
+      "size_bytes": 1328,
+      "sha256": "d090448c6900a5770fe4153a2b0a8be6a5bef2d24f02ff1fcfc18d8dc18d362b"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "01ba3eb34b9c8cbc55919730454dd930481ecc57390ed8cc7e65e5666fcafe55"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_d01_wind_speed_propagation_a_baseline.log": {
+      "size_bytes": 1317,
+      "sha256": "2b8cf6bf30f756b1b9593e3ab62891887db3a66876b540f2ebbde1b78ec77f48"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_d01_wind_speed_propagation_b_correct.log": {
+      "size_bytes": 1188,
+      "sha256": "9ae838dfb3ce8416edbe163f1509d516fcfd02201952039c991bb42f71ebb929"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_d01_wind_speed_propagation_c_naive.log": {
+      "size_bytes": 1317,
+      "sha256": "01ba3eb34b9c8cbc55919730454dd930481ecc57390ed8cc7e65e5666fcafe55"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "21632530f0c1ab526122d92893b7c6e72a43d0a1137148906645f3145a9262e5"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_d02_temperature_propagation_a_baseline.log": {
+      "size_bytes": 1394,
+      "sha256": "21632530f0c1ab526122d92893b7c6e72a43d0a1137148906645f3145a9262e5"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 2536,
+      "sha256": "0fda1642c379d015b6b799abf9b39a40497c9491fff081bff6d5d50713914e0e"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_eq_load_conservation_a_baseline.log": {
+      "size_bytes": 2638,
+      "sha256": "af686de50cb4f6dac372bc0e748cd365fea60a839f5c48e8198deee7320514e1"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_eq_load_conservation_b_correct.log": {
+      "size_bytes": 2454,
+      "sha256": "12fe123addc59f05806cf00560ed02710c6ebb5a5b32f1f0186fef585548ac24"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_eq_load_conservation_c_naive.log": {
+      "size_bytes": 2536,
+      "sha256": "0fda1642c379d015b6b799abf9b39a40497c9491fff081bff6d5d50713914e0e"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1523,
+      "sha256": "c4e628c928560629e8699f216704efd6c1412d8caf09114882c72430950b0dce"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_fs_clean_working_tree_a_baseline.log": {
+      "size_bytes": 1747,
+      "sha256": "c503b4cbf2a93eeaa2e2942a351ddc241644208f75ef36635a9c976fe13602cd"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_fs_clean_working_tree_b_correct.log": {
+      "size_bytes": 1605,
+      "sha256": "06bb77908a3491ed6ec13beaf75766a987158c9dc4c76095f2300649d3548742"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_fs_clean_working_tree_c_naive.log": {
+      "size_bytes": 1523,
+      "sha256": "c4e628c928560629e8699f216704efd6c1412d8caf09114882c72430950b0dce"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "07d36c25b1fb45f850137955670cb225b6d7e9c80fa456d36d26b2b46b58d747"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_geo_girder_count_alignment_a_baseline.log": {
+      "size_bytes": 996,
+      "sha256": "ac6e949a184ab308c10820b1dc4e57c1ba88fa961264d2a3624cd130b2e8502d"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_geo_girder_count_alignment_b_correct.log": {
+      "size_bytes": 883,
+      "sha256": "e06001d89afe7644f21869343564737892f00c10ed8b210af03365e0be75dbb1"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_geo_girder_count_alignment_c_naive.log": {
+      "size_bytes": 996,
+      "sha256": "07d36c25b1fb45f850137955670cb225b6d7e9c80fa456d36d26b2b46b58d747"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "2de4a0667e802ae3f69dc4129016fc74c8e67990238b29f8f1de50011cc7704a"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_geo_slab_section_properties_a_baseline.log": {
+      "size_bytes": 1491,
+      "sha256": "2de4a0667e802ae3f69dc4129016fc74c8e67990238b29f8f1de50011cc7704a"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "993ca09350169bb8e240fffccc7180c72e5f18bdecaeb63878e2375262b38ec8"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_mat_density_consistency_a_baseline.log": {
+      "size_bytes": 1078,
+      "sha256": "aef0db791ba729417f583f7aff528f4f2d3778e7aacc0c9b0e18a05fcb0f1416"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_mat_density_consistency_b_correct.log": {
+      "size_bytes": 1008,
+      "sha256": "4c0ccf27dad2b69c2a780d58fd0c2a14d18e0c9e9a07c938d671d36137c8baf1"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_mat_density_consistency_c_naive.log": {
+      "size_bytes": 1078,
+      "sha256": "993ca09350169bb8e240fffccc7180c72e5f18bdecaeb63878e2375262b38ec8"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 1644,
+      "sha256": "bb25e92938a2a969c971e4dcd9a9c0bebe67d9df43ab8a170097a1c0eac9620d"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_rpt_exec_summary_status_a_baseline.log": {
+      "size_bytes": 1744,
+      "sha256": "38716d577f05268aa898f2549123d685998b287668adc439d4315924a87af3d5"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_rpt_exec_summary_status_b_correct.log": {
+      "size_bytes": 1566,
+      "sha256": "2d943760200ef74e536d7c295c3d09eab2a24260b8b91a8f9b998aa441020f25"
+    },
+    "testing\\evidence\\phase_2_5\\candidates\\tc_reg_rpt_exec_summary_status_c_naive.log": {
+      "size_bytes": 1644,
+      "sha256": "bb25e92938a2a969c971e4dcd9a9c0bebe67d9df43ab8a170097a1c0eac9620d"
+    },
+    "testing\\evidence\\phase_2_5\\environment\\environment_fingerprint.json": {
+      "size_bytes": 762,
+      "sha256": "40a0cd71f7359d28a729aca51a765e39e386fcf2a8f5bffef67106e07ca1bb4f"
+    },
+    "testing\\evidence\\phase_2_5\\hashes\\manifest_hashes.json": {
+      "size_bytes": 16139,
+      "sha256": "08c4943d113ec7019f3c4bdf95ecbe18f8c977b1e40babbfd2b6193ac17a4705"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\console_output.txt": {
+      "size_bytes": 94030,
+      "sha256": "f28c7e9cced4cc0f59653a8ca829624986e285d4b856e03563af55c4420f6e11"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\phase_2_5_sensitivity_matrix_summary.json": {
+      "size_bytes": 24914,
+      "sha256": "9e65122ca6e42d4c6c384373aae5de3ff6675585a429973a7fa94599560c9225"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\sensitivity_exit_code.txt": {
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\shell_exit_code.txt": {
+      "size_bytes": 8,
+      "sha256": "4af4aed4248c649ed7ae90eded643d8af8b56359361f7e856389976ac216cf6b"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_a01_factor_scaling_sensitivity.json": {
+      "size_bytes": 1357,
+      "sha256": "38947c6ef1035863cd97626ca37010eb102dcdbb239d4fa8f22a6963035a1ab1"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_a02_uls_combination_sum_sensitivity.json": {
+      "size_bytes": 1674,
+      "sha256": "b7cb1e6fb2be8cbf3c50b27fcc9339cce185f3f58bfbafd94207353fe90f0b34"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_b01_section_property_sync_sensitivity.json": {
+      "size_bytes": 1652,
+      "sha256": "2dffb2841e1a91dd9157f302ab23b39e5e4518b78590241913cafe176d4079f1"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_c01_sectional_stress_range_sensitivity.json": {
+      "size_bytes": 1633,
+      "sha256": "1955c17f5e965aa0af4c23f1cc495e99a899c4c1197bad33e943b318351419a2"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json": {
+      "size_bytes": 1346,
+      "sha256": "2cf8cca1483815bde4125c3c0fd8c889b4e6021c75bf4e6cbfb166045a32e412"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_cad_export_vs_screenshot_sensitivity.json": {
+      "size_bytes": 1310,
+      "sha256": "1b73944fd3027e08bc641b10e671050b23c08f4295dd68e45f563a7750bc02dc"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_cap_stiffener_buckling_sensitivity.json": {
+      "size_bytes": 1571,
+      "sha256": "f49087a8da7a1c764b4d3bc3e4ad620f57e05524e58f2824e15fe10acb8996fa"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_d01_wind_speed_propagation_sensitivity.json": {
+      "size_bytes": 1540,
+      "sha256": "75254928312c852e634e8a4e0048a0b50528c060c7c3db5a4fb92389007f82d5"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_d02_temperature_propagation_sensitivity.json": {
+      "size_bytes": 1272,
+      "sha256": "ef5a34920f630145545c7b7ccce3db4c802581cee0a74ce8cf0116ac7cc95929"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_eq_load_conservation_sensitivity.json": {
+      "size_bytes": 1707,
+      "sha256": "d0c6fb27d1db3d6215065fc06b8a29c8941ef47429b1dc97dc4906ecdee7b5a3"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_fs_clean_working_tree_sensitivity.json": {
+      "size_bytes": 1569,
+      "sha256": "44882a1de170fd1bcc5c02683c8a10cefd546fc3530c2b63a5b2e98738d94532"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_geo_girder_count_alignment_sensitivity.json": {
+      "size_bytes": 1440,
+      "sha256": "81117bc41a3705fe286708c05ea550462ee6d7b97f3ada5b2c72bd9de53750ec"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_geo_slab_section_properties_sensitivity.json": {
+      "size_bytes": 1363,
+      "sha256": "52f3b76378467e15f9eef8582accdab9996de625997503cbfbbe4a16bd7b64c4"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_mat_density_consistency_sensitivity.json": {
+      "size_bytes": 1450,
+      "sha256": "75be1f94ce94139d17cb21bd564aecf5818af894ff7c7f7223e6dd406528f95a"
+    },
+    "testing\\evidence\\phase_2_5\\sensitivity\\tc_reg_rpt_exec_summary_status_sensitivity.json": {
+      "size_bytes": 1755,
+      "sha256": "bfd907aa5dc0efb096a3f04b319e51b6b0a763f5a62beb3d6877727e466157b5"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\baseline_exit_code.txt": {
+      "size_bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\console_output.txt": {
+      "size_bytes": 43824,
+      "sha256": "99c846cdda2225130f69f1574981742b7fee3f91b8ecc1084cb03f026d22d866"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\phase_2_6_baseline_summary.json": {
+      "size_bytes": 12732,
+      "sha256": "e2bd04069919b3ef826c0a766938fdb4ca9544d1b332f02707223aee41aae441"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\shell_exit_code.txt": {
+      "size_bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "95c170d4d8108cffcd57bf4fbe57a8c4cf451202a12afb54420374d97a1ad376"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 2001,
+      "sha256": "b6e0c87f80ce2a1e30ba5fddfd3bac6b1ebc5a717f940b3da60cd873cbebbf9c"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 2027,
+      "sha256": "e30e0cd6e5d734591b230fb0b3bcb30b10aba771fa075fe3092ee3087992fc27"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 2054,
+      "sha256": "d33489c5e465381cf83e6976ff096a6c2b034c8ed16a1859612e75d0982447b5"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1715,
+      "sha256": "d3c240482fc82e97b1d5660993d972b181b98cddb7953076480b0f4a139691db"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 963,
+      "sha256": "df9435672210836bab3d1ee0d58deba6a67fa9aef1a8129411c857e59b5d253e"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1336,
+      "sha256": "37a4ea16209115fd16115f3ef97264dead9de37e082e8dbcc87384831a3910b9"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "76954c90849713373ae8a8d284a39906878ae7e4f855aed6ea827fd7d7587802"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "84f10f4dae6257422712e1ade9b11a75710efeabaa1664baa3860b0a0ca30c41"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 4359,
+      "sha256": "cdcda56bd559dc332c641cd1f86dee67b411b5766b7fd53e55e1ce69effa2ad2"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1987,
+      "sha256": "ab1ecb30bb82506af612091527466345e51356e2821ac23ffbe9ef8708e02ea2"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "db777b360d042ac58eaf77e889ea8d8d6e2a836874f4ceca36119307e7389772"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "79ac6290a782215a854ac767023856d7884674b3fd7c157a82fafad3a3c54502"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "4bf5f0fe0f448f67b6dcf983b2698657b2f8d4aed1b27dd135b8b7cf56d34c02"
+    },
+    "testing\\evidence\\phase_2_6\\baseline\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 2438,
+      "sha256": "6c4537d593d04fc574a11e457590a85b2d5382d405dd61e6ec41471a59c7ea00"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "472f27f6aac21c924496143726493c76fc20c2586afe43d25e78879917046b9f"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_a01_factor_scaling_a_baseline.log": {
+      "size_bytes": 1079,
+      "sha256": "d9372afe5c2664783d0c6693541a6291881492b2fca3f8952988b83d5b4fcc2f"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_a01_factor_scaling_b_correct.log": {
+      "size_bytes": 1057,
+      "sha256": "c60ddb541340ab65723ec6b3ec040bfe815f0f86b94d0b57d218b47a5c4229e4"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_a01_factor_scaling_c_naive.log": {
+      "size_bytes": 1079,
+      "sha256": "472f27f6aac21c924496143726493c76fc20c2586afe43d25e78879917046b9f"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 2003,
+      "sha256": "6b69e668424146c26f53eafaa87e4de1e5106848536fa4f02ad02094d12b07b6"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_a02_uls_combination_sum_a_baseline.log": {
+      "size_bytes": 2001,
+      "sha256": "7faf456b01d5188f2f7dde10658e68376da3a485ebaac43897f515228f137f4f"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_a02_uls_combination_sum_b_correct.log": {
+      "size_bytes": 1824,
+      "sha256": "59f27f4f931afc5e33c8895e103d2cb8d52f7a76be5f5e78bbc5a1a1d5d0fbdf"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_a02_uls_combination_sum_c_naive.log": {
+      "size_bytes": 2003,
+      "sha256": "6b69e668424146c26f53eafaa87e4de1e5106848536fa4f02ad02094d12b07b6"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 2027,
+      "sha256": "8fd719ce84f38f246693586785586d8078d02320ec4ed6a297df861154dd207e"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_b01_section_property_sync_a_baseline.log": {
+      "size_bytes": 2027,
+      "sha256": "b8bdc07a28b205caaeeeb35f8e4a0336c6d96ff314f87d581bfb32e65f870250"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_b01_section_property_sync_b_correct.log": {
+      "size_bytes": 1856,
+      "sha256": "5349a5737f888794e6e8b4553c412ab3cb3b75da2d0c481ca4a08f2e35111de7"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_b01_section_property_sync_c_naive.log": {
+      "size_bytes": 2027,
+      "sha256": "8fd719ce84f38f246693586785586d8078d02320ec4ed6a297df861154dd207e"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 2046,
+      "sha256": "ff2e7b532061c04332d681cc931328ee89769d3715539583c06724cfe5655763"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_c01_sectional_stress_range_a_baseline.log": {
+      "size_bytes": 2054,
+      "sha256": "8e8d4ef58cebaf3514e60accba05437302c8649627d71a1a7b42bbd5f8a8b3cd"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_c01_sectional_stress_range_b_correct.log": {
+      "size_bytes": 1954,
+      "sha256": "2bee9e4dad6dc68b5882a4d4a33ff118ea4cd462dd483e61b3719dc7dd636de0"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_c01_sectional_stress_range_c_naive.log": {
+      "size_bytes": 2046,
+      "sha256": "ff2e7b532061c04332d681cc931328ee89769d3715539583c06724cfe5655763"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1715,
+      "sha256": "9a1ae1abc9c4e2dcec328cd633c982083df492e6adfcd0cd1f3d08dec8355828"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_c02_fatigue_vehicle_analysis_a_baseline.log": {
+      "size_bytes": 1715,
+      "sha256": "9a1ae1abc9c4e2dcec328cd633c982083df492e6adfcd0cd1f3d08dec8355828"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 942,
+      "sha256": "e3cea207eb74eb740da9c5f4048f0ee1dcff75d868919bc8425b936c3f6d46cd"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_cad_export_vs_screenshot_a_baseline.log": {
+      "size_bytes": 963,
+      "sha256": "5f39e8ae4cffe55c202b0dde50a14bfed4c1d6a372685a7bc8cf8e5d60974cba"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_cad_export_vs_screenshot_b_correct.log": {
+      "size_bytes": 963,
+      "sha256": "d7b18b7db59204e8223cdf8f1997623e06ad54f8b50add1e2ad93c7e273d79ed"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_cad_export_vs_screenshot_c_naive.log": {
+      "size_bytes": 942,
+      "sha256": "e3cea207eb74eb740da9c5f4048f0ee1dcff75d868919bc8425b936c3f6d46cd"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1328,
+      "sha256": "a2805e1d4d12d4d695d82f5c67203892c46c9ef685e83cdc24f3dfb2138cb0d6"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_cap_stiffener_buckling_a_baseline.log": {
+      "size_bytes": 1336,
+      "sha256": "f7b014781207f54c6d2102c63e92f59fa34c845845bffd42c3032b9e08fc7f67"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_cap_stiffener_buckling_b_correct.log": {
+      "size_bytes": 1226,
+      "sha256": "3450458e509185aa451dccb094c1391560c3ba21950f4a1897e7bbcf5523aa82"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_cap_stiffener_buckling_c_naive.log": {
+      "size_bytes": 1328,
+      "sha256": "a2805e1d4d12d4d695d82f5c67203892c46c9ef685e83cdc24f3dfb2138cb0d6"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "e175676b4484856fc480fcc3c7bd1e952fb479aa05886e394d121a550a2cb4bd"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_d01_wind_speed_propagation_a_baseline.log": {
+      "size_bytes": 1317,
+      "sha256": "971f2bb0a75109d8cc0620e7fe77b52cf68f4bac64cb56dae1085186bb983580"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_d01_wind_speed_propagation_b_correct.log": {
+      "size_bytes": 1188,
+      "sha256": "e8e7edd22e7f1442913cdbf172f13c9801706e6ed66185dd237a98109938abda"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_d01_wind_speed_propagation_c_naive.log": {
+      "size_bytes": 1317,
+      "sha256": "e175676b4484856fc480fcc3c7bd1e952fb479aa05886e394d121a550a2cb4bd"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "6eb2ee2a6f21e60c500db7bdba711a58f673cc5c08becb668a4096a14963d845"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_d02_temperature_propagation_a_baseline.log": {
+      "size_bytes": 1394,
+      "sha256": "6eb2ee2a6f21e60c500db7bdba711a58f673cc5c08becb668a4096a14963d845"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 4073,
+      "sha256": "0d490c374931b3335aefdc1cf3396e10e027e197986879105b45bc1c8fdff54a"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_eq_load_conservation_a_baseline.log": {
+      "size_bytes": 4247,
+      "sha256": "1f03ac8e5573c4c99864e309aff62feccc5151313d46a6759a0f89f2130f9df2"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_eq_load_conservation_b_correct.log": {
+      "size_bytes": 3740,
+      "sha256": "e8c58fd69e5301cfece6b1c84518c5f96200f4bed5e09e4b4726d48faaae07e8"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_eq_load_conservation_c_naive.log": {
+      "size_bytes": 4073,
+      "sha256": "0d490c374931b3335aefdc1cf3396e10e027e197986879105b45bc1c8fdff54a"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1651,
+      "sha256": "ab361431ea2a3d87a434890cbd1884aec3425c485ef644e09bb14559e7103a8f"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_fs_clean_working_tree_a_baseline.log": {
+      "size_bytes": 2028,
+      "sha256": "3c25632d9fdff8f6efe73c286d2d531e25aaca29907e4ce5aea26e140cdddf56"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_fs_clean_working_tree_b_correct.log": {
+      "size_bytes": 1752,
+      "sha256": "55a1e4d1685fca9b42c0c430c6330773a8e50fb43a4184f63610a37faf3f799b"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_fs_clean_working_tree_c_naive.log": {
+      "size_bytes": 1651,
+      "sha256": "ab361431ea2a3d87a434890cbd1884aec3425c485ef644e09bb14559e7103a8f"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "65481cda982f4627aed891d73c7a1ecc1a455384e3ce5556d028863aaab5c5eb"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_geo_girder_count_alignment_a_baseline.log": {
+      "size_bytes": 996,
+      "sha256": "1b1890934f36021f105aa7d98592f0c7f659d08f8e1902fb974ee6dff657fc16"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_geo_girder_count_alignment_b_correct.log": {
+      "size_bytes": 883,
+      "sha256": "8eab154e6542546810fbed230a422d892d2ed55ad26e53774744e44288503601"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_geo_girder_count_alignment_c_naive.log": {
+      "size_bytes": 996,
+      "sha256": "65481cda982f4627aed891d73c7a1ecc1a455384e3ce5556d028863aaab5c5eb"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "c997f16fe11b464de3dd74754d7bcb63850f865badd563eafce0b917a014820d"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_geo_slab_section_properties_a_baseline.log": {
+      "size_bytes": 1491,
+      "sha256": "c997f16fe11b464de3dd74754d7bcb63850f865badd563eafce0b917a014820d"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "96c3dab39d8e8f61a0bd689d213e2c62c21c21da153269a455bda81bb9a6322c"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_mat_density_consistency_a_baseline.log": {
+      "size_bytes": 1078,
+      "sha256": "ff1aaa7c538799ac5c019f14c63422e07bb6647c0ca5f6399dae1e47dd92cd56"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_mat_density_consistency_b_correct.log": {
+      "size_bytes": 1008,
+      "sha256": "a1c28ff93c092b874b98231c17062db276195afe06e7dab9684b5c139c7f570c"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_mat_density_consistency_c_naive.log": {
+      "size_bytes": 1078,
+      "sha256": "96c3dab39d8e8f61a0bd689d213e2c62c21c21da153269a455bda81bb9a6322c"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 2415,
+      "sha256": "89d3466d20aa00839f0d63b4aabbb1bbdbd52f5affbbc38ff0b7c2362d6d36ae"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_rpt_exec_summary_status_a_baseline.log": {
+      "size_bytes": 2438,
+      "sha256": "53b78e3720aef08208a6ceeddafc932c2162c6f0119cbe64cf2ea81baf5fbfc9"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_rpt_exec_summary_status_b_correct.log": {
+      "size_bytes": 1991,
+      "sha256": "86a918b07995cc36e34cab084b6fead3ef6ef571ea0cb10069e18b30c1e7cab3"
+    },
+    "testing\\evidence\\phase_2_6\\candidates\\tc_reg_rpt_exec_summary_status_c_naive.log": {
+      "size_bytes": 2415,
+      "sha256": "89d3466d20aa00839f0d63b4aabbb1bbdbd52f5affbbc38ff0b7c2362d6d36ae"
+    },
+    "testing\\evidence\\phase_2_6\\environment\\environment_fingerprint.json": {
+      "size_bytes": 1142,
+      "sha256": "5b8f09e71cb50c408cef1d839cfec518bec62204be1240faaba72e428729a815"
+    },
+    "testing\\evidence\\phase_2_6\\hashes\\manifest_hashes.json": {
+      "size_bytes": 16047,
+      "sha256": "7f20225cb604186f37120c2ee0e0ecff2409f33ab06b46f103528d51c2ad9dc6"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\console_output.txt": {
+      "size_bytes": 94032,
+      "sha256": "946e5e94ef34d2301fe9ae1157207173368cc0114e4fa2b47871031333690ed6"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\phase_2_6_sensitivity_matrix_summary.json": {
+      "size_bytes": 25929,
+      "sha256": "fbaf7f119ec749da76146def6c69442ac927789c6e12883f315af429a9f80d6c"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\sensitivity_exit_code.txt": {
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\shell_exit_code.txt": {
+      "size_bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_a01_factor_scaling_sensitivity.json": {
+      "size_bytes": 1357,
+      "sha256": "88a60d5b76c6964ce4910e7ecffb6afdb6aff109c9a78b71d4b8454fd7fa3e36"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_a02_uls_combination_sum_sensitivity.json": {
+      "size_bytes": 1675,
+      "sha256": "50497d74f6c7a7bb84e9391520dd4b3e7188fd9474b5025fd6c85105115173b8"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_b01_section_property_sync_sensitivity.json": {
+      "size_bytes": 1650,
+      "sha256": "4c6b90395218f8c8ddccede30d85b9f2deed3ce2ad77a1e2bc8fe3089593681e"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_c01_sectional_stress_range_sensitivity.json": {
+      "size_bytes": 1641,
+      "sha256": "acc54c8b32fc21d5b6473e53208d9df8aff82e2b5af30d317ddff2650fbf0485"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json": {
+      "size_bytes": 1348,
+      "sha256": "1678180c3959d773d414efbbda0b6579a0ee6a9db227990f4b43263073ddc839"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_cad_export_vs_screenshot_sensitivity.json": {
+      "size_bytes": 1310,
+      "sha256": "7d921af88120804149d8921f05e6d3cff976421f749ce209c0e42210ebbf0981"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_cap_stiffener_buckling_sensitivity.json": {
+      "size_bytes": 1571,
+      "sha256": "a352ec298ae7052c9067f7ad28116f7722a9af8e8c149df8dd8b8805805414cd"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_d01_wind_speed_propagation_sensitivity.json": {
+      "size_bytes": 1540,
+      "sha256": "1695b6f3507502892618d08937f767c1bc29b0fb23ba412fd97b21780e1ea766"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_d02_temperature_propagation_sensitivity.json": {
+      "size_bytes": 1274,
+      "sha256": "7d5d69dd4c59cfb1159f9adbe512e9e65c705f544fbbb684c83e6906df49b9b3"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_eq_load_conservation_sensitivity.json": {
+      "size_bytes": 2323,
+      "sha256": "fea1f57005924133fbf276435ef9d62ef672c70aeda69c6b8b9ef894b9750395"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_fs_clean_working_tree_sensitivity.json": {
+      "size_bytes": 1626,
+      "sha256": "f864c1b4444e300c3706fd6aace62e569c4e0894822d065efe8312577415e064"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_geo_girder_count_alignment_sensitivity.json": {
+      "size_bytes": 1440,
+      "sha256": "a06448c9b59893929e585e52641968d87cdbe587af8e32d8457f8065b1effa72"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_geo_slab_section_properties_sensitivity.json": {
+      "size_bytes": 1365,
+      "sha256": "0e7e3f8bf420b2c6708657aaa35e225320266f89439eea78ab39a9d3e1d34ea0"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_mat_density_consistency_sensitivity.json": {
+      "size_bytes": 1450,
+      "sha256": "ab3d44e0b1f629e42db15665807e3c63952c6748b44a944a0ca69692fd44358f"
+    },
+    "testing\\evidence\\phase_2_6\\sensitivity\\tc_reg_rpt_exec_summary_status_sensitivity.json": {
+      "size_bytes": 2082,
+      "sha256": "fad33dba2c91e77780c68584a8660d42cbee3178fa651a3cfe40eebc6a3450cd"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\baseline_exit_code.txt": {
+      "size_bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\console_output.txt": {
+      "size_bytes": 21930,
+      "sha256": "db1c5287881966ad2c042b726faacf38d11cd634a9ce1ebf21309b6e21e03896"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\phase_2_7_baseline_summary.json": {
+      "size_bytes": 13091,
+      "sha256": "27379466ebcc929313d24748676e0e19455c11ad03faa4a73fd6c76cdf719011"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\shell_exit_code.txt": {
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "ec659b911e069ea967e269b4d219350e8128979cc69759e24fae92e9416b3d25"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 2484,
+      "sha256": "78f8c1d253a1c19fa078399b7911f22f7986f67ac504ebb13b7f9fe82bd84d1f"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 2140,
+      "sha256": "7226059f1a2dcc2b890e144eeac0e2d3875afb064ad86f0ae33d8401828e1d1a"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 2373,
+      "sha256": "f16b0dddd1153f56419848983f93031f7ab67ae48dcae9e0bb0dadc9407ba6ca"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1715,
+      "sha256": "938ba30c0b90123d9170b4c7d0c252acd7f7baeea9916d7b81e95ef005fd7a03"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 963,
+      "sha256": "7eaf94439d4e77ad3b683e1000edfbcca28b3cdd4b8a89cc6132b4bfbc54ef7c"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1336,
+      "sha256": "3e569d69d1ae5f992651c296593ad60801c100c1d913f4ae6782abb4125ee434"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "a8ff74e578acb354e50d0fc432128de67d68df83a01bdb45a9776eb4c72101c8"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "545f02737647d34f9a3e8ae3ba35bc03d0e60376c6d0f25e82aee934f2e6f9fa"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 4359,
+      "sha256": "e41e647a89e94aba560b867d70a92e7f5b7c4138b609f2fcc73060e1fbe16556"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 2196,
+      "sha256": "1db49c268df20f22a42cd890e75ecf121cfaf334802ee19b561dc44559851a91"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "60ecf60969a8ba7bb0a7913f0375092eca0816a3ad03f002bd56869e36920d87"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "358099bdee8feeee9e71825083585bd1f0850d057d441203a1b3ced6319f99b5"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "86887b4b153803f6eb79fca0801cf426a27bde69fa06fde099a6a5da5e2d3f7d"
+    },
+    "testing\\evidence\\phase_2_7\\baseline\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 2205,
+      "sha256": "71fa7287ba855ba5db34238cece62aab8bb575fd19eba79aaf290b72afb0c154"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "b51a3e098b53e50c8933d68410440acda11f91ec58ef06e7971c323badfe8205"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_a01_factor_scaling_a_baseline.log": {
+      "size_bytes": 1079,
+      "sha256": "a5309b77d2fe748b1e745d209a0c5c6a9b9114a8344be58a265f8ea189757b03"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_a01_factor_scaling_b_correct.log": {
+      "size_bytes": 1057,
+      "sha256": "8f988e67cbc3cd4b8a50e6b3b3bae9546b4731afaa1e11cf37f4bcd3b58b9b51"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_a01_factor_scaling_c_naive.log": {
+      "size_bytes": 1079,
+      "sha256": "b51a3e098b53e50c8933d68410440acda11f91ec58ef06e7971c323badfe8205"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 2487,
+      "sha256": "04c510ded74450dfc71ab9654d2e66215fec4239ca59a35d00e5ca22c62e0d7f"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_a02_uls_combination_sum_a_baseline.log": {
+      "size_bytes": 2485,
+      "sha256": "e8113f08dc731504db280f588bd63be042258f69fe65ed96ec5b8d6c7bc44472"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_a02_uls_combination_sum_b_correct.log": {
+      "size_bytes": 2214,
+      "sha256": "59d6426cb03558d368b3baff191ea3fd881d38b3243ecc96b887ad6e04f10e30"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_a02_uls_combination_sum_c_naive.log": {
+      "size_bytes": 2487,
+      "sha256": "04c510ded74450dfc71ab9654d2e66215fec4239ca59a35d00e5ca22c62e0d7f"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 2140,
+      "sha256": "d005dc9cb8cc4742aa7ad2c95281d003a8e939df80fdbabe7af30c627c9db698"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_b01_section_property_sync_a_baseline.log": {
+      "size_bytes": 2140,
+      "sha256": "9c8eb653effba2b9c8ee00897ba4701e3d4462d9f24fe806d1f96931148c2cc3"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_b01_section_property_sync_b_correct.log": {
+      "size_bytes": 2040,
+      "sha256": "5712c12506d6ffcae9090c1420b39336a15f6d444c9554acb49976219c9064e1"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_b01_section_property_sync_c_naive.log": {
+      "size_bytes": 2140,
+      "sha256": "d005dc9cb8cc4742aa7ad2c95281d003a8e939df80fdbabe7af30c627c9db698"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 2363,
+      "sha256": "5068cd331ca9cce19f11a86728b76fe92681b9b8cbb1b68cfa6571a70262bcaf"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_c01_sectional_stress_range_a_baseline.log": {
+      "size_bytes": 2373,
+      "sha256": "9dfd2daaaf6ca1720eddc8789d9efd6c80faf89f94591088cdf53a750c02c979"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_c01_sectional_stress_range_b_correct.log": {
+      "size_bytes": 2324,
+      "sha256": "95408027ff5bbdd204953035ea4fb134deb17dd4572950c363a836891b5bfe0f"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_c01_sectional_stress_range_c_naive.log": {
+      "size_bytes": 2363,
+      "sha256": "5068cd331ca9cce19f11a86728b76fe92681b9b8cbb1b68cfa6571a70262bcaf"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1715,
+      "sha256": "c1ce54268783088914c10b57eec28be7c12629f9bd8dce645849f0157c118ccc"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_c02_fatigue_vehicle_analysis_a_baseline.log": {
+      "size_bytes": 1715,
+      "sha256": "c1ce54268783088914c10b57eec28be7c12629f9bd8dce645849f0157c118ccc"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 942,
+      "sha256": "2d095afcd44a0573f1b2e96c5716a28fed208470e810741f55bc22a74b03b008"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_cad_export_vs_screenshot_a_baseline.log": {
+      "size_bytes": 963,
+      "sha256": "e03ce08675a8d644c11163fe0de05d861cba89979bd7739a27e37b1869cee80a"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_cad_export_vs_screenshot_b_correct.log": {
+      "size_bytes": 963,
+      "sha256": "6205f86b6107e3908720366e4ab1d629415d077f9c3849cc07d6bd6820aaf133"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_cad_export_vs_screenshot_c_naive.log": {
+      "size_bytes": 942,
+      "sha256": "2d095afcd44a0573f1b2e96c5716a28fed208470e810741f55bc22a74b03b008"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1328,
+      "sha256": "2523001244549766684fc568091a5bd2a3302084e49d17f30280578070113006"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_cap_stiffener_buckling_a_baseline.log": {
+      "size_bytes": 1336,
+      "sha256": "f6f090d01f39718d06c631a2392b201f01720cc320793bb038b29b386cdee701"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_cap_stiffener_buckling_b_correct.log": {
+      "size_bytes": 1226,
+      "sha256": "5b3fa10c34bd13d20a20de821463c88faa46119eb13cbcdc47bbe306fd90f7f0"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_cap_stiffener_buckling_c_naive.log": {
+      "size_bytes": 1328,
+      "sha256": "2523001244549766684fc568091a5bd2a3302084e49d17f30280578070113006"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "880378397d4ff1d3415e381ee0d03d61096aca386500be63e4f88bcb3c291283"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_d01_wind_speed_propagation_a_baseline.log": {
+      "size_bytes": 1317,
+      "sha256": "87b3e1d6f146cd3dcfecda685fd80002a5605656b28efc39b176e7fe0f8744cf"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_d01_wind_speed_propagation_b_correct.log": {
+      "size_bytes": 1188,
+      "sha256": "61fa8c242323d2bd7df2f616943810cb3cad3b02a7abed9ec117e1ad11ce7699"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_d01_wind_speed_propagation_c_naive.log": {
+      "size_bytes": 1317,
+      "sha256": "880378397d4ff1d3415e381ee0d03d61096aca386500be63e4f88bcb3c291283"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "91827ec907d7944bc202b2ca8d16cb2a1da8730f7963d055a97b7e90acc9db3b"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_d02_temperature_propagation_a_baseline.log": {
+      "size_bytes": 1394,
+      "sha256": "91827ec907d7944bc202b2ca8d16cb2a1da8730f7963d055a97b7e90acc9db3b"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 4168,
+      "sha256": "9ee3fe4b89b8a90788a26b45c50cd7a0a17650cc3efc723c8b1d3df59632bf44"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_eq_load_conservation_a_baseline.log": {
+      "size_bytes": 4359,
+      "sha256": "0dd35688ca5e8d48f28938b8144aff438fd916268258e5146dc1e90edf3d6ac0"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_eq_load_conservation_b_correct.log": {
+      "size_bytes": 3917,
+      "sha256": "17b5b274ee5a2b68cf5105e6e183a05fb359b9fb26cea6004587c730c4ac44e0"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_eq_load_conservation_c_naive.log": {
+      "size_bytes": 4168,
+      "sha256": "9ee3fe4b89b8a90788a26b45c50cd7a0a17650cc3efc723c8b1d3df59632bf44"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1778,
+      "sha256": "0a22fb34f645dd2f4fb52dd13864179e904e406290d375388b4d4f27b716d56f"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_fs_clean_working_tree_a_baseline.log": {
+      "size_bytes": 2197,
+      "sha256": "e5b046c722b90f1932c602ccac65115055657c4f3d9727d5ca0669f7e68a8f29"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_fs_clean_working_tree_b_correct.log": {
+      "size_bytes": 1879,
+      "sha256": "13e44b9a64d4be3875366d4348fee820c638260eac70dc1a8ebe0cc3c320491e"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_fs_clean_working_tree_c_naive.log": {
+      "size_bytes": 1778,
+      "sha256": "0a22fb34f645dd2f4fb52dd13864179e904e406290d375388b4d4f27b716d56f"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "aef05665cfdf8c77d204241acb1cf10c0fc01bfe58e9df1160c50f0e66c03c84"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_geo_girder_count_alignment_a_baseline.log": {
+      "size_bytes": 996,
+      "sha256": "beb3af9cd2c31973c41a10d4cae2217d4c6f254cac03208ef849835b26f2c22a"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_geo_girder_count_alignment_b_correct.log": {
+      "size_bytes": 883,
+      "sha256": "59b610ad2cdd65a770eaf13cf3792fdb30da8e98872586b4a02896d88b195dcb"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_geo_girder_count_alignment_c_naive.log": {
+      "size_bytes": 996,
+      "sha256": "aef05665cfdf8c77d204241acb1cf10c0fc01bfe58e9df1160c50f0e66c03c84"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "9e5f080a6b9cea53e99df7a26988f5701c04cf3bfbd124e9a0c815fc5a9809d8"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_geo_slab_section_properties_a_baseline.log": {
+      "size_bytes": 1491,
+      "sha256": "9e5f080a6b9cea53e99df7a26988f5701c04cf3bfbd124e9a0c815fc5a9809d8"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "af0343331680e9d43c1e2296f1c9a36bc8d8b7242013028967fcf8c9462191c0"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_mat_density_consistency_a_baseline.log": {
+      "size_bytes": 1078,
+      "sha256": "92d2c4d7f289ed9ffa1711809c5a7ba5fd39f7122740954c32738c90438cf4f0"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_mat_density_consistency_b_correct.log": {
+      "size_bytes": 1008,
+      "sha256": "077c136c798e2cd77ef459722ba9ded3cf9b8b631fe99486d3b9788273b2a2a6"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_mat_density_consistency_c_naive.log": {
+      "size_bytes": 1078,
+      "sha256": "af0343331680e9d43c1e2296f1c9a36bc8d8b7242013028967fcf8c9462191c0"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 2114,
+      "sha256": "f614945bda9597fb27e93c554fe8ad1387597a276229485ca039e8ca39f3b019"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_rpt_exec_summary_status_a_baseline.log": {
+      "size_bytes": 2205,
+      "sha256": "5be8e551410ac38190e118b0e37e87aad2a53ef85e85add82c07df9e6587fa61"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_rpt_exec_summary_status_b_correct.log": {
+      "size_bytes": 1447,
+      "sha256": "38d4ccd1d512965abaecc2d751013660f178986f7d6a88827397eba21e9edf85"
+    },
+    "testing\\evidence\\phase_2_7\\candidates\\tc_reg_rpt_exec_summary_status_c_naive.log": {
+      "size_bytes": 2114,
+      "sha256": "f614945bda9597fb27e93c554fe8ad1387597a276229485ca039e8ca39f3b019"
+    },
+    "testing\\evidence\\phase_2_7\\environment\\environment_fingerprint.json": {
+      "size_bytes": 1142,
+      "sha256": "b3564aec4028666268cf001d2d0d908413ec89f8f0434081ce0b665372786aba"
+    },
+    "testing\\evidence\\phase_2_7\\hashes\\manifest_hashes.json": {
+      "size_bytes": 16047,
+      "sha256": "d95036fb77bc9a1d4876636bdcbc3324f8ad8e0cf90e11bcdb88be35aa823180"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\console_output.txt": {
+      "size_bytes": 46690,
+      "sha256": "c3b9507ba91d48998c43fc3e615dd0bfb08eb59229972c84a991f68fcccb1ee4"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\phase_2_7_sensitivity_matrix_summary.json": {
+      "size_bytes": 26532,
+      "sha256": "b293ddd4bf9252b2ecd0ca487df337f74a38befff20f12df78927d3542a673a7"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\sensitivity_exit_code.txt": {
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\shell_exit_code.txt": {
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_a01_factor_scaling_sensitivity.json": {
+      "size_bytes": 1357,
+      "sha256": "3a5651e6e085fcebd79521b743d10ba36a0087d785ff53bb8ce62474ec903db6"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_a02_uls_combination_sum_sensitivity.json": {
+      "size_bytes": 1853,
+      "sha256": "2c0d9c63ee9399c74386aae2a6775c6b7e5375753a360e593784aa2af9120280"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_b01_section_property_sync_sensitivity.json": {
+      "size_bytes": 1499,
+      "sha256": "9f62e5e060789f61b13df7d09e32c05821f872a99f022c87849268105b11b164"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_c01_sectional_stress_range_sensitivity.json": {
+      "size_bytes": 1692,
+      "sha256": "6bde2d2e997ed4fe41660fd4dda84fcc318741023b15d0a1d7ae667d00ee94dd"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json": {
+      "size_bytes": 1348,
+      "sha256": "e7b0a47f7ce51b8cf136de1998b626cd1874a1f99227c7ebdbaab8f539533d73"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_cad_export_vs_screenshot_sensitivity.json": {
+      "size_bytes": 1310,
+      "sha256": "24f0a4ede85ab178cbff04e75f395c8a22b3344bf300d6c07d0baf9d80dbf557"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_cap_stiffener_buckling_sensitivity.json": {
+      "size_bytes": 1570,
+      "sha256": "82ae7ace345b5fac771aeb7dfb60884415acbcd2e4ea90de3da2ac90a09d340c"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_d01_wind_speed_propagation_sensitivity.json": {
+      "size_bytes": 1540,
+      "sha256": "320af9beeba05713e5bd220e41edb6d248086cf1001f6a75b935b103d4c2167f"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_d02_temperature_propagation_sensitivity.json": {
+      "size_bytes": 1274,
+      "sha256": "b47cb775d5f345a69f1bab9dd19ef2bb02b6260a0b5c2d336a758290de54085e"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_eq_load_conservation_sensitivity.json": {
+      "size_bytes": 2009,
+      "sha256": "4b6dfe4416f68805291ee43eed46ca35d806089d374274c998ff010cd043c0e3"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_fs_clean_working_tree_sensitivity.json": {
+      "size_bytes": 1656,
+      "sha256": "239783af45626e6d1b225ba658466ad5cb381ea1cfbeabe20afbfce927b4c808"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_geo_girder_count_alignment_sensitivity.json": {
+      "size_bytes": 1440,
+      "sha256": "f453e9e3a13ef79deb3c90a826839562a98cdf3c3cbcfd11d69ae6ecaa160cad"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_geo_slab_section_properties_sensitivity.json": {
+      "size_bytes": 1365,
+      "sha256": "8aa8043cb0f0dd6ad86b7ccbf51cdd1bc777a2d995a07fddd51fda5716e7f64f"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_mat_density_consistency_sensitivity.json": {
+      "size_bytes": 1449,
+      "sha256": "740e3966dee4d21cf2a700fce4fda641450770b40c4bed784f3da192c1f44eef"
+    },
+    "testing\\evidence\\phase_2_7\\sensitivity\\tc_reg_rpt_exec_summary_status_sensitivity.json": {
+      "size_bytes": 2894,
+      "sha256": "4a736930bac2856eee708367064f754ec3fc9ed05bcded58ac71e552327fc042"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\baseline_exit_code.txt": {
+      "size_bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\phase_2_8_baseline_summary.json": {
+      "size_bytes": 13686,
+      "sha256": "3fda14ad3fc5f94c39273f3a5d10cc69a69b0c427b20b09af0a2073dbc840f68"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "2fd7a59b3bda87ae7dc4a61214d3b4706063517d5fa80ebe56a73dbebf122f20"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 2529,
+      "sha256": "a0d838a93f537c6f978f002d97a2818a3a53aa4ffd68e1b8d75c1f23608d0433"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 2356,
+      "sha256": "484160c8f2053dd1830fcff6292b67985b8f58618fc8f4243ab0fa4554871980"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 2339,
+      "sha256": "ec1fa827f44a945ad52c65fa8762d84b23caa02862b9295fe7691c02df0911ef"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1715,
+      "sha256": "cd9af48a002e0ad14e590b422682295a457f17b511f5c10d22ef0a8e85cbfeeb"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 963,
+      "sha256": "09704edcc05772795b6c17f958dbcd08ac6d8e009d903461bddfc9e136cb7d45"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1336,
+      "sha256": "34da1152e07e7d2a2c7d0eb4539c222d34a5df46eaf5e5832f6614918d80748f"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "48787a5e0ff03b34fcaeaa611937499d7a24bf4a84cd373aad19ce30e6b9620b"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "e4c4a31509d5b1df78b68abe44eced678d83d877b060ac7dd58916f291dc9497"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 4898,
+      "sha256": "044a335f24cbf534e3e2b531d8d0eea2f5d4810c56f512b473aafb8e28d6af15"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 2332,
+      "sha256": "91734d53c5b6d0911d69fdaeb4e2673aa6b0555dd97016142c819080d1f6794b"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "d1ac465f3b31a534c1fd4b7b85427103bf23bc527d200e4be23a201edd0a44a5"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "d71d3cc5d12119af4fba787e9191ee6db9804283a5bf5894c01d33fd7e6b60dd"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "8164bd034023e735afd40c925da364132b0e97033f21285390599ebce9c5850b"
+    },
+    "testing\\evidence\\phase_2_8\\baseline\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 2443,
+      "sha256": "ac1587d30ae7534c311b9093c9c91aa7115c7dbaf8cc09cdf60060a1d8dfcc07"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_a01_factor_scaling.log": {
+      "size_bytes": 1079,
+      "sha256": "698fb77bc99c41dff1f59f548b0848c2c5dd6c22c8b188c81d99a1c2ff1fc15f"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_a01_factor_scaling_a_baseline.log": {
+      "size_bytes": 1079,
+      "sha256": "1f37ba9b1ce1e7b161b3a97ce54ae1491f6c182c87bcaacc32d3dc876a15bc40"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_a01_factor_scaling_b_correct.log": {
+      "size_bytes": 1057,
+      "sha256": "643b8814d00c7740be040182930e58582a5f43f553c4405878aec7b280fee290"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_a01_factor_scaling_c_naive.log": {
+      "size_bytes": 1079,
+      "sha256": "698fb77bc99c41dff1f59f548b0848c2c5dd6c22c8b188c81d99a1c2ff1fc15f"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_a02_uls_combination_sum.log": {
+      "size_bytes": 2532,
+      "sha256": "2a61229c81ee5ab3fb96d26c4f10351ce297ebd955b3bf00ee78febd35816fc9"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_a02_uls_combination_sum_a_baseline.log": {
+      "size_bytes": 2529,
+      "sha256": "b7e64984e2d15cf4a01f077b2e560e54c1866c184affda7c6d2292c0da437151"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_a02_uls_combination_sum_b_correct.log": {
+      "size_bytes": 2341,
+      "sha256": "335a05ee5db706e87a9449ab49765c341c9abfcb4ea6eb539d478d9f21f5fd80"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_a02_uls_combination_sum_c_naive.log": {
+      "size_bytes": 2532,
+      "sha256": "2a61229c81ee5ab3fb96d26c4f10351ce297ebd955b3bf00ee78febd35816fc9"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_b01_section_property_sync.log": {
+      "size_bytes": 2356,
+      "sha256": "ee632f5978f4336401d815ba43007932dd03b1aeee499b08b916d352a1698243"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_b01_section_property_sync_a_baseline.log": {
+      "size_bytes": 2356,
+      "sha256": "d2f9de5c6879e269850a7ed6f59f54f83800055d1362f2b46909104433273154"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_b01_section_property_sync_b_correct.log": {
+      "size_bytes": 2248,
+      "sha256": "1021305d6ce40c515c098772993aad0fec36d93d2c42e8b2f0416aa5a6f1c9b7"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_b01_section_property_sync_c_naive.log": {
+      "size_bytes": 2356,
+      "sha256": "ee632f5978f4336401d815ba43007932dd03b1aeee499b08b916d352a1698243"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_c01_sectional_stress_range.log": {
+      "size_bytes": 2326,
+      "sha256": "9125d22ed2209f098b6ec1a60547d5bf8c58cf547d4556db3a62c1850193e086"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_c01_sectional_stress_range_a_baseline.log": {
+      "size_bytes": 2339,
+      "sha256": "3980544b6026caa51073357f65b0db838eceecbba96c182330019f3b36a0e1ca"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_c01_sectional_stress_range_b_correct.log": {
+      "size_bytes": 2303,
+      "sha256": "e8dfb3c7d0d6a514ab01a6e8ac88848449289434b0a558957f2e05c62836b165"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_c01_sectional_stress_range_c_naive.log": {
+      "size_bytes": 2326,
+      "sha256": "9125d22ed2209f098b6ec1a60547d5bf8c58cf547d4556db3a62c1850193e086"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_c02_fatigue_vehicle_analysis.log": {
+      "size_bytes": 1715,
+      "sha256": "74c330e79cc7dc414fed39fa0cddbbd49a768909a97d44c2044995765d233408"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_c02_fatigue_vehicle_analysis_a_baseline.log": {
+      "size_bytes": 1715,
+      "sha256": "74c330e79cc7dc414fed39fa0cddbbd49a768909a97d44c2044995765d233408"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_cad_export_vs_screenshot.log": {
+      "size_bytes": 942,
+      "sha256": "5f062924024034ef7abdcab285710275d86eb34d5ccb3bc0e94a1d93e64d039a"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_cad_export_vs_screenshot_a_baseline.log": {
+      "size_bytes": 963,
+      "sha256": "034d24a71b6009eb563ac5e2d63b64dec373c86009a61705da07b8acfe949416"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_cad_export_vs_screenshot_b_correct.log": {
+      "size_bytes": 963,
+      "sha256": "b80483a2597bd4f32b3c547150452960996674d63845139289fd3c727cbff609"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_cad_export_vs_screenshot_c_naive.log": {
+      "size_bytes": 942,
+      "sha256": "5f062924024034ef7abdcab285710275d86eb34d5ccb3bc0e94a1d93e64d039a"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_cap_stiffener_buckling.log": {
+      "size_bytes": 1328,
+      "sha256": "b6625d2f3c1e167c2dd9663c5fba78bacde54e7f1b3e5f0d8fe5331acb97929f"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_cap_stiffener_buckling_a_baseline.log": {
+      "size_bytes": 1336,
+      "sha256": "ecf58eb14a099881cbe9e7292e80f84e0f9e8180d875bdfde64568651bc30768"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_cap_stiffener_buckling_b_correct.log": {
+      "size_bytes": 1226,
+      "sha256": "9688179ef61c14a53cb0463971de82fa1c20725e443e4826d7495cc68e82acb5"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_cap_stiffener_buckling_c_naive.log": {
+      "size_bytes": 1328,
+      "sha256": "b6625d2f3c1e167c2dd9663c5fba78bacde54e7f1b3e5f0d8fe5331acb97929f"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_d01_wind_speed_propagation.log": {
+      "size_bytes": 1317,
+      "sha256": "9395ff11da559afe773df3295d3ed46abf30fdded84b406a0a43752d7b851b02"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_d01_wind_speed_propagation_a_baseline.log": {
+      "size_bytes": 1317,
+      "sha256": "9668627b27a61fb2e0481a90c228296e4a0a938968120bbc3ef6cb81b7d7c31e"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_d01_wind_speed_propagation_b_correct.log": {
+      "size_bytes": 1188,
+      "sha256": "8deaf182bb97057ac0387ba13e1542a8b7cea94ba83c0cf44e7b93dfb557511f"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_d01_wind_speed_propagation_c_naive.log": {
+      "size_bytes": 1317,
+      "sha256": "9395ff11da559afe773df3295d3ed46abf30fdded84b406a0a43752d7b851b02"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_d02_temperature_propagation.log": {
+      "size_bytes": 1394,
+      "sha256": "e764766293466679a5e1c659be7885e43c7ebef5446514e2cda0c075c0c41260"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_d02_temperature_propagation_a_baseline.log": {
+      "size_bytes": 1394,
+      "sha256": "e764766293466679a5e1c659be7885e43c7ebef5446514e2cda0c075c0c41260"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_eq_load_conservation.log": {
+      "size_bytes": 4632,
+      "sha256": "33d432ce8c60d3470ba5159a7d99e24a1f312a1a311d93527baeaafd127b1b27"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_eq_load_conservation_a_baseline.log": {
+      "size_bytes": 4898,
+      "sha256": "d451aefed15a48e9b1f83ccb335b17894f79af1958992e6bc11ad162a619649e"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_eq_load_conservation_b_correct.log": {
+      "size_bytes": 4415,
+      "sha256": "04d1f0e3ab8dbaaa2f63a36f973069752e869bcba9c7f9203c351521befd93c3"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_eq_load_conservation_c_naive.log": {
+      "size_bytes": 4632,
+      "sha256": "33d432ce8c60d3470ba5159a7d99e24a1f312a1a311d93527baeaafd127b1b27"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_fs_clean_working_tree.log": {
+      "size_bytes": 1825,
+      "sha256": "efd85cead472a368076e194b33be83681776498aedb4b56e401688bf59e0fd9d"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_fs_clean_working_tree_a_baseline.log": {
+      "size_bytes": 2332,
+      "sha256": "34846456a2a2ea5405ae5d9e2377499a41924afd4d3a83d5e46cd527b88eff11"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_fs_clean_working_tree_b_correct.log": {
+      "size_bytes": 1926,
+      "sha256": "691326788a16e71aa59f437413d8e3c525ebe9d798e1592f01463b2d70d74f0a"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_fs_clean_working_tree_c_naive.log": {
+      "size_bytes": 1825,
+      "sha256": "efd85cead472a368076e194b33be83681776498aedb4b56e401688bf59e0fd9d"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_geo_girder_count_alignment.log": {
+      "size_bytes": 996,
+      "sha256": "b089c18792a34ebf730ef37e1fd20f9f57aba7579bc38cdfc243ffc2fb4363dc"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_geo_girder_count_alignment_a_baseline.log": {
+      "size_bytes": 996,
+      "sha256": "29c347d2db8ca76d649c2c5c4baea51adddef46aa51e3cad2d9dcfcbbb157ae9"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_geo_girder_count_alignment_b_correct.log": {
+      "size_bytes": 883,
+      "sha256": "ca3ac87f6eefd5f644952fcfdceda07b34e933535a60dd72f9490344af7eb60d"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_geo_girder_count_alignment_c_naive.log": {
+      "size_bytes": 996,
+      "sha256": "b089c18792a34ebf730ef37e1fd20f9f57aba7579bc38cdfc243ffc2fb4363dc"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_geo_slab_section_properties.log": {
+      "size_bytes": 1491,
+      "sha256": "572b76770d1b096642fc0caf07ebbce29e0537968a45f60fb5e7ec6d63c39ad2"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_geo_slab_section_properties_a_baseline.log": {
+      "size_bytes": 1491,
+      "sha256": "572b76770d1b096642fc0caf07ebbce29e0537968a45f60fb5e7ec6d63c39ad2"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_mat_density_consistency.log": {
+      "size_bytes": 1078,
+      "sha256": "cfc5c37645000f30b863a39df558285aca361e57928aaec49db7f77ba62790c2"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_mat_density_consistency_a_baseline.log": {
+      "size_bytes": 1078,
+      "sha256": "523bd0e3b09dfec66f33f3342c6c5f1b9b08d0b4a9a180a62ab2cb8206053816"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_mat_density_consistency_b_correct.log": {
+      "size_bytes": 1008,
+      "sha256": "742d699a23d5e30753e21e3770e559bf218e7767d335489fafbc52af3a402b93"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_mat_density_consistency_c_naive.log": {
+      "size_bytes": 1078,
+      "sha256": "cfc5c37645000f30b863a39df558285aca361e57928aaec49db7f77ba62790c2"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_rpt_exec_summary_status.log": {
+      "size_bytes": 2324,
+      "sha256": "b84e57fbafc93fd2516bea45572aad4960c5dfa20335576ae3168c2df7d5a728"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_rpt_exec_summary_status_a_baseline.log": {
+      "size_bytes": 2443,
+      "sha256": "2ce4587f55628347905cdde65419e610a10cc80393bac3d3edbea7f90878ae36"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_rpt_exec_summary_status_b_correct.log": {
+      "size_bytes": 1122,
+      "sha256": "459a7e3edfd4308740616aa8f0bcf0d902dc8442e54dc62b48ece3f42df284a3"
+    },
+    "testing\\evidence\\phase_2_8\\candidates\\tc_reg_rpt_exec_summary_status_c_naive.log": {
+      "size_bytes": 2324,
+      "sha256": "b84e57fbafc93fd2516bea45572aad4960c5dfa20335576ae3168c2df7d5a728"
+    },
+    "testing\\evidence\\phase_2_8\\hashes\\manifest_hashes.json": {
+      "size_bytes": 16874,
+      "sha256": "41f4d6146108d032420ea30b19cb55c2caa5d1de947a5b773504e17481761368"
+    },
+    "testing\\evidence\\phase_2_8\\preservation\\PHASE_2_6_FORENSIC_INVESTIGATION.md": {
+      "size_bytes": 5240,
+      "sha256": "43d7d900823e6f3c34f7e994f8d6da0ed3380c6474a05c10cf65db131cd11b60"
+    },
+    "testing\\evidence\\phase_2_8\\preservation\\manifest_preservation.json": {
+      "size_bytes": 76067,
+      "sha256": "7f365d632c8c712ada74a2513a3e4944c95bffbceb934f04c0e573bee8042d0c"
+    },
+    "testing\\evidence\\phase_2_8\\preservation\\phase_2_6_discrepancy_manifest.json": {
+      "size_bytes": 2666,
+      "sha256": "7d49776e897c415ccf8918bea16711d8f1124c66d105e1aa3a2adfc337d76377"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\phase_2_8_sensitivity_matrix_summary.json": {
+      "size_bytes": 27680,
+      "sha256": "eee98691e5292351458b9c06ea0032b2ba7e5cadbef0733a8ee6e98cb23b4223"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\sensitivity_exit_code.txt": {
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_a01_factor_scaling_sensitivity.json": {
+      "size_bytes": 1357,
+      "sha256": "b59151ac4a75103baf9e3181e6c4c73d98f6ded004872dff514bd52eb81d862c"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_a02_uls_combination_sum_sensitivity.json": {
+      "size_bytes": 1684,
+      "sha256": "4c88ca0effb9ac9f0a6c57a6ffd8c25aca0024f02398a3c80142be86c1ab3e4d"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_b01_section_property_sync_sensitivity.json": {
+      "size_bytes": 1500,
+      "sha256": "66a19204b6a3f1c975762465cd85aaef591e883dfd2e898749f5d71759549512"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_c01_sectional_stress_range_sensitivity.json": {
+      "size_bytes": 1706,
+      "sha256": "5f3531e8f25d1e433aafc9b4f3a1de01f0b160d43093a7d8be348da03d92c6d1"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json": {
+      "size_bytes": 1346,
+      "sha256": "2cf8cca1483815bde4125c3c0fd8c889b4e6021c75bf4e6cbfb166045a32e412"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_cad_export_vs_screenshot_sensitivity.json": {
+      "size_bytes": 1310,
+      "sha256": "3bd89796d97230ec1eaa3826592421d4016013fa5fdb0a3d7231f11fbcc3fce4"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_cap_stiffener_buckling_sensitivity.json": {
+      "size_bytes": 1570,
+      "sha256": "4ca93d5945b276f115156ebf49c148e6741d9aecd44996ae143caa39e23e76ba"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_d01_wind_speed_propagation_sensitivity.json": {
+      "size_bytes": 1540,
+      "sha256": "e4fb679aeb768a260648077ad762f01869d36c72176b24698f4996411b3c9524"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_d02_temperature_propagation_sensitivity.json": {
+      "size_bytes": 1274,
+      "sha256": "41c59a3182d8c909c60fa0d12fe0771260570bf66c03206abae3f7750a2570c2"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_eq_load_conservation_sensitivity.json": {
+      "size_bytes": 2095,
+      "sha256": "fe47bf87a3bf0f3329952da0b3ac104d6fdac0f70e68ae1a22233230d7ee7530"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_fs_clean_working_tree_sensitivity.json": {
+      "size_bytes": 1651,
+      "sha256": "75cd11312824241c41b09c3634f4cefb1230b06c667e07ea02547992a6ccfeef"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_geo_girder_count_alignment_sensitivity.json": {
+      "size_bytes": 1439,
+      "sha256": "f6783936f79b0ca13a66b3afbf9d6befdb142bf2e3886f767b88a701640b9fbd"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_geo_slab_section_properties_sensitivity.json": {
+      "size_bytes": 1365,
+      "sha256": "8aa8043cb0f0dd6ad86b7ccbf51cdd1bc777a2d995a07fddd51fda5716e7f64f"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_mat_density_consistency_sensitivity.json": {
+      "size_bytes": 1450,
+      "sha256": "5c59ed195418cd987b75539ab4659d5200e4382d7ba78a0e978012a441596f2e"
+    },
+    "testing\\evidence\\phase_2_8\\sensitivity\\tc_reg_rpt_exec_summary_status_sensitivity.json": {
+      "size_bytes": 4117,
+      "sha256": "7c8bfd7b58d355ffdd544c3e5ab3fbe03941e8a79253a843a73f208e3d611e2f"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+TEST IDENTIFIER: TC-REG-FS-CLEAN-WORKING-TREE
+DEFECT IDENTIFIER: DEF-10
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-10 Confirmed: Database() defaults to relative path 'weather.sqlite', creating an unanchored SQLite file (180224 bytes) in the local execution directory instead of isolated user app data.
+
+--- DETAILED EXECUTION LOG ---
+Created weather.sqlite in unanchored working dir: True (180224 bytes)

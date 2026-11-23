@@ -1,0 +1,9 @@
+TEST IDENTIFIER: TC-REG-CAD-EXPORT-VS-SCREENSHOT
+DEFECT IDENTIFIER: DEF-09
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: DEF-09 Confirmed: Qt widget.grab() produced 92.9% transparent pixels due to unrendered OpenGL back-buffer.
+
+--- EXECUTION DETAILS ---
+Image Format: PNG, Mode: RGBA, Size: (793, 1103)
+Total Pixels: 874679, Transparent Pixels (alpha=0): 813005 (92.95%)

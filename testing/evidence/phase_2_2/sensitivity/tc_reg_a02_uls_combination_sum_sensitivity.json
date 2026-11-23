@@ -1,0 +1,30 @@
+{
+  "test_id": "TC-REG-A02-ULS-COMBINATION-SUM",
+  "defect_id": "DEF-01 / DEF-02",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 7.222,
+      "reason": "DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=72392.5N, vs unfactored=1.16e-07N); Total reaction 1736.6kN does not match factored target 2932.3kN; Crash barrier load omitted from BASIC_1 combination"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 15.147,
+      "reason": "FE solver analyzed combination correctly scales component reactions and includes barrier load."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 25.718,
+      "reason": "DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=206667.2N, vs unfactored=1.34e+05N); Total reaction 1736.6kN does not match factored target 2932.3kN; Crash barrier load omitted from BASIC_1 combination"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

@@ -1,0 +1,94 @@
+{
+  "phase": "Phase 2.11 Sensitivity",
+  "runner_id": "baseline_runner",
+  "run_uuid": "3f53ab9b-6a86-4c7a-92fd-1336651b399c",
+  "timestamp_utc": "2026-11-17T12:45:35.636411+00:00",
+  "total_files": 17,
+  "files": [
+    {
+      "path": "phase_2_11_sensitivity_matrix_summary.json",
+      "size_bytes": 31094,
+      "sha256": "083be1903d72ff462a56af5421e82ebd892f5ffccca9a362ed8128f717dc9bae"
+    },
+    {
+      "path": "sensitivity_exit_code.txt",
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "tc_reg_a01_factor_scaling_sensitivity.json",
+      "size_bytes": 1355,
+      "sha256": "cce2633b23d58b005b44e87557bedacb29fbf31b2ee8249d01172ebe1c58969b"
+    },
+    {
+      "path": "tc_reg_a02_uls_combination_sum_sensitivity.json",
+      "size_bytes": 2224,
+      "sha256": "3d77c8e564acefcd5192c5f42e533e019fa62da8cba6fb78de95221baadd23b4"
+    },
+    {
+      "path": "tc_reg_b01_section_property_sync_sensitivity.json",
+      "size_bytes": 1724,
+      "sha256": "f044f5694676af3fb11df00dc71b32170b30f02743f322f3ebcb4fce2233c460"
+    },
+    {
+      "path": "tc_reg_c01_sectional_stress_range_sensitivity.json",
+      "size_bytes": 1704,
+      "sha256": "5272597663135221a90dcca11cb00885b80ec021adfe7f2ed812e84051c08192"
+    },
+    {
+      "path": "tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json",
+      "size_bytes": 1348,
+      "sha256": "e7b0a47f7ce51b8cf136de1998b626cd1874a1f99227c7ebdbaab8f539533d73"
+    },
+    {
+      "path": "tc_reg_cad_export_vs_screenshot_sensitivity.json",
+      "size_bytes": 1310,
+      "sha256": "5661e7ce6d2cd2710a3b81fb4b55bd965d51e74985f05f9ede96b311ae6c36e4"
+    },
+    {
+      "path": "tc_reg_cap_stiffener_buckling_sensitivity.json",
+      "size_bytes": 1571,
+      "sha256": "10813cdddfddc59614416683a2fec43c9cfa2202638a0d5aa2156dc6a4c6ee3e"
+    },
+    {
+      "path": "tc_reg_d01_wind_speed_propagation_sensitivity.json",
+      "size_bytes": 1540,
+      "sha256": "106b71de23c73f3a9f933afcc56e5cee1b0e1bbf54fa13b1bd509ae85c0a8d2f"
+    },
+    {
+      "path": "tc_reg_d02_temperature_propagation_sensitivity.json",
+      "size_bytes": 1274,
+      "sha256": "b47cb775d5f345a69f1bab9dd19ef2bb02b6260a0b5c2d336a758290de54085e"
+    },
+    {
+      "path": "tc_reg_eq_load_conservation_sensitivity.json",
+      "size_bytes": 2766,
+      "sha256": "df8cc097f746575eb63656ffdc39591391eca7123f96f1678767cd41d8649263"
+    },
+    {
+      "path": "tc_reg_fs_clean_working_tree_sensitivity.json",
+      "size_bytes": 1689,
+      "sha256": "13145889f8040ad8b6c41403b07aa12ec1599a70555bf96ed7062cf106ffb634"
+    },
+    {
+      "path": "tc_reg_geo_girder_count_alignment_sensitivity.json",
+      "size_bytes": 1440,
+      "sha256": "df3e413199c96a2e885d69152005e31cb577315361839810f092df0acbf5fa3e"
+    },
+    {
+      "path": "tc_reg_geo_slab_section_properties_sensitivity.json",
+      "size_bytes": 1365,
+      "sha256": "8aa8043cb0f0dd6ad86b7ccbf51cdd1bc777a2d995a07fddd51fda5716e7f64f"
+    },
+    {
+      "path": "tc_reg_mat_density_consistency_sensitivity.json",
+      "size_bytes": 1449,
+      "sha256": "d56a5f9b3a15020824342fd46700554cf97f538fb4f6e2fae813b14956644bde"
+    },
+    {
+      "path": "tc_reg_rpt_exec_summary_status_sensitivity.json",
+      "size_bytes": 5748,
+      "sha256": "729a897dc1a1b78abe092a616253561e77f92c43e1ebe92d0311012699133752"
+    }
+  ]
+}

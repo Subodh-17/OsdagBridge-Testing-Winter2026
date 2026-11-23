@@ -1,0 +1,21 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-RPT-EXEC-SUMMARY-STATUS
+DEFECT IDENTIFIER:      DEF-08
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.451 s
+TIMESTAMP UTC:          2026-11-16T16:39:09.896316+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-08 Confirmed: executive_summary() emits literal '\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in: Scenario 2A (Interior G3 Fail), Scenario 2B (Edge G1 Fail), Scenario 3 (CB Fail), Scenario 4 (ED Fail), Scenario 5 (Deck Fail), Scenario 6 (Multi Fail).
+
+EXECUTION DETAILS & TRACE:
+Scenario 1 (All Pass): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS, Table=Pass -> Ok: True
+Scenario 2A (Interior G3 Fail): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS, Table=Fail (Fatigue Assessment) -> Ok: False
+Scenario 2B (Edge G1 Fail): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS, Table=Fail (Moment Capacity) -> Ok: False
+Scenario 3 (CB Fail): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS -> Ok: False
+Scenario 4 (ED Fail): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS -> Ok: False
+Scenario 5 (Deck Fail): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS -> Ok: False
+Scenario 6 (Multi Fail): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS, Table=Fail (Fatigue Assessment) -> Ok: False

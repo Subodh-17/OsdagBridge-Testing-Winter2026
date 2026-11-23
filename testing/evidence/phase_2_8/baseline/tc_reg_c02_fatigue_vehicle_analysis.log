@@ -1,0 +1,22 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS
+DEFECT IDENTIFIER:      DEF-17
+RESULT STATUS:          BLOCKED
+EXPECTED ON BASELINE:   BLOCKED
+EXECUTION DURATION:     0.000 s
+TIMESTAMP UTC:          2026-11-17T06:32:24.789368+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEC-018 Pending: OsdagBridge has no implementation linking the IRC 6 Cl. 204.6 fatigue vehicle moving load to grillage moving load analysis or designer.py fatigue demand/utilization extraction.
+
+EXECUTION DETAILS & TRACE:
+DEC-018 Architectural Blocker Audit:
+  1. Vendored ospgrillage defines LoadModel.create_fatigue_vehicle() (40t 3-axle vehicle).
+  2. Vehicle coordinates in ospgrillage are local (track width -0.84m to +0.84m relative to center).
+  3. OsdagBridge BridgeGrillageModel.vehicle_lane_coordinates() only generates ClassA and Class70R cases.
+  4. BridgeGrillageModel has no implementation to generate or solve a discrete moving fatigue vehicle case.
+  5. designer.py extracts fatigue stress ranges solely from classified SLS_FREQUENT combinations.
+  6. The application provides no complete pipeline linking the fatigue vehicle solver response to fatigue demand or utilization.
+  Conclusion: Formally marked BLOCKED pending architectural specification under DEC-018.

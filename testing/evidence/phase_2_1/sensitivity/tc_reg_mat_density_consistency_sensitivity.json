@@ -1,0 +1,28 @@
+{
+  "test_id": "TC-REG-MAT-DENSITY-CONSISTENCY",
+  "defect_id": "DEF-13",
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.777,
+      "reason": "DEF-13 Confirmed: Self-weight resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN)."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.785,
+      "reason": "Self-weight load resultant (151.4 kN) correctly matches user input density 70.0 kN/m3."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.776,
+      "reason": "DEF-13 Confirmed: Self-weight resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN)."
+    }
+  },
+  "sensitivity_verified": true
+}

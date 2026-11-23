@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-A01-FACTOR-SCALING",
+  "defect_id": "DEF-01 (Upstream)",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.331,
+      "reason": "DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.00000 (expected 1.35000)."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "8aea6bd94b289a469c3d989a9d9fae374335228b3e5ef064b390941c05dac0f1",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.305,
+      "reason": "Load factor 1.35 correctly scaled linear grillage forces across line and patch loads."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "4747fc79c5045bd7072ff1c7c11cae54830368b63778b7a9d1b3b76171a18fc8",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.314,
+      "reason": "DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.09174 (expected 1.35000)."
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

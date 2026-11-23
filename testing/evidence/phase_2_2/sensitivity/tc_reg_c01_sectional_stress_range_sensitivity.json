@@ -1,0 +1,30 @@
+{
+  "test_id": "TC-REG-C01-SECTIONAL-STRESS-RANGE",
+  "defect_id": "DEF-07",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.066,
+      "reason": "DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 125.46 MPa (doubled from +M and -M end signs); Path (b) per-LC = 62.73 MPa (treats static moment Mz as range). Expected 0.0 MPa."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.067,
+      "reason": "Fatigue stress ranges correctly evaluate to 0.0 MPa on static load and 62.73 MPa on cyclic range."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.061,
+      "reason": "DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 0.00 MPa (doubled from +M and -M end signs); Path (b) per-LC = 62.73 MPa (treats static moment Mz as range). Expected 0.0 MPa."
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

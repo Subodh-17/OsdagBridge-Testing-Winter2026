@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-RPT-EXEC-SUMMARY-STATUS",
+  "defect_id": "DEF-08",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 2.502,
+      "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 11/12 scenarios: Scenario 2 (G1 Fail), Scenario 2 (G2 Fail), Scenario 2 (G3 Fail), Scenario 2 (G4 Fail), Scenario 2 (G5 Fail), Scenario 2 (G6 Fail), Scenario 3 (DCR-Only G5 Fail), Scenario 4 (CB Fail), Scenario 5 (ED Fail), Scenario 6 (Deck Fail), Scenario 7 (Multi Fail)."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "70020738b6c969d954421bf617ac574c9db112d742b61dcefc97eecf5df73217",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 2.48,
+      "reason": "Executive summary accurately derives and reports pass/fail status across all components, all single girders G1-G6, DCR failures, and agrees with Overall Design Status."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "6ddab2ca36563e83a811ec261fe3ae96f387e234e008cf7c159fe9850574b170",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 2.424,
+      "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 10/12 scenarios: Scenario 2 (G2 Fail), Scenario 2 (G3 Fail), Scenario 2 (G4 Fail), Scenario 2 (G5 Fail), Scenario 2 (G6 Fail), Scenario 3 (DCR-Only G5 Fail), Scenario 4 (CB Fail), Scenario 5 (ED Fail), Scenario 6 (Deck Fail), Scenario 7 (Multi Fail)."
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

@@ -1,0 +1,18 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-GEO-SLAB-SECTION-PROPERTIES
+DEFECT IDENTIFIER:      DEF-14
+RESULT STATUS:          BLOCKED
+EXPECTED ON BASELINE:   BLOCKED
+EXECUTION DURATION:     0.000 s
+TIMESTAMP UTC:          2026-11-17T11:25:08.134802+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEC-013 Pending: Transverse deck slab representation is undecided in project documentation. Baseline assigns girder/2 (Iz=0.00367 m4), which is mechanically invalid for concrete deck, but exact transformed vs concrete material and cracked/torsion model requires engineering sign-off.
+
+EXECUTION DETAILS & TRACE:
+DEC-013 FORMAL BLOCKER: Transverse deck slab grillage representation model undecided.
+Baseline assigns girder/2 (Iz=0.00367 m4), which is mechanically invalid for a reinforced concrete deck slab.
+A unit concrete slab strip (b=1.0m, t=0.25m) has gross Iz = 0.001302 m4/m and modular-ratio transformed Iz = 2.148e-4 m4/m.
+Remediation requires engineering sign-off specifying gross concrete vs transformed steel properties and cracking/torsion factors.

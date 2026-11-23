@@ -1,0 +1,17 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-A01-FACTOR-SCALING
+DEFECT IDENTIFIER:      DEF-01 (Upstream ospgrillage)
+RESULT STATUS:          PASS
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.305 s
+TIMESTAMP UTC:          2026-11-17T11:23:07.726022+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        Load factor 1.35 correctly scaled linear grillage forces across line and patch loads.
+
+EXECUTION DETAILS & TRACE:
+Unfactored Load Case (Line + Patch) max force: 26331.9016 N
+Factored Load Case (Line + Patch) max force:   35548.0672 N (Target ratio: 1.35000)
+Observed Force Ratio:                         1.35000

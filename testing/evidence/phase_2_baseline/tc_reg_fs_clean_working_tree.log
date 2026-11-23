@@ -1,0 +1,10 @@
+TEST IDENTIFIER: TC-REG-FS-CLEAN-WORKING-TREE
+DEFECT IDENTIFIER: DEF-10
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: DEF-10 Confirmed: Runtime database 'weather.sqlite' (180224 bytes) was generated inside the tracked package source directory.
+
+--- EXECUTION DETAILS ---
+Target DB Path: F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\data\project_location\weather.sqlite
+File Exists: True
+File Size: 180224 bytes

@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS",
+  "defect_id": "DEF-17",
+  "is_blocked": true,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.001,
+      "reason": "DEC-018 Pending: OsdagBridge has no implementation linking the IRC 6 Cl. 204.6 fatigue vehicle moving load to grillage moving load analysis or designer.py fatigue demand/utilization extraction."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": null,
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.0,
+      "reason": "DEC-018 Pending: IRC 6 Cl. 204.6 fatigue vehicle moving load not implemented in analysis/design pipeline"
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": null,
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.0,
+      "reason": "DEC-018 Pending: IRC 6 Cl. 204.6 fatigue vehicle moving load not implemented in analysis/design pipeline"
+    }
+  },
+  "sensitivity_verified": false,
+  "sensitivity_status": "BLOCKED / NOT DEMONSTRATED"
+}

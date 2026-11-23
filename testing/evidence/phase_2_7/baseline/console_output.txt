@@ -1,0 +1,232 @@
+WARNING analysis Static - no Algorithm yet specified, 
+ NewtonRaphson default will be used
+WARNING analysis Static - no ConstraintHandler yet specified, 
+ PlainHandler default will be used
+WARNING analysis Static - no Numberer specified, 
+ RCM default will be used
+WARNING analysis Static - no Integrator specified, 
+ StaticIntegrator default will be used
+WARNING analysis Static - no LinearSOE specified, 
+ ProfileSPDLinSOE default will be used
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'wind_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'wind_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'wind_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'wind_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'wind_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'wind_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_1: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_1: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_2: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_2: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_3: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_3: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_1: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_1: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2392: UserWarning: SEISMIC_1: seismic load case not available.
+  warnings.warn(f"{prefix}_{seq}: seismic load case not available.")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_2: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_2: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2392: UserWarning: SEISMIC_2: seismic load case not available.
+  warnings.warn(f"{prefix}_{seq}: seismic load case not available.")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_3: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_3: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2392: UserWarning: SEISMIC_3: seismic load case not available.
+  warnings.warn(f"{prefix}_{seq}: seismic load case not available.")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_4: 'live_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_4: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2392: UserWarning: SEISMIC_4: seismic load case not available.
+  warnings.warn(f"{prefix}_{seq}: seismic load case not available.")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+================================================================================
+PHASE 2.7 REGRESSION TEST SUITE & VALIDATION HARNESS
+Workspace Root:   F:\FOSSEE internship
+Evidence Dir:     F:\FOSSEE internship\testing\evidence\phase_2_7\baseline
+Execution Mode:   BASELINE
+Baseline Commit:  d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+Script Self-Hash: 6af66095b53f21871c578a4a7fe9f4cafe1760571ebe613d58b9b692f2e7fb5f
+Python Exec:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+Concrete Module:  F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+Bridge width from layout: 8.5 m
+[BASELINE_FAIL] TC-REG-A01-FACTOR-SCALING            -> MATCH
+         Reason: DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.00000 (expected 1.35000).
+Bridge width from layout: 8.5 m
+[BASELINE_FAIL] TC-REG-B01-SECTION-PROPERTY-SYNC     -> MATCH
+         Reason: DEF-03 Confirmed: Dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm; Solver girder sections retain preliminary sizing: Iz gap ~7.40%, A gap ~10.55%
+Bridge width from layout: 8.5 m
+[BASELINE_FAIL] TC-REG-C01-SECTIONAL-STRESS-RANGE    -> MATCH
+         Reason: DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 125.46 MPa (doubled from +M and -M end signs); Path (b) per-LC = 62.73 MPa (treats static moment Mz as range). Expected 0.0 MPa.
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+ULS Basic combinations:
+  Created: BASIC_1: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  live_load leading
+  Created: BASIC_2: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  wind_load leading
+  Created: BASIC_3: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  thermal_load leading
+  Created: BASIC_4: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  live_load leading
+  Created: BASIC_5: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  wind_load leading
+  Created: BASIC_6: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  thermal_load leading
+
+ULS Accidental combinations:
+  Created: ACCIDENTAL_1: 1.0DL + 1.0DW                    DL=1.0  vehicle_collision(no lc)  live_load leading
+  Created: ACCIDENTAL_2: 1.0DL + 1.0DW                    DL=1.0  barge_impact(no lc)  live_load leading
+  Created: ACCIDENTAL_3: 1.0DL + 1.0DW                    DL=1.0  floating_bodies(no lc)  live_load leading
+
+ULS Seismic combinations:
+  Created: SEISMIC_1: 1.35DL + 1.75DW                     DL=1.35(adding)  EL=1.5(service)
+  Created: SEISMIC_2: 1.35DL + 1.75DW                     DL=1.35(adding)  EL=0.75(construction)
+  Created: SEISMIC_3: 1.0DL + 1.0DW                       DL=1.0(relieving)  EL=1.5(service)
+  Created: SEISMIC_4: 1.0DL + 1.0DW                       DL=1.0(relieving)  EL=0.75(construction)
+
+Total ULS combinations created: 13
+[BASELINE_FAIL] TC-REG-A02-ULS-COMBINATION-SUM       -> MATCH
+         Reason: DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=72392.5N, vs unfactored=1.60e-07N); Total reaction 1736.6kN does not match superposition target 2710.2kN; Total reaction 1736.6kN does not match theoretical physical ULS resultant 2762.1kN; Crash barrier load omitted from BASIC_1 combination
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+[BASELINE_FAIL] TC-REG-EQ-LOAD-CONSERVATION          -> MATCH
+         Reason: DEF-18 Confirmed: Static equilibrium and spatial load distribution violated in FE grillage: Deck Slab (DD): force diff +39.4 kN (+3.1%); Wearing Course (1.0 DW): force diff +7.6 kN (+3.1%); Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=-0.000m; Left Barrier line: force=98.1kN (exp 157.0kN), along_span_ok=True; Right Barrier line: force=98.1kN (exp 157.0kN), along_span_ok=True; DD distribution deviates: shares_ok=False, along_span_ok=True (support_ratio=7.6%)
+Bridge width from layout: 8.5 m
+Wind loads (IRC:6-2017): Pz=463.7 N/m²  FT=12.00 kN  FT/m=0.500 kN/m  FL=14.7069 N/m²  FV=695.55 N/m²
+[BASELINE_FAIL] TC-REG-D01-WIND-SPEED-PROPAGATION    -> MATCH
+         Reason: DEF-05 Confirmed: Wind arguments fell back to defaults (speed=33.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2), yielding Pz = 463.7 N/m2 instead of authentic 1039.6 N/m2.
+[BLOCKED      ] TC-REG-D02-TEMPERATURE-PROPAGATION   -> MATCH
+         Reason: DEC-015 Pending: Thermal load modeling (IRC 6 Cl. 215) is undecided in project specifications. add_temperature_load() reads unpopulated 'temperature_load_kN_m2' and leaves temperature_load_case as None.
+[BLOCKED      ] TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS  -> MATCH
+         Reason: DEC-018 Pending: OsdagBridge has no implementation linking the IRC 6 Cl. 204.6 fatigue vehicle moving load to grillage moving load analysis or designer.py fatigue demand/utilization extraction.
+[BASELINE_FAIL] TC-REG-RPT-EXEC-SUMMARY-STATUS       -> MATCH
+         Reason: DEF-08 Confirmed: executive_summary() emits literal '\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 23/24 scenarios: Scenario 2 (G1 Moment Fail), Scenario 2 (G1 Stiffener Fail), Scenario 2 (G1 Fatigue Fail), Scenario 2 (G2 Moment Fail), Scenario 2 (G2 Stiffener Fail), Scenario 2 (G2 Fatigue Fail), Scenario 2 (G3 Moment Fail), Scenario 2 (G3 Stiffener Fail), Scenario 2 (G3 Fatigue Fail), Scenario 2 (G4 Moment Fail), Scenario 2 (G4 Stiffener Fail), Scenario 2 (G4 Fatigue Fail), Scenario 2 (G5 Moment Fail), Scenario 2 (G5 Stiffener Fail), Scenario 2 (G5 Fatigue Fail), Scenario 2 (G6 Moment Fail), Scenario 2 (G6 Stiffener Fail), Scenario 2 (G6 Fatigue Fail), Scenario 3 (DCR-Only G5 Fail), Scenario 4 (CB Member P1/M2 Fail), Scenario 5 (ED Member P1/M2 Fail), Scenario 6 (Deck Fail), Scenario 7 (Multi Fail).
+Bridge width from layout: 8.5 m
+[BASELINE_FAIL] TC-REG-GEO-GIRDER-COUNT-ALIGNMENT    -> MATCH
+         Reason: DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (6), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge.
+[BLOCKED      ] TC-REG-GEO-SLAB-SECTION-PROPERTIES   -> MATCH
+         Reason: DEC-013 Pending: Transverse deck slab representation is undecided in project documentation. Baseline assigns girder/2 (Iz=0.00367 m4), which is mechanically invalid for concrete deck, but exact transformed vs concrete material and cracked/torsion model requires engineering sign-off.
+Bridge width from layout: 8.5 m
+[BASELINE_FAIL] TC-REG-CAP-STIFFENER-BUCKLING        -> MATCH
+         Reason: DEF-12 Confirmed: Geometry 1 (Baseline Snapped): capacity 214533.2kN (fails oracle 63.4kN, squash=1918.8kN); Geometry 2 (Alternate Section): capacity 370184.0kN (fails oracle 158.5kN, squash=1909.1kN)
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+[BASELINE_FAIL] TC-REG-MAT-DENSITY-CONSISTENCY       -> MATCH
+         Reason: DEF-13 Confirmed: Self-weight resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN).
+[BASELINE_FAIL] TC-REG-FS-CLEAN-WORKING-TREE         -> MATCH
+         Reason: DEF-10 Confirmed: Production ui_loc.DB_PATH resolves inside the package tree; Database() default constructor creates unanchored weather.sqlite in cwd; Package tree mutated during production calls: created ['core/data/project_location/weather.sqlite']; Production call vulnerable to read-only package installations (denied write causes OperationalError)
+[PASS         ] TC-REG-CAD-EXPORT-VS-SCREENSHOT      -> MATCH
+         Reason: Native OCC offscreen Viewer3d.ExportToImage renders opaque 3D geometry (std=66.6, 3 colors).
+
+================================================================================
+SUMMARY OF PHASE 2.7 REGRESSION RESULTS (MODE: BASELINE)
+================================================================================
+Total Tests Executed:         15
+Baseline Failures (Defects):  11
+Passing Checks:               1
+Blocked (Undecided Specs):    3
+Errors (Harness Exceptions):  0
+Manifest Alignment:           15 / 15 matches
+Total Execution Duration:     17.45 s
+================================================================================
+Saved structured summary to: F:\FOSSEE internship\testing\evidence\phase_2_7\baseline\phase_2_7_baseline_summary.json
+Recorded process exit code 0 to: F:\FOSSEE internship\testing\evidence\phase_2_7\baseline\baseline_exit_code.txt
+####### 3D rendering pipe initialisation #####
+Display3d class initialization starting ...
+Aspect_DisplayConnection created.
+OpenGl_GraphicDriver created.
+V3d_Viewer created.
+AIS_InteractiveContext created.
+V3d_View created
+Graphic3d_Camera created
+Graphic3d_StructureManager created
+Display3d class successfully initialized.
+#########################################
+OpenGl information:
+  GLvendor: Intel
+  GLdevice: Intel(R) RaptorLake-S Mobile Graphics Controller
+  GLversion: 4.6.0 - Build 32.0.101.7084
+  GLSLversion: 4.60 - Build 32.0.101.7084
+  Max texture size: 16384
+  Max FBO dump size: 4096x16384
+  Max combined texture units: 192
+  Max MSAA samples: 16
+  Viewport: 656x519
+  Window buffer: RGB8 ALPHA8 DEPTH24 STENCIL8
+  ResolutionRatio: 1
+  FBO buffer: GL_SRGB8_ALPHA8 GL_DEPTH24_STENCIL8

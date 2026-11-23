@@ -1,0 +1,28 @@
+{
+  "test_id": "TC-REG-D02-TEMPERATURE-PROPAGATION",
+  "defect_id": "DEF-06",
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.046,
+      "reason": "DEF-06 Confirmed: add_temperature_load() reads 'temperature_load_kN_m2' which no UI field or standard inputs populate; authentic temperature keys are ignored and load case is None."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.045,
+      "reason": "Temperature load case was created from authentic UI temperature inputs."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.046,
+      "reason": "DEF-06 Confirmed: add_temperature_load() reads 'temperature_load_kN_m2' which no UI field or standard inputs populate; authentic temperature keys are ignored and load case is None."
+    }
+  },
+  "sensitivity_verified": true
+}

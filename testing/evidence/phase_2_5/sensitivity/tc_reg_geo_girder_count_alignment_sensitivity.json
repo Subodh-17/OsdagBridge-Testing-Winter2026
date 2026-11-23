@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-GEO-GIRDER-COUNT-ALIGNMENT",
+  "defect_id": "DEF-11",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.046,
+      "reason": "DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (6), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "9d60549b7c549fcba77d33c720f5e6ada33efbc30b6b73503feb1da9d757c561",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.047,
+      "reason": "Designer girder count (4) matches physical count (4)."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "546ed5285c58798de84b6c5b7c18891ebbd6edb71a516b1cf224fca235afec3f",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.048,
+      "reason": "DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (0), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge."
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

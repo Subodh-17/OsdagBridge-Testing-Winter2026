@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-EQ-LOAD-CONSERVATION",
+  "defect_id": "DEF-18",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 3.947,
+      "reason": "DEF-18 Confirmed: Static equilibrium and moment/centroid violated in FE grillage load distribution: Girder Self-Weight (SW): force diff +4.5 kN (+2.7%); Deck Slab (DD): force diff +39.4 kN (+3.1%); Wearing Course (1.0 DW): force diff +7.6 kN (+3.1%); Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=-0.000m; Left Barrier line (z=0.25m): force=98.1kN (exp 156.96kN), x_bar=12.75m (exp 12.00m), Line 0 share=76.2%; Right Barrier line (z=8.25m): force=98.1kN (exp 156.96kN), x_bar=12.75m (exp 12.00m), Line 5 share=76.2%; DD transverse tributary shares deviate from geometric mesh widths"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "330eba1656e6ba30ce7a7f4194928a7a5c736ce723fb36d3df4f8f425cf37023",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.588,
+      "reason": "Static equilibrium and transverse tributary load distribution conserved: support reactions, centroids, and tributary line shares match physical dead loads."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "3e3aee4700eb8cc9db91ea7319550ff8e89cb8798a5696945ee8155d87d19ebf",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 5.762,
+      "reason": "DEF-18 Confirmed: Static equilibrium and moment/centroid violated in FE grillage load distribution: Girder Self-Weight (SW): force diff +4.5 kN (+2.7%); Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=+0.000m; Left Barrier line (z=0.25m): force=98.1kN (exp 156.96kN), x_bar=12.75m (exp 12.00m), Line 0 share=76.2%; Right Barrier line (z=8.25m): force=98.1kN (exp 156.96kN), x_bar=12.75m (exp 12.00m), Line 5 share=76.2%"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

@@ -1,0 +1,52 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-B01-SECTION-PROPERTY-SYNC
+DEFECT IDENTIFIER:      DEF-03
+RESULT STATUS:          PASS
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.060 s
+TIMESTAMP UTC:          2026-11-17T10:07:34.645744+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        Solver-side sections and analysed stiffness response synchronize with snapped section.
+
+EXECUTION DETAILS & TRACE:
+Geometric Dimensions & Dynamically Derived Section Properties:
+  Flange bf:                  410.0 mm, tf: 18.0 mm
+  Web dw:                     1304.0 mm, tw: 8.0 mm
+  Total Depth D:              1340.0 mm (Expected: dw + 2*tf = 1340.0 mm)
+  Derived Expected Area A:    0.025192 m2
+  Derived Expected Iz:        0.00792758 m4
+  Derived Expected Iy:        0.00020682 m4
+  Derived Expected J:         1.81662933e-06 m4
+  Geometric Consistency Check: True
+Solver Girder Sections count: 4
+  Section 0 (<ospgrillage.members.Section object at 0x000001DD7B76EF90>):
+      Iz=0.00792758 m4 (exp 0.00792758, OK: True)
+      A=0.025192 m2 (exp 0.025192, OK: True)
+      Iy=0.00020682 m4 (exp 0.00020682, OK: True)
+      J=1.81662933e-06 m4 (exp 1.81662933e-06, OK: True)
+  Section 1 (<ospgrillage.members.Section object at 0x000001DD7B76F650>):
+      Iz=0.00792758 m4 (exp 0.00792758, OK: True)
+      A=0.025192 m2 (exp 0.025192, OK: True)
+      Iy=0.00020682 m4 (exp 0.00020682, OK: True)
+      J=1.81662933e-06 m4 (exp 1.81662933e-06, OK: True)
+  Section 2 (<ospgrillage.members.Section object at 0x000001DD7B76F740>):
+      Iz=0.00792758 m4 (exp 0.00792758, OK: True)
+      A=0.025192 m2 (exp 0.025192, OK: True)
+      Iy=0.00020682 m4 (exp 0.00020682, OK: True)
+      J=1.81662933e-06 m4 (exp 1.81662933e-06, OK: True)
+  Section 3 (<ospgrillage.members.Section object at 0x000001DD7B76EE70>):
+      Iz=0.00792758 m4 (exp 0.00792758, OK: True)
+      A=0.025192 m2 (exp 0.025192, OK: True)
+      Iy=0.00020682 m4 (exp 0.00020682, OK: True)
+      J=1.81662933e-06 m4 (exp 1.81662933e-06, OK: True)
+100 kN Point Load Midspan Deflection Probe:
+  Observed Grillage Max Deflection:  7.239 mm at Node 49 (x=12.00m, z=0.00m)
+  Calibrated Grillage Model Target:  7.218 mm (6-line Courbon 7.22 mm, ±3%)
+  Single-Beam Hand Reference:        18.164 mm (snapped) / 19.616 mm (preliminary)
+  Preliminary Grillage Deflection:   7.816 mm (+8.28% deviation)
+Model Consistency & Gate Evaluation:
+  [MANDATORY] Section Dimension & Property Sync: PASS
+  [INFORMATIONAL] Analyzed Grillage Deflection:   PASS (7.239 mm vs target 7.218 mm ±3%)

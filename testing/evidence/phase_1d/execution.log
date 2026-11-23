@@ -1,0 +1,2328 @@
+================================================================================
+OSDAGBRIDGE PHASE 1D — END-TO-END COMPUTATIONAL VERIFICATION RUN
+Timestamp: 2026-11-16T11:25:05.091066
+Python: C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+================================================================================
+
+[Step 1/8] Instantiating Desktop Application Window (CustomWindow)...
+[Step 2/8] Setting Benchmark Bridge Input Configuration...
+[DEBUG] Bridge Layout Sizing Result:
+  overall_width = 8.4 m
+  no_of_girders = 4
+  girder_spacing = 2.1 m
+  deck_overhang = 1.05 m
+  Input configuration saved: F:\FOSSEE internship\testing\evidence\phase_1d\input_configuration.json
+  Input configuration saved (YAML): F:\FOSSEE internship\testing\evidence\phase_1d\input_configuration.yaml
+
+[Step 3/8] Validating Required Inputs...
+  validate_required_inputs: True
+
+[Step 4/8] Triggering Common Design Execution Pipeline...
+
+@@input_dictionary_before (common_design_func):
+
+{'bl_irc_class_sv': True,
+ 'design_options.construction.stage': 'Yes',
+ 'design_options.deck.bottom_clear_cover': '50',
+ 'design_options.deck.reinforcement_bounds': {'lower': None, 'upper': None},
+ 'design_options.deck.reinforcement_material': 'Fe 500',
+ 'design_options.deck.side_clear_cover': '50',
+ 'design_options.deck.top_clear_cover': '50',
+ 'design_options.shear_studs.count': '2',
+ 'design_options.shear_studs.diameter': '20',
+ 'design_options.shear_studs.height': '100',
+ 'design_options.shear_studs.transverse_spacing': '100',
+ 'design_options.shear_studs.ultimate_strength': '495',
+ 'design_options.shear_studs.yield_strength': '385',
+ 'design_options_cont.camber.mode': 'Default',
+ 'design_options_cont.fatigue.load_cycles': '2000000',
+ 'design_options_cont.partial_factor.concrete_accidental.gamma_c_accidental': '1.20',
+ 'design_options_cont.partial_factor.concrete_basic.gamma_c_basic': '1.50',
+ 'design_options_cont.partial_factor.fatigue_load.gamma_flt': '1.00',
+ 'design_options_cont.partial_factor.fatigue_strength.gamma_mf': '1.35',
+ 'design_options_cont.partial_factor.reinforcing_steel.gamma_s': '1.15',
+ 'design_options_cont.partial_factor.shear_connectors.gamma_v': '1.25',
+ 'design_options_cont.partial_factor.ultimate_stress.gamma_m1': '1.25',
+ 'design_options_cont.partial_factor.yielding_and_buckling.gamma_m0': '1.10',
+ 'design_options_cont.sls.crack_width': True,
+ 'design_options_cont.sls.deflection_control': True,
+ 'design_options_cont.sls.longitudinal_shear': True,
+ 'design_options_cont.sls.stress_limitation': True,
+ 'design_options_cont.uls.bending_resistance': True,
+ 'design_options_cont.uls.fatigue': True,
+ 'design_options_cont.uls.lateral_torsional_buckling': True,
+ 'design_options_cont.uls.longitudinal_shear': True,
+ 'design_options_cont.uls.transverse_force': True,
+ 'design_options_cont.uls.vertical_shear': True,
+ 'geometry.carriageway_width': 7.5,
+ 'geometry.design_mode': 'Optimized',
+ 'geometry.footpath': 'None',
+ 'geometry.include_median': 'No',
+ 'geometry.skew_angle': 0.0,
+ 'geometry.span': 24.0,
+ 'loading.live_load.custom_vehicles': [],
+ 'loading.live_load.eccentricity': '1.2',
+ 'loading.live_load.footpath_pressure.mode': 'As per IRC 6',
+ 'loading.live_load.footpath_pressure.value': '',
+ 'loading.live_load.irc.70r_bogie': True,
+ 'loading.live_load.irc.70r_tracked': True,
+ 'loading.live_load.irc.70r_wheeled': True,
+ 'loading.live_load.irc.aa_tracked': True,
+ 'loading.live_load.irc.aa_wheeled': True,
+ 'loading.live_load.irc.class_a': True,
+ 'loading.live_load.irc.class_fatigue': True,
+ 'loading.live_load.irc.class_sv': True,
+ 'loading.load_combination.combinations': [],
+ 'loading.permanent_load.dead_load.self_weight_factor': '1.00',
+ 'loading.seismic_load.damping': '2',
+ 'loading.seismic_load.dead_load.mode': 'Automatic',
+ 'loading.seismic_load.dead_load.value': '',
+ 'loading.seismic_load.importance_factor': '1.0',
+ 'loading.seismic_load.live_load.mode': 'Automatic',
+ 'loading.seismic_load.live_load.value': '',
+ 'loading.seismic_load.response_reduction_factor': '1',
+ 'loading.seismic_load.soil_type': 'Type I – Rocky or Hard',
+ 'loading.seismic_load.time_period': '0.5',
+ 'loading.temperature_load.thermal_coeff_rcc': '11.7e-6',
+ 'loading.temperature_load.thermal_coeff_steel': '11.7e-6',
+ 'loading.wind_load.avg_exposed_height': '10',
+ 'loading.wind_load.drag_coeff.mode': 'As per IRC 6',
+ 'loading.wind_load.drag_coeff.value': '',
+ 'loading.wind_load.drag_coeff_ll.mode': 'As per IRC 6',
+ 'loading.wind_load.drag_coeff_ll.value': '',
+ 'loading.wind_load.exposed_frontal_area.mode': 'Automatic',
+ 'loading.wind_load.exposed_frontal_area.value': '',
+ 'loading.wind_load.gust_factor.mode': 'As per IRC 6',
+ 'loading.wind_load.gust_factor.value': '',
+ 'loading.wind_load.lift_coeff.mode': 'As per IRC 6',
+ 'loading.wind_load.lift_coeff.value': '',
+ 'loading.wind_load.site_topography': 'Flat',
+ 'loading.wind_load.super_area_elev.mode': 'Automatic',
+ 'loading.wind_load.super_area_elev.value': '',
+ 'loading.wind_load.super_area_plain.mode': 'Automatic',
+ 'loading.wind_load.super_area_plain.value': '',
+ 'loading.wind_load.terrain_type': 'Plain Terrain',
+ 'loading.wind_load.wind_ecc_deck.mode': 'As per IRC 6',
+ 'loading.wind_load.wind_ecc_deck.value': '',
+ 'loading.wind_load.wind_ll_ecc.mode': 'As per IRC 6',
+ 'loading.wind_load.wind_ll_ecc.value': '',
+ 'material.cross_bracing': 'E 350A',
+ 'material.cross_bracing.density': '76.4',
+ 'material.cross_bracing.e': '200.0',
+ 'material.cross_bracing.fu': '490.0',
+ 'material.cross_bracing.fy': '350.0',
+ 'material.cross_bracing.g': '76.9',
+ 'material.cross_bracing.poisson': '0.30',
+ 'material.cross_bracing.thermal': '11.7',
+ 'material.deck': 'M40',
+ 'material.deck.density': '24.5',
+ 'material.deck.ecm': '33.0',
+ 'material.deck.fck': '40.0',
+ 'material.deck.fctm': '3.0',
+ 'material.deck.thermal': '11.7',
+ 'material.end_diaphragm': 'E 350A',
+ 'material.end_diaphragm.density': '76.4',
+ 'material.end_diaphragm.e': '200.0',
+ 'material.end_diaphragm.fu': '490.0',
+ 'material.end_diaphragm.fy': '350.0',
+ 'material.end_diaphragm.g': '76.9',
+ 'material.end_diaphragm.poisson': '0.30',
+ 'material.end_diaphragm.thermal': '11.7',
+ 'material.girder': 'E 350A',
+ 'material.girder.density': '76.4',
+ 'material.girder.e': '200.0',
+ 'material.girder.fu': '490.0',
+ 'material.girder.fy': '350.0',
+ 'material.girder.g': '76.9',
+ 'material.girder.poisson': '0.30',
+ 'material.girder.thermal': '11.7',
+ 'member_properties.cross_bracing_details.bottom_chord.G1G2.B1M1': 'Yes',
+ 'member_properties.cross_bracing_details.bottom_chord.G2G3.B2M1': 'Yes',
+ 'member_properties.cross_bracing_details.bottom_chord.G3G4.B3M1': 'Yes',
+ 'member_properties.cross_bracing_details.bottom_chord_section_designation.G1G2.B1M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.cross_bracing_details.bottom_chord_section_designation.G2G3.B2M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.cross_bracing_details.bottom_chord_section_designation.G3G4.B3M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.cross_bracing_details.bottom_chord_section_type.G1G2.B1M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.cross_bracing_details.bottom_chord_section_type.G2G3.B2M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.cross_bracing_details.bottom_chord_section_type.G3G4.B3M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.cross_bracing_details.bracing_section_designation.G1G2.B1M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.cross_bracing_details.bracing_section_designation.G2G3.B2M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.cross_bracing_details.bracing_section_designation.G3G4.B3M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.cross_bracing_details.bracing_section_type.G1G2.B1M1': 'Double '
+                                                                           'Angle '
+                                                                           '(Long '
+                                                                           'Leg)',
+ 'member_properties.cross_bracing_details.bracing_section_type.G2G3.B2M1': 'Double '
+                                                                           'Angle '
+                                                                           '(Long '
+                                                                           'Leg)',
+ 'member_properties.cross_bracing_details.bracing_section_type.G3G4.B3M1': 'Double '
+                                                                           'Angle '
+                                                                           '(Long '
+                                                                           'Leg)',
+ 'member_properties.cross_bracing_details.member_id.G1G2.B1M1': 'B1M1 to B1M1',
+ 'member_properties.cross_bracing_details.member_id.G2G3.B2M1': 'B2M1 to B2M1',
+ 'member_properties.cross_bracing_details.member_id.G3G4.B3M1': 'B3M1 to B3M1',
+ 'member_properties.cross_bracing_details.no_of_cross_bracings': 1,
+ 'member_properties.cross_bracing_details.select_girders.G1G2.B1M1': 'G1 to G2',
+ 'member_properties.cross_bracing_details.select_girders.G2G3.B2M1': 'G2 to G3',
+ 'member_properties.cross_bracing_details.select_girders.G3G4.B3M1': 'G3 to G4',
+ 'member_properties.cross_bracing_details.spacing.G1G2.B1M1': 12.0,
+ 'member_properties.cross_bracing_details.spacing.G2G3.B2M1': 12.0,
+ 'member_properties.cross_bracing_details.spacing.G3G4.B3M1': 12.0,
+ 'member_properties.cross_bracing_details.top_chord.G1G2.B1M1': 'Yes',
+ 'member_properties.cross_bracing_details.top_chord.G2G3.B2M1': 'Yes',
+ 'member_properties.cross_bracing_details.top_chord.G3G4.B3M1': 'Yes',
+ 'member_properties.cross_bracing_details.top_chord_section_designation.G1G2.B1M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.cross_bracing_details.top_chord_section_designation.G2G3.B2M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.cross_bracing_details.top_chord_section_designation.G3G4.B3M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.cross_bracing_details.top_chord_section_type.G1G2.B1M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.cross_bracing_details.top_chord_section_type.G2G3.B2M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.cross_bracing_details.top_chord_section_type.G3G4.B3M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.cross_bracing_details.type.G1G2.B1M1': 'X-Bracing',
+ 'member_properties.cross_bracing_details.type.G2G3.B2M1': 'X-Bracing',
+ 'member_properties.cross_bracing_details.type.G3G4.B3M1': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bottom_chord.G1G2.E1M1': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G1G2.E1M2': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G2G3.E2M1': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G2G3.E2M2': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G3G4.E3M1': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G3G4.E3M2': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G1G2.E1M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G1G2.E1M2': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G2G3.E2M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G2G3.E2M2': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G3G4.E3M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G3G4.E3M2': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G1G2.E1M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G1G2.E1M2': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G2G3.E2M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G2G3.E2M2': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G3G4.E3M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G3G4.E3M2': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.bracing_connection.G1G2.E1M1': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G1G2.E1M2': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G2G3.E2M1': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G2G3.E2M2': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G3G4.E3M1': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G3G4.E3M2': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_section.G1G2.E1M1': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G1G2.E1M2': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G2G3.E2M1': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G2G3.E2M2': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G3G4.E3M1': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G3G4.E3M2': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G1G2.E1M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G1G2.E1M2': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G2G3.E2M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G2G3.E2M2': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G3G4.E3M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G3G4.E3M2': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_type.G1G2.E1M1': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G1G2.E1M2': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G2G3.E2M1': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G2G3.E2M2': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G3G4.E3M1': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G3G4.E3M2': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.is_section.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.is_section.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.is_section.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.is_section.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.is_section.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.is_section.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G1G2.E1M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G1G2.E1M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G2G3.E2M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G2G3.E2M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G3G4.E3M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G3G4.E3M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G1G2.E1M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G1G2.E1M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G2G3.E2M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G2G3.E2M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G3G4.E3M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G3G4.E3M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G1G2.E1M1': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G1G2.E1M2': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G2G3.E2M1': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G2G3.E2M2': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G3G4.E3M1': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G3G4.E3M2': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G1G2.E1M1': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G1G2.E1M2': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G2G3.E2M1': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G2G3.E2M2': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G3G4.E3M1': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G3G4.E3M2': 45.4,
+ 'member_properties.end_diaphragm_details.member_id.G1G2.E1M1': 'E1M1 to E1M2',
+ 'member_properties.end_diaphragm_details.member_id.G1G2.E1M2': 'E1M1 to E1M2',
+ 'member_properties.end_diaphragm_details.member_id.G2G3.E2M1': 'E2M1 to E2M2',
+ 'member_properties.end_diaphragm_details.member_id.G2G3.E2M2': 'E2M1 to E2M2',
+ 'member_properties.end_diaphragm_details.member_id.G3G4.E3M1': 'E3M1 to E3M2',
+ 'member_properties.end_diaphragm_details.member_id.G3G4.E3M2': 'E3M1 to E3M2',
+ 'member_properties.end_diaphragm_details.section_properties.area.G1G2.E1M1': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G1G2.E1M2': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G2G3.E2M1': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G2G3.E2M2': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G3G4.E3M1': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G3G4.E3M2': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G1G2.E1M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G1G2.E1M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G2G3.E2M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G2G3.E2M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G3G4.E3M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G3G4.E3M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G1G2.E1M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G1G2.E1M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G2G3.E2M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G2G3.E2M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G3G4.E3M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G3G4.E3M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G1G2.E1M1': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G1G2.E1M2': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G2G3.E2M1': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G2G3.E2M2': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G3G4.E3M1': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G3G4.E3M2': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G1G2.E1M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G1G2.E1M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G2G3.E2M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G2G3.E2M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G3G4.E3M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G3G4.E3M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G1G2.E1M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G1G2.E1M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G2G3.E2M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G2G3.E2M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G3G4.E3M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G3G4.E3M2': 3.07,
+ 'member_properties.end_diaphragm_details.select_girders.G1G2.E1M1': 'G1 to G2',
+ 'member_properties.end_diaphragm_details.select_girders.G1G2.E1M2': 'G1 to G2',
+ 'member_properties.end_diaphragm_details.select_girders.G2G3.E2M1': 'G2 to G3',
+ 'member_properties.end_diaphragm_details.select_girders.G2G3.E2M2': 'G2 to G3',
+ 'member_properties.end_diaphragm_details.select_girders.G3G4.E3M1': 'G3 to G4',
+ 'member_properties.end_diaphragm_details.select_girders.G3G4.E3M2': 'G3 to G4',
+ 'member_properties.end_diaphragm_details.symmetry.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.symmetry.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.symmetry.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.symmetry.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.symmetry.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.symmetry.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.top_chord.G1G2.E1M1': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G1G2.E1M2': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G2G3.E2M1': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G2G3.E2M2': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G3G4.E3M1': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G3G4.E3M2': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G1G2.E1M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G1G2.E1M2': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G2G3.E2M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G2G3.E2M2': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G3G4.E3M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G3G4.E3M2': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G1G2.E1M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G1G2.E1M2': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G2G3.E2M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G2G3.E2M2': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G3G4.E3M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G3G4.E3M2': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.total_depth.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.total_depth.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.total_depth.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.total_depth.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.total_depth.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.total_depth.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.type.G1G2.E1M1': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G1G2.E1M2': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G2G3.E2M1': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G2G3.E2M2': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G3G4.E3M1': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G3G4.E3M2': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.web_thickness.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G3G4.E3M2': '',
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy.G1.M1': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy.G2.M1': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy.G3.M1': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy.G4.M1': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz': 0.01095659,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz.G1.M1': 0.01095659,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz.G2.M1': 0.01095659,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz.G3.M1': 0.01095659,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz.G4.M1': 0.01095659,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy.G1.M1': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy.G2.M1': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy.G3.M1': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy.G4.M1': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz': 0.01204931,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz.G1.M1': 0.01204931,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz.G2.M1': 0.01204931,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz.G3.M1': 0.01204931,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz.G4.M1': 0.01204931,
+ 'member_properties.girder_details.member_id.G1.M1': 'G1M1',
+ 'member_properties.girder_details.member_id.G2.M1': 'G2M1',
+ 'member_properties.girder_details.member_id.G3.M1': 'G3M1',
+ 'member_properties.girder_details.member_id.G4.M1': 'G4M1',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness.G1.M1': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness.G2.M1': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness.G3.M1': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness.G4.M1': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_width': 410,
+ 'member_properties.girder_details.section_input.bottom_flange_width.G1.M1': 410,
+ 'member_properties.girder_details.section_input.bottom_flange_width.G2.M1': 410,
+ 'member_properties.girder_details.section_input.bottom_flange_width.G3.M1': 410,
+ 'member_properties.girder_details.section_input.bottom_flange_width.G4.M1': 410,
+ 'member_properties.girder_details.section_input.depth': 1340,
+ 'member_properties.girder_details.section_input.depth.G1.M1': 1340,
+ 'member_properties.girder_details.section_input.depth.G2.M1': 1340,
+ 'member_properties.girder_details.section_input.depth.G3.M1': 1340,
+ 'member_properties.girder_details.section_input.depth.G4.M1': 1340,
+ 'member_properties.girder_details.section_input.is_section.G1.M1': 'JB 150',
+ 'member_properties.girder_details.section_input.is_section.G2.M1': 'JB 150',
+ 'member_properties.girder_details.section_input.is_section.G3.M1': 'JB 150',
+ 'member_properties.girder_details.section_input.is_section.G4.M1': 'JB 150',
+ 'member_properties.girder_details.section_input.symmetry': 'Girder Symmetric',
+ 'member_properties.girder_details.section_input.symmetry.G1.M1': 'Girder '
+                                                                  'Symmetric',
+ 'member_properties.girder_details.section_input.symmetry.G2.M1': 'Girder '
+                                                                  'Symmetric',
+ 'member_properties.girder_details.section_input.symmetry.G3.M1': 'Girder '
+                                                                  'Symmetric',
+ 'member_properties.girder_details.section_input.symmetry.G4.M1': 'Girder '
+                                                                  'Symmetric',
+ 'member_properties.girder_details.section_input.top_flange_thickness': 'All',
+ 'member_properties.girder_details.section_input.top_flange_thickness.G1.M1': 'All',
+ 'member_properties.girder_details.section_input.top_flange_thickness.G2.M1': 'All',
+ 'member_properties.girder_details.section_input.top_flange_thickness.G3.M1': 'All',
+ 'member_properties.girder_details.section_input.top_flange_thickness.G4.M1': 'All',
+ 'member_properties.girder_details.section_input.top_flange_width': 410,
+ 'member_properties.girder_details.section_input.top_flange_width.G1.M1': 410,
+ 'member_properties.girder_details.section_input.top_flange_width.G2.M1': 410,
+ 'member_properties.girder_details.section_input.top_flange_width.G3.M1': 410,
+ 'member_properties.girder_details.section_input.top_flange_width.G4.M1': 410,
+ 'member_properties.girder_details.section_input.torsional_restraint.G1.M1': 'Fully '
+                                                                             'Restrained',
+ 'member_properties.girder_details.section_input.torsional_restraint.G2.M1': 'Fully '
+                                                                             'Restrained',
+ 'member_properties.girder_details.section_input.torsional_restraint.G3.M1': 'Fully '
+                                                                             'Restrained',
+ 'member_properties.girder_details.section_input.torsional_restraint.G4.M1': 'Fully '
+                                                                             'Restrained',
+ 'member_properties.girder_details.section_input.type.G1.M1': 'Welded',
+ 'member_properties.girder_details.section_input.type.G2.M1': 'Welded',
+ 'member_properties.girder_details.section_input.type.G3.M1': 'Welded',
+ 'member_properties.girder_details.section_input.type.G4.M1': 'Welded',
+ 'member_properties.girder_details.section_input.warping_restraint.G1.M1': 'Both '
+                                                                           'Flanges '
+                                                                           'Restrained',
+ 'member_properties.girder_details.section_input.warping_restraint.G2.M1': 'Both '
+                                                                           'Flanges '
+                                                                           'Restrained',
+ 'member_properties.girder_details.section_input.warping_restraint.G3.M1': 'Both '
+                                                                           'Flanges '
+                                                                           'Restrained',
+ 'member_properties.girder_details.section_input.warping_restraint.G4.M1': 'Both '
+                                                                           'Flanges '
+                                                                           'Restrained',
+ 'member_properties.girder_details.section_input.web_depth': 1306,
+ 'member_properties.girder_details.section_input.web_depth.G1.M1': 1306,
+ 'member_properties.girder_details.section_input.web_depth.G2.M1': 1306,
+ 'member_properties.girder_details.section_input.web_depth.G3.M1': 1306,
+ 'member_properties.girder_details.section_input.web_depth.G4.M1': 1306,
+ 'member_properties.girder_details.section_input.web_thickness': 'All',
+ 'member_properties.girder_details.section_input.web_thickness.G1.M1': 'All',
+ 'member_properties.girder_details.section_input.web_thickness.G2.M1': 'All',
+ 'member_properties.girder_details.section_input.web_thickness.G3.M1': 'All',
+ 'member_properties.girder_details.section_input.web_thickness.G4.M1': 'All',
+ 'member_properties.girder_details.section_input.web_type.G1.M1': 'Thin Web '
+                                                                  'with ITS',
+ 'member_properties.girder_details.section_input.web_type.G2.M1': 'Thin Web '
+                                                                  'with ITS',
+ 'member_properties.girder_details.section_input.web_type.G3.M1': 'Thin Web '
+                                                                  'with ITS',
+ 'member_properties.girder_details.section_input.web_type.G4.M1': 'Thin Web '
+                                                                  'with ITS',
+ 'member_properties.girder_details.section_inputs.support_type.G1.M1': 'Major '
+                                                                       'Laterally '
+                                                                       'Supported',
+ 'member_properties.girder_details.section_inputs.support_type.G2.M1': 'Major '
+                                                                       'Laterally '
+                                                                       'Supported',
+ 'member_properties.girder_details.section_inputs.support_type.G3.M1': 'Major '
+                                                                       'Laterally '
+                                                                       'Supported',
+ 'member_properties.girder_details.section_inputs.support_type.G4.M1': 'Major '
+                                                                       'Laterally '
+                                                                       'Supported',
+ 'member_properties.girder_details.section_inputs.support_width.G1.M1': 400.0,
+ 'member_properties.girder_details.section_inputs.support_width.G2.M1': 400.0,
+ 'member_properties.girder_details.section_inputs.support_width.G3.M1': 400.0,
+ 'member_properties.girder_details.section_inputs.support_width.G4.M1': 400.0,
+ 'member_properties.girder_details.section_properties.area': 0.02253434,
+ 'member_properties.girder_details.section_properties.area.G1.M1': 0.02253434,
+ 'member_properties.girder_details.section_properties.area.G2.M1': 0.02253434,
+ 'member_properties.girder_details.section_properties.area.G3.M1': 0.02253434,
+ 'member_properties.girder_details.section_properties.area.G4.M1': 0.02253434,
+ 'member_properties.girder_details.section_properties.iy': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iy.G1.M1': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iy.G2.M1': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iy.G3.M1': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iy.G4.M1': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iz': 0.0073409121,
+ 'member_properties.girder_details.section_properties.iz.G1.M1': 0.0073409121,
+ 'member_properties.girder_details.section_properties.iz.G2.M1': 0.0073409121,
+ 'member_properties.girder_details.section_properties.iz.G3.M1': 0.0073409121,
+ 'member_properties.girder_details.section_properties.iz.G4.M1': 0.0073409121,
+ 'member_properties.girder_details.section_properties.mass': 176.8945,
+ 'member_properties.girder_details.section_properties.mass.G1.M1': 176.8945,
+ 'member_properties.girder_details.section_properties.mass.G2.M1': 176.8945,
+ 'member_properties.girder_details.section_properties.mass.G3.M1': 176.8945,
+ 'member_properties.girder_details.section_properties.mass.G4.M1': 176.8945,
+ 'member_properties.girder_details.section_properties.radius_gyration_y': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_y.G1.M1': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_y.G2.M1': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_y.G3.M1': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_y.G4.M1': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_z': 0.570759,
+ 'member_properties.girder_details.section_properties.radius_gyration_z.G1.M1': 0.570759,
+ 'member_properties.girder_details.section_properties.radius_gyration_z.G2.M1': 0.570759,
+ 'member_properties.girder_details.section_properties.radius_gyration_z.G3.M1': 0.570759,
+ 'member_properties.girder_details.section_properties.radius_gyration_z.G4.M1': 0.570759,
+ 'member_properties.girder_details.section_properties.torsion_constant_it': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.torsion_constant_it.G1.M1': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.torsion_constant_it.G2.M1': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.torsion_constant_it.G3.M1': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.torsion_constant_it.G4.M1': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.warping_constant_iw': 8.585743689e-05,
+ 'member_properties.girder_details.section_properties.warping_constant_iw.G1.M1': 8.585743689e-05,
+ 'member_properties.girder_details.section_properties.warping_constant_iw.G2.M1': 8.585743689e-05,
+ 'member_properties.girder_details.section_properties.warping_constant_iw.G3.M1': 8.585743689e-05,
+ 'member_properties.girder_details.section_properties.warping_constant_iw.G4.M1': 8.585743689e-05,
+ 'member_properties.girder_details.segment_table.G1': [{'end': 24.0,
+                                                        'id': 'G1M1',
+                                                        'start': 0.0}],
+ 'member_properties.girder_details.segment_table.G2': [{'end': 24.0,
+                                                        'id': 'G2M1',
+                                                        'start': 0.0}],
+ 'member_properties.girder_details.segment_table.G3': [{'end': 24.0,
+                                                        'id': 'G3M1',
+                                                        'start': 0.0}],
+ 'member_properties.girder_details.segment_table.G4': [{'end': 24.0,
+                                                        'id': 'G4M1',
+                                                        'start': 0.0}],
+ 'member_properties.girder_details.select_girder.G1': 'G1',
+ 'member_properties.girder_details.select_girder.G2': 'G2',
+ 'member_properties.girder_details.select_girder.G3': 'G3',
+ 'member_properties.girder_details.select_girder.G4': 'G4',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand.G1.M1': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand.G2.M1': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand.G3.M1': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand.G4.M1': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness.G1.M1': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness.G2.M1': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness.G3.M1': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness.G4.M1': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing': '100',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing.G1.M1': '100',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing.G2.M1': '100',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing.G3.M1': '100',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing.G4.M1': '100',
+ 'member_properties.stiffener_details.design_method': 'Simple Post Critical',
+ 'member_properties.stiffener_details.design_method.G1.M1': 'Simple Post '
+                                                            'Critical',
+ 'member_properties.stiffener_details.design_method.G2.M1': 'Simple Post '
+                                                            'Critical',
+ 'member_properties.stiffener_details.design_method.G3.M1': 'Simple Post '
+                                                            'Critical',
+ 'member_properties.stiffener_details.design_method.G4.M1': 'Simple Post '
+                                                            'Critical',
+ 'member_properties.stiffener_details.intermediate_stiffener': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener.G1.M1': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener.G2.M1': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener.G3.M1': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener.G4.M1': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand.G1.M1': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand.G2.M1': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand.G3.M1': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand.G4.M1': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing.G1.M1': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing.G2.M1': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing.G3.M1': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing.G4.M1': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness': '10',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness.G1.M1': '10',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness.G2.M1': '10',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness.G3.M1': '10',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness.G4.M1': '10',
+ 'member_properties.stiffener_details.longitudinal_stiffener': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener.G1.M1': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener.G2.M1': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener.G3.M1': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener.G4.M1': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness': '8',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness.G1.M1': '8',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness.G2.M1': '8',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness.G3.M1': '8',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness.G4.M1': '8',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end': '4',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end.G1.M1': '4',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end.G2.M1': '4',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end.G3.M1': '4',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end.G4.M1': '4',
+ 'member_properties.stiffener_details.select_member_id.G1.M1': 'G1M1',
+ 'member_properties.stiffener_details.select_member_id.G2.M1': 'G2M1',
+ 'member_properties.stiffener_details.select_member_id.G3.M1': 'G3M1',
+ 'member_properties.stiffener_details.select_member_id.G4.M1': 'G4M1',
+ 'project.location': {'data': {'district': 'Ahmednagar',
+                               'state': 'Maharashtra'},
+                      'display_text': 'Ahmednagar, Maharashtra',
+                      'method': 'location_name',
+                      'show_display': True,
+                      'weather_data': {'latitude': 19.0948,
+                                       'longitude': 74.748,
+                                       'max_temp': 48.2,
+                                       'min_temp': 2.2,
+                                       'wind_speed': 39.0,
+                                       'z_value': 0.16,
+                                       'zone': 'III'}},
+ 'structure.type': 'Highway Bridge',
+ 'support_conditions.bearing_length': '400.00',
+ 'support_conditions.left_support': 'Pinned',
+ 'support_conditions.right_support': 'Roller',
+ 'typical_section.crash_barrier.area': 302282.768,
+ 'typical_section.crash_barrier.density': 25,
+ 'typical_section.crash_barrier.height': 1.1,
+ 'typical_section.crash_barrier.load': 7.557,
+ 'typical_section.crash_barrier.post_spacing': 2,
+ 'typical_section.crash_barrier.type': 'IRC 5 - RCC Crash Barrier',
+ 'typical_section.crash_barrier.width': 0.45,
+ 'typical_section.deck_overhang': 1.05,
+ 'typical_section.deck_thickness': 250.0,
+ 'typical_section.footpath_thickness': 100.0,
+ 'typical_section.footpath_width': 0.0,
+ 'typical_section.girder_spacing': 2.1,
+ 'typical_section.median.area': None,
+ 'typical_section.median.density': None,
+ 'typical_section.median.height': None,
+ 'typical_section.median.load': None,
+ 'typical_section.median.post_spacing': None,
+ 'typical_section.median.type': None,
+ 'typical_section.median.width': 0.0,
+ 'typical_section.no_of_footpaths': 0,
+ 'typical_section.no_of_girders': 4,
+ 'typical_section.overall_bridge_width': 8.4,
+ 'typical_section.railing.height': 1.1,
+ 'typical_section.railing.load_mode': 'As per IRC 6',
+ 'typical_section.railing.load_value': 1.4715,
+ 'typical_section.railing.type': 'IRC 5 - RCC Railing',
+ 'typical_section.railing.width': 0.0,
+ 'typical_section.wearing_course.density': 24.0,
+ 'typical_section.wearing_course.material': 'Concrete',
+ 'typical_section.wearing_course.thickness': 50.0}
+[DEBUG] Bridge Layout Sizing Result:
+  overall_width = 8.4 m
+  no_of_girders = 4
+  girder_spacing = 2.1 m
+  deck_overhang = 1.05 m
+
+@@input_dictionary_after (common_design_func):
+
+{'bl_irc_class_sv': True,
+ 'design_options.construction.stage': 'Yes',
+ 'design_options.deck.bottom_clear_cover': '50',
+ 'design_options.deck.reinforcement_bounds': {'lower': None, 'upper': None},
+ 'design_options.deck.reinforcement_material': 'Fe 500',
+ 'design_options.deck.side_clear_cover': '50',
+ 'design_options.deck.top_clear_cover': '50',
+ 'design_options.shear_studs.count': '2',
+ 'design_options.shear_studs.diameter': '20',
+ 'design_options.shear_studs.height': '100',
+ 'design_options.shear_studs.transverse_spacing': '100',
+ 'design_options.shear_studs.ultimate_strength': '495',
+ 'design_options.shear_studs.yield_strength': '385',
+ 'design_options_cont.camber.mode': 'Default',
+ 'design_options_cont.fatigue.load_cycles': '2000000',
+ 'design_options_cont.partial_factor.concrete_accidental.gamma_c_accidental': '1.20',
+ 'design_options_cont.partial_factor.concrete_basic.gamma_c_basic': '1.50',
+ 'design_options_cont.partial_factor.fatigue_load.gamma_flt': '1.00',
+ 'design_options_cont.partial_factor.fatigue_strength.gamma_mf': '1.35',
+ 'design_options_cont.partial_factor.reinforcing_steel.gamma_s': '1.15',
+ 'design_options_cont.partial_factor.shear_connectors.gamma_v': '1.25',
+ 'design_options_cont.partial_factor.ultimate_stress.gamma_m1': '1.25',
+ 'design_options_cont.partial_factor.yielding_and_buckling.gamma_m0': '1.10',
+ 'design_options_cont.sls.crack_width': True,
+ 'design_options_cont.sls.deflection_control': True,
+ 'design_options_cont.sls.longitudinal_shear': True,
+ 'design_options_cont.sls.stress_limitation': True,
+ 'design_options_cont.uls.bending_resistance': True,
+ 'design_options_cont.uls.fatigue': True,
+ 'design_options_cont.uls.lateral_torsional_buckling': True,
+ 'design_options_cont.uls.longitudinal_shear': True,
+ 'design_options_cont.uls.transverse_force': True,
+ 'design_options_cont.uls.vertical_shear': True,
+ 'geometry.carriageway_width': 7.5,
+ 'geometry.design_mode': 'Optimized',
+ 'geometry.footpath': 'None',
+ 'geometry.include_median': 'No',
+ 'geometry.skew_angle': 0.0,
+ 'geometry.span': 24.0,
+ 'loading.live_load.custom_vehicles': [],
+ 'loading.live_load.eccentricity': '1.2',
+ 'loading.live_load.footpath_pressure.mode': 'As per IRC 6',
+ 'loading.live_load.footpath_pressure.value': '',
+ 'loading.live_load.irc.70r_bogie': True,
+ 'loading.live_load.irc.70r_tracked': True,
+ 'loading.live_load.irc.70r_wheeled': True,
+ 'loading.live_load.irc.aa_tracked': True,
+ 'loading.live_load.irc.aa_wheeled': True,
+ 'loading.live_load.irc.class_a': True,
+ 'loading.live_load.irc.class_fatigue': True,
+ 'loading.live_load.irc.class_sv': True,
+ 'loading.load_combination.combinations': [],
+ 'loading.permanent_load.dead_load.self_weight_factor': '1.00',
+ 'loading.seismic_load.damping': '2',
+ 'loading.seismic_load.dead_load.mode': 'Automatic',
+ 'loading.seismic_load.dead_load.value': '',
+ 'loading.seismic_load.importance_factor': '1.0',
+ 'loading.seismic_load.live_load.mode': 'Automatic',
+ 'loading.seismic_load.live_load.value': '',
+ 'loading.seismic_load.response_reduction_factor': '1',
+ 'loading.seismic_load.soil_type': 'Type I – Rocky or Hard',
+ 'loading.seismic_load.time_period': '0.5',
+ 'loading.temperature_load.thermal_coeff_rcc': '11.7e-6',
+ 'loading.temperature_load.thermal_coeff_steel': '11.7e-6',
+ 'loading.wind_load.avg_exposed_height': '10',
+ 'loading.wind_load.drag_coeff.mode': 'As per IRC 6',
+ 'loading.wind_load.drag_coeff.value': '',
+ 'loading.wind_load.drag_coeff_ll.mode': 'As per IRC 6',
+ 'loading.wind_load.drag_coeff_ll.value': '',
+ 'loading.wind_load.exposed_frontal_area.mode': 'Automatic',
+ 'loading.wind_load.exposed_frontal_area.value': '',
+ 'loading.wind_load.gust_factor.mode': 'As per IRC 6',
+ 'loading.wind_load.gust_factor.value': '',
+ 'loading.wind_load.lift_coeff.mode': 'As per IRC 6',
+ 'loading.wind_load.lift_coeff.value': '',
+ 'loading.wind_load.site_topography': 'Flat',
+ 'loading.wind_load.super_area_elev.mode': 'Automatic',
+ 'loading.wind_load.super_area_elev.value': '',
+ 'loading.wind_load.super_area_plain.mode': 'Automatic',
+ 'loading.wind_load.super_area_plain.value': '',
+ 'loading.wind_load.terrain_type': 'Plain Terrain',
+ 'loading.wind_load.wind_ecc_deck.mode': 'As per IRC 6',
+ 'loading.wind_load.wind_ecc_deck.value': '',
+ 'loading.wind_load.wind_ll_ecc.mode': 'As per IRC 6',
+ 'loading.wind_load.wind_ll_ecc.value': '',
+ 'material.cross_bracing': 'E 350A',
+ 'material.cross_bracing.density': '76.4',
+ 'material.cross_bracing.e': '200.0',
+ 'material.cross_bracing.fu': '490.0',
+ 'material.cross_bracing.fy': '350.0',
+ 'material.cross_bracing.g': '76.9',
+ 'material.cross_bracing.poisson': '0.30',
+ 'material.cross_bracing.thermal': '11.7',
+ 'material.deck': 'M40',
+ 'material.deck.density': '24.5',
+ 'material.deck.ecm': '33.0',
+ 'material.deck.fck': '40.0',
+ 'material.deck.fctm': '3.0',
+ 'material.deck.thermal': '11.7',
+ 'material.end_diaphragm': 'E 350A',
+ 'material.end_diaphragm.density': '76.4',
+ 'material.end_diaphragm.e': '200.0',
+ 'material.end_diaphragm.fu': '490.0',
+ 'material.end_diaphragm.fy': '350.0',
+ 'material.end_diaphragm.g': '76.9',
+ 'material.end_diaphragm.poisson': '0.30',
+ 'material.end_diaphragm.thermal': '11.7',
+ 'material.girder': 'E 350A',
+ 'material.girder.density': '76.4',
+ 'material.girder.e': '200.0',
+ 'material.girder.fu': '490.0',
+ 'material.girder.fy': '350.0',
+ 'material.girder.g': '76.9',
+ 'material.girder.poisson': '0.30',
+ 'material.girder.thermal': '11.7',
+ 'member_properties.cross_bracing_details.bottom_chord.G1G2.B1M1': 'Yes',
+ 'member_properties.cross_bracing_details.bottom_chord.G2G3.B2M1': 'Yes',
+ 'member_properties.cross_bracing_details.bottom_chord.G3G4.B3M1': 'Yes',
+ 'member_properties.cross_bracing_details.bottom_chord_section_designation.G1G2.B1M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.cross_bracing_details.bottom_chord_section_designation.G2G3.B2M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.cross_bracing_details.bottom_chord_section_designation.G3G4.B3M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.cross_bracing_details.bottom_chord_section_type.G1G2.B1M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.cross_bracing_details.bottom_chord_section_type.G2G3.B2M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.cross_bracing_details.bottom_chord_section_type.G3G4.B3M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.cross_bracing_details.bracing_section_designation.G1G2.B1M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.cross_bracing_details.bracing_section_designation.G2G3.B2M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.cross_bracing_details.bracing_section_designation.G3G4.B3M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.cross_bracing_details.bracing_section_type.G1G2.B1M1': 'Double '
+                                                                           'Angle '
+                                                                           '(Long '
+                                                                           'Leg)',
+ 'member_properties.cross_bracing_details.bracing_section_type.G2G3.B2M1': 'Double '
+                                                                           'Angle '
+                                                                           '(Long '
+                                                                           'Leg)',
+ 'member_properties.cross_bracing_details.bracing_section_type.G3G4.B3M1': 'Double '
+                                                                           'Angle '
+                                                                           '(Long '
+                                                                           'Leg)',
+ 'member_properties.cross_bracing_details.member_id.G1G2.B1M1': 'B1M1 to B1M1',
+ 'member_properties.cross_bracing_details.member_id.G2G3.B2M1': 'B2M1 to B2M1',
+ 'member_properties.cross_bracing_details.member_id.G3G4.B3M1': 'B3M1 to B3M1',
+ 'member_properties.cross_bracing_details.no_of_cross_bracings': 1,
+ 'member_properties.cross_bracing_details.select_girders.G1G2.B1M1': 'G1 to G2',
+ 'member_properties.cross_bracing_details.select_girders.G2G3.B2M1': 'G2 to G3',
+ 'member_properties.cross_bracing_details.select_girders.G3G4.B3M1': 'G3 to G4',
+ 'member_properties.cross_bracing_details.spacing.G1G2.B1M1': 12.0,
+ 'member_properties.cross_bracing_details.spacing.G2G3.B2M1': 12.0,
+ 'member_properties.cross_bracing_details.spacing.G3G4.B3M1': 12.0,
+ 'member_properties.cross_bracing_details.top_chord.G1G2.B1M1': 'Yes',
+ 'member_properties.cross_bracing_details.top_chord.G2G3.B2M1': 'Yes',
+ 'member_properties.cross_bracing_details.top_chord.G3G4.B3M1': 'Yes',
+ 'member_properties.cross_bracing_details.top_chord_section_designation.G1G2.B1M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.cross_bracing_details.top_chord_section_designation.G2G3.B2M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.cross_bracing_details.top_chord_section_designation.G3G4.B3M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.cross_bracing_details.top_chord_section_type.G1G2.B1M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.cross_bracing_details.top_chord_section_type.G2G3.B2M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.cross_bracing_details.top_chord_section_type.G3G4.B3M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.cross_bracing_details.type.G1G2.B1M1': 'X-Bracing',
+ 'member_properties.cross_bracing_details.type.G2G3.B2M1': 'X-Bracing',
+ 'member_properties.cross_bracing_details.type.G3G4.B3M1': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bottom_chord.G1G2.E1M1': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G1G2.E1M2': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G2G3.E2M1': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G2G3.E2M2': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G3G4.E3M1': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord.G3G4.E3M2': 'Yes',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G1G2.E1M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G1G2.E1M2': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G2G3.E2M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G2G3.E2M2': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G3G4.E3M1': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_designation.G3G4.E3M2': 'IS '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '100 '
+                                                                                       'x '
+                                                                                       '10',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G1G2.E1M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G1G2.E1M2': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G2G3.E2M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G2G3.E2M2': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G3G4.E3M1': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_chord_section_type.G3G4.E3M2': 'Double '
+                                                                                'Angle '
+                                                                                '(Long '
+                                                                                'Leg)',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_thickness.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.bottom_flange_width.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.bracing_connection.G1G2.E1M1': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G1G2.E1M2': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G2G3.E2M1': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G2G3.E2M2': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G3G4.E3M1': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_connection.G3G4.E3M2': 'Bolted',
+ 'member_properties.end_diaphragm_details.bracing_section.G1G2.E1M1': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G1G2.E1M2': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G2G3.E2M1': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G2G3.E2M2': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G3G4.E3M1': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section.G3G4.E3M2': 'Double '
+                                                                      'Angle '
+                                                                      '(Long '
+                                                                      'Leg)',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G1G2.E1M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G1G2.E1M2': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G2G3.E2M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G2G3.E2M2': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G3G4.E3M1': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_section_designation.G3G4.E3M2': 'IS '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '100 '
+                                                                                  'x '
+                                                                                  '10',
+ 'member_properties.end_diaphragm_details.bracing_type.G1G2.E1M1': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G1G2.E1M2': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G2G3.E2M1': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G2G3.E2M2': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G3G4.E3M1': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.bracing_type.G3G4.E3M2': 'X-Bracing',
+ 'member_properties.end_diaphragm_details.is_section.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.is_section.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.is_section.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.is_section.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.is_section.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.is_section.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G1G2.E1M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G1G2.E1M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G2G3.E2M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G2G3.E2M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G3G4.E3M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zy.G3G4.E3M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G1G2.E1M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G1G2.E1M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G2G3.E2M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G2G3.E2M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G3G4.E3M1': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.elastic_modulus_zz.G3G4.E3M2': 25.3,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G1G2.E1M1': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G1G2.E1M2': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G2G3.E2M1': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G2G3.E2M2': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G3G4.E3M1': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuy.G3G4.E3M2': 45.5,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G1G2.E1M1': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G1G2.E1M2': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G2G3.E2M1': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G2G3.E2M2': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G3G4.E3M1': 45.4,
+ 'member_properties.end_diaphragm_details.material_properties.plastic_modulus_zuz.G3G4.E3M2': 45.4,
+ 'member_properties.end_diaphragm_details.member_id.G1G2.E1M1': 'E1M1 to E1M2',
+ 'member_properties.end_diaphragm_details.member_id.G1G2.E1M2': 'E1M1 to E1M2',
+ 'member_properties.end_diaphragm_details.member_id.G2G3.E2M1': 'E2M1 to E2M2',
+ 'member_properties.end_diaphragm_details.member_id.G2G3.E2M2': 'E2M1 to E2M2',
+ 'member_properties.end_diaphragm_details.member_id.G3G4.E3M1': 'E3M1 to E3M2',
+ 'member_properties.end_diaphragm_details.member_id.G3G4.E3M2': 'E3M1 to E3M2',
+ 'member_properties.end_diaphragm_details.section_properties.area.G1G2.E1M1': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G1G2.E1M2': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G2G3.E2M1': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G2G3.E2M2': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G3G4.E3M1': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.area.G3G4.E3M2': 19.1,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G1G2.E1M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G1G2.E1M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G2G3.E2M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G2G3.E2M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G3G4.E3M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iy.G3G4.E3M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G1G2.E1M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G1G2.E1M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G2G3.E2M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G2G3.E2M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G3G4.E3M1': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.iz.G3G4.E3M2': 180.0,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G1G2.E1M1': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G1G2.E1M2': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G2G3.E2M1': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G2G3.E2M2': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G3G4.E3M1': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.mass.G3G4.E3M2': 15.04,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G1G2.E1M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G1G2.E1M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G2G3.E2M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G2G3.E2M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G3G4.E3M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_y.G3G4.E3M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G1G2.E1M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G1G2.E1M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G2G3.E2M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G2G3.E2M2': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G3G4.E3M1': 3.07,
+ 'member_properties.end_diaphragm_details.section_properties.radius_gyration_z.G3G4.E3M2': 3.07,
+ 'member_properties.end_diaphragm_details.select_girders.G1G2.E1M1': 'G1 to G2',
+ 'member_properties.end_diaphragm_details.select_girders.G1G2.E1M2': 'G1 to G2',
+ 'member_properties.end_diaphragm_details.select_girders.G2G3.E2M1': 'G2 to G3',
+ 'member_properties.end_diaphragm_details.select_girders.G2G3.E2M2': 'G2 to G3',
+ 'member_properties.end_diaphragm_details.select_girders.G3G4.E3M1': 'G3 to G4',
+ 'member_properties.end_diaphragm_details.select_girders.G3G4.E3M2': 'G3 to G4',
+ 'member_properties.end_diaphragm_details.symmetry.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.symmetry.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.symmetry.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.symmetry.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.symmetry.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.symmetry.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.top_chord.G1G2.E1M1': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G1G2.E1M2': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G2G3.E2M1': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G2G3.E2M2': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G3G4.E3M1': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord.G3G4.E3M2': 'Yes',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G1G2.E1M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G1G2.E1M2': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G2G3.E2M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G2G3.E2M2': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G3G4.E3M1': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_designation.G3G4.E3M2': 'IS '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '100 '
+                                                                                    'x '
+                                                                                    '10',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G1G2.E1M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G1G2.E1M2': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G2G3.E2M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G2G3.E2M2': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G3G4.E3M1': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_chord_section_type.G3G4.E3M2': 'Double '
+                                                                             'Angle '
+                                                                             '(Long '
+                                                                             'Leg)',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_thickness.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.top_flange_width.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.total_depth.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.total_depth.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.total_depth.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.total_depth.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.total_depth.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.total_depth.G3G4.E3M2': '',
+ 'member_properties.end_diaphragm_details.type.G1G2.E1M1': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G1G2.E1M2': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G2G3.E2M1': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G2G3.E2M2': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G3G4.E3M1': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.type.G3G4.E3M2': 'Cross Bracing',
+ 'member_properties.end_diaphragm_details.web_thickness.G1G2.E1M1': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G1G2.E1M2': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G2G3.E2M1': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G2G3.E2M2': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G3G4.E3M1': '',
+ 'member_properties.end_diaphragm_details.web_thickness.G3G4.E3M2': '',
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy.G1.M1': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy.G2.M1': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy.G3.M1': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy.G4.M1': 0.00095738,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz': 0.01095659,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz.G1.M1': 0.01095659,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz.G2.M1': 0.01095659,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz.G3.M1': 0.01095659,
+ 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz.G4.M1': 0.01095659,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy.G1.M1': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy.G2.M1': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy.G3.M1': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuy.G4.M1': 0.00144977,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz': 0.01204931,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz.G1.M1': 0.01204931,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz.G2.M1': 0.01204931,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz.G3.M1': 0.01204931,
+ 'member_properties.girder_details.material_properties.plastic_modulus_zuz.G4.M1': 0.01204931,
+ 'member_properties.girder_details.member_id.G1.M1': 'G1M1',
+ 'member_properties.girder_details.member_id.G2.M1': 'G2M1',
+ 'member_properties.girder_details.member_id.G3.M1': 'G3M1',
+ 'member_properties.girder_details.member_id.G4.M1': 'G4M1',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness.G1.M1': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness.G2.M1': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness.G3.M1': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_thickness.G4.M1': 'All',
+ 'member_properties.girder_details.section_input.bottom_flange_width': 410,
+ 'member_properties.girder_details.section_input.bottom_flange_width.G1.M1': 410,
+ 'member_properties.girder_details.section_input.bottom_flange_width.G2.M1': 410,
+ 'member_properties.girder_details.section_input.bottom_flange_width.G3.M1': 410,
+ 'member_properties.girder_details.section_input.bottom_flange_width.G4.M1': 410,
+ 'member_properties.girder_details.section_input.depth': 1340,
+ 'member_properties.girder_details.section_input.depth.G1.M1': 1340,
+ 'member_properties.girder_details.section_input.depth.G2.M1': 1340,
+ 'member_properties.girder_details.section_input.depth.G3.M1': 1340,
+ 'member_properties.girder_details.section_input.depth.G4.M1': 1340,
+ 'member_properties.girder_details.section_input.is_section.G1.M1': 'JB 150',
+ 'member_properties.girder_details.section_input.is_section.G2.M1': 'JB 150',
+ 'member_properties.girder_details.section_input.is_section.G3.M1': 'JB 150',
+ 'member_properties.girder_details.section_input.is_section.G4.M1': 'JB 150',
+ 'member_properties.girder_details.section_input.symmetry': 'Girder Symmetric',
+ 'member_properties.girder_details.section_input.symmetry.G1.M1': 'Girder '
+                                                                  'Symmetric',
+ 'member_properties.girder_details.section_input.symmetry.G2.M1': 'Girder '
+                                                                  'Symmetric',
+ 'member_properties.girder_details.section_input.symmetry.G3.M1': 'Girder '
+                                                                  'Symmetric',
+ 'member_properties.girder_details.section_input.symmetry.G4.M1': 'Girder '
+                                                                  'Symmetric',
+ 'member_properties.girder_details.section_input.top_flange_thickness': 'All',
+ 'member_properties.girder_details.section_input.top_flange_thickness.G1.M1': 'All',
+ 'member_properties.girder_details.section_input.top_flange_thickness.G2.M1': 'All',
+ 'member_properties.girder_details.section_input.top_flange_thickness.G3.M1': 'All',
+ 'member_properties.girder_details.section_input.top_flange_thickness.G4.M1': 'All',
+ 'member_properties.girder_details.section_input.top_flange_width': 410,
+ 'member_properties.girder_details.section_input.top_flange_width.G1.M1': 410,
+ 'member_properties.girder_details.section_input.top_flange_width.G2.M1': 410,
+ 'member_properties.girder_details.section_input.top_flange_width.G3.M1': 410,
+ 'member_properties.girder_details.section_input.top_flange_width.G4.M1': 410,
+ 'member_properties.girder_details.section_input.torsional_restraint.G1.M1': 'Fully '
+                                                                             'Restrained',
+ 'member_properties.girder_details.section_input.torsional_restraint.G2.M1': 'Fully '
+                                                                             'Restrained',
+ 'member_properties.girder_details.section_input.torsional_restraint.G3.M1': 'Fully '
+                                                                             'Restrained',
+ 'member_properties.girder_details.section_input.torsional_restraint.G4.M1': 'Fully '
+                                                                             'Restrained',
+ 'member_properties.girder_details.section_input.type.G1.M1': 'Welded',
+ 'member_properties.girder_details.section_input.type.G2.M1': 'Welded',
+ 'member_properties.girder_details.section_input.type.G3.M1': 'Welded',
+ 'member_properties.girder_details.section_input.type.G4.M1': 'Welded',
+ 'member_properties.girder_details.section_input.warping_restraint.G1.M1': 'Both '
+                                                                           'Flanges '
+                                                                           'Restrained',
+ 'member_properties.girder_details.section_input.warping_restraint.G2.M1': 'Both '
+                                                                           'Flanges '
+                                                                           'Restrained',
+ 'member_properties.girder_details.section_input.warping_restraint.G3.M1': 'Both '
+                                                                           'Flanges '
+                                                                           'Restrained',
+ 'member_properties.girder_details.section_input.warping_restraint.G4.M1': 'Both '
+                                                                           'Flanges '
+                                                                           'Restrained',
+ 'member_properties.girder_details.section_input.web_depth': 1306,
+ 'member_properties.girder_details.section_input.web_depth.G1.M1': 1306,
+ 'member_properties.girder_details.section_input.web_depth.G2.M1': 1306,
+ 'member_properties.girder_details.section_input.web_depth.G3.M1': 1306,
+ 'member_properties.girder_details.section_input.web_depth.G4.M1': 1306,
+ 'member_properties.girder_details.section_input.web_thickness': 'All',
+ 'member_properties.girder_details.section_input.web_thickness.G1.M1': 'All',
+ 'member_properties.girder_details.section_input.web_thickness.G2.M1': 'All',
+ 'member_properties.girder_details.section_input.web_thickness.G3.M1': 'All',
+ 'member_properties.girder_details.section_input.web_thickness.G4.M1': 'All',
+ 'member_properties.girder_details.section_input.web_type.G1.M1': 'Thin Web '
+                                                                  'with ITS',
+ 'member_properties.girder_details.section_input.web_type.G2.M1': 'Thin Web '
+                                                                  'with ITS',
+ 'member_properties.girder_details.section_input.web_type.G3.M1': 'Thin Web '
+                                                                  'with ITS',
+ 'member_properties.girder_details.section_input.web_type.G4.M1': 'Thin Web '
+                                                                  'with ITS',
+ 'member_properties.girder_details.section_inputs.support_type.G1.M1': 'Major '
+                                                                       'Laterally '
+                                                                       'Supported',
+ 'member_properties.girder_details.section_inputs.support_type.G2.M1': 'Major '
+                                                                       'Laterally '
+                                                                       'Supported',
+ 'member_properties.girder_details.section_inputs.support_type.G3.M1': 'Major '
+                                                                       'Laterally '
+                                                                       'Supported',
+ 'member_properties.girder_details.section_inputs.support_type.G4.M1': 'Major '
+                                                                       'Laterally '
+                                                                       'Supported',
+ 'member_properties.girder_details.section_inputs.support_width.G1.M1': 400.0,
+ 'member_properties.girder_details.section_inputs.support_width.G2.M1': 400.0,
+ 'member_properties.girder_details.section_inputs.support_width.G3.M1': 400.0,
+ 'member_properties.girder_details.section_inputs.support_width.G4.M1': 400.0,
+ 'member_properties.girder_details.section_properties.area': 0.02253434,
+ 'member_properties.girder_details.section_properties.area.G1.M1': 0.02253434,
+ 'member_properties.girder_details.section_properties.area.G2.M1': 0.02253434,
+ 'member_properties.girder_details.section_properties.area.G3.M1': 0.02253434,
+ 'member_properties.girder_details.section_properties.area.G4.M1': 0.02253434,
+ 'member_properties.girder_details.section_properties.iy': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iy.G1.M1': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iy.G2.M1': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iy.G3.M1': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iy.G4.M1': 0.0001962637,
+ 'member_properties.girder_details.section_properties.iz': 0.0073409121,
+ 'member_properties.girder_details.section_properties.iz.G1.M1': 0.0073409121,
+ 'member_properties.girder_details.section_properties.iz.G2.M1': 0.0073409121,
+ 'member_properties.girder_details.section_properties.iz.G3.M1': 0.0073409121,
+ 'member_properties.girder_details.section_properties.iz.G4.M1': 0.0073409121,
+ 'member_properties.girder_details.section_properties.mass': 176.8945,
+ 'member_properties.girder_details.section_properties.mass.G1.M1': 176.8945,
+ 'member_properties.girder_details.section_properties.mass.G2.M1': 176.8945,
+ 'member_properties.girder_details.section_properties.mass.G3.M1': 176.8945,
+ 'member_properties.girder_details.section_properties.mass.G4.M1': 176.8945,
+ 'member_properties.girder_details.section_properties.radius_gyration_y': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_y.G1.M1': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_y.G2.M1': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_y.G3.M1': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_y.G4.M1': 0.093325,
+ 'member_properties.girder_details.section_properties.radius_gyration_z': 0.570759,
+ 'member_properties.girder_details.section_properties.radius_gyration_z.G1.M1': 0.570759,
+ 'member_properties.girder_details.section_properties.radius_gyration_z.G2.M1': 0.570759,
+ 'member_properties.girder_details.section_properties.radius_gyration_z.G3.M1': 0.570759,
+ 'member_properties.girder_details.section_properties.radius_gyration_z.G4.M1': 0.570759,
+ 'member_properties.girder_details.section_properties.torsion_constant_it': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.torsion_constant_it.G1.M1': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.torsion_constant_it.G2.M1': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.torsion_constant_it.G3.M1': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.torsion_constant_it.G4.M1': 1.483887e-06,
+ 'member_properties.girder_details.section_properties.warping_constant_iw': 8.585743689e-05,
+ 'member_properties.girder_details.section_properties.warping_constant_iw.G1.M1': 8.585743689e-05,
+ 'member_properties.girder_details.section_properties.warping_constant_iw.G2.M1': 8.585743689e-05,
+ 'member_properties.girder_details.section_properties.warping_constant_iw.G3.M1': 8.585743689e-05,
+ 'member_properties.girder_details.section_properties.warping_constant_iw.G4.M1': 8.585743689e-05,
+ 'member_properties.girder_details.segment_table.G1': [{'end': 24.0,
+                                                        'id': 'G1M1',
+                                                        'start': 0.0}],
+ 'member_properties.girder_details.segment_table.G2': [{'end': 24.0,
+                                                        'id': 'G2M1',
+                                                        'start': 0.0}],
+ 'member_properties.girder_details.segment_table.G3': [{'end': 24.0,
+                                                        'id': 'G3M1',
+                                                        'start': 0.0}],
+ 'member_properties.girder_details.segment_table.G4': [{'end': 24.0,
+                                                        'id': 'G4M1',
+                                                        'start': 0.0}],
+ 'member_properties.girder_details.select_girder.G1': 'G1',
+ 'member_properties.girder_details.select_girder.G2': 'G2',
+ 'member_properties.girder_details.select_girder.G3': 'G3',
+ 'member_properties.girder_details.select_girder.G4': 'G4',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand.G1.M1': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand.G2.M1': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand.G3.M1': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_outstand.G4.M1': '200',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness.G1.M1': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness.G2.M1': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness.G3.M1': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_plate_thickness.G4.M1': '10',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing': '100',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing.G1.M1': '100',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing.G2.M1': '100',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing.G3.M1': '100',
+ 'member_properties.stiffener_details.bearing_stiffener_spacing.G4.M1': '100',
+ 'member_properties.stiffener_details.design_method': 'Simple Post Critical',
+ 'member_properties.stiffener_details.design_method.G1.M1': 'Simple Post '
+                                                            'Critical',
+ 'member_properties.stiffener_details.design_method.G2.M1': 'Simple Post '
+                                                            'Critical',
+ 'member_properties.stiffener_details.design_method.G3.M1': 'Simple Post '
+                                                            'Critical',
+ 'member_properties.stiffener_details.design_method.G4.M1': 'Simple Post '
+                                                            'Critical',
+ 'member_properties.stiffener_details.intermediate_stiffener': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener.G1.M1': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener.G2.M1': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener.G3.M1': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener.G4.M1': 'Yes',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand.G1.M1': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand.G2.M1': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand.G3.M1': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_outstand.G4.M1': '200',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing.G1.M1': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing.G2.M1': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing.G3.M1': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_spacing.G4.M1': '1955',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness': '10',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness.G1.M1': '10',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness.G2.M1': '10',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness.G3.M1': '10',
+ 'member_properties.stiffener_details.intermediate_stiffener_thickness.G4.M1': '10',
+ 'member_properties.stiffener_details.longitudinal_stiffener': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener.G1.M1': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener.G2.M1': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener.G3.M1': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener.G4.M1': 'No',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness': '8',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness.G1.M1': '8',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness.G2.M1': '8',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness.G3.M1': '8',
+ 'member_properties.stiffener_details.longitudinal_stiffener_thickness.G4.M1': '8',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end': '4',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end.G1.M1': '4',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end.G2.M1': '4',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end.G3.M1': '4',
+ 'member_properties.stiffener_details.no_bearing_stiffeners_each_end.G4.M1': '4',
+ 'member_properties.stiffener_details.select_member_id.G1.M1': 'G1M1',
+ 'member_properties.stiffener_details.select_member_id.G2.M1': 'G2M1',
+ 'member_properties.stiffener_details.select_member_id.G3.M1': 'G3M1',
+ 'member_properties.stiffener_details.select_member_id.G4.M1': 'G4M1',
+ 'project.location': {'data': {'district': 'Ahmednagar',
+                               'state': 'Maharashtra'},
+                      'display_text': 'Ahmednagar, Maharashtra',
+                      'method': 'location_name',
+                      'show_display': True,
+                      'weather_data': {'latitude': 19.0948,
+                                       'longitude': 74.748,
+                                       'max_temp': 48.2,
+                                       'min_temp': 2.2,
+                                       'wind_speed': 39.0,
+                                       'z_value': 0.16,
+                                       'zone': 'III'}},
+ 'structure.type': 'Highway Bridge',
+ 'support_conditions.bearing_length': '400.00',
+ 'support_conditions.left_support': 'Pinned',
+ 'support_conditions.right_support': 'Roller',
+ 'typical_section.crash_barrier.area': 302282.768,
+ 'typical_section.crash_barrier.density': 25,
+ 'typical_section.crash_barrier.height': 1.1,
+ 'typical_section.crash_barrier.load': 7.557,
+ 'typical_section.crash_barrier.post_spacing': 2,
+ 'typical_section.crash_barrier.type': 'IRC 5 - RCC Crash Barrier',
+ 'typical_section.crash_barrier.width': 0.45,
+ 'typical_section.deck_overhang': 1.05,
+ 'typical_section.deck_thickness': 250.0,
+ 'typical_section.footpath_thickness': 100.0,
+ 'typical_section.footpath_width': 0.0,
+ 'typical_section.girder_spacing': 2.1,
+ 'typical_section.median.area': None,
+ 'typical_section.median.density': None,
+ 'typical_section.median.height': None,
+ 'typical_section.median.load': None,
+ 'typical_section.median.post_spacing': None,
+ 'typical_section.median.type': None,
+ 'typical_section.median.width': 0.0,
+ 'typical_section.no_of_footpaths': 0,
+ 'typical_section.no_of_girders': 4,
+ 'typical_section.overall_bridge_width': 8.4,
+ 'typical_section.railing.height': 1.1,
+ 'typical_section.railing.load_mode': 'As per IRC 6',
+ 'typical_section.railing.load_value': 1.4715,
+ 'typical_section.railing.type': 'IRC 5 - RCC Railing',
+ 'typical_section.railing.width': 0.0,
+ 'typical_section.wearing_course.density': 24.0,
+ 'typical_section.wearing_course.material': 'Concrete',
+ 'typical_section.wearing_course.thickness': 50.0}
+
+@@compute_function:compute_crash_barrier_values result:
+{'typical_section.crash_barrier.density': '25.0', 'typical_section.crash_barrier.width': '0.450', 'typical_section.crash_barrier.height': '1.100', 'typical_section.crash_barrier.area': '0.3023', 'typical_section.crash_barrier.load': '7.56'}
+
+@@compute_function:compute_median_values result:
+{}
+
+@@compute_function:compute_railing_values result:
+{'typical_section.railing.load_value': '6.806', 'typical_section.railing.width': '0.275'}
+
+@@compute_function:compute_wearing_course_values result:
+{'typical_section.wearing_course.density': '25.0'}
+
+@@compute_function:_compute_welded_section_properties result:
+{'member_properties.girder_details.section_properties.mass': '1.77e+02', 'member_properties.girder_details.section_properties.area': '2.25e-02', 'member_properties.girder_details.section_properties.iz': '7.34e-03', 'member_properties.girder_details.section_properties.iy': '1.96e-04', 'member_properties.girder_details.section_properties.radius_gyration_z': '5.71e-01', 'member_properties.girder_details.section_properties.radius_gyration_y': '9.33e-02', 'member_properties.girder_details.material_properties.modulus_of_elasticity_zz': '1.10e-02', 'member_properties.girder_details.material_properties.modulus_of_elasticity_zy': '9.57e-04', 'member_properties.girder_details.material_properties.plastic_modulus_zuz': '1.20e-02', 'member_properties.girder_details.material_properties.plastic_modulus_zuy': '1.45e-03', 'member_properties.girder_details.section_properties.torsion_constant_it': '1.48e-06', 'member_properties.girder_details.section_properties.warping_constant_iw': '8.59e-05'}
+
+@@compute_function:_compute_rolled_section_properties result:
+{}
+
+@@compute_function:_compute_ed_rolled_section_properties result:
+{}
+
+@@compute_function:_compute_ed_welded_section_properties result:
+{}
+
+@@compute_function:_compute_seismic_values result:
+{'loading.seismic_load.computed.zone_factor': '0.16', 'loading.seismic_load.computed.spectral_coeff': '2.8', 'loading.seismic_load.computed.horizontal_coeff': '0.224', 'loading.seismic_load.computed.vertical_coeff': '0.1493'}
+
+@@compute_function:_compute_wind_values result:
+{}
+
+@@compute_function:_compute_temperature_values result:
+{}
+  Waiting for design worker thread to complete...
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1250.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Wind loads (IRC:6-2017): Pz=463.7 N/m²  FT=12.00 kN  FT/m=0.500 kN/m  FL=14.7069 N/m²  FV=695.55 N/m²
+Seismic inputs: DL=1699.8 kN  Governing LL=0.0 kN
+Seismic loads (IRC:6-2017 Cl.218): Z=0.16  Ah=0.2240  Av=0.1493
+  Feq_X=380.76 kN  Feq_Z=380.76 kN  Feq_Y=253.78 kN
+Governing LL: Case2 1xClass70R  (max |Mz_i| = 751.88 kNm)
+ULS Basic combinations:
+  Created: BASIC_1: 1.35DL + 1.75DW + 1.5LL + 0.9WL       DL=1.35(adding)  Surf=1.75  live_load leading
+  Created: BASIC_2: 1.35DL + 1.75DW + 1.15LL + 1.5WL      DL=1.35(adding)  Surf=1.75  wind_load leading
+  Created: BASIC_3: 1.35DL + 1.75DW + 1.15LL + 0.9WL      DL=1.35(adding)  Surf=1.75  thermal_load leading
+  Created: BASIC_4: 1.0DL + 1.0DW + 1.5LL + 0.9WL         DL=1.0(relieving)  Surf=1.0  live_load leading
+  Created: BASIC_5: 1.0DL + 1.0DW + 1.15LL + 1.5WL        DL=1.0(relieving)  Surf=1.0  wind_load leading
+  Created: BASIC_6: 1.0DL + 1.0DW + 1.15LL + 0.9WL        DL=1.0(relieving)  Surf=1.0  thermal_load leading
+
+ULS Accidental combinations:
+  Created: ACCIDENTAL_1: 1.0DL + 1.0DW + 0.75LL           DL=1.0  vehicle_collision(no lc)  live_load leading
+  Created: ACCIDENTAL_2: 1.0DL + 1.0DW + 0.75LL           DL=1.0  barge_impact(no lc)  live_load leading
+  Created: ACCIDENTAL_3: 1.0DL + 1.0DW + 0.75LL           DL=1.0  floating_bodies(no lc)  live_load leading
+
+ULS Seismic combinations:
+  Created: SEISMIC_1: 1.35DL + 1.75DW + 0.2LL + 1.5EL     DL=1.35(adding)  EL=1.5(service)
+  Created: SEISMIC_2: 1.35DL + 1.75DW + 0.2LL + 0.75EL    DL=1.35(adding)  EL=0.75(construction)
+  Created: SEISMIC_3: 1.0DL + 1.0DW + 0.2LL + 1.5EL       DL=1.0(relieving)  EL=1.5(service)
+  Created: SEISMIC_4: 1.0DL + 1.0DW + 0.2LL + 0.75EL      DL=1.0(relieving)  EL=0.75(construction)
+
+Total ULS combinations created: 13
+SLS Rare combinations:
+  Created: SLS_RARE_1: 1.0DL + 1.2DW + 1.0LL + 0.6WL      DL=1.0  Surf=1.2(adding)  live_load leading
+  Created: SLS_RARE_2: 1.0DL + 1.2DW + 0.75LL + 1.0WL     DL=1.0  Surf=1.2(adding)  wind_load leading
+  Created: SLS_RARE_3: 1.0DL + 1.2DW + 0.75LL + 0.6WL     DL=1.0  Surf=1.2(adding)  thermal_load leading
+  Created: SLS_RARE_4: 1.0DL + 1.0DW + 1.0LL + 0.6WL      DL=1.0  Surf=1.0(relieving)  live_load leading
+  Created: SLS_RARE_5: 1.0DL + 1.0DW + 0.75LL + 1.0WL     DL=1.0  Surf=1.0(relieving)  wind_load leading
+  Created: SLS_RARE_6: 1.0DL + 1.0DW + 0.75LL + 0.6WL     DL=1.0  Surf=1.0(relieving)  thermal_load leading
+
+SLS Frequent combinations:
+  Created: SLS_FREQUENT_1: 1.0DL + 1.2DW + 0.75LL + 0.5WL  DL=1.0  Surf=1.2(adding)  live_load leading
+  Created: SLS_FREQUENT_2: 1.0DL + 1.2DW + 0.2LL + 0.6WL  DL=1.0  Surf=1.2(adding)  wind_load leading
+  Created: SLS_FREQUENT_3: 1.0DL + 1.2DW + 0.2LL + 0.5WL  DL=1.0  Surf=1.2(adding)  thermal_load leading
+  Created: SLS_FREQUENT_4: 1.0DL + 1.0DW + 0.75LL + 0.5WL  DL=1.0  Surf=1.0(relieving)  live_load leading
+  Created: SLS_FREQUENT_5: 1.0DL + 1.0DW + 0.2LL + 0.6WL  DL=1.0  Surf=1.0(relieving)  wind_load leading
+  Created: SLS_FREQUENT_6: 1.0DL + 1.0DW + 0.2LL + 0.5WL  DL=1.0  Surf=1.0(relieving)  thermal_load leading
+
+SLS Quasi-permanent combinations:
+  Created: SLS_QP_1: 1.0DL + 1.2DW                        DL=1.0  Surf=1.2(adding)  TL=0.5
+  Created: SLS_QP_2: 1.0DL + 1.0DW                        DL=1.0  Surf=1.0(relieving)  TL=0.5
+
+Total SLS combinations created: 14
+Envelope ULS (worst signed magnitude) over 13 combinations: peak |Mz_i|=1526.50 kNm  peak |dy|=61.14 mm
+Envelope SLS (worst signed magnitude) over 14 combinations: peak |Mz_i|=1455.73 kNm  peak |dy|=58.23 mm
+
+------------------------------------------------------------
+  PLATE GIRDER BRIDGE - DESIGN SUMMARY
+------------------------------------------------------------
+  Span                  : 24.0 m
+  Overall width         : 8.400 m
+  No. of girders        : 4
+  Girder spacing        : 2100.0 mm
+  Deck overhang         : 1050.0 mm
+
+------------------------------------------------------------
+  GIRDER G1 CROSS-SECTION (mm) / PROPERTIES (SI)
+------------------------------------------------------------
+  Total depth      D    : 1340.0
+  Web depth        d_w  : 1306.0
+  Web thickness    t_w  : 8.0
+  Top flange width B_ft : 410.0
+  Top flange thk   T_ft : 18.0
+  Bot flange width B_fb : 410.0
+  Bot flange thk   T_fb : 18.0
+  Area   A  : 0.022534 m^2
+  I_z       : 0.007341 m^4
+  I_y       : 0.000196 m^4
+  I_t (J)   : 0.000001 m^3
+------------------------------------------------------------
+------------------------------------------------------------
+  GIRDER G2 CROSS-SECTION (mm) / PROPERTIES (SI)
+------------------------------------------------------------
+  Total depth      D    : 1340.0
+  Web depth        d_w  : 1306.0
+  Web thickness    t_w  : 8.0
+  Top flange width B_ft : 410.0
+  Top flange thk   T_ft : 18.0
+  Bot flange width B_fb : 410.0
+  Bot flange thk   T_fb : 18.0
+  Area   A  : 0.022534 m^2
+  I_z       : 0.007341 m^4
+  I_y       : 0.000196 m^4
+  I_t (J)   : 0.000001 m^3
+------------------------------------------------------------
+------------------------------------------------------------
+  GIRDER G3 CROSS-SECTION (mm) / PROPERTIES (SI)
+------------------------------------------------------------
+  Total depth      D    : 1340.0
+  Web depth        d_w  : 1306.0
+  Web thickness    t_w  : 8.0
+  Top flange width B_ft : 410.0
+  Top flange thk   T_ft : 18.0
+  Bot flange width B_fb : 410.0
+  Bot flange thk   T_fb : 18.0
+  Area   A  : 0.022534 m^2
+  I_z       : 0.007341 m^4
+  I_y       : 0.000196 m^4
+  I_t (J)   : 0.000001 m^3
+------------------------------------------------------------
+------------------------------------------------------------
+  GIRDER G4 CROSS-SECTION (mm) / PROPERTIES (SI)
+------------------------------------------------------------
+  Total depth      D    : 1340.0
+  Web depth        d_w  : 1306.0
+  Web thickness    t_w  : 8.0
+  Top flange width B_ft : 410.0
+  Top flange thk   T_ft : 18.0
+  Bot flange width B_fb : 410.0
+  Bot flange thk   T_fb : 18.0
+  Area   A  : 0.022534 m^2
+  I_z       : 0.007341 m^4
+  I_y       : 0.000196 m^4
+  I_t (J)   : 0.000001 m^3
+------------------------------------------------------------
+============================================================
+  IRC 22:2015 DESIGN CHECK PIPELINE
+============================================================
+
+[Step 1] Loading bridge configuration ...
+  Config: L=24.0m | E 350A/M40 | D=1340.0mm | 6 girders @ 2.1m
+
+[Step 2] Running checks for 6 girder(s) ...
+  [INFO] bs_R_kN not set — using max Vu = 305.0 kN as bearing reaction default
+  [X] G1                                       max_DCR=1.948  FAIL
+  [X] G2                                       max_DCR=1.963  FAIL
+  [X] G3                                       max_DCR=1.975  FAIL
+  [X] G4                                       max_DCR=1.975  FAIL
+  [X] G5                                       max_DCR=1.963  FAIL
+  [X] G6                                       max_DCR=1.948  FAIL
+
+  Controlling girder: G3  (max_DCR = 1.975)
+
+[Step 4] Generating report for controlling girder ...
+
+==============================================================================
+               IRC 22:2015 COMPOSITE BRIDGE DESIGN CHECK REPORT               
+          Demand (Analyser)  -->  IRC 22 Capacity  -->  DCR Pipeline          
+                        Generated: 2026-11-16 11:25:28                        
+==============================================================================
+
+BRIDGE CONFIGURATION
+--------------------
+  Span                    : 24.00 m
+  Support                 : simply_supported
+  Carriageway Width       : 7.50 m
+  Girder Spacing          : 2.10 m
+  No. of Girders          : 6
+  Beam Type               : inner
+  Steel Grade             : E 350A (fy = 350.0 MPa)
+  Concrete Grade          : M40 (fck = 40.0 MPa)
+  Rebar Grade             : Fe 500
+
+STEEL SECTION (Plate Girder - Welded)
+-------------------------------------
+  Overall Depth D         : 1,340.00 mm
+  Top Flange              : 410.0 x 18.0 mm
+  Bottom Flange           : 410.0 x 18.0 mm
+  Web                     : 1304 x 8.0 mm
+  A_steel                 : 25,192 mm2
+  Iz_steel                : 7,927,580,789 mm4
+
+CONCRETE SLAB
+-------------
+  Slab Thickness          : 250.00 mm
+  Haunch Depth            : 0.000 mm
+
+DESIGN DEMANDS (Envelope ULS)
+-----------------------------
+  Location                : critical element
+  Member                  : G3
+  Source                  : grillage_analysis
+
+  Mu (factored)           : 1,526.50 kNm
+  Vu (factored)           : 226.14 kN
+  Nu (factored)           : 25.37 kN
+  delta_live              : 11.40 mm
+  delta_total             : 22.15 mm
+  Stress Range            : 182.63 MPa
+  Shear Range             : 41.27 MPa
+  Nsc                     : 2,000,000 cycles
+  M_sls (service)         : 1,455.73 kNm
+  V_sls (service)         : 215.25 kN
+
+IRC 22:2015 CAPACITY COMPUTATIONS
+---------------------------------
+
+  1. Effective Width (Cl.603.2.1)
+     beff = 2100.0 mm
+
+  2. Section Classification (Cl.603)
+     epsilon = 0.8450
+     Web: Slender  (d/tw = 163.0)
+     Flange: Semi-Compact  (b/tf = 11.2)
+     Governing: Slender
+
+  3. Positive Moment Capacity (Cl.603.3.1)
+     PNA Location: top_flange
+     xu = 251.96 mm
+     Mp = Md = 6,495.57 kNm  (γm0 and γc embedded)
+
+  4. Plastic Shear Resistance (Cl.603.3.3.2)
+     Av = 10,432 mm²
+     Vn = 2,108.02 kN
+     Vd = 1,916.38 kN
+
+  4b. Shear Buckling Resistance (Cl.603.3.3.2 — Post-Critical)
+     Kv = 7.130  |  λw = 2.041
+     τb = 48.51 MPa  |  Vcr = 460.01 kN
+
+  5. Buckling Resistance Moment (Cl.603.3.3.1)
+     Mcr = 30,084.69 kNm  |  λ_LT = 0.3710  |  χ_LT = 1.0000
+     Mb = 4,186.38 kNm
+
+  6. Bending–Shear Interaction (Cl.603.3.3.3)
+     beta = 0.0000  |  Mdv = 6,495.57 kNm
+
+  7. Composite Section Properties (Cl.604.3)
+     Short-term (n=7.5):  I = 20,000,481,691 mm⁴  |  y_top = 335.4 mm  |  y_bot = 1254.6 mm
+     Long-term  (n=15.0):  I = 17,368,064,292 mm⁴
+
+  8. SLS Stress Limits (Cl.604.3.1)
+     Concrete limit   : σc  ≤ 0.48 fck = 19.2 MPa
+     Steel equiv. limit: fe  ≤ 0.90 fy  = 315.0 MPa
+     Rebar limit      : σr  ≤ 0.80 fyk = 400.0 MPa
+     --- Actual stresses (M_sls = 1455.7 kNm) ---
+     σc (concrete)  = 3.255 MPa  OK
+     fe (steel)     = 98.061 MPa  OK
+     σr (rebar)     = 20.335 MPa  OK
+     τ (web shear)  = 20.634 MPa
+
+  9. Deflection Limits (Cl.604.3.2)
+     Live + impact ≤ L/800 = 30.00 mm
+     Total         ≤ L/600 = 40.00 mm
+
+  10. Fatigue Assessment (Cl.605)
+     f_fd  = 92.491 MPa  |  τ_fd = 52.493 MPa
+
+  11. Shear Stud Capacity (Cl.606.3.1)
+     Qu = 95.363 kN / stud
+     Required ULS spacing = 1533.8 mm
+
+  12. Shear Connector Spacing Limits (Cl.606.9)
+     Max spacing = min(600, 3t_slab, 4h_stud) = 400 mm
+     Min spacing = 75 mm
+
+DESIGN CHECK RESULTS (DCR = Demand / Capacity)
+----------------------------------------------
+  -------------------------------------------------------------------------
+    #  Check                            Demand    Capacity      DCR  Status
+  -------------------------------------------------------------------------
+    1  ULS Flexure                     1526.50     6495.57    0.235   PASS 
+    2  ULS Shear                        226.14     1916.38    0.118   PASS 
+    2  ULS Shear Buckling               226.14      460.01    0.492   PASS 
+    3  M-V Interaction                 1526.50     6495.57    0.235   PASS 
+    4  M-N Interaction                    0.24        1.00    0.238   PASS 
+    5  LTB (Girder SW Only)              84.68      479.69    0.176   PASS 
+    5  LTB (Construction Stage)         723.09     4186.38    0.173   PASS 
+    7  Stud Spacing Feasibility (Cl.606.9)      75.00      302.74    0.248   PASS 
+    7  Stud Detailing                     0.00        1.00    0.000   PASS 
+    8  Fatigue Normal Stress            182.63       92.49    1.975  *FAIL*
+    9  Fatigue Shear Stress              41.27       52.49    0.786   PASS 
+   11  SLS Steel Equiv. Stress           98.06      315.00    0.311   PASS 
+   13  SLS Deflection (Live)             11.40       30.00    0.380   PASS 
+   14  SLS Deflection (Total)            22.15       40.00    0.554   PASS 
+   20  Int.Stiff: Leg ≤ H_limit         200.00      169.03    1.183  *FAIL*
+   20  Int.Stiff: Iys ≥ Iys_min      500736.00  56597333.33    0.009   PASS 
+   21  Brg.Stiff: Web Buckling          304.97   134083.23    0.002   PASS 
+   21  Brg.Stiff: Local Crushing        304.97      373.70    0.816   PASS 
+   21  Brg.Stiff: Bearing Contact       304.97     2545.45    0.120   PASS 
+   21  Brg.Stiff: Column Buckling       304.97     2087.27    0.146   PASS 
+  -------------------------------------------------------------------------
+
+DCR BAR CHART
+-------------
+  ULS Flexure            [||||||||||...................................] 0.235
+  ULS Shear              [|||||........................................] 0.118
+  ULS Shear Buckling     [||||||||||||||||||||||.......................] 0.492
+  M-V Interaction        [||||||||||...................................] 0.235
+  M-N Interaction        [||||||||||...................................] 0.238
+  LTB (Girder SW Only)   [|||||||......................................] 0.176
+  LTB (Construction Stage) [|||||||......................................] 0.173
+  Stud Spacing Feasibility (Cl.606.9) [|||||||||||..................................] 0.248
+  Stud Detailing         [.............................................] 0.000
+  Fatigue Normal Stress  [XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] 1.975
+  Fatigue Shear Stress   [|||||||||||||||||||||||||||||||||||..........] 0.786
+  SLS Steel Equiv. Stress [||||||||||||||...............................] 0.311
+  SLS Deflection (Live)  [|||||||||||||||||............................] 0.380
+  SLS Deflection (Total) [||||||||||||||||||||||||.....................] 0.554
+  Int.Stiff: Leg ≤ H_limit [XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] 1.183
+  Int.Stiff: Iys ≥ Iys_min [.............................................] 0.009
+  Brg.Stiff: Web Buckling [.............................................] 0.002
+  Brg.Stiff: Local Crushing [||||||||||||||||||||||||||||||||||||.........] 0.816
+  Brg.Stiff: Bearing Contact [|||||........................................] 0.120
+  Brg.Stiff: Column Buckling [||||||.......................................] 0.146
+
+OVERALL VERDICT
+---------------
+
+  Status           : FAIL
+  Checks Run       : 20
+  PASS / WARN / FAIL: 13 / 0 / 1
+  Maximum DCR      : 1.9746
+  Critical Check   : Fatigue Normal Stress (Cl.605)
+
+  >>> DESIGN FAILS ONE OR MORE CHECKS - REVISION REQUIRED <<<
+
+
+============================================================
+  PIPELINE COMPLETE -- G3  Overall: FAIL
+============================================================
+
+============================================================
+  DECK SLAB DESIGN RESULTS
+============================================================
+IRC 6:2017 Deck Slab Design Summary
+====================================================
+
+Governing vehicle      : Class70R(W)
+Impact factor (IF)     : 1.100  [IRC 6:2017 Cl.208]
+  (1 + 0.100 for span 24.0 m)
+γ<sub>DL</sub>  [Table B.2]      : 1.35
+γ<sub>LL</sub>  [Table B.2]      : 1.5
+
+Effective span (S)     : 2.100 m  (girder c/c)
+Deck thickness         : 250 mm
+Concrete               : M40  (f<sub>ck</sub> = 40 MPa, f<sub>ctm</sub> = 3.0 MPa)
+Reinforcement          : Fe 500  (f<sub>y</sub> = 500 MPa)
+
+Cover Adequacy  [IRC 112:2020 Table 14.2 — 100-yr service life]
+----------------------------------------
+  Concrete grade        : M40  → Exposure: Very Severe
+  Recommended min cover : 50 mm
+  Top cover provided    : 50 mm  → OK
+  Bottom cover provided : 50 mm  → OK
+
+Interior Span Loads
+----------------------------------------
+  Dead load (w<sub>DL</sub>)     : 6.13 kN/m²
+  Max wheel load (P)   : 83.4 kN  [IRC 6:2017 Cl.204]
+  Cross-bracing spacing : 3.000 m  (b/l<sub>o</sub> = 1.43)
+  Effective width b<sub>e</sub> : 1.708 m  [IRC 112:2020 Eq. B3.1, α<sub>e</sub> = 2.49]
+
+Interior Span Design Moments
+----------------------------------------
+  M<sub>DL</sub>                : 2.704 kNm/m
+  M<sub>LL</sub> (unfactored)    : 25.631 kNm/m
+  M<sub>ULS</sub> (sagging)      : 45.941 kNm/m
+  M<sub>ULS</sub> (hogging, 75%) : 34.456 kNm/m
+
+Bottom (Sagging) Reinforcement
+----------------------------------------
+  Effective depth d    : 194.0 mm
+  A<sub>s</sub> required          : 596 mm²/m
+  Provided             : Ø12 @ 175 mm c/c  →  646 mm²/m
+  Moment capacity M<sub>u</sub>  : 52.234 kNm/m
+  Status               : PASS
+
+Top (Hogging) Reinforcement
+----------------------------------------
+  Effective depth d    : 194.0 mm
+  A<sub>s</sub> required          : 488 mm²/m
+  Provided             : Ø12 @ 230 mm c/c  →  492 mm²/m
+  Moment capacity M<sub>u</sub>   : 40.162 kNm/m
+  Status               : PASS
+
+Longitudinal (Distribution) Reinforcement  [IRC 112:2020 Cl.16.6.1]
+----------------------------------------
+  20% of A<sub>s</sub>bot        : 129 mm²/m
+  As required          : 303 mm²/m
+  Provided             : Ø12 @ 300 mm c/c  →  377 mm²/m
+
+Deck Overhang Design
+----------------------------------------
+  Overhang length L<sub>oh</sub> : 1050 mm  (1.050 m)
+  Edge clearance f      : 0.150 m  [IRC 6:2017 Table 3]
+  Railing DL load       : 1.472 kN/m  [IRC 6:2017 Cl.206.5]
+  Crash barrier moment  : 7.50 kNm/m  [IRC 6:2017 Cl.206.4]
+  Wheel arm from root   : 0.900 m
+  M<sub>DL</sub> (overhang)       : 4.925 kNm/m  (slab 3.380 + railing 1.545)
+  M<sub>LL</sub> (overhang)       : 50.707 kNm/m
+  M<sub>ULS</sub> (overhang)      : 101.565 kNm/m
+
+Overhang Top Reinforcement
+----------------------------------------
+  Effective depth d     : 194.0 mm
+  As required           : 1394 mm²/m
+  Provided              : Ø12 @ 80 mm c/c  →  1414 mm²/m
+  Moment capacity M<sub>u</sub>    : 108.273 kNm/m
+  Status                : PASS
+
+====================================================
+Shear Checks  (IRC 112:2020)
+====================================================
+
+One-Way Shear — Interior Span  [Cl.10.3.2]
+----------------------------------------
+  V<sub>DL</sub> at support         : 6.438 kN/m
+  V<sub>LL</sub> at support         : 48.820 kN/m
+  V<sub>ULS</sub>          : 89.244 kN/m
+  V<sub>RD</sub>,c (no links)        : 107.582 kN/m  → PASS
+
+Punching Shear — Interior Span  [Cl.10.4]
+----------------------------------------
+  Effective contact c1    : 400 mm  (transverse, incl. WC dispersion)
+  Effective contact c2    : 250 mm  (longitudinal, incl. WC dispersion)
+  Control perimeter u1    : 3738 mm  (at 2d = 388 mm)
+  v<sub>ED</sub>                    : 0.1897 MPa
+  v<sub>RD</sub>,c                   : 0.5545 MPa  → PASS
+
+Shear Check — Overhang  [IRC 112:2020 Cl.10.3.2]
+----------------------------------------
+  V<sub>ULS</sub> (one-way) at root : 103.641 kN/m
+  V<sub>RD</sub>,c (no links)        : 131.631 kN/m  → PASS
+
+Punching Shear — Overhang  [IRC 112:2020 Cl.10.4]
+----------------------------------------
+  Control perimeter u1    : 3738 mm  (at 2d = 388 mm)
+  v<sub>ED</sub>                    : 0.1897 MPa
+  v<sub>RD</sub>,c                   : 0.6785 MPa  → PASS
+
+====================================================
+SLS Checks  (IRC 112:2020)
+====================================================
+
+Stress Check — Bottom (Sagging)  [Cl.12.2.1]
+----------------------------------------
+  M<sub>SLS</sub>,char (sagging)  : 30.898 kNm/m  (γ<sub>DL</sub>=1.0, γ<sub>LL</sub>=1.0)
+  Neutral axis depth x  : 189.4 mm
+  Concrete σ<sub>c</sub>         : 2.49 MPa  ≤ 19.2 MPa  → PASS
+  Steel σ<sub>s</sub>            : 365.34 MPa  ≤ 400.0 MPa  → PASS
+
+Stress Check — Top (Hogging)  [Cl.12.2.1]
+----------------------------------------
+  M<sub>SLS</sub>,char (hogging)  : 23.173 kNm/m  (γ<sub>DL</sub>=1.0, γ<sub>LL</sub>=1.0)
+  Concrete σ<sub>c</sub>           : 1.88 MPa  ≤ 19.2 MPa  → PASS
+  Steel σ<sub>s</sub>              : 358.89 MPa  ≤ 400.0 MPa  → PASS
+
+Crack Width Check — Bottom (Sagging)  [Cl.12.3.4]
+----------------------------------------
+  M<sub>SLS</sub>,freq (sagging)  : 23.849 kNm/m  (γ<sub>DL</sub>=1.0, γ<sub>LL</sub>=0.75)
+  Steel stress σ<sub>s</sub>       : 282.00 MPa
+  ρ<sub>p,eff</sub>               : 0.03200
+  Crack spacing S<sub>r,max</sub>  : 233.7 mm
+  Strain diff ε<sub>sm</sub>−ε<sub>cm</sub>  : 8.460e-04
+  Crack width w<sub>k</sub>      : 0.1977 mm  ≤ 0.3 mm  → PASS
+
+Crack Width Check — Top (Hogging)  [Cl.12.3.4]
+----------------------------------------
+  M<sub>SLS</sub>,freq (hogging)  : 17.887 kNm/m  (γ<sub>DL</sub>=1.0, γ<sub>LL</sub>=0.75)
+  Steel stress σ<sub>s</sub>       : 277.02 MPa
+  ρ<sub>p,eff</sub>              : 0.02382
+  Crack spacing S<sub>r,max</sub>   : 255.6 mm
+  Strain diff ε<sub>sm</sub>−ε<sub>cm</sub>  : 8.311e-04
+  Crack width w<sub>k</sub>      : 0.2125 mm  ≤ 0.3 mm  → PASS
+
+Overhang SLS Stress Check  [IRC 112:2020 Cl.12.2.1]
+----------------------------------------
+  M<sub>SLS</sub>,char (overhang) : 68.203 kNm/m  (γ_DL=1.0, γ_LL=1.0)
+  Concrete σ<sub>c</sub>          : 5.47 MPa  ≤ 19.2 MPa  → PASS
+  Steel σ<sub>s</sub>              : 370.96 MPa  ≤ 400.0 MPa  → PASS
+
+Overhang Crack Width Check  [IRC 112:2020 Cl.12.3.4]
+----------------------------------------
+  M<sub>SLS</sub>,freq (overhang) : 52.383 kNm/m  (γ_DL=1.0, γ_LL=0.75)
+  Steel stress σ<sub>s</sub>      : 284.92 MPa
+  ρ<sub>p,eff</sub>                : 0.07294
+  Crack spacing S<sub>r,max</sub> : 198.0 mm
+  Strain diff ε<sub>sm</sub> − ε<sub>cm</sub>  : 8.548e-04
+  Crack width w<sub>k</sub>       : 0.1692 mm  ≤ 0.3 mm  → PASS
+============================================================
+
+======================================================================
+                  CROSS BRACING CONFIGURATION & GEOMETRY
+======================================================================
+  Brace type               : X-type
+  Top chord                : Yes
+  Bottom chord             : Yes
+----------------------------------------------------------------------
+  Girder spacing (s)       : 2.1000 m
+  Girder depth (D)         : 1.3400 m
+  Brace clear height (h)   : 1.1390 m  (depth_ratio = 0.85)
+  Diagonal length          : 2.3890 m
+  Diagonal angle (alpha)   : 28.47 deg from horizontal
+  Panel spacing            : 3.000 m
+======================================================================
+
+===============================================================================================
+                      CROSS BRACING — CRITICAL DESIGN FORCES
+===============================================================================================
+Girder Pair Type  F_diag (kN)  F_chord (kN)        Gov LC
+      G1-G2    T        3.414         3.001    1.5 EQ (a)
+      G1-G2    C       -6.055        -5.323    1.5 EQ (b)
+      G2-G3    T        3.854         3.388    1.5 EQ (a)
+      G2-G3    C       -0.499        -0.439    1.5 EQ (a)
+      G3-G4    T        6.738         5.923    1.5 EQ (b)
+      G3-G4    C       -0.427        -0.375 WL Transverse
+===============================================================================================
+
+------------------------------------------------------------
+  CROSS BRACING DESIGNS  (3 pair(s))  diag L=2389 mm  chord L=2100 mm
+------------------------------------------------------------
+  Total time : 10.396s  |  12 designs
+------------------------------------------------------------
+
+===========================================================================
+                   CROSS BRACING — OSDAG DESIGN RESULTS                    
+===========================================================================
+  Pair : G1-G2
+    Diagonal [    Tension     3.414 kN]  →  40 x 40 x 3   cap=45.0 kN  eff=0.08  λ=194.2  Bolted
+    Diagonal [Compression     6.055 kN]  →  40 x 40 x 3   cap=18.4 kN  eff=0.56  λ=126.2  Bolted
+    Chord    [    Tension     3.001 kN]  →  40 x 40 x 3   cap=45.0 kN  eff=0.07  λ=170.7  Bolted
+    Chord    [Compression     5.323 kN]  →  40 x 40 x 3   cap=22.14 kN  eff=0.49  λ=111.0  Bolted
+  Pair : G2-G3
+    Diagonal [    Tension     3.854 kN]  →  40 x 40 x 3   cap=45.0 kN  eff=0.09  λ=194.2  Bolted
+    Diagonal [Compression     0.499 kN]  →  40 x 40 x 3   cap=18.4 kN  eff=0.05  λ=126.2  Bolted
+    Chord    [    Tension     3.388 kN]  →  40 x 40 x 3   cap=45.0 kN  eff=0.08  λ=170.7  Bolted
+    Chord    [Compression     0.439 kN]  →  40 x 40 x 3   cap=22.14 kN  eff=0.04  λ=111.0  Bolted
+  Pair : G3-G4
+    Diagonal [    Tension     6.738 kN]  →  40 x 40 x 3   cap=45.0 kN  eff=0.15  λ=194.2  Bolted
+    Diagonal [Compression     0.427 kN]  →  40 x 40 x 3   cap=18.4 kN  eff=0.04  λ=126.2  Bolted
+    Chord    [    Tension     5.923 kN]  →  40 x 40 x 3   cap=45.0 kN  eff=0.13  λ=170.7  Bolted
+    Chord    [Compression     0.375 kN]  →  40 x 40 x 3   cap=22.14 kN  eff=0.03  λ=111.0  Bolted
+===========================================================================
+
+===========================================================================
+                   END DIAPHRAGM — OSDAG DESIGN RESULTS                    
+===========================================================================
+  Pair : G1-G2
+  Pair : G2-G3
+  Pair : G3-G4
+===========================================================================
+DEBUG railing raw: IRC 5 - RCC Railing
+DEBUG railing resolved: IRC 5 RCC railing
+DEBUG girder spacing input m: 2.1
+DEBUG girder spacing dto mm: 2100.0
+DEBUG stiffeners | mode=Optimized | intermediate_on=True spacing=1955.0 thick=10.0 outstand=200.0 | longitudinal_on=False count=1 thick=8.0 | bearing_pairs=4 thick=10.0 outstand=200.0
+DEBUG stiffeners raw keys | intermediate='Yes' longitudinal='No'
+DEBUG railing raw: IRC 5 - RCC Railing
+DEBUG railing resolved: IRC 5 RCC railing
+DEBUG girder spacing input m: 2.1
+DEBUG girder spacing dto mm: 2100.0
+DEBUG stiffeners | mode=Optimized | intermediate_on=True spacing=1955.0 thick=10.0 outstand=200.0 | longitudinal_on=False count=1 thick=8.0 | bearing_pairs=4 thick=10.0 outstand=200.0
+DEBUG stiffeners raw keys | intermediate='Yes' longitudinal='No'
+  Design worker finished in 41.59 seconds.
+
+[Step 5/8] Validating Output Dictionary Snapshot (1066 keys)...
+  Output dictionary snapshot saved: F:\FOSSEE internship\testing\evidence\phase_1d\output_dictionary_snapshot.json
+
+[Step 6/8] Extracting Structural Results & DCRs:
+  elapsed_seconds: 41.587859869003296
+  overall_width: None
+  no_of_girders: 4
+  girder_spacing: 2.1
+  deck_overhang: 1.05
+  cross_bracing_results: {'G1-G2': {'diagonal': {'tension': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'Member.tension_yielding': 107.73, 'Member.tension_rupture': 89.55, 'Member.tension_blockshear': 45.0, 'Member.tension_capacity': 45.0, 'Member.Slenderness': 194.23, 'Member.efficiency': 0.08, 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(5.6), 'Bolt.Shear': 16.9, 'Bolt.Bearing': np.float64(22.83), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 16.9, 'Bolt.Force (kN)': 16.16, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(72.73), 'Plate.Rupture': np.float64(75.57), 'Plate.BlockShear': np.float64(60.0), 'Plate.Capacity': np.float64(60.0), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 773.0, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(5.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}, 'compression': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'KEY_EFFECTIVE_LENGTH': 1552.85, 'KEY_FCD': 77.64, 'Member.tension_capacity': 18.4, 'Member.Slenderness': 126.25, 'Member.efficiency': np.float64(0.56), 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(3.6), 'Bolt.Shear': np.float64(5.43), 'Bolt.Bearing': np.float64(8.2), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 11.16, 'Bolt.Force (kN)': 3.03, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(127.27), 'Plate.Rupture': np.float64(141.7), 'Plate.BlockShear': np.float64(54.54), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 773.0, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(3.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}}, 'chord': {'tension': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'Member.tension_yielding': 107.73, 'Member.tension_rupture': 89.55, 'Member.tension_blockshear': 45.0, 'Member.tension_capacity': 45.0, 'Member.Slenderness': 170.73, 'Member.efficiency': 0.07, 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(5.6), 'Bolt.Shear': 16.9, 'Bolt.Bearing': np.float64(22.83), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 16.9, 'Bolt.Force (kN)': 16.16, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(72.73), 'Plate.Rupture': np.float64(75.57), 'Plate.BlockShear': np.float64(60.0), 'Plate.Capacity': np.float64(60.0), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 676.67, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(5.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}, 'compression': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'KEY_EFFECTIVE_LENGTH': 1365.0, 'KEY_FCD': 93.43, 'Member.tension_capacity': 22.14, 'Member.Slenderness': 110.98, 'Member.efficiency': np.float64(0.49), 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(3.6), 'Bolt.Shear': np.float64(5.43), 'Bolt.Bearing': np.float64(8.2), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 11.16, 'Bolt.Force (kN)': 3.32, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(127.27), 'Plate.Rupture': np.float64(141.7), 'Plate.BlockShear': np.float64(54.54), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 676.67, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(3.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}}}, 'G2-G3': {'diagonal': {'tension': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'Member.tension_yielding': 107.73, 'Member.tension_rupture': 89.55, 'Member.tension_blockshear': 45.0, 'Member.tension_capacity': 45.0, 'Member.Slenderness': 194.23, 'Member.efficiency': 0.09, 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(5.6), 'Bolt.Shear': 16.9, 'Bolt.Bearing': np.float64(22.83), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 16.9, 'Bolt.Force (kN)': 16.16, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(72.73), 'Plate.Rupture': np.float64(75.57), 'Plate.BlockShear': np.float64(60.0), 'Plate.Capacity': np.float64(60.0), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 773.0, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(5.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}, 'compression': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'KEY_EFFECTIVE_LENGTH': 1552.85, 'KEY_FCD': 77.64, 'Member.tension_capacity': 18.4, 'Member.Slenderness': 126.25, 'Member.efficiency': np.float64(0.05), 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(3.6), 'Bolt.Shear': np.float64(5.43), 'Bolt.Bearing': np.float64(8.2), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 11.16, 'Bolt.Force (kN)': 2.76, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(127.27), 'Plate.Rupture': np.float64(141.7), 'Plate.BlockShear': np.float64(54.54), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 773.0, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(3.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}}, 'chord': {'tension': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'Member.tension_yielding': 107.73, 'Member.tension_rupture': 89.55, 'Member.tension_blockshear': 45.0, 'Member.tension_capacity': 45.0, 'Member.Slenderness': 170.73, 'Member.efficiency': 0.08, 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(5.6), 'Bolt.Shear': 16.9, 'Bolt.Bearing': np.float64(22.83), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 16.9, 'Bolt.Force (kN)': 16.16, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(72.73), 'Plate.Rupture': np.float64(75.57), 'Plate.BlockShear': np.float64(60.0), 'Plate.Capacity': np.float64(60.0), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 676.67, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(5.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}, 'compression': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'KEY_EFFECTIVE_LENGTH': 1365.0, 'KEY_FCD': 93.43, 'Member.tension_capacity': 22.14, 'Member.Slenderness': 110.98, 'Member.efficiency': np.float64(0.04), 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(3.6), 'Bolt.Shear': np.float64(5.43), 'Bolt.Bearing': np.float64(8.2), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 11.16, 'Bolt.Force (kN)': 3.32, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(127.27), 'Plate.Rupture': np.float64(141.7), 'Plate.BlockShear': np.float64(54.54), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 676.67, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(3.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}}}, 'G3-G4': {'diagonal': {'tension': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'Member.tension_yielding': 107.73, 'Member.tension_rupture': 89.55, 'Member.tension_blockshear': 45.0, 'Member.tension_capacity': 45.0, 'Member.Slenderness': 194.23, 'Member.efficiency': 0.15, 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(5.6), 'Bolt.Shear': 16.9, 'Bolt.Bearing': np.float64(22.83), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 16.9, 'Bolt.Force (kN)': 16.16, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(72.73), 'Plate.Rupture': np.float64(75.57), 'Plate.BlockShear': np.float64(60.0), 'Plate.Capacity': np.float64(60.0), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 773.0, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(5.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}, 'compression': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'KEY_EFFECTIVE_LENGTH': 1552.85, 'KEY_FCD': 77.64, 'Member.tension_capacity': 18.4, 'Member.Slenderness': 126.25, 'Member.efficiency': np.float64(0.04), 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(3.6), 'Bolt.Shear': np.float64(5.43), 'Bolt.Bearing': np.float64(8.2), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 11.16, 'Bolt.Force (kN)': 2.76, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(127.27), 'Plate.Rupture': np.float64(141.7), 'Plate.BlockShear': np.float64(54.54), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 773.0, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(3.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}}, 'chord': {'tension': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'Member.tension_yielding': 107.73, 'Member.tension_rupture': 89.55, 'Member.tension_blockshear': 45.0, 'Member.tension_capacity': 45.0, 'Member.Slenderness': 170.73, 'Member.efficiency': 0.13, 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(5.6), 'Bolt.Shear': 16.9, 'Bolt.Bearing': np.float64(22.83), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 16.9, 'Bolt.Force (kN)': 16.16, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(72.73), 'Plate.Rupture': np.float64(75.57), 'Plate.BlockShear': np.float64(60.0), 'Plate.Capacity': np.float64(60.0), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 676.67, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(5.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}, 'compression': {'Parameter': 'Value', 'section_size.designation': '40 x 40 x 3', 'KEY_EFFECTIVE_LENGTH': 1365.0, 'KEY_FCD': 93.43, 'Member.tension_capacity': 22.14, 'Member.Slenderness': 110.98, 'Member.efficiency': np.float64(0.03), 'Bolt.Diameter': 8, 'Bolt.Grade_Provided': np.float64(3.6), 'Bolt.Shear': np.float64(5.43), 'Bolt.Bearing': np.float64(8.2), 'bolt.long_joint': 1.0, 'bolt.large_grip': 1.0, 'Bolt.Capacity': 11.16, 'Bolt.Force (kN)': 3.32, 'Plate.Thickness': 8, 'Plate.Height': 70, 'Plate.Length': 50, 'Plate.Yield': np.float64(127.27), 'Plate.Rupture': np.float64(141.7), 'Plate.BlockShear': np.float64(54.54), 'Intermittent.Connection': 2, 'Intermittent.Spacing': 676.67, 'Bolt.InterDiameter': 8, 'Bolt.InterGrade': np.float64(3.6), 'Bolt.InterLine': 1, 'Bolt.InterOneLine': 1, 'Plate.InterHeight': 40, 'Plate.InterLength': 30}}}}
+  end_diaphragm_results: {'G1-G2': {}, 'G2-G3': {}, 'G3-G4': {}}
+
+[Step 7/8] Verifying 3D CAD & Capturing Genuine Screenshots...
+  3D CAD Widget Visible: True
+  3D CAD Solid Model Generated: True
+  Captured Full Main Window: F:\FOSSEE internship\testing\evidence\phase_1d\01_end_to_end_design_full_window.png (79374 bytes)
+  Captured 3D CAD Viewport: F:\FOSSEE internship\testing\evidence\phase_1d\02_3d_cad_bridge_model.png (13485 bytes)
+
+[Step 8/8] Testing Formal PDF Design Report Generation...
+  Report Result Object: ReportResult(pdf_path='F:\\FOSSEE internship\\testing\\evidence\\phase_1d\\phase_1d_design_report.pdf', tex_path='F:\\FOSSEE internship\\testing\\evidence\\phase_1d\\phase_1d_design_report.tex')
+  SUCCESS: PDF Report generated: F:\FOSSEE internship\testing\evidence\phase_1d\phase_1d_design_report.pdf (402485 bytes)
+
+================================================================================
+PHASE 1D END-TO-END RUN COMPLETED SUCCESSFULLY!
+================================================================================

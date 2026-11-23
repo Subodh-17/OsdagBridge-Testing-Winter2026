@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-CAD-EXPORT-VS-SCREENSHOT",
+  "defect_id": "DEF-09 (Harness)",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.846,
+      "reason": "Native OCC offscreen Viewer3d.ExportToImage renders opaque 3D geometry (std=66.6, 3 colors)."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "b488b1a3676bbfa2988617f4ef9ec47c138cb8922db887ebbc6b7c214b685ab2",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.442,
+      "reason": "Native OCC offscreen Viewer3d.ExportToImage renders opaque 3D geometry (std=66.6, 3 colors)."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "d9cd7ff8656bf6a3592aa4dce24dd3b2c40d89f05fccb14adf0a456238ae0616",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.369,
+      "reason": "ExportToImage produced blank/uniform image (std=0.0, 1 colors)."
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

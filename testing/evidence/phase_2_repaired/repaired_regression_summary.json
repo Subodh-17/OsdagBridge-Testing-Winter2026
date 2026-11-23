@@ -1,0 +1,114 @@
+[
+  {
+    "test_id": "TC-REG-A01-FACTOR-SCALING",
+    "defect_id": "DEF-01 (Upstream ospgrillage)",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.00000 (expected 1.35000).",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_a01_factor_scaling.log"
+  },
+  {
+    "test_id": "TC-REG-B01-SECTION-PROPERTY-SYNC",
+    "defect_id": "DEF-03",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-03 Confirmed: Grillage members retain preliminary sizing (assigned Iz=0.00734091 m4 vs snapped 0.00792758 m4, diff 7.40%); input dict dw=1306.0mm is stale vs true snapped 1304.0mm.",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_b01_section_property_sync.log"
+  },
+  {
+    "test_id": "TC-REG-C01-SECTIONAL-STRESS-RANGE",
+    "defect_id": "DEF-07",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-07 Confirmed: _extract_demands_from_analysis_results flattens opposite element end signs Mz_i and Mz_j, doubling M0 to 2*M0 (2000.0 kNm) and yielding 125.46 MPa under a single static load case (expected 0.0 MPa).",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_c01_sectional_stress_range.log"
+  },
+  {
+    "test_id": "TC-REG-A02-ULS-COMBINATION-SUM",
+    "defect_id": "DEF-01 / DEF-02",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-01 / DEF-02 Confirmed: create_sidl_combination() was never invoked (sidl_combination is None)",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_a02_uls_combination_sum.log"
+  },
+  {
+    "test_id": "TC-REG-D01-WIND-SPEED-PROPAGATION",
+    "defect_id": "DEF-05",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-05 Confirmed: Wind parameters dropped to fallbacks (speed=33.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2) because plategirderbridge.py:1381 reads un-prefixed bare keys.",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_d01_wind_speed_propagation.log"
+  },
+  {
+    "test_id": "TC-REG-D02-TEMPERATURE-PROPAGATION",
+    "defect_id": "DEF-06",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-06 Confirmed: add_temperature_load() looks for 'temperature_load_kN_m2', which no UI field or standard input generates; temperature load case is silently skipped (None).",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_d02_temperature_propagation.log"
+  },
+  {
+    "test_id": "TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS",
+    "defect_id": "DEF-17",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-17 Confirmed: add_vehicle_load_cases_from_combinations() only generates Class A and Class 70R vehicle combinations; IRC 6 Cl. 204.6 fatigue vehicle load case is completely omitted.",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_c02_fatigue_vehicle_analysis.log"
+  },
+  {
+    "test_id": "TC-REG-RPT-EXEC-SUMMARY-STATUS",
+    "defect_id": "DEF-08",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally despite failing design status in output dictionary.",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_rpt_exec_summary_status.log"
+  },
+  {
+    "test_id": "TC-REG-GEO-GIRDER-COUNT-ALIGNMENT",
+    "defect_id": "DEF-11",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (6), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge.",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_geo_girder_count_alignment.log"
+  },
+  {
+    "test_id": "TC-REG-GEO-SLAB-SECTION-PROPERTIES",
+    "defect_id": "DEF-14",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-14 Confirmed: plategirderbridge.py:1285 assigns exactly Iz/2 (0.00367046 m4) and A/2 (0.01126717 m2) of the preliminary steel girder to the transverse concrete deck slab.",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_geo_slab_section_properties.log"
+  },
+  {
+    "test_id": "TC-REG-CAP-STIFFENER-BUCKLING",
+    "defect_id": "DEF-12",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-12 Confirmed: bs_Fcdw_wb_kN evaluates to 134083.2 kN (69.9x the maximum possible yield capacity of the web strip) due to unreduced Euler elastic stress using mixed stiffener inertia Iys.",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_cap_stiffener_buckling.log"
+  },
+  {
+    "test_id": "TC-REG-MAT-DENSITY-CONSISTENCY",
+    "defect_id": "DEF-13",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-13 Confirmed: Self-weight load resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN).",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_mat_density_consistency.log"
+  },
+  {
+    "test_id": "TC-REG-FS-CLEAN-WORKING-TREE",
+    "defect_id": "DEF-10",
+    "status": "FAIL",
+    "expected_baseline": "FAIL",
+    "reason": "DEF-10 Confirmed: Database() defaults to relative path 'weather.sqlite', creating an unanchored SQLite file (180224 bytes) in the local execution directory instead of isolated user app data.",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_fs_clean_working_tree.log"
+  },
+  {
+    "test_id": "TC-REG-CAD-EXPORT-VS-SCREENSHOT",
+    "defect_id": "DEF-09 (Harness Flaw vs Application API)",
+    "status": "PASS",
+    "expected_baseline": "PASS",
+    "reason": "Application CAD export API (Viewer3d.ExportToImage) produces fully rendered opaque geometry. (The 92.95% transparent PNG in Phase 1D was a test harness artifact).",
+    "log_path": "F:\\FOSSEE internship\\testing\\evidence\\phase_2_repaired\\tc_reg_cad_export_vs_screenshot.log"
+  }
+]

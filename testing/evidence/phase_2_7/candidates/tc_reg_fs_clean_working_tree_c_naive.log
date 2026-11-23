@@ -1,0 +1,23 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-FS-CLEAN-WORKING-TREE
+DEFECT IDENTIFIER:      DEF-10 (Filesystem/Packaging)
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     10.470 s
+TIMESTAMP UTC:          2026-11-16T18:43:11.713312+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-10 Confirmed: Database() default constructor creates unanchored weather.sqlite in cwd
+
+EXECUTION DETAILS & TRACE:
+Real package data directory: F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\data\project_location
+Package root directory:      F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge
+Package relative loc dir:    core\data\project_location
+Recursive package snapshot detector verified: 491 files inventoried across all subtrees.
+Check 1: Production DB_PATH: 'C:\Users\Subodh\AppData\Local\Temp\OsdagBridgeAppData\weather.sqlite' (Inside package tree: False, Dir writable: True)
+Check 2: Default Database().db_name: 'weather.sqlite' (Unanchored in cwd: True, In package: False)
+Check 3: Package tree mutated during production calls: False (New files: [], Mutated: []) | Queries OK: True (States: 32, MaxTemp: 48.2)
+Check 4: Vulnerable to read-only package installation: False (Real OS permissions applied: True)
+Check 5: Real application repository clean: True (New: [], Mutated: [])

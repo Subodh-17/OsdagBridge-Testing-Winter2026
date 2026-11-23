@@ -1,0 +1,17 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-RPT-EXEC-SUMMARY-STATUS
+DEFECT IDENTIFIER:      DEF-08
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     4.226 s
+TIMESTAMP UTC:          2026-11-17T14:43:51.250062+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-08 Confirmed: executive_summary() emits literal '\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 54/74 scenarios: Scenario 2 (G2 Moment Fail), Scenario 2 (G2 Shear Fail), Scenario 2 (G2 Stiffener Fail), Scenario 2 (G2 Fatigue Fail), Scenario 2 (G3 Moment Fail), Scenario 2 (G3 Shear Fail), Scenario 2 (G3 Stiffener Fail), Scenario 2 (G3 Fatigue Fail), Scenario 2 (G4 Moment Fail), Scenario 2 (G4 Shear Fail), Scenario 2 (G4 Stiffener Fail), Scenario 2 (G4 Fatigue Fail), Scenario 2 (G5 Moment Fail), Scenario 2 (G5 Shear Fail), Scenario 2 (G5 Stiffener Fail), Scenario 2 (G5 Fatigue Fail), Scenario 2 (G6 Moment Fail), Scenario 2 (G6 Shear Fail), Scenario 2 (G6 Stiffener Fail), Scenario 2 (G6 Fatigue Fail), Scenario 3 (G2 DCR Moment > 1.0), Scenario 3 (G2 DCR Shear > 1.0), Scenario 3 (G2 DCR Stiffener > 1.0), Scenario 3 (G2 DCR Fatigue > 1.0), Scenario 3 (G3 DCR Moment > 1.0), Scenario 3 (G3 DCR Shear > 1.0), Scenario 3 (G3 DCR Stiffener > 1.0), Scenario 3 (G3 DCR Fatigue > 1.0), Scenario 3 (G4 DCR Moment > 1.0), Scenario 3 (G4 DCR Shear > 1.0), Scenario 3 (G4 DCR Stiffener > 1.0), Scenario 3 (G4 DCR Fatigue > 1.0), Scenario 3 (G5 DCR Moment > 1.0), Scenario 3 (G5 DCR Shear > 1.0), Scenario 3 (G5 DCR Stiffener > 1.0), Scenario 3 (G5 DCR Fatigue > 1.0), Scenario 3 (G6 DCR Moment > 1.0), Scenario 3 (G6 DCR Shear > 1.0), Scenario 3 (G6 DCR Stiffener > 1.0), Scenario 3 (G6 DCR Fatigue > 1.0), Scenario 4 (CB P1/M1 First Member Fail), Scenario 4 (CB P1/M2 Middle Member Fail), Scenario 4 (CB P1/M3 Last Member Fail), Scenario 4 (CB P2/M1 Panel 2 Member Fail), Scenario 5 (ED P1/M1 First Member Fail), Scenario 5 (ED P1/M2 Middle Member Fail), Scenario 5 (ED P1/M3 Last Member Fail), Scenario 6 (Deck Moment-Only Fail), Scenario 6 (Deck Shear-Only Fail), Scenario 6 (Deck Moment & Shear Fail), Scenario 6B (Deck UR = 1.001 Boundary FAIL), Scenario 7 (Multi Fail: G3 Stiffener + CB P1/M3 + Deck Shear), Scenario 8 (CB eff = 1.001 Boundary FAIL), Scenario 9 (ED eff = 1.001 Boundary FAIL).
+
+EXECUTION DETAILS & TRACE:
+Scenario 1 (All Pass): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS, Table=Pass -> Ok: True
+Scenario 2 (G1-G6 Moment, Shear, Stiffener Buckling & Fatigue Matrix): 24 sub-scenarios evaluated.
+Scenario 3 (G1-G6 DCR-Only Failures across 4 check types): 24 sub-scenarios evaluated.

@@ -1,0 +1,35 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-C01-SECTIONAL-STRESS-RANGE
+DEFECT IDENTIFIER:      DEF-07
+RESULT STATUS:          PASS
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.412 s
+TIMESTAMP UTC:          2026-11-16T18:40:37.368602+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        Fatigue stress ranges correctly evaluate to 0.0 MPa on static load, 62.73 MPa on positive cyclic, 125.45 MPa on bidirectional sign reversal, and 0.0 MPa across shared node envelope.
+
+EXECUTION DETAILS & TRACE:
+OpenSees simply supported beam sign proof at shared Node 2:
+  Element 1 end j moment: +12500.0 N*m
+  Element 2 end i moment: -12500.0 N*m (opposite signs proved)
+Static Case (M0 = 1000 kNm):
+  Path (a) Envelope stress range: 0.000 MPa (expected 0.0 MPa)
+  Path (b) Per-LC stress range:    0.000 MPa (expected 0.0 MPa)
+Authentic Code-Defined Fatigue Capacity (IRC 22 Cl. 605.4):
+  f_fd_eff: 92.491 MPa (Nsc = 2,000,000 cycles, welded fabrication, gamma_mft = 1.35)
+Positive Cyclic Case (M_min = 500 kNm, M_max = 1500 kNm):
+  Path (a) Envelope Stress Range: 62.729 MPa (expected 62.729 MPa)
+  Path (b) Per-LC Stress Range:    62.729 MPa (expected 62.729 MPa)
+  Fatigue Utilization DCR:         0.6782 (expected 0.6782)
+Static Case Utilization DCR:       0.0000 (expected 0.0000)
+Sign-Reversal Cyclic Case (M = -500 kNm to +1500 kNm, delta_M = 2000 kNm):
+  Hogging -> Sagging Envelope Stress Range: 125.458 MPa (expected 125.450 MPa)
+  Sagging -> Hogging Envelope Stress Range: 125.458 MPa (expected 125.450 MPa)
+  Per-LC Stress Range:                      125.458 MPa (expected 125.450 MPa)
+  Fatigue Utilization DCR:                   1.3564 (expected 1.3563)
+Cross-End Shared Node Sign Harmonization Probe at Node 2:
+  Element 1 end j: +1000000.0 N*m | Element 2 end i: -1000000.0 N*m
+  Harmonized Physical Moment Diff: 0.0 N*m -> Static Range: 0.000 MPa (OK: True)

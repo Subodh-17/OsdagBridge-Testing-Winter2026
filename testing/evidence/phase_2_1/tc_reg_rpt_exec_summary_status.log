@@ -1,0 +1,18 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-RPT-EXEC-SUMMARY-STATUS
+DEFECT IDENTIFIER:      DEF-08
+RESULT STATUS:          FAIL
+EXPECTED ON BASELINE:   FAIL
+EXECUTION DURATION:     0.086 s
+TIMESTAMP UTC:          2026-11-16T10:09:07.410048+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+OSDAGBRIDGE MODULE:     None
+REASON / SUMMARY:       DEF-08 Confirmed: executive_summary() emits literal '\noindent Girder design pass' unconditionally under Key Design Outcomes Summary despite a failing fatigue check (DCR = 1.9746).
+================================================================================
+
+--- DETAILED EXECUTION LOG ---
+Case A (Failing Design DCR=1.97): Status table contains 'Fail': True
+Case A: Emits unconditional '\noindent Girder design pass': True
+Case B (Passing Mirror): Status table contains 'Pass': True
+Case B: Emits '\noindent Girder design pass': True

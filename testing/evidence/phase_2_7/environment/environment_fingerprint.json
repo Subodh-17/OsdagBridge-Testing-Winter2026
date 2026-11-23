@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-11-16T18:46:49Z",
+  "python_version": "3.12.16 | packaged by conda-forge | (main, Oct 26 2026, 11:29:01) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Subodh\\miniconda3\\envs\\osdagbridge-py312\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "machine": "AMD64",
+  "baseline_commit": "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
+  "branch": "dev",
+  "packages": {
+    "OCC": "8.0.1",
+    "openseespy": "3.8.0.0",
+    "ospgrillage": "0.6.0",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "xarray": "2026.9.0",
+    "PIL": "13.0.0"
+  },
+  "databases": {
+    "Intg_osdag.sqlite": {
+      "path": "source/OsdagBridge/src/osdagbridge/core/data/ResourceFiles/Intg_osdag.sqlite",
+      "sha256": "25f978575be64a11ce2e00562c7513c215a33ba26ea9da795171343c74d9ea91",
+      "size_bytes": 270336
+    },
+    "weather.sqlite": {
+      "path": "source/OsdagBridge/src/osdagbridge/core/data/project_location/weather.sqlite",
+      "sha256": "1d767658099bef9da035cd8e4c4fdfa5f8e83794a6756a7832bc824b67cd7e98",
+      "size_bytes": 180224
+    }
+  }
+}

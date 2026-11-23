@@ -1,0 +1,30 @@
+{
+  "test_id": "TC-REG-GEO-SLAB-SECTION-PROPERTIES",
+  "defect_id": "DEF-14",
+  "is_blocked": true,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.005,
+      "reason": "DEC-013 Pending: Transverse deck slab representation is undecided in project documentation. Baseline assigns girder/2 (Iz=0.00367 m4), which is mechanically invalid for concrete deck, but exact transformed vs concrete material and cracked/torsion model requires engineering sign-off."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.0,
+      "reason": "DEC-013 Pending: Transverse deck slab representation model undecided"
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.0,
+      "reason": "DEC-013 Pending: Transverse deck slab representation model undecided"
+    }
+  },
+  "sensitivity_verified": false,
+  "sensitivity_status": "BLOCKED / NOT DEMONSTRATED"
+}

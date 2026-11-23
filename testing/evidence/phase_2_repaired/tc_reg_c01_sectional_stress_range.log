@@ -1,0 +1,10 @@
+TEST IDENTIFIER: TC-REG-C01-SECTIONAL-STRESS-RANGE
+DEFECT IDENTIFIER: DEF-07
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-07 Confirmed: _extract_demands_from_analysis_results flattens opposite element end signs Mz_i and Mz_j, doubling M0 to 2*M0 (2000.0 kNm) and yielding 125.46 MPa under a single static load case (expected 0.0 MPa).
+
+--- DETAILED EXECUTION LOG ---
+Static sagging moment applied: M0 = 1000.0 kNm
+Element end moments: Mz_i = +1000.0 kNm, Mz_j = -1000.0 kNm
+Stress range computed by _extract_demands_from_analysis_results: 125.458 MPa

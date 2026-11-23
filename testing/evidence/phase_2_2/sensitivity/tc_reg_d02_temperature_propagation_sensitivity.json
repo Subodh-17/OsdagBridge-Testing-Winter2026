@@ -1,0 +1,30 @@
+{
+  "test_id": "TC-REG-D02-TEMPERATURE-PROPAGATION",
+  "defect_id": "DEF-06",
+  "is_blocked": true,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.048,
+      "reason": "DEC-015 Pending: Thermal load modeling (IRC 6 Cl. 215) is undecided in project specifications. add_temperature_load() reads unpopulated 'temperature_load_kN_m2' and leaves temperature_load_case as None."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.0,
+      "reason": "DEC-015 Pending: Thermal modeling undecided under IRC 6 Cl. 215"
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "BLOCKED",
+      "expected_status": "BLOCKED",
+      "duration_sec": 0.0,
+      "reason": "DEC-015 Pending: Thermal modeling undecided under IRC 6 Cl. 215"
+    }
+  },
+  "sensitivity_verified": false,
+  "sensitivity_status": "BLOCKED / NOT DEMONSTRATED"
+}

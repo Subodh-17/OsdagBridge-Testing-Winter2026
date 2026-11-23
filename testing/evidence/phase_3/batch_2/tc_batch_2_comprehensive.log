@@ -1,0 +1,80 @@
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+test_tc_b2_01_line_scale_uniform (__main__.TestBatch2Comprehensive.test_tc_b2_01_line_scale_uniform)
+TC-B2-01: Line force conservation across mesh densities (dx = 1.0, 2.0 m). ... ok
+test_tc_b2_02_line_small_mag (__main__.TestBatch2Comprehensive.test_tc_b2_02_line_small_mag)
+TC-B2-02: Micro-load magnitude scaling and first-bay inclusion (w = 1.0 N/m). ... ok
+test_tc_b2_03_line_asymmetric_partial (__main__.TestBatch2Comprehensive.test_tc_b2_03_line_asymmetric_partial)
+TC-B2-03: Partial line load equilibrium and centroid (x in [4, 16] m). ... ok
+test_tc_b2_04_line_trapezoidal (__main__.TestBatch2Comprehensive.test_tc_b2_04_line_trapezoidal)
+TC-B2-04: Trapezoidal intensity integration (w1 = 2000, w2 = 8000 N/m). ... ok
+test_tc_b2_05_line_skew_varying (__main__.TestBatch2Comprehensive.test_tc_b2_05_line_skew_varying)
+TC-B2-05: Skew line varying intensity force, 2D centroid, and reaction equilibrium. ... ok
+test_tc_b2_06_line_first_bay_offset (__main__.TestBatch2Comprehensive.test_tc_b2_06_line_first_bay_offset)
+TC-B2-06: First end-bay load point placed inside cell [0, 1.5] at x = 0.75 m. ... ok
+test_tc_b2_07_patch_corner_dedup (__main__.TestBatch2Comprehensive.test_tc_b2_07_patch_corner_dedup)
+TC-B2-07: Uniform patch eliminates corner duplication (A = 200 m2, P = 400 kN). ... ok
+test_tc_b2_08_patch_interior_partial (__main__.TestBatch2Comprehensive.test_tc_b2_08_patch_interior_partial)
+TC-B2-08: Partial interior patch equilibrium and centroid (A = 54 m2, P = 81 kN). ... ok
+test_tc_b2_09_negative_out_of_mesh (__main__.TestBatch2Comprehensive.test_tc_b2_09_negative_out_of_mesh)
+TC-B2-09: Fail-closed out-of-mesh exception (raises ValueError). ... ok
+test_tc_b2_10_fe_barrier_equilibrium (__main__.TestBatch2Comprehensive.test_tc_b2_10_fe_barrier_equilibrium)
+TC-B2-10: Full-bridge crash barrier static equilibrium (313.920 kN). ... F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+ok
+test_tc_b2_11_fe_deck_slab_equil (__main__.TestBatch2Comprehensive.test_tc_b2_11_fe_deck_slab_equil)
+TC-B2-11: Full-bridge deck slab static equilibrium (1275.000 kN). ... ok
+test_tc_b2_12_fe_overlay_equil (__main__.TestBatch2Comprehensive.test_tc_b2_12_fe_overlay_equil)
+TC-B2-12: Full-bridge wearing course static equilibrium (244.800 kN). ... ok
+test_tc_b2_13_regression_batch1 (__main__.TestBatch2Comprehensive.test_tc_b2_13_regression_batch1)
+TC-B2-13: Invariance of Batch 1 defect remediations (DEF-12, DEF-08, DEF-11). ... ok
+test_tc_b2_14_line_all_bays (__main__.TestBatch2Comprehensive.test_tc_b2_14_line_all_bays)
+TC-B2-14: Complete 16/16 bay force contribution for uniform longitudinal line load. ... ok
+test_tc_b2_15_line_triangle (__main__.TestBatch2Comprehensive.test_tc_b2_15_line_triangle)
+TC-B2-15: Triangular load peak at p2 centroid at 2/3 L. ... ok
+test_tc_b2_16_patch_nonaligned (__main__.TestBatch2Comprehensive.test_tc_b2_16_patch_nonaligned)
+TC-B2-16: Non-grid-aligned patch load area and force conservation (239.4 kN). ... ok
+test_tc_b2_17_zero_crossing_failsafe (__main__.TestBatch2Comprehensive.test_tc_b2_17_zero_crossing_failsafe)
+TC-B2-17: Zero-crossing partitioning, force neutrality, and moment conservation. ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 18.855s
+
+OK

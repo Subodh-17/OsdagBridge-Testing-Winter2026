@@ -1,0 +1,28 @@
+{
+  "test_id": "TC-REG-CAP-STIFFENER-BUCKLING",
+  "defect_id": "DEF-12",
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.047,
+      "reason": "DEF-12 Confirmed: capacity 134083.2 kN exceeds squash bound 1918.8 kN (69.9x); elastic stress 22233.9 MPa exceeds yield bound 318.2 MPa; capacity 134083.2 kN fails positive IS 800 oracle 63.4 kN"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.048,
+      "reason": "Web buckling capacity (63.4 kN) satisfies IS 800 Cl. 8.7.3.1 oracle (63.4 kN)."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.091,
+      "reason": "DEF-12 Confirmed: capacity 1918.8 kN fails positive IS 800 oracle 63.4 kN"
+    }
+  },
+  "sensitivity_verified": true
+}

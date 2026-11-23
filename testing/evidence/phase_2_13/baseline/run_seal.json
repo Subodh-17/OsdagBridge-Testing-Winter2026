@@ -1,0 +1,12 @@
+{
+  "run_uuid": "fb966e81-b715-4208-98c7-c258b7eb08fd",
+  "phase_label": "Phase 2.13 Baseline (baseline)",
+  "runner_id": "baseline_runner",
+  "timestamp_utc": "2026-11-17T17:37:54.620312+00:00",
+  "evidence_dir": "F:/FOSSEE internship/testing/evidence/phase_2_13/baseline",
+  "total_files": 19,
+  "total_bytes": 71441,
+  "manifest_path": "F:/FOSSEE internship/testing/evidence/phase_2_13/baseline/manifest_hashes.json",
+  "manifest_sha256": "b8711d3c777c2d53375dd23942238f86821e4fb3eebe5461c5b59f0056d91e38",
+  "signature": "5fbbcf4d1fcd75f564f1714de68b771de780ae70fd46f38b76541dfa581bb916"
+}

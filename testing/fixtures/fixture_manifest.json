@@ -1,0 +1,16 @@
+{
+  "phase": "2.5",
+  "baseline_commit": "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
+  "branch": "dev",
+  "python_version": "3.12",
+  "environment": "osdagbridge-py312",
+  "fixtures": {
+    "base_config": "testing/fixtures/base_config.json",
+    "phase_1d_input": "testing/evidence/phase_1d/input_configuration.json",
+    "phase_1d_output": "testing/evidence/phase_1d/output_dictionary_snapshot.json"
+  },
+  "databases": {
+    "Intg_osdag.sqlite": "source/OsdagBridge/src/osdagbridge/core/data/ResourceFiles/Intg_osdag.sqlite",
+    "weather.sqlite": "source/OsdagBridge/src/osdagbridge/core/data/project_location/weather.sqlite"
+  }
+}

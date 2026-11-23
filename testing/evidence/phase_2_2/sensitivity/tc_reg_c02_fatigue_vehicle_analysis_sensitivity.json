@@ -1,0 +1,30 @@
+{
+  "test_id": "TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS",
+  "defect_id": "DEF-17",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 1.829,
+      "reason": "DEF-17 Confirmed: Moving vehicle cases generated 2 (Class A and 70R only); IRC 6 Cl. 204.6 fatigue vehicle missing"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 6.048,
+      "reason": "IRC 6 Cl. 204.6 fatigue vehicle moving load case generated (40t = 392.4 kN) and participates in analysis."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 8.884,
+      "reason": "DEF-17 Confirmed: Fatigue vehicle axle specifications do not match 40-tonne vehicle (12t/14t/14t)"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

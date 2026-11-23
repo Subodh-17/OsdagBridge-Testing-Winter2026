@@ -1,0 +1,12 @@
+TEST IDENTIFIER: TC-REG-D01-WIND-SPEED-PROPAGATION
+DEFECT IDENTIFIER: DEF-05
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: All 4 wind parameters dropped and defaulted to fallbacks (speed=33.0, barrier_h=0.0) because line 1381 reads un-prefixed keys.
+
+--- EXECUTION DETAILS ---
+Intercepted create_wind_load arguments:
+  basic_wind_speed:     33.0 (Input: 47.0, Fallback: 33.0)
+  height_for_pz:        10.0 (Input: 15.0, Fallback: 10.0)
+  crash_barrier_height: 0.0 (Input: 1.1, Fallback: 0.0)
+  railing_height:       0.0 (Input: 1.2, Fallback: 0.0)

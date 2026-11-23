@@ -1,0 +1,28 @@
+{
+  "test_id": "TC-REG-RPT-EXEC-SUMMARY-STATUS",
+  "defect_id": "DEF-08",
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.089,
+      "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally under Key Design Outcomes Summary despite a failing fatigue check (DCR = 1.9746)."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.124,
+      "reason": "Executive summary outcomes reflect actual design pass/fail results without unconditional statements."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.068,
+      "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally under Key Design Outcomes Summary despite a failing fatigue check (DCR = 1.9746)."
+    }
+  },
+  "sensitivity_verified": true
+}

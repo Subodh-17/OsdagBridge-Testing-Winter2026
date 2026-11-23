@@ -1,0 +1,39 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-EQ-LOAD-CONSERVATION
+DEFECT IDENTIFIER:      DEF-18
+RESULT STATUS:          PASS
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     3.259 s
+TIMESTAMP UTC:          2026-11-16T15:35:58.513871+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        Static equilibrium conserved: all support reactions match applied physical dead loads within 0.5%.
+
+EXECUTION DETAILS & TRACE:
+Static Equilibrium Audit (Sum of Support Reactions vs Applied Physical Load):
+  [SW] Girder Self-Weight:
+      Applied Load:        169.819 kN
+      Support Reaction:    169.819 kN
+      Difference:           -0.000 kN ( -0.00%)
+      Equilibrium OK:   True
+  [DD] Deck Slab:
+      Applied Load:       1275.000 kN
+      Support Reaction:   1275.000 kN
+      Difference:           +0.000 kN ( +0.00%)
+      Equilibrium OK:   True
+  [1.0 DW] Wearing Course:
+      Applied Load:        244.800 kN
+      Support Reaction:    244.800 kN
+      Difference:           +0.000 kN ( +0.00%)
+      Equilibrium OK:   True
+  [Crash barrier load] Crash Barrier:
+      Applied Load:        313.920 kN
+      Support Reaction:    313.920 kN
+      Difference:           +0.000 kN ( +0.00%)
+      Equilibrium OK:   True
+  Total Dead Load Resultants:
+      Total Applied:      2003.539 kN
+      Total Reaction:     2003.539 kN
+      Net Shortfall:        -0.000 kN ( -0.00%)

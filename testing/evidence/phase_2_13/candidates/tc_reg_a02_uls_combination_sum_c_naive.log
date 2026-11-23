@@ -1,0 +1,45 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-A02-ULS-COMBINATION-SUM
+DEFECT IDENTIFIER:      DEF-01 / DEF-02
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     25.142 s
+TIMESTAMP UTC:          2026-11-17T17:39:09.803339+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=206667.2N, vs unfactored=1.34e+05N); Total reaction 1736.6kN does not match superposition target 2710.2kN; Crash barrier load omitted from BASIC_1 combination; Analyzed reaction 1736.6kN does not match theoretical applied resultant 2711.7kN; Component reaction deviations: SW reaction 169.8kN != oracle 165.3kN, DD reaction 1314.4kN != oracle 1249.5kN, DW reaction 252.4kN != oracle 216.0kN, CB reaction 196.2kN != oracle 313.9kN
+
+EXECUTION DETAILS & TRACE:
+Identified ULS Combination Case: 'BASIC_1: 1.35DL + 1.75DW'
+  Component reaction [SW]: 169.819 kN
+  Component reaction [DD]: 1314.375 kN
+  Component reaction [Crash barrier load]: 196.200 kN
+  Component reaction [1.0 DW]: 252.360 kN
+Independently Derived Applied ULS Resultant: 2711.74 kN
+  Inputs: L=24.00m, W_deck=8.50m, W_cw=7.50m, SW=165.28kN, DD=1249.50kN, DW=216.00kN, CB=313.92kN
+Reaction Superposition Target:       2710.16 kN (Linearity check from FE components)
+Total Support Vertical Reaction in BASIC_1:
+  Case-Specific Analyzed Reaction:     1736.55 kN
+  Run-Time Component Superposition:    2710.16 kN
+  Theoretical Applied Load Resultant:  2711.74 kN
+  Discrepancy vs Superposition Target: 973.61 kN
+  Discrepancy vs Applied Target:       975.19 kN
+Finite Element Shear Discrepancy vs Factored: 206667.2 N
+Finite Element Shear Error vs Un-factored:   1.34e+05 N
+Finite Element Moment Discrepancy vs Factored: 987977.6 N*m
+Crash Barrier Load Force Presence in BASIC_1:
+  Observed Barrier Contribution: -708.74 kN (Expected: 264.87 kN)
+  Barrier Presence Verified:     False
+Component Reaction Checks (Independent Oracles):
+  SW Reaction: 169.82 kN vs Oracle 165.28 kN -> OK: False
+  DD Reaction: 1314.38 kN vs Oracle 1249.50 kN -> OK: False
+  DW Reaction: 252.36 kN vs Oracle 216.00 kN -> OK: False
+  CB Reaction: 196.20 kN vs Oracle 313.92 kN -> OK: False
+Combination Checks Summary:
+  [MANDATORY] Superposition Linearity (R == 1.35*R_DL + 1.75*R_DW): False
+  [MANDATORY] Internal Force Factoring (Vy & Mz):                    False
+  [MANDATORY] Barrier Load Inclusion:                                False
+  [MANDATORY] Applied Factored Resultant (2711.74 kN +- 0.5%):      False (diff: 975.19 kN)
+  [MANDATORY] Component Reaction Accuracy (SW, DD, DW, CB):         False

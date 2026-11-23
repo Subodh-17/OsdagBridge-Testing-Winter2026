@@ -1,0 +1,19 @@
+{
+  "python_version": "3.12.16",
+  "python_executable": "C:\\Users\\Subodh\\miniconda3\\envs\\osdagbridge-py312\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "system": "Windows",
+  "release": "11",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "openseespy_version": "present",
+  "numpy_version": "2.5.5",
+  "scipy_version": "1.18.1",
+  "xarray_version": "2026.9.0",
+  "OCC_version": "present",
+  "PIL_version": "13.0.0",
+  "Intg_osdag.sqlite_sha256": "25f978575be64a11ce2e00562c7513c215a33ba26ea9da795171343c74d9ea91",
+  "Intg_osdag.sqlite_size": 270336,
+  "weather.sqlite_sha256": "1d767658099bef9da035cd8e4c4fdfa5f8e83794a6756a7832bc824b67cd7e98",
+  "weather.sqlite_size": 180224
+}

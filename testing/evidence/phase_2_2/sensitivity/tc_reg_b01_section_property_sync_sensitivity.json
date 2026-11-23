@@ -1,0 +1,30 @@
+{
+  "test_id": "TC-REG-B01-SECTION-PROPERTY-SYNC",
+  "defect_id": "DEF-03",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.059,
+      "reason": "DEF-03 Confirmed: Dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm; Solver girder sections retain preliminary sizing: Iz gap ~7.40%, A gap ~10.55%; Analysed deflection 7.82mm deviates from snapped target 7.22mm"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.073,
+      "reason": "Solver-side sections and analysed stiffness response synchronize with snapped section."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.058,
+      "reason": "DEF-03 Confirmed: Dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm; Solver girder sections retain preliminary sizing: Iz gap ~7.40%, A gap ~10.55%; Analysed deflection 7.82mm deviates from snapped target 7.22mm"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

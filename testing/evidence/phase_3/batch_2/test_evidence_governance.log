@@ -1,0 +1,75 @@
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+test_01_missing_evidence_dir_fails_closed (__main__.TestEvidenceGovernanceAdversarial.test_01_missing_evidence_dir_fails_closed)
+Vector 1: Invocation without evidence directory or with empty string must fail closed. ... ok
+test_02_protected_historical_phase_rejected (__main__.TestEvidenceGovernanceAdversarial.test_02_protected_historical_phase_rejected)
+Vector 2: Direct path targeting any historical phase directory must be refused. ... ok
+test_03_path_traversal_targeting_protected_phases_rejected (__main__.TestEvidenceGovernanceAdversarial.test_03_path_traversal_targeting_protected_phases_rejected)
+Vector 3: Traversal patterns like active/../../phase_2_6/baseline must be detected and blocked. ... ok
+test_04_case_variant_targeting_protected_phases_rejected (__main__.TestEvidenceGovernanceAdversarial.test_04_case_variant_targeting_protected_phases_rejected)
+Vector 4: Case variants like PHASE_2_6 or Phase_2_7 must be caught on Windows/POSIX. ... ok
+test_05_symlink_or_junction_to_protected_phase_rejected (__main__.TestEvidenceGovernanceAdversarial.test_05_symlink_or_junction_to_protected_phase_rejected)
+Vector 5: Symlinks or junctions pointing into protected phase directories must be caught. ... ok
+test_06_populated_directory_reuse_rejected_by_default (__main__.TestEvidenceGovernanceAdversarial.test_06_populated_directory_reuse_rejected_by_default)
+Vector 6: Reusing an existing populated evidence directory without allow_existing=True fails. ... ok
+test_07_baseline_runner_cli_fails_on_protected_phase (__main__.TestEvidenceGovernanceAdversarial.test_07_baseline_runner_cli_fails_on_protected_phase)
+Vector 7: Executing baseline runner with protected phase directory exits with code 1. ... ok
+test_08_sensitivity_runner_cli_fails_on_protected_phase (__main__.TestEvidenceGovernanceAdversarial.test_08_sensitivity_runner_cli_fails_on_protected_phase)
+Vector 8: Executing sensitivity runner with protected candidates directory exits with code 1. ... ok
+test_09_process_lifetime_job_containment (__main__.TestEvidenceGovernanceAdversarial.test_09_process_lifetime_job_containment)
+Vector 9: ProcessLifetimeJob contains child processes and reports process counts accurately. ... ok
+test_10_post_manifest_tamper_detection (__main__.TestEvidenceGovernanceAdversarial.test_10_post_manifest_tamper_detection)
+Vector 10: Modifying an evidence file after manifest sealing is immediately detected. ... ok
+test_11_direct_test_function_write_rejected_at_write_time (__main__.TestEvidenceGovernanceAdversarial.test_11_direct_test_function_write_rejected_at_write_time)
+Vector 11: Direct test-function calls with protected evidence_dir fail at write time. ... ok
+test_12_direct_logger_write_rejected_at_write_time (__main__.TestEvidenceGovernanceAdversarial.test_12_direct_logger_write_rejected_at_write_time)
+Vector 12: Direct calls to log_test_result with protected evidence_dir fail at write time. ... ok
+test_13_toctou_symlink_swap_rejected_at_write_time (__main__.TestEvidenceGovernanceAdversarial.test_13_toctou_symlink_swap_rejected_at_write_time)
+Vector 13: Canonical realpath validation catches directory symlinks created after startup. ... ok
+test_14_protected_directories_include_baseline_repaired_and_phase_2_11 (__main__.TestEvidenceGovernanceAdversarial.test_14_protected_directories_include_baseline_repaired_and_phase_2_11)
+Vector 14: Historical directories list contains phase_2_11, phase_2_baseline, phase_2_repaired. ... ok
+test_15_non_destructive_toctou_defense_never_truncates (__main__.TestEvidenceGovernanceAdversarial.test_15_non_destructive_toctou_defense_never_truncates)
+Vector 15: If an attacker swaps directory to a protected target, the target file is NEVER truncated. ... ok
+test_16_windows_assign_before_execute_job_spawn (__main__.TestEvidenceGovernanceAdversarial.test_16_windows_assign_before_execute_job_spawn)
+Vector 16: job.spawn() assigns process to Job Object before primary thread execution. ... ok
+test_17_extended_delayed_write_probes_contained (__main__.TestEvidenceGovernanceAdversarial.test_17_extended_delayed_write_probes_contained)
+Vector 17: Extended delayed writes (3s, 8s, 15s) are cleanly intercepted and contained on job exit. ... ok
+test_18_eq_barrier_load_oracle_dynamic_derivation (__main__.TestEvidenceGovernanceAdversarial.test_18_eq_barrier_load_oracle_dynamic_derivation)
+Vector 18: EQ oracle and production crash_barrier_load_from_inputs dynamically propagate genuine 'crash_barrier_load' key. ... ok
+test_19_a02_raw_inputs_independent_from_production_helper (__main__.TestEvidenceGovernanceAdversarial.test_19_a02_raw_inputs_independent_from_production_helper)
+Vector 19: A02 oracle independently derives barrier resultant from raw key, catching mutated helper. ... ok
+test_20_b01_bottom_flange_width_mutation_rejected (__main__.TestEvidenceGovernanceAdversarial.test_20_b01_bottom_flange_width_mutation_rejected)
+Vector 20: Mutating bottom flange width (410 -> 450 mm) causes test_tc_reg_b01 to fail. ... F:\FOSSEE internship\source\OsdagBridge\src\ospgrillage\mesh.py:1272: ResourceWarning: unclosed file <_io.FileIO name=3 mode='rb' closefd=True>
+  for (a, b) in zip(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_21_c01_multi_girder_discrimination (__main__.TestEvidenceGovernanceAdversarial.test_21_c01_multi_girder_discrimination)
+Vector 21: C01 rejects first-girder-only, j-end-only, i-end-only, and -1.5% low candidates. ... WARNING analysis Static - no Algorithm yet specified, 
+ NewtonRaphson default will be used
+WARNING analysis Static - no ConstraintHandler yet specified, 
+ PlainHandler default will be used
+WARNING analysis Static - no Numberer specified, 
+ RCM default will be used
+WARNING analysis Static - no Integrator specified, 
+ StaticIntegrator default will be used
+WARNING analysis Static - no LinearSOE specified, 
+ ProfileSPDLinSOE default will be used
+ok
+test_22_run_seal_trust_architecture_attacks_s1_through_s11 (__main__.TestEvidenceGovernanceAdversarial.test_22_run_seal_trust_architecture_attacks_s1_through_s11)
+Vector 22: Run-Seal Trust Architecture rejects all attack classes (S1-S11) fail-closed. ... ok
+test_23_missing_evidence_dir_cli_execution_no_name_error (__main__.TestEvidenceGovernanceAdversarial.test_23_missing_evidence_dir_cli_execution_no_name_error)
+Vector 23: Baseline runner CLI without --evidence-dir executes without NameError: uuid. ... ok
+test_24_cross_process_sealed_overwrite_prevention (__main__.TestEvidenceGovernanceAdversarial.test_24_cross_process_sealed_overwrite_prevention)
+Vector 24 (Probe W1): Fresh process cannot overwrite an already-sealed directory. ... ok
+test_25_workspace_root_and_reports_protection (__main__.TestEvidenceGovernanceAdversarial.test_25_workspace_root_and_reports_protection)
+Vector 25 (Probes W6/W7): Gateway prohibits writing to workspace root or reports directory. ... ok
+test_26_pinned_trust_directory_enforcement (__main__.TestEvidenceGovernanceAdversarial.test_26_pinned_trust_directory_enforcement)
+Vector 26 (Probe K14): Verification fails closed on unpinned trust directory without explicit override. ... ok
+test_27_linux_cgroup_tmpfs_detection_rejection (__main__.TestEvidenceGovernanceAdversarial.test_27_linux_cgroup_tmpfs_detection_rejection)
+Vector 27 (Audit F-08): False cgroup v2 containment on tmpfs/hybrid hosts is rejected. ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 29.992s
+
+OK

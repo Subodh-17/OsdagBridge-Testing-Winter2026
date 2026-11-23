@@ -1,0 +1,10 @@
+TEST IDENTIFIER: TC-REG-A01-FACTOR-SCALING
+DEFECT IDENTIFIER: DEF-01
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: Load factor 1.35 was ignored by ospgrillage; ratio is 1.00000 (expected 1.35000).
+
+--- EXECUTION DETAILS ---
+Max force Unfactored: 9634.6432 N
+Max force Factored (expected 1.35x): 9634.6432 N
+Ratio Factored / Unfactored: 1.00000

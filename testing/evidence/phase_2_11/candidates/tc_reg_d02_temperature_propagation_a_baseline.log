@@ -1,0 +1,18 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-D02-TEMPERATURE-PROPAGATION
+DEFECT IDENTIFIER:      DEF-06
+RESULT STATUS:          BLOCKED
+EXPECTED ON BASELINE:   BLOCKED
+EXECUTION DURATION:     0.000 s
+TIMESTAMP UTC:          2026-11-17T12:44:47.270309+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEC-015 Pending: Thermal load modeling (IRC 6 Cl. 215) is undecided in project specifications. add_temperature_load() reads unpopulated 'temperature_load_kN_m2' and leaves temperature_load_case as None.
+
+EXECUTION DETAILS & TRACE:
+DEC-015 FORMAL BLOCKER: Thermal load representation model undecided in project specifications.
+Under IRC 6:2017 Cl. 215, thermal effects are specified as effective temperature ranges and non-linear vertical gradients.
+Production add_temperature_load() inspects unpopulated 'temperature_load_kN_m2' and leaves temperature_load_case as None.
+Remediation is deferred until thermal grillage modeling is ratified by engineering authority.

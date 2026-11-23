@@ -1,0 +1,122 @@
+{
+  "timestamp_utc": "2026-11-17T09:37:45.362361+00:00",
+  "total_restored": 7,
+  "records": [
+    {
+      "phase": "2.6",
+      "relative_path": "candidates/tc_reg_a02_uls_combination_sum.log",
+      "recovery_source": "candidates/tc_reg_a02_uls_combination_sum_c_naive.log",
+      "recorded_manifest_sha256": "6b69e668424146c26f53eafaa87e4de1e5106848536fa4f02ad02094d12b07b6",
+      "recorded_manifest_size": 2003,
+      "overwritten_sha256": "0fecf5570bb56d70be4a4cdd397fe12da5d53f8725937e23b1b613ae31d12eef",
+      "overwritten_size": 2486,
+      "overwritten_timestamp_utc": "2026-11-16T18:38:43.457973+00:00",
+      "backup_path": "testing/evidence/phase_2_9/preservation/overwritten_versions/phase_2_6_tc_reg_a02_uls_combination_sum.log.overwritten",
+      "restored_sha256": "6b69e668424146c26f53eafaa87e4de1e5106848536fa4f02ad02094d12b07b6",
+      "restored_size": 2003,
+      "status": "RESTORED_AND_VERIFIED"
+    },
+    {
+      "phase": "2.6",
+      "relative_path": "candidates/tc_reg_b01_section_property_sync.log",
+      "recovery_source": "candidates/tc_reg_b01_section_property_sync_c_naive.log",
+      "recorded_manifest_sha256": "8fd719ce84f38f246693586785586d8078d02320ec4ed6a297df861154dd207e",
+      "recorded_manifest_size": 2027,
+      "overwritten_sha256": "7fe4da64dfeae5b0bb4420aa735931bd54d93a8cabc8a87f75a0f8e37db64897",
+      "overwritten_size": 2140,
+      "overwritten_timestamp_utc": "2026-11-16T18:35:46.674849+00:00",
+      "backup_path": "testing/evidence/phase_2_9/preservation/overwritten_versions/phase_2_6_tc_reg_b01_section_property_sync.log.overwritten",
+      "restored_sha256": "8fd719ce84f38f246693586785586d8078d02320ec4ed6a297df861154dd207e",
+      "restored_size": 2027,
+      "status": "RESTORED_AND_VERIFIED"
+    },
+    {
+      "phase": "2.6",
+      "relative_path": "candidates/tc_reg_c01_sectional_stress_range.log",
+      "recovery_source": "candidates/tc_reg_c01_sectional_stress_range_c_naive.log",
+      "recorded_manifest_sha256": "ff2e7b532061c04332d681cc931328ee89769d3715539583c06724cfe5655763",
+      "recorded_manifest_size": 2046,
+      "overwritten_sha256": "83de7855dccf7a9d37764d7bc98cc5e6962e88fa2d89636c6b688d5acb4ff650",
+      "overwritten_size": 2363,
+      "overwritten_timestamp_utc": "2026-11-16T18:35:37.841497+00:00",
+      "backup_path": "testing/evidence/phase_2_9/preservation/overwritten_versions/phase_2_6_tc_reg_c01_sectional_stress_range.log.overwritten",
+      "restored_sha256": "ff2e7b532061c04332d681cc931328ee89769d3715539583c06724cfe5655763",
+      "restored_size": 2046,
+      "status": "RESTORED_AND_VERIFIED"
+    },
+    {
+      "phase": "2.6",
+      "relative_path": "candidates/tc_reg_eq_load_conservation.log",
+      "recovery_source": "candidates/tc_reg_eq_load_conservation_c_naive.log",
+      "recorded_manifest_sha256": "0d490c374931b3335aefdc1cf3396e10e027e197986879105b45bc1c8fdff54a",
+      "recorded_manifest_size": 4073,
+      "overwritten_sha256": "40092b80eabf0e5b19eb241534dcb458c50ffdae07d4043af2df3ea87d43c32b",
+      "overwritten_size": 3917,
+      "overwritten_timestamp_utc": "2026-11-16T18:35:16.364810+00:00",
+      "backup_path": "testing/evidence/phase_2_9/preservation/overwritten_versions/phase_2_6_tc_reg_eq_load_conservation.log.overwritten",
+      "restored_sha256": "0d490c374931b3335aefdc1cf3396e10e027e197986879105b45bc1c8fdff54a",
+      "restored_size": 4073,
+      "status": "RESTORED_AND_VERIFIED"
+    },
+    {
+      "phase": "2.6",
+      "relative_path": "candidates/tc_reg_fs_clean_working_tree.log",
+      "recovery_source": "candidates/tc_reg_fs_clean_working_tree_c_naive.log",
+      "recorded_manifest_sha256": "ab361431ea2a3d87a434890cbd1884aec3425c485ef644e09bb14559e7103a8f",
+      "recorded_manifest_size": 1651,
+      "overwritten_sha256": "c966fe8ec07aa4974d50d8e3dd6a60c55373210b0ae19cb4c261b0d2abe66824",
+      "overwritten_size": 1685,
+      "overwritten_timestamp_utc": "2026-11-16T18:32:39.394452+00:00",
+      "backup_path": "testing/evidence/phase_2_9/preservation/overwritten_versions/phase_2_6_tc_reg_fs_clean_working_tree.log.overwritten",
+      "restored_sha256": "ab361431ea2a3d87a434890cbd1884aec3425c485ef644e09bb14559e7103a8f",
+      "restored_size": 1651,
+      "status": "RESTORED_AND_VERIFIED"
+    },
+    {
+      "phase": "2.6",
+      "relative_path": "candidates/tc_reg_rpt_exec_summary_status.log",
+      "recovery_source": "candidates/tc_reg_rpt_exec_summary_status_c_naive.log",
+      "recorded_manifest_sha256": "89d3466d20aa00839f0d63b4aabbb1bbdbd52f5affbbc38ff0b7c2362d6d36ae",
+      "recorded_manifest_size": 2415,
+      "overwritten_sha256": "d7ca1f685f7c5b1fb293bbffb1207dc9b13bd17dc703d1fdbc6729d4fceaf35a",
+      "overwritten_size": 2114,
+      "overwritten_timestamp_utc": "2026-11-16T18:35:28.049163+00:00",
+      "backup_path": "testing/evidence/phase_2_9/preservation/overwritten_versions/phase_2_6_tc_reg_rpt_exec_summary_status.log.overwritten",
+      "restored_sha256": "89d3466d20aa00839f0d63b4aabbb1bbdbd52f5affbbc38ff0b7c2362d6d36ae",
+      "restored_size": 2415,
+      "status": "RESTORED_AND_VERIFIED"
+    },
+    {
+      "phase": "2.7",
+      "relative_path": "candidates/tc_reg_eq_load_conservation.log",
+      "recovery_source": "candidates/tc_reg_eq_load_conservation_c_naive.log",
+      "recorded_manifest_sha256": "9ee3fe4b89b8a90788a26b45c50cd7a0a17650cc3efc723c8b1d3df59632bf44",
+      "recorded_manifest_size": 4168,
+      "overwritten_sha256": "8476f0535f5810f732d1e60a66cbe0860eefc7a326053c61fcb675f405e3d3a6",
+      "overwritten_size": 3917,
+      "overwritten_timestamp_utc": "2026-11-17T06:15:49.227433+00:00",
+      "backup_path": "testing/evidence/phase_2_9/preservation/overwritten_versions/phase_2_7_tc_reg_eq_load_conservation.log.overwritten",
+      "restored_sha256": "9ee3fe4b89b8a90788a26b45c50cd7a0a17650cc3efc723c8b1d3df59632bf44",
+      "restored_size": 4168,
+      "status": "RESTORED_AND_VERIFIED"
+    }
+  ],
+  "lost_files": [
+    {
+      "phase": "2.6",
+      "relative_path": "baseline/tc_reg_eq_load_conservation.log",
+      "recorded_sha256": "054876a74adcaeb8619bc32353e1981882f0ddb05f2e8f1b63013d52c231718c",
+      "recorded_size": 4247,
+      "status": "IRRETRIEVABLY_LOST",
+      "surviving_evidence": "Summary and exit code preserved in phase_2_6_baseline_summary.json"
+    },
+    {
+      "phase": "2.6",
+      "relative_path": "baseline/tc_reg_fs_clean_working_tree.log",
+      "recorded_sha256": "cd1e28d7a18b2ee13c19b027d11f81c96ae25d4838f5fef9d8d64115ff698889",
+      "recorded_size": 2028,
+      "status": "IRRETRIEVABLY_LOST",
+      "surviving_evidence": "Summary and exit code preserved in phase_2_6_baseline_summary.json"
+    }
+  ]
+}

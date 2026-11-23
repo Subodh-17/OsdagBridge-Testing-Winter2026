@@ -1,0 +1,32 @@
+From eaba0763daaf0a1e908a8b4575f501bb92f07cfb Mon Sep 17 00:00:00 2001
+From: Subodh Bansode <subodh171011@gmail.com>
+Date: Thu, 19 Nov 2026 13:04:18 +0530
+Subject: [PATCH 3/6] fix(designer): align BridgeConfig girder count with
+ physical girders (DEF-11)
+
+- Bind bcfg.geometry.n_girders directly to bridge._girder_count()
+- Exclude 2 auxiliary cantilever overhang grillage mesh lines from physical girder count
+- Eliminate mismatch where 4-girder bridge was reported as 6 girders
+- Verified downstream FE grillage solver remains decoupled and invariant
+
+Accepted in Phase 3 Batch 1 audit P3-IA-001.
+---
+ src/osdagbridge/core/bridge_types/plate_girder/designer.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/osdagbridge/core/bridge_types/plate_girder/designer.py b/src/osdagbridge/core/bridge_types/plate_girder/designer.py
+index 96bb2c1..252d74f 100644
+--- a/src/osdagbridge/core/bridge_types/plate_girder/designer.py
++++ b/src/osdagbridge/core/bridge_types/plate_girder/designer.py
+@@ -398,7 +398,7 @@ class BridgeConfig:
+                 "Run deck layout setup before calling from_plate_girder_bridge()."
+             )
+         carriageway = deck.carriageway_width
+-        n_girders = geom.n_l
++        n_girders = bridge._girder_count()
+         edge_dist = geom.edge_dist
+ 
+         # Cross-bracing spacing drives the lateral unbraced length for LTB.
+-- 
+2.34.1
+

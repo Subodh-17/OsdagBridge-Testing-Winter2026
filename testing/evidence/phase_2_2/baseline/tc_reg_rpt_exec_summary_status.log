@@ -1,0 +1,28 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-RPT-EXEC-SUMMARY-STATUS
+DEFECT IDENTIFIER:      DEF-08
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.195 s
+TIMESTAMP UTC:          2026-11-16T12:51:37.176597+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-08 Confirmed: executive_summary() emits literal '\noindent Girder design pass' unconditionally under Key Design Outcomes Summary despite a failing fatigue check (DCR = 1.9746).
+
+EXECUTION DETAILS & TRACE:
+Generated Key Design Outcomes Summary text:
+  \addcontentsline{toc}{section}{Key Design Outcomes Summary}
+  \label{sec:key-outcomes}
+  
+  \noindent Girder design completed \\
+  Cross bracing design pass \\
+  End Diaphragm design pass \\
+  Deck design pass
+Semantic Check Results:
+  Girder Design reflects failure:      False
+  Girder Design emits unconditional pass: False
+  Cross Bracing reflects pass:         True
+  End Diaphragm reflects pass:         True
+  Deck Design reflects pass:           True

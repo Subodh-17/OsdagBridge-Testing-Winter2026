@@ -1,0 +1,61 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-EQ-LOAD-CONSERVATION
+DEFECT IDENTIFIER:      DEF-18
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     5.760 s
+TIMESTAMP UTC:          2026-11-16T17:43:03.843912+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-18 Confirmed: Static equilibrium and moment/centroid violated in FE grillage load distribution: Girder Self-Weight (SW): force diff +4.5 kN (+2.7%); Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=+0.000m; Left Barrier line (z=0.25m): force=98.1kN (exp 156.96kN), x_bar=12.75m (exp 12.00m), Line 0 share=76.2%; Right Barrier line (z=8.25m): force=98.1kN (exp 156.96kN), x_bar=12.75m (exp 12.00m), Line 5 share=76.2%
+
+EXECUTION DETAILS & TRACE:
+Static & Moment Equilibrium Audit (Support Reactions vs Applied Physical Loads):
+  [SW] Girder Self-Weight:
+      Applied Load:        165.276 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    169.819 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:     +4.543 kN ( +2.75%) -> Force OK: False
+      Centroid Shift:   dx=-0.000m, dz=-0.000m -> Centroid OK: True
+      Equilibrium OK:   False
+  [DD] Deck Slab:
+      Applied Load:       1275.000 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:   1275.000 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:     +0.000 kN ( +0.00%) -> Force OK: True
+      Centroid Shift:   dx=+0.000m, dz=+0.000m -> Centroid OK: True
+      Equilibrium OK:   True
+  [1.0 DW] Wearing Course:
+      Applied Load:        244.800 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    244.800 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:     +0.000 kN ( +0.00%) -> Force OK: True
+      Centroid Shift:   dx=-0.000m, dz=-0.000m -> Centroid OK: True
+      Equilibrium OK:   True
+  [Crash barrier load] Crash Barrier:
+      Applied Load:        313.920 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    196.200 kN (x_bar=12.750m, z_bar=4.250m)
+      Force Difference:   -117.720 kN (-37.50%) -> Force OK: False
+      Centroid Shift:   dx=+0.750m, dz=+0.000m -> Centroid OK: False
+      Equilibrium OK:   False
+  Total Dead Load Resultants:
+      Total Applied:      1998.996 kN
+      Total Reaction:     1885.819 kN
+      Net Shortfall:      -113.177 kN ( -5.66%)
+
+Individual Load Group & Transverse Distribution Audit:
+  [Left Barrier (z=0.25m)]:
+      Total Force:          98.100 kN (Expected: 156.960 kN) -> OK: False
+      Centroid (x, z):  x=12.750m, z=0.250m (Expected: x=12.000m, z=0.250m) -> OK: False
+      Line 0 (z=0.0m):  76.19% (Expected: 76.19%) -> OK: True
+      Line 1 (z=1.05m): 23.81% (Expected: 23.81%) -> OK: True
+      Overall Left Barrier Distribution OK: False
+  [Right Barrier (z=8.25m)]:
+      Total Force:          98.100 kN (Expected: 156.960 kN) -> OK: False
+      Centroid (x, z):  x=12.750m, z=8.250m (Expected: x=12.000m, z=8.250m) -> OK: False
+      Line 4 (z=7.45m): 23.81% (Expected: 23.81%) -> OK: True
+      Line 5 (z=8.50m): 76.19% (Expected: 76.19%) -> OK: True
+      Overall Right Barrier Distribution OK: False
+  [Concrete Deck Slab (DD) Transverse Distribution]:
+      Total Force:        1275.000 kN (Expected: 1275.000 kN)
+      Tributary Shares: Line 0 (z=0.000m): 6.18% (exp 6.18%) -> True; Line 1 (z=1.050m): 18.73% (exp 18.73%) -> True; Line 2 (z=3.183m): 25.10% (exp 25.10%) -> True; Line 3 (z=5.317m): 25.10% (exp 25.10%) -> True; Line 4 (z=7.450m): 18.73% (exp 18.73%) -> True; Line 5 (z=8.500m): 6.18% (exp 6.18%) -> True
+      Overall DD Tributary Shares OK: True

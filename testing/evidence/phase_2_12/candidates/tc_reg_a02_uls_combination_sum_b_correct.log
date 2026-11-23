@@ -1,0 +1,45 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-A02-ULS-COMBINATION-SUM
+DEFECT IDENTIFIER:      DEF-01 / DEF-02
+RESULT STATUS:          PASS
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.552 s
+TIMESTAMP UTC:          2026-11-17T14:43:28.389940+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        FE solver analyzed combination correctly scales component reactions and includes barrier load.
+
+EXECUTION DETAILS & TRACE:
+Identified ULS Combination Case: 'BASIC_1: 1.35DL + 1.75DW'
+  Component reaction [SW]: 165.276 kN
+  Component reaction [DD]: 1249.500 kN
+  Component reaction [Crash barrier load]: 313.920 kN
+  Component reaction [1.0 DW]: 216.000 kN
+Independently Derived Applied ULS Resultant: 2711.74 kN
+  Inputs: L=24.00m, W_deck=8.50m, W_cw=7.50m, SW=165.28kN, DD=1249.50kN, DW=216.00kN, CB=313.92kN
+Reaction Superposition Target:       2711.74 kN (Linearity check from FE components)
+Total Support Vertical Reaction in BASIC_1:
+  Case-Specific Analyzed Reaction:     2711.74 kN
+  Run-Time Component Superposition:    2711.74 kN
+  Theoretical Applied Load Resultant:  2711.74 kN
+  Discrepancy vs Superposition Target: 0.00 kN
+  Discrepancy vs Applied Target:       0.00 kN
+Finite Element Shear Discrepancy vs Factored: 0.0 N
+Finite Element Shear Error vs Un-factored:   7.94e+04 N
+Finite Element Moment Discrepancy vs Factored: 0.0 N*m
+Crash Barrier Load Force Presence in BASIC_1:
+  Observed Barrier Contribution: 423.79 kN (Expected: 423.79 kN)
+  Barrier Presence Verified:     True
+Component Reaction Checks (Independent Oracles):
+  SW Reaction: 165.28 kN vs Oracle 165.28 kN -> OK: True
+  DD Reaction: 1249.50 kN vs Oracle 1249.50 kN -> OK: True
+  DW Reaction: 216.00 kN vs Oracle 216.00 kN -> OK: True
+  CB Reaction: 313.92 kN vs Oracle 313.92 kN -> OK: True
+Combination Checks Summary:
+  [MANDATORY] Superposition Linearity (R == 1.35*R_DL + 1.75*R_DW): True
+  [MANDATORY] Internal Force Factoring (Vy & Mz):                    True
+  [MANDATORY] Barrier Load Inclusion:                                True
+  [MANDATORY] Applied Factored Resultant (2711.74 kN +- 0.5%):      True (diff: 0.00 kN)
+  [MANDATORY] Component Reaction Accuracy (SW, DD, DW, CB):         True

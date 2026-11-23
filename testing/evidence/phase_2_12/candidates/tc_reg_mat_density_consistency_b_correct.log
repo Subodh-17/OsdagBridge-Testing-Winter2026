@@ -1,0 +1,18 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-MAT-DENSITY-CONSISTENCY
+DEFECT IDENTIFIER:      DEF-13
+RESULT STATUS:          PASS
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.827 s
+TIMESTAMP UTC:          2026-11-17T14:43:53.396091+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        Self-weight load resultant (151.4 kN) correctly matches user input density 70.0 kN/m3.
+
+EXECUTION DETAILS & TRACE:
+User Input Density:            70.0 kN/m3
+Observed Self-Weight Resultant:151.43 kN
+Expected at User Density (70): 151.43 kN
+Expected at Hardcoded (78.5):  169.82 kN

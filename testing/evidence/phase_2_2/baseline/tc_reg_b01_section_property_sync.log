@@ -1,0 +1,22 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-B01-SECTION-PROPERTY-SYNC
+DEFECT IDENTIFIER:      DEF-03
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.057 s
+TIMESTAMP UTC:          2026-11-16T12:50:31.078839+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-03 Confirmed: Dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm; Solver girder sections retain preliminary sizing: Iz gap ~7.40%, A gap ~10.55%; Analysed deflection 7.82mm deviates from snapped target 7.22mm
+
+EXECUTION DETAILS & TRACE:
+Governing checked section: D=1.340m, dw=1.3040m, tf=0.0180m, tw=0.0080m
+Geometric consistency: D (1.3400m) == dw + 2*tf (1.3420m): False
+Theoretical Snapped Section: A=0.025192 m2, Iz=0.00792758 m4
+Solver Girder 0 Section: Iz=0.00734091 m4 (gap 7.40%), A=0.022534 m2 (gap 10.55%)
+Solver Girder 1 Section: Iz=0.00734091 m4 (gap 7.40%), A=0.022534 m2 (gap 10.55%)
+Solver Girder 2 Section: Iz=0.00734091 m4 (gap 7.40%), A=0.022534 m2 (gap 10.55%)
+Solver Girder 3 Section: Iz=0.00734091 m4 (gap 7.40%), A=0.022534 m2 (gap 10.55%)
+Analyzed Midspan Deflection: 7.816 mm (Target with snapped section: 7.218 mm)

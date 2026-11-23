@@ -1,0 +1,11 @@
+TEST IDENTIFIER: TC-REG-MAT-DENSITY-CONSISTENCY
+DEFECT IDENTIFIER: DEF-13
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-13 Confirmed: Self-weight load resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN).
+
+--- DETAILED EXECUTION LOG ---
+User Input Density: 70.0 kN/m3
+Resultant SW Load Generated: 169.82 kN
+Expected Resultant at 70.0 kN/m3: 151.43 kN
+Resultant at hardcoded 78.5 kN/m3: 169.82 kN

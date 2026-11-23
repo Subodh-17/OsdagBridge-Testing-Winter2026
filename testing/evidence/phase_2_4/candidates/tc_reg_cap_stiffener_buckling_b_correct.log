@@ -1,0 +1,21 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-CAP-STIFFENER-BUCKLING
+DEFECT IDENTIFIER:      DEF-12
+RESULT STATUS:          PASS
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.262 s
+TIMESTAMP UTC:          2026-11-16T15:36:08.221659+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        Web buckling capacity satisfies positive IS 800 Cl. 8.7.3.1 slenderness oracle across multiple geometries.
+
+EXECUTION DETAILS & TRACE:
+Geometry 1 (tw=8.0mm, dw=1304.0mm, b1=101.81mm):
+  Computed Capacity: 63.4 kN
+  IS 800 Oracle:     63.4 kN (Squash limit: 1918.8 kN)
+Geometry 2 (tw=10.0mm, dw=1000.0mm, b1=100.0mm):
+  Computed Capacity: 158.5 kN
+  IS 800 Oracle:     158.5 kN (Squash limit: 1909.1 kN)
+Note: Tolerance ±15% bounds code variations; does not discriminate buckling curves a/b/c/d.

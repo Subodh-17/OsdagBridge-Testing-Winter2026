@@ -1,0 +1,56 @@
+From 418fd75a652b174e83e1733ff929fe90747b3b8a Mon Sep 17 00:00:00 2001
+From: Subodh Bansode <subodh171011@gmail.com>
+Date: Thu, 19 Nov 2026 13:03:03 +0530
+Subject: [PATCH 1/6] fix(designer): correct bearing stiffener web buckling
+ capacity formula (DEF-12)
+
+- Replace stiffener plate moment of inertia Iys with web strip weak-axis radius of gyration r_y = t_w / sqrt(12)
+- Evaluate design compressive stress f_cd per IS 800:2007 Cl. 8.7.3.1 and Cl. 7.1.2.1 column curve c (alpha = 0.49)
+- Eliminate 3,384x overprediction anomaly (reducing sealed geometry 1 capacity from 214,533.2 kN to 63.40 kN)
+- Corroborate hand calculation fixture capacity at 118.79 kN
+- Retain KL_r_wb, fcc_wb_MPa, and fcd_wb_MPa in returned capacity dictionary
+
+Accepted in Phase 3 Batch 1 audit P3-IA-001.
+---
+ .../core/bridge_types/plate_girder/designer.py  | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+
+diff --git a/src/osdagbridge/core/bridge_types/plate_girder/designer.py b/src/osdagbridge/core/bridge_types/plate_girder/designer.py
+index 3b3b982..96bb2c1 100644
+--- a/src/osdagbridge/core/bridge_types/plate_girder/designer.py
++++ b/src/osdagbridge/core/bridge_types/plate_girder/designer.py
+@@ -1662,13 +1662,14 @@ class IRC22CapacityCalculator:
+         KL = 0.7 * d
+ 
+         # Cl.509.7.3.1 / IS 800 8.7.3.1 — Web buckling check
+-        # Checks if the unstiffened web bearing zone can carry R (Euler stress, no imperfection reduction).
+-        n1      = d / 2.0
+-        A_wb    = (b1 + n1) * tw
+-        rys_wb  = math.sqrt(Iys / A_wb) if A_wb > 0 else 0.0
+-        KL_r_wb = KL / rys_wb if rys_wb > 0 else 1e9
+-        fcc_wb  = (math.pi**2 * E) / KL_r_wb**2
+-        Fcdw_wb_kN = fcc_wb * A_wb / 1000.0
++        # Evaluates web buckling capacity per IS 800:2007 Cl. 8.7.3.1 and Cl. 7.1.2.1 (curve c, alpha=0.49).
++        n1         = d / 2.0
++        A_wb       = (b1 + n1) * tw
++        rys_wb     = tw / math.sqrt(12.0) if tw > 0 else 0.0
++        KL_r_wb    = KL / rys_wb if rys_wb > 0 else 1e9
++        fcc_wb     = (math.pi**2 * E) / KL_r_wb**2 if KL_r_wb > 0 else 0.0
++        fcd_wb     = IS800_2007.cl_7_1_2_1_design_compressisive_stress_plategirder(fy, gm0, KL_r_wb, E)
++        Fcdw_wb_kN = fcd_wb * A_wb / 1000.0
+ 
+         # Cl.509.7.3.2 / IS 800 8.7.3.2 — Local crushing check
+         n2         = 2.5 * sec.tf_top
+@@ -1705,7 +1706,9 @@ class IRC22CapacityCalculator:
+             "A_wb_mm2"          : round(A_wb, 3),
+             "rys_wb_mm"         : round(rys_wb, 3),
+             "KL_mm"             : round(KL, 3),
++            "KL_r_wb"           : round(KL_r_wb, 3),
+             "fcc_wb_MPa"        : round(fcc_wb, 3),
++            "fcd_wb_MPa"        : round(fcd_wb, 3),
+             "Fcdw_wb_kN"        : round(Fcdw_wb_kN, 3),
+             "n2_mm"             : round(n2, 3),
+             "A_lc_mm2"          : round(A_lc, 3),
+-- 
+2.34.1
+

@@ -1,0 +1,105 @@
+{
+  "phase": "Phase 2.12 Sensitivity",
+  "runner_id": "sensitivity_runner",
+  "run_uuid": "09dca119-7acd-450d-8b6b-11c63cf9b5a8",
+  "timestamp_utc": "2026-11-17T14:44:26.939226+00:00",
+  "total_files": 19,
+  "total_bytes": 104166,
+  "files": [
+    {
+      "path": "console_error.txt",
+      "size_bytes": 30435,
+      "sha256": "688addba5ec92c90e43db10a14a947005b5d2e0c0f1838a0c351bdc2b05a5fbe"
+    },
+    {
+      "path": "console_output.txt",
+      "size_bytes": 14096,
+      "sha256": "78653761c03352a27c5ad3db774dadfb27828de576586cc10c8fd25ab5918d33"
+    },
+    {
+      "path": "phase_2_12_sensitivity_matrix_summary.json",
+      "size_bytes": 31109,
+      "sha256": "a5fbc6ff1321f09f012d9a0486bfe74929d16d564516045ab9030d58f149b34f"
+    },
+    {
+      "path": "sensitivity_exit_code.txt",
+      "size_bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "tc_reg_a01_factor_scaling_sensitivity.json",
+      "size_bytes": 1357,
+      "sha256": "d201313972d7bbcad4f194daf3ddb66873afcb63528640190630307ed9bcdf10"
+    },
+    {
+      "path": "tc_reg_a02_uls_combination_sum_sensitivity.json",
+      "size_bytes": 2224,
+      "sha256": "aeca73e30c3a795c9ffb54ac841d50598e61303f4bff9a7656daa9ae73c0ecc3"
+    },
+    {
+      "path": "tc_reg_b01_section_property_sync_sensitivity.json",
+      "size_bytes": 1724,
+      "sha256": "5daea5b443c25f2867c03deda7e4e26f98d2ddff68fe63ac70620f2486120219"
+    },
+    {
+      "path": "tc_reg_c01_sectional_stress_range_sensitivity.json",
+      "size_bytes": 1719,
+      "sha256": "28f5aa721e271c52c028e1e24dec872e55edcae3a26c8d17e4c7ce2f935d2c65"
+    },
+    {
+      "path": "tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json",
+      "size_bytes": 1348,
+      "sha256": "049e7e2b7ea964b306312ea71dfb34213501e3fa01109ffedbe2e5cccd1d0e21"
+    },
+    {
+      "path": "tc_reg_cad_export_vs_screenshot_sensitivity.json",
+      "size_bytes": 1310,
+      "sha256": "d7ea2974a1b80abb8f97084088d9f7f69dbabf7dcbf8e01e671b030a0027370b"
+    },
+    {
+      "path": "tc_reg_cap_stiffener_buckling_sensitivity.json",
+      "size_bytes": 1570,
+      "sha256": "09f03cc517310f4af4ca08982264d3feee0ada835838a96dd4516215108bdf15"
+    },
+    {
+      "path": "tc_reg_d01_wind_speed_propagation_sensitivity.json",
+      "size_bytes": 1540,
+      "sha256": "79de694586f9a5582a2618f699cb7fe674e14466fc5ee34a571aef8a792b8783"
+    },
+    {
+      "path": "tc_reg_d02_temperature_propagation_sensitivity.json",
+      "size_bytes": 1274,
+      "sha256": "c2654fde10e6a704e1ef98eaf34dd84763398c6f56d657bc22c604300a4f3e0f"
+    },
+    {
+      "path": "tc_reg_eq_load_conservation_sensitivity.json",
+      "size_bytes": 2766,
+      "sha256": "ddc3beda3c7b28a183049f87d842d123ce808f323fa7278b4695a3949b17b9df"
+    },
+    {
+      "path": "tc_reg_fs_clean_working_tree_sensitivity.json",
+      "size_bytes": 1689,
+      "sha256": "c92ced857c31d61dd1774552caf5aa490030286782a5dbf938f1a4b93f1f3bf2"
+    },
+    {
+      "path": "tc_reg_geo_girder_count_alignment_sensitivity.json",
+      "size_bytes": 1440,
+      "sha256": "bf8d1a9336d7fbaf6c8708afb11a6cbbb663118c17bbeb3822acc520a52dcbc5"
+    },
+    {
+      "path": "tc_reg_geo_slab_section_properties_sensitivity.json",
+      "size_bytes": 1365,
+      "sha256": "962c9c7b3a17a0c008f473ceff4d8993bf4459acfc3d464533bfc83b3296f2ce"
+    },
+    {
+      "path": "tc_reg_mat_density_consistency_sensitivity.json",
+      "size_bytes": 1449,
+      "sha256": "3c6ea9511f4f6186ce45fad7225d5928f1795b930bba5391a6a5a23b4193c974"
+    },
+    {
+      "path": "tc_reg_rpt_exec_summary_status_sensitivity.json",
+      "size_bytes": 5748,
+      "sha256": "f01556a3db13ea686c7cbc9088efebf6cf93970e6adb05a5f6b26db1fec2b172"
+    }
+  ]
+}

@@ -1,0 +1,3750 @@
+{
+  "osdag_core_database": {
+    "path": "C:\\Users\\Subodh\\miniconda3\\envs\\osdagbridge-py312\\Lib\\site-packages\\osdag_core\\data\\ResourceFiles\\Database\\Intg_osdag.sqlite",
+    "exists": true,
+    "size_bytes": 249856,
+    "tables": {
+      "Anchor_Bolt": {
+        "record_count": 13,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Diameter",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Anchor_Bolt\" (\n\t\"Diameter\"\tINTEGER\n)"
+      },
+      "Angle_Pitch": {
+        "record_count": 13,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "ID",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 1,
+            "name": "Nominal_Leg",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Max_Bolt_Dia",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Bolt_lines",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "S1",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "S2",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "S3",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Angle_Pitch\" (\n\t\"ID\"\tINTEGER UNIQUE,\n\t\"Nominal_Leg\"\tINTEGER,\n\t\"Max_Bolt_Dia\"\tINTEGER,\n\t\"Bolt_lines\"\tINTEGER,\n\t\"S1\"\tINTEGER,\n\t\"S2\"\tINTEGER,\n\t\"S3\"\tINTEGER\n)"
+      },
+      "Angles": {
+        "record_count": 199,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "a",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "b",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "t",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": "null",
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Cz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Cy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Alpha",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Iumax",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Ivmin",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "rumax",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "rvmin",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 24,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 25,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 26,
+            "name": "Type",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Angles\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"a\"\tREAL(10 , 2),\n\t\"b\"\tREAL(10 , 2),\n\t\"t\"\tREAL(10 , 2),\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2) DEFAULT (null),\n\t\"Cz\"\tREAL(10 , 2),\n\t\"Cy\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"Alpha\"\tREAL(10 , 2),\n\t\"Iumax\"\tREAL(10 , 2),\n\t\"Ivmin\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"rumax\"\tREAL(10 , 2),\n\t\"rvmin\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"It\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"Type\"\tVARCHAR(100),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Beams": {
+        "record_count": 323,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "D",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "B",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "tw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "FlangeSlope",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Iw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Type",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Beams\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"D\"\tREAL(10 , 2),\n\t\"B\"\tREAL(10 , 2),\n\t\"tw\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"FlangeSlope\"\tINTEGER,\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"It\"\tREAL(10 , 2),\n\t\"Iw\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"Type\"\tVARCHAR(100),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Bolt": {
+        "record_count": 21,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Bolt_diameter",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Bolt\" (\n\t\"Bolt_diameter\"\tTEXT\n)"
+      },
+      "Bolt_fy_fu": {
+        "record_count": 11,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Property_Class",
+            "type": "NUMERIC",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 1,
+            "name": "Diameter_min",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Diameter_max",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "fy",
+            "type": "NUMERIC",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "fu",
+            "type": "NUMERIC",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Bolt_fy_fu\" (\n\t`Property_Class`\tNUMERIC,\n\t`Diameter_min`\tINTEGER,\n\t`Diameter_max`\tINTEGER,\n\t`fy`\tNUMERIC,\n\t`fu`\tNUMERIC\n)"
+      },
+      "CHS": {
+        "record_count": 81,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "NB",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "OD",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "W",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "A",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "V",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "Ves",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Vis",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "I",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Z",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "R",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Rsq",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Source",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"CHS\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR,\n\t\"NB\"\tVARCHAR,\n\t\"OD\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"W\"\tREAL(10 , 2),\n\t\"A\"\tREAL(10 , 2),\n\t\"V\"\tREAL(10 , 2),\n\t\"Ves\"\tREAL(10 , 2),\n\t\"Vis\"\tREAL(10 , 2),\n\t\"I\"\tREAL(10 , 2),\n\t\"Z\"\tREAL(10 , 2),\n\t\"R\"\tREAL(10 , 2),\n\t\"Rsq\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR,\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Channels": {
+        "record_count": 60,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "D",
+            "type": "INTEGER(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "B",
+            "type": "INTEGER(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "tw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "FlangeSlope",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Cy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "Zpy",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Iw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Type",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Channels\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"D\"\tINTEGER(50),\n\t\"B\"\tINTEGER(50),\n\t\"tw\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"FlangeSlope\"\tINTEGER,\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Cy\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL,\n\t\"It\"\tREAL(10 , 2),\n\t\"Iw\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"Type\"\tVARCHAR(100),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Columns": {
+        "record_count": 86,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "D",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "B",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "tw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "T",
+            "type": "INTEGER(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "FlangeSlope",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": "null",
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Iw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Type",
+            "type": "BVARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Columns\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"D\"\tREAL(10 , 2),\n\t\"B\"\tREAL(10 , 2),\n\t\"tw\"\tREAL(10 , 2),\n\t\"T\"\tINTEGER(10 , 2),\n\t\"FlangeSlope\"\tINTEGER DEFAULT (null),\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"It\"\tREAL(10 , 2),\n\t\"Iw\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"Type\"\tBVARCHAR(100),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "EqualAngle": {
+        "record_count": 91,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "a",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "b",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "t",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Cz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Cy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Alpha",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Iu(max)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Iv(min)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "ru(max)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "rv(min)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 24,
+            "name": "Source",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 25,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"EqualAngle\" (\n\t\"Id\"\tINTEGER NOT NULL,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"a\"\tREAL(10 , 2),\n\t\"b\"\tREAL(10 , 2),\n\t\"t\"\tREAL(10 , 2),\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Cz\"\tREAL(10 , 2),\n\t\"Cy\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"Alpha\"\tREAL(10 , 2),\n\t\"Iu(max)\"\tREAL(10 , 2),\n\t\"Iv(min)\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"ru(max)\"\tREAL(10 , 2),\n\t\"rv(min)\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(50),\n\t\"It\"\tREAL(10 , 2),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Material": {
+        "record_count": 10,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Grade",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 1,
+            "name": "Yield Stress (< 20)",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Yield Stress (20 -40)",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Yield Stress (> 40)",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "Ultimate Tensile Stress",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "Elongation ",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Material\" (\n\t\"Grade\"\tTEXT,\n\t\"Yield Stress (< 20)\"\tINTEGER,\n\t\"Yield Stress (20 -40)\"\tINTEGER,\n\t\"Yield Stress (> 40)\"\tINTEGER,\n\t\"Ultimate Tensile Stress\"\tINTEGER,\n\t\"Elongation \"\tINTEGER\n)"
+      },
+      "RHS": {
+        "record_count": 26,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "D",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "B",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "W",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "A",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "Izz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "Iyy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Rzz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Ryy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Zzz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Zyy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Source",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"RHS\" (\n\t\"Id\"\tINTEGER NOT NULL,\n\t\"Designation\"\tVARCHAR,\n\t\"D\"\tREAL(10 , 2),\n\t\"B\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"W\"\tREAL(10 , 2),\n\t\"A\"\tREAL(10 , 2),\n\t\"Izz\"\tREAL(10 , 2),\n\t\"Iyy\"\tREAL(10 , 2),\n\t\"Rzz\"\tREAL(10 , 2),\n\t\"Ryy\"\tREAL(10 , 2),\n\t\"Zzz\"\tREAL(10 , 2),\n\t\"Zyy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(50),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "SHS": {
+        "record_count": 62,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "D",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "B",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "W",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "A",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "Izz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "Iyy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Rzz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Ryy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Zzz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Zyy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Source",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"SHS\" (\n\t\"Id\"\tINTEGER NOT NULL,\n\t\"Designation\"\tVARCHAR,\n\t\"D\"\tREAL(10 , 2),\n\t\"B\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"W\"\tREAL(10 , 2),\n\t\"A\"\tREAL(10 , 2),\n\t\"Izz\"\tREAL(10 , 2),\n\t\"Iyy\"\tREAL(10 , 2),\n\t\"Rzz\"\tREAL(10 , 2),\n\t\"Ryy\"\tREAL(10 , 2),\n\t\"Zzz\"\tREAL(10 , 2),\n\t\"Zyy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(50),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "UnequalAngle": {
+        "record_count": 108,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "a",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "b",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "t",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Cz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Cy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Alpha",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Iu(max)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Iv(min)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "ru(max)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "rv(min)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 24,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 25,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"UnequalAngle\" (\n\t\"Id\"\tINTEGER NOT NULL,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"a\"\tREAL(10 , 2),\n\t\"b\"\tREAL(10 , 2),\n\t\"t\"\tREAL(10 , 2),\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Cz\"\tREAL(10 , 2),\n\t\"Cy\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"Alpha\"\tREAL(10 , 2),\n\t\"Iu(max)\"\tREAL(10 , 2),\n\t\"Iv(min)\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"ru(max)\"\tREAL(10 , 2),\n\t\"rv(min)\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"It\"\tREAL(10 , 2),\n\tPRIMARY KEY(\"Id\")\n)"
+      }
+    }
+  },
+  "osdagbridge_local_database": {
+    "path": "F:\\FOSSEE internship\\source\\OsdagBridge\\src\\osdagbridge\\core\\data\\ResourceFiles\\Intg_osdag.sqlite",
+    "exists": true,
+    "size_bytes": 270336,
+    "tables": {
+      "Anchor_Bolt": {
+        "record_count": 13,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Diameter",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Anchor_Bolt\" (\n\t\"Diameter\"\tINTEGER\n)"
+      },
+      "Angle_Pitch": {
+        "record_count": 13,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "ID",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 1,
+            "name": "Nominal_Leg",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Max_Bolt_Dia",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Bolt_lines",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "S1",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "S2",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "S3",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Angle_Pitch\" (\n\t\"ID\"\tINTEGER UNIQUE,\n\t\"Nominal_Leg\"\tINTEGER,\n\t\"Max_Bolt_Dia\"\tINTEGER,\n\t\"Bolt_lines\"\tINTEGER,\n\t\"S1\"\tINTEGER,\n\t\"S2\"\tINTEGER,\n\t\"S3\"\tINTEGER\n)"
+      },
+      "Angles": {
+        "record_count": 199,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "a",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "b",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "t",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": "null",
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Cz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Cy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Alpha",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Iumax",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Ivmin",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "rumax",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "rvmin",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 24,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 25,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 26,
+            "name": "Type",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Angles\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"a\"\tREAL(10 , 2),\n\t\"b\"\tREAL(10 , 2),\n\t\"t\"\tREAL(10 , 2),\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2) DEFAULT (null),\n\t\"Cz\"\tREAL(10 , 2),\n\t\"Cy\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"Alpha\"\tREAL(10 , 2),\n\t\"Iumax\"\tREAL(10 , 2),\n\t\"Ivmin\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"rumax\"\tREAL(10 , 2),\n\t\"rvmin\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"It\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"Type\"\tVARCHAR(100),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Beams": {
+        "record_count": 323,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "D",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "B",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "tw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "FlangeSlope",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Iw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Type",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Beams\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"D\"\tREAL(10 , 2),\n\t\"B\"\tREAL(10 , 2),\n\t\"tw\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"FlangeSlope\"\tINTEGER,\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"It\"\tREAL(10 , 2),\n\t\"Iw\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"Type\"\tVARCHAR(100),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Bolt": {
+        "record_count": 21,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Bolt_diameter",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Bolt\" (\n\t\"Bolt_diameter\"\tTEXT\n)"
+      },
+      "Bolt_fy_fu": {
+        "record_count": 11,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Property_Class",
+            "type": "NUMERIC",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 1,
+            "name": "Diameter_min",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Diameter_max",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "fy",
+            "type": "NUMERIC",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "fu",
+            "type": "NUMERIC",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Bolt_fy_fu\" (\n\t`Property_Class`\tNUMERIC,\n\t`Diameter_min`\tINTEGER,\n\t`Diameter_max`\tINTEGER,\n\t`fy`\tNUMERIC,\n\t`fu`\tNUMERIC\n)"
+      },
+      "CHS": {
+        "record_count": 81,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "NB",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "OD",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "W",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "A",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "V",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "Ves",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Vis",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "I",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Z",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "R",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Rsq",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Source",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"CHS\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR,\n\t\"NB\"\tVARCHAR,\n\t\"OD\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"W\"\tREAL(10 , 2),\n\t\"A\"\tREAL(10 , 2),\n\t\"V\"\tREAL(10 , 2),\n\t\"Ves\"\tREAL(10 , 2),\n\t\"Vis\"\tREAL(10 , 2),\n\t\"I\"\tREAL(10 , 2),\n\t\"Z\"\tREAL(10 , 2),\n\t\"R\"\tREAL(10 , 2),\n\t\"Rsq\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR,\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Channels": {
+        "record_count": 60,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "D",
+            "type": "INTEGER(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "B",
+            "type": "INTEGER(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "tw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "FlangeSlope",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Cy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "Zpy",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Iw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Type",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Channels\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"D\"\tINTEGER(50),\n\t\"B\"\tINTEGER(50),\n\t\"tw\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"FlangeSlope\"\tINTEGER,\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Cy\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL,\n\t\"It\"\tREAL(10 , 2),\n\t\"Iw\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"Type\"\tVARCHAR(100),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Columns": {
+        "record_count": 86,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "D",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "B",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "tw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "T",
+            "type": "INTEGER(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "FlangeSlope",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": "null",
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Iw",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Type",
+            "type": "BVARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Columns\" (\n\t\"Id\"\tINTEGER,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"D\"\tREAL(10 , 2),\n\t\"B\"\tREAL(10 , 2),\n\t\"tw\"\tREAL(10 , 2),\n\t\"T\"\tINTEGER(10 , 2),\n\t\"FlangeSlope\"\tINTEGER DEFAULT (null),\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"It\"\tREAL(10 , 2),\n\t\"Iw\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"Type\"\tBVARCHAR(100),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Concrete_Grade_Properties": {
+        "record_count": 16,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Grade",
+            "type": "TEXT",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 1,
+            "name": "fck",
+            "type": "REAL",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "fctm",
+            "type": "REAL",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Ecm",
+            "type": "REAL",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Concrete_Grade_Properties\" (\n\t\"Grade\"\tTEXT NOT NULL UNIQUE,\n\t\"fck\"\tREAL NOT NULL,\n\t\"fctm\"\tREAL NOT NULL,\n\t\"Ecm\"\tREAL NOT NULL\n)"
+      },
+      "EqualAngle": {
+        "record_count": 91,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "a",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "b",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "t",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Cz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Cy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Alpha",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Iu(max)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Iv(min)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "ru(max)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "rv(min)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 24,
+            "name": "Source",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 25,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"EqualAngle\" (\n\t\"Id\"\tINTEGER NOT NULL,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"a\"\tREAL(10 , 2),\n\t\"b\"\tREAL(10 , 2),\n\t\"t\"\tREAL(10 , 2),\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Cz\"\tREAL(10 , 2),\n\t\"Cy\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"Alpha\"\tREAL(10 , 2),\n\t\"Iu(max)\"\tREAL(10 , 2),\n\t\"Iv(min)\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"ru(max)\"\tREAL(10 , 2),\n\t\"rv(min)\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(50),\n\t\"It\"\tREAL(10 , 2),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "RHS": {
+        "record_count": 26,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "D",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "B",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "W",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "A",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "Izz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "Iyy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Rzz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Ryy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Zzz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Zyy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Source",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"RHS\" (\n\t\"Id\"\tINTEGER NOT NULL,\n\t\"Designation\"\tVARCHAR,\n\t\"D\"\tREAL(10 , 2),\n\t\"B\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"W\"\tREAL(10 , 2),\n\t\"A\"\tREAL(10 , 2),\n\t\"Izz\"\tREAL(10 , 2),\n\t\"Iyy\"\tREAL(10 , 2),\n\t\"Rzz\"\tREAL(10 , 2),\n\t\"Ryy\"\tREAL(10 , 2),\n\t\"Zzz\"\tREAL(10 , 2),\n\t\"Zyy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(50),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Rebar_Grade_Properties": {
+        "record_count": 7,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Grade",
+            "type": "TEXT",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 1,
+            "name": "fy",
+            "type": "REAL",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "fu",
+            "type": "REAL",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Es",
+            "type": "REAL",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Rebar_Grade_Properties\" (\n\t\"Grade\"\tTEXT NOT NULL UNIQUE,\n\t\"fy\"\tREAL NOT NULL,\n\t\"fu\"\tREAL NOT NULL,\n\t\"Es\"\tREAL NOT NULL\n)"
+      },
+      "SHS": {
+        "record_count": 62,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "D",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "B",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "T",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "W",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "A",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "Izz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "Iyy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Rzz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Ryy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Zzz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Zyy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Source",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"SHS\" (\n\t\"Id\"\tINTEGER NOT NULL,\n\t\"Designation\"\tVARCHAR,\n\t\"D\"\tREAL(10 , 2),\n\t\"B\"\tREAL(10 , 2),\n\t\"T\"\tREAL(10 , 2),\n\t\"W\"\tREAL(10 , 2),\n\t\"A\"\tREAL(10 , 2),\n\t\"Izz\"\tREAL(10 , 2),\n\t\"Iyy\"\tREAL(10 , 2),\n\t\"Rzz\"\tREAL(10 , 2),\n\t\"Ryy\"\tREAL(10 , 2),\n\t\"Zzz\"\tREAL(10 , 2),\n\t\"Zyy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(50),\n\tPRIMARY KEY(\"Id\")\n)"
+      },
+      "Steel_Grade_Properties": {
+        "record_count": 28,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Grade",
+            "type": "TEXT",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 1,
+            "name": "Yield Strength",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Ultimate Tensile Strength",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Modulus of Elasticity",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "Poisson's Ratio",
+            "type": "NUMERIC",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "Density",
+            "type": "INTEGER",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"Steel_Grade_Properties\" (\n\t\"Grade\"\tTEXT NOT NULL UNIQUE,\n\t\"Yield Strength\"\tINTEGER,\n\t\"Ultimate Tensile Strength\"\tINTEGER,\n\t\"Modulus of Elasticity\"\tINTEGER,\n\t\"Poisson's Ratio\"\tNUMERIC,\n\t\"Density\"\tINTEGER\n)"
+      },
+      "UnequalAngle": {
+        "record_count": 108,
+        "columns": [
+          {
+            "cid": 0,
+            "name": "Id",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "Designation",
+            "type": "VARCHAR(50)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Mass",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Area",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "a",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "b",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "t",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "R1",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "R2",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "Cz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "Cy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "Iz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "Iy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "Alpha",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Iu(max)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "Iv(min)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "rz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "ry",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "ru(max)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "rv(min)",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "Zz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "Zy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Zpz",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Zpy",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 24,
+            "name": "Source",
+            "type": "VARCHAR(100)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 25,
+            "name": "It",
+            "type": "REAL(10 , 2)",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "schema_sql": "CREATE TABLE \"UnequalAngle\" (\n\t\"Id\"\tINTEGER NOT NULL,\n\t\"Designation\"\tVARCHAR(50),\n\t\"Mass\"\tREAL(10 , 2),\n\t\"Area\"\tREAL(10 , 2),\n\t\"a\"\tREAL(10 , 2),\n\t\"b\"\tREAL(10 , 2),\n\t\"t\"\tREAL(10 , 2),\n\t\"R1\"\tREAL(10 , 2),\n\t\"R2\"\tREAL(10 , 2),\n\t\"Cz\"\tREAL(10 , 2),\n\t\"Cy\"\tREAL(10 , 2),\n\t\"Iz\"\tREAL(10 , 2),\n\t\"Iy\"\tREAL(10 , 2),\n\t\"Alpha\"\tREAL(10 , 2),\n\t\"Iu(max)\"\tREAL(10 , 2),\n\t\"Iv(min)\"\tREAL(10 , 2),\n\t\"rz\"\tREAL(10 , 2),\n\t\"ry\"\tREAL(10 , 2),\n\t\"ru(max)\"\tREAL(10 , 2),\n\t\"rv(min)\"\tREAL(10 , 2),\n\t\"Zz\"\tREAL(10 , 2),\n\t\"Zy\"\tREAL(10 , 2),\n\t\"Zpz\"\tREAL(10 , 2),\n\t\"Zpy\"\tREAL(10 , 2),\n\t\"Source\"\tVARCHAR(100),\n\t\"It\"\tREAL(10 , 2),\n\tPRIMARY KEY(\"Id\")\n)"
+      }
+    }
+  },
+  "source_code_findings": {
+    "modules_opening_osdag_core_db": [
+      "osdag_core.Common (Common.py)",
+      "osdag_core.design_type.connection.connection",
+      "osdag_core.export_ifc.database_connector",
+      "osdag_core.utils.common.component",
+      "osdag_core.utils.common.material",
+      "osdag_core.utils.common.other_standards",
+      "osdagbridge.desktop.__main__.ensure_osdag_core_db (populates from Intg_osdag.sql if empty)"
+    ],
+    "modules_opening_osdagbridge_local_db": [
+      "osdagbridge.core.bridge_types.plate_girder.plategirderbridge (_DB_PATH)",
+      "osdagbridge.core.utils.common (_DB_PATH & DB_PATH)",
+      "osdagbridge.core.ifc_export_bridge.metadata_mapper (_DB_PATH)",
+      "osdagbridge.desktop.__main__.create_sqlite (creates/updates from Intg_osdag.sql)",
+      "osdagbridge.desktop.ui.dialogs.material_properties (db_path)",
+      "osdagbridge.desktop.ui.dialogs.transverse_member_design (DB_PATH)",
+      "osdagbridge.desktop.ui.widgets.section_viewer (DB_PATH)"
+    ],
+    "material_information_provider": {
+      "general_steel_materials": "osdag_core database ('Material' table, 10 records: E 165 to E 450)",
+      "bridge_materials": "osdagbridge local database ('Concrete_Grade_Properties', 'Rebar_Grade_Properties', 'Steel_Grade_Properties')"
+    },
+    "concrete_steel_rebar_grade_properties_provider": "osdagbridge local database. These three tables (Concrete_Grade_Properties [16 rows], Rebar_Grade_Properties [7 rows], Steel_Grade_Properties [28 rows]) exist exclusively in osdagbridge local database and do NOT exist in osdag_core.",
+    "path_resolution": {
+      "osdag_core": "Uses importlib.resources.files('osdag_core.data.ResourceFiles.Database').joinpath('Intg_osdag.sqlite'), yielding absolute/resolved site-packages path.",
+      "osdagbridge": "Uses Path(__file__).resolve().parents[2] / 'data' / 'ResourceFiles' / 'Intg_osdag.sqlite' or importlib.resources.files('osdagbridge.core.data.ResourceFiles').joinpath('Intg_osdag.sqlite'), resolving to local package resource directory."
+    },
+    "data_initialization_copy_seed_overwrite": {
+      "osdagbridge.desktop.__main__.create_sqlite": "Checks if sqlite exists; if missing or 0-byte or mtime < sql mtime, builds/updates from Intg_osdag.sql.",
+      "osdagbridge.desktop.__main__.ensure_osdag_core_db": "Checks if osdag_core sqlite is missing, 0 bytes, or has no tables; if so, populates from osdag_core's Intg_osdag.sql."
+    },
+    "can_application_accidentally_read_wrong_db": "No. PlateGirderBridge and OsdagBridge core utilities hardcode their path specifically to the local repository ResourceFiles directory (_DB_PATH). osdag_core uses importlib.resources anchored to the osdag_core namespace in site-packages. The namespaces and paths are completely isolated."
+  }
+}

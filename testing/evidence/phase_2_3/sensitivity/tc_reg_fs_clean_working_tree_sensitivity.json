@@ -1,0 +1,30 @@
+{
+  "test_id": "TC-REG-FS-CLEAN-WORKING-TREE",
+  "defect_id": "DEF-10",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 4.141,
+      "reason": "DEF-10 Confirmed: Production DB_PATH targets package tree (F:\\FOSSEE internship\\source\\OsdagBridge\\src\\osdagbridge\\core\\data\\project_location\\weather.sqlite) causing package mutation; Database() default constructor creates unanchored weather.sqlite in cwd"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 2.054,
+      "reason": "Database paths are cleanly anchored to user app data without package writes or cwd side effects."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 4.074,
+      "reason": "DEF-10 Confirmed: Database() default constructor creates unanchored weather.sqlite in cwd"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

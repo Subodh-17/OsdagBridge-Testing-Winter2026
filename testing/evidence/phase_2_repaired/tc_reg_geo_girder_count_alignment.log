@@ -1,0 +1,9 @@
+TEST IDENTIFIER: TC-REG-GEO-GIRDER-COUNT-ALIGNMENT
+DEFECT IDENTIFIER: DEF-11
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (6), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge.
+
+--- DETAILED EXECUTION LOG ---
+Physical Structural Girders (bridge._girder_count()): 4
+Designer Girders (bcfg.geometry.n_girders):            6

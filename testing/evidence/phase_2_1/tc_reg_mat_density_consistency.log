@@ -1,0 +1,19 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-MAT-DENSITY-CONSISTENCY
+DEFECT IDENTIFIER:      DEF-13
+RESULT STATUS:          FAIL
+EXPECTED ON BASELINE:   FAIL
+EXECUTION DURATION:     0.786 s
+TIMESTAMP UTC:          2026-11-16T10:09:08.295556+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+OSDAGBRIDGE MODULE:     None
+REASON / SUMMARY:       DEF-13 Confirmed: Self-weight resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN).
+================================================================================
+
+--- DETAILED EXECUTION LOG ---
+User Input Density: 70.0 kN/m3
+Model Girder Areas (m2): [0.02253434, 0.02253434, 0.02253434, 0.02253434], Span: 24.0 m
+Resultant SW Load Generated: 169.82 kN
+Dynamic Expected Resultant at 70.0 kN/m3: 151.43 kN
+Resultant at hardcoded 78.5 kN/m3:                 169.82 kN

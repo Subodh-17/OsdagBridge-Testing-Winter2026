@@ -1,0 +1,9 @@
+TEST IDENTIFIER: TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS
+DEFECT IDENTIFIER: DEF-17
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-17 Confirmed: add_vehicle_load_cases_from_combinations() only generates Class A and Class 70R vehicle combinations; IRC 6 Cl. 204.6 fatigue vehicle load case is completely omitted.
+
+--- DETAILED EXECUTION LOG ---
+Total vehicle load cases generated: 2
+Vehicle cases: ['Case1 2xClassA', 'Case2 1xClass70R']

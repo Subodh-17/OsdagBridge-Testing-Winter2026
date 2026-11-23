@@ -1,0 +1,279 @@
+{
+  "phase": "Phase 2.11 Candidates",
+  "runner_id": "baseline_runner",
+  "run_uuid": "b8e24ed7-768b-4d62-95dd-b783f1c68a8d",
+  "timestamp_utc": "2026-11-17T12:45:36.501164+00:00",
+  "total_files": 54,
+  "files": [
+    {
+      "path": "tc_reg_a01_factor_scaling.log",
+      "size_bytes": 1079,
+      "sha256": "9dcb0287180d96fecd0fc75aafab488c5408c9b85db194e9f93561490d0e1ce7"
+    },
+    {
+      "path": "tc_reg_a01_factor_scaling_a_baseline.log",
+      "size_bytes": 1079,
+      "sha256": "07013e567d9bfec52541b2eecb33700e0e53745ba704ce42499e3e357631cd7e"
+    },
+    {
+      "path": "tc_reg_a01_factor_scaling_b_correct.log",
+      "size_bytes": 1057,
+      "sha256": "099d4a232c0ab531b89b7912cfacabb8c24947303ec5ea9903644e39536f23a6"
+    },
+    {
+      "path": "tc_reg_a01_factor_scaling_c_naive.log",
+      "size_bytes": 1079,
+      "sha256": "9dcb0287180d96fecd0fc75aafab488c5408c9b85db194e9f93561490d0e1ce7"
+    },
+    {
+      "path": "tc_reg_a02_uls_combination_sum.log",
+      "size_bytes": 3117,
+      "sha256": "0ae39fff6b5c7465f779d990b903bbde1a5638e77c5953a44ec244beee488688"
+    },
+    {
+      "path": "tc_reg_a02_uls_combination_sum_a_baseline.log",
+      "size_bytes": 3115,
+      "sha256": "14bb0a59c6bb6cf14387755829356ebc80512fbea3697bfc617f6fcccbf7ae9f"
+    },
+    {
+      "path": "tc_reg_a02_uls_combination_sum_b_correct.log",
+      "size_bytes": 2649,
+      "sha256": "66d8ef8577d6ebfc9f03009d5fe116e4892c6acbd5529dc6953b4d0d78e3c2c6"
+    },
+    {
+      "path": "tc_reg_a02_uls_combination_sum_c_naive.log",
+      "size_bytes": 3117,
+      "sha256": "0ae39fff6b5c7465f779d990b903bbde1a5638e77c5953a44ec244beee488688"
+    },
+    {
+      "path": "tc_reg_b01_section_property_sync.log",
+      "size_bytes": 3806,
+      "sha256": "9d4502163281ca50bdaf75f4cd846115e8d218755c11cf345a09b8860ce3f6ce"
+    },
+    {
+      "path": "tc_reg_b01_section_property_sync_a_baseline.log",
+      "size_bytes": 3806,
+      "sha256": "f4560a7a4ef8eee706c912ef9e768402dde8ffb949c0db1a1ffe05ba0aa4d90d"
+    },
+    {
+      "path": "tc_reg_b01_section_property_sync_b_correct.log",
+      "size_bytes": 3578,
+      "sha256": "a564d7e156e3980e6682b6165286b9d4c3683326765ff894227730345b5f7823"
+    },
+    {
+      "path": "tc_reg_b01_section_property_sync_c_naive.log",
+      "size_bytes": 3806,
+      "sha256": "9d4502163281ca50bdaf75f4cd846115e8d218755c11cf345a09b8860ce3f6ce"
+    },
+    {
+      "path": "tc_reg_c01_sectional_stress_range.log",
+      "size_bytes": 2338,
+      "sha256": "6ef28cd12cc8add8c77fe7d5a5a716833e24b6defc88e517d87d503a7dca7f2a"
+    },
+    {
+      "path": "tc_reg_c01_sectional_stress_range_a_baseline.log",
+      "size_bytes": 2345,
+      "sha256": "8d554b075c390c76d7338a562140dc65232596f24f11e10f8cb85ce0a90032e0"
+    },
+    {
+      "path": "tc_reg_c01_sectional_stress_range_b_correct.log",
+      "size_bytes": 2308,
+      "sha256": "cddc742383336130bb5110ba521d3cf302ca0e89f5e5fd64a64b44cc78da8ed0"
+    },
+    {
+      "path": "tc_reg_c01_sectional_stress_range_c_naive.log",
+      "size_bytes": 2338,
+      "sha256": "6ef28cd12cc8add8c77fe7d5a5a716833e24b6defc88e517d87d503a7dca7f2a"
+    },
+    {
+      "path": "tc_reg_c02_fatigue_vehicle_analysis.log",
+      "size_bytes": 1715,
+      "sha256": "79a6b0ed5b07cc43868171a0f2ead70a46287cf3a49bd50c875fa7946c598ffa"
+    },
+    {
+      "path": "tc_reg_c02_fatigue_vehicle_analysis_a_baseline.log",
+      "size_bytes": 1715,
+      "sha256": "79a6b0ed5b07cc43868171a0f2ead70a46287cf3a49bd50c875fa7946c598ffa"
+    },
+    {
+      "path": "tc_reg_cad_export_vs_screenshot.log",
+      "size_bytes": 942,
+      "sha256": "47ed7bd4f7e50e13f5b61e4c512819139fbf514eaab8e51ff402f3d1854dccfc"
+    },
+    {
+      "path": "tc_reg_cad_export_vs_screenshot_a_baseline.log",
+      "size_bytes": 963,
+      "sha256": "c858471ef8e266af063b7aea5f33a03ae2f958129f78d11a1f10c4db1d5bb42f"
+    },
+    {
+      "path": "tc_reg_cad_export_vs_screenshot_b_correct.log",
+      "size_bytes": 963,
+      "sha256": "b466928355269b5e0bdbb00475758db117addcd501a9a80d7b6bb164b75df472"
+    },
+    {
+      "path": "tc_reg_cad_export_vs_screenshot_c_naive.log",
+      "size_bytes": 942,
+      "sha256": "47ed7bd4f7e50e13f5b61e4c512819139fbf514eaab8e51ff402f3d1854dccfc"
+    },
+    {
+      "path": "tc_reg_cap_stiffener_buckling.log",
+      "size_bytes": 1328,
+      "sha256": "1c94e442d37d1506096674482077cd19930ec1d7b2aaf2f4dde724379d00fa3d"
+    },
+    {
+      "path": "tc_reg_cap_stiffener_buckling_a_baseline.log",
+      "size_bytes": 1336,
+      "sha256": "41bc38c5bcc71f86baf53b2bc684a9d270be9dcba25e74595e179f99553de21e"
+    },
+    {
+      "path": "tc_reg_cap_stiffener_buckling_b_correct.log",
+      "size_bytes": 1226,
+      "sha256": "0a118b80c9a0bbe2afacddd2a2f0e815491f04a6de820d63b2e90dfdb720defd"
+    },
+    {
+      "path": "tc_reg_cap_stiffener_buckling_c_naive.log",
+      "size_bytes": 1328,
+      "sha256": "1c94e442d37d1506096674482077cd19930ec1d7b2aaf2f4dde724379d00fa3d"
+    },
+    {
+      "path": "tc_reg_d01_wind_speed_propagation.log",
+      "size_bytes": 1317,
+      "sha256": "3556d52cf8aae49e303bf94c240463914418f97b3429d43dc45fbd989cca2870"
+    },
+    {
+      "path": "tc_reg_d01_wind_speed_propagation_a_baseline.log",
+      "size_bytes": 1317,
+      "sha256": "ea364f4c2269caf5f7e08a097506860aa1758299759b65fb66b8e70ef221e2a4"
+    },
+    {
+      "path": "tc_reg_d01_wind_speed_propagation_b_correct.log",
+      "size_bytes": 1188,
+      "sha256": "cb552a3254e495ed7b0a0bd61b1ecdc8bdb86bcde462b9001be9aa3e12ab0224"
+    },
+    {
+      "path": "tc_reg_d01_wind_speed_propagation_c_naive.log",
+      "size_bytes": 1317,
+      "sha256": "3556d52cf8aae49e303bf94c240463914418f97b3429d43dc45fbd989cca2870"
+    },
+    {
+      "path": "tc_reg_d02_temperature_propagation.log",
+      "size_bytes": 1394,
+      "sha256": "50be60b08f96a5f6393b4e91e184c7a120f71b4b0b985734193e337d754bba97"
+    },
+    {
+      "path": "tc_reg_d02_temperature_propagation_a_baseline.log",
+      "size_bytes": 1394,
+      "sha256": "50be60b08f96a5f6393b4e91e184c7a120f71b4b0b985734193e337d754bba97"
+    },
+    {
+      "path": "tc_reg_eq_load_conservation.log",
+      "size_bytes": 6048,
+      "sha256": "e557a2331bfba8a037ea244bd0c08c3a7a18ef9c8337b89af1208ddc9976bb51"
+    },
+    {
+      "path": "tc_reg_eq_load_conservation_a_baseline.log",
+      "size_bytes": 6232,
+      "sha256": "1be96aaa613c650333cf8a48f5c2cf70c7beca7e3dca2c1e4bb02ef89a0d2e60"
+    },
+    {
+      "path": "tc_reg_eq_load_conservation_b_correct.log",
+      "size_bytes": 5473,
+      "sha256": "c99eb0d12171bf25be57381d3e7fb8ae317f689ea59f30e0c513dcb40d1412e7"
+    },
+    {
+      "path": "tc_reg_eq_load_conservation_c_naive.log",
+      "size_bytes": 6048,
+      "sha256": "e557a2331bfba8a037ea244bd0c08c3a7a18ef9c8337b89af1208ddc9976bb51"
+    },
+    {
+      "path": "tc_reg_fs_clean_working_tree.log",
+      "size_bytes": 1905,
+      "sha256": "f80302f0a523981c6b2b5f5b0c28c73e8f5d5fb2b67d96c1dd3ae0d714773ded"
+    },
+    {
+      "path": "tc_reg_fs_clean_working_tree_a_baseline.log",
+      "size_bytes": 2445,
+      "sha256": "82163e1f726eea7d92d6e82ba9716be018b5e8715ec99be5b5d40ebf64bc3649"
+    },
+    {
+      "path": "tc_reg_fs_clean_working_tree_b_correct.log",
+      "size_bytes": 2026,
+      "sha256": "a6f3b05edc6d625de236c9792713cc0581b2eac6a1d331c2401eb9de511e954a"
+    },
+    {
+      "path": "tc_reg_fs_clean_working_tree_c_naive.log",
+      "size_bytes": 1905,
+      "sha256": "f80302f0a523981c6b2b5f5b0c28c73e8f5d5fb2b67d96c1dd3ae0d714773ded"
+    },
+    {
+      "path": "tc_reg_geo_girder_count_alignment.log",
+      "size_bytes": 996,
+      "sha256": "e24b65449a9ccf9eeabc1490157d3b296a121edb08c2c3d8706a821ee157a6a9"
+    },
+    {
+      "path": "tc_reg_geo_girder_count_alignment_a_baseline.log",
+      "size_bytes": 996,
+      "sha256": "e033e09f90180e2373fcdc85f12dcc62ccf117abcbf2bf1f99fd45342b0067e9"
+    },
+    {
+      "path": "tc_reg_geo_girder_count_alignment_b_correct.log",
+      "size_bytes": 883,
+      "sha256": "5b3c470437328a0bc0a21a9553b1b41d4db3dde704be675bbcea4479f003243b"
+    },
+    {
+      "path": "tc_reg_geo_girder_count_alignment_c_naive.log",
+      "size_bytes": 996,
+      "sha256": "e24b65449a9ccf9eeabc1490157d3b296a121edb08c2c3d8706a821ee157a6a9"
+    },
+    {
+      "path": "tc_reg_geo_slab_section_properties.log",
+      "size_bytes": 1491,
+      "sha256": "aed52ddf56001ff55d069a0c2eb2604e5d264f2ae1f1d3c49e92007797949922"
+    },
+    {
+      "path": "tc_reg_geo_slab_section_properties_a_baseline.log",
+      "size_bytes": 1491,
+      "sha256": "aed52ddf56001ff55d069a0c2eb2604e5d264f2ae1f1d3c49e92007797949922"
+    },
+    {
+      "path": "tc_reg_mat_density_consistency.log",
+      "size_bytes": 1078,
+      "sha256": "a9b98a1e489b23f94305ebe539fafae0133c0d6e4878da275ab9c18aab674065"
+    },
+    {
+      "path": "tc_reg_mat_density_consistency_a_baseline.log",
+      "size_bytes": 1078,
+      "sha256": "34964a421c1b1c285d9a29151e0cacd4f07825c463ef2f5012d13a2d31c582c9"
+    },
+    {
+      "path": "tc_reg_mat_density_consistency_b_correct.log",
+      "size_bytes": 1008,
+      "sha256": "786b34eb8f05f66550fde20a65d4df1d0b5d9dfefab078381025a82e476e7b96"
+    },
+    {
+      "path": "tc_reg_mat_density_consistency_c_naive.log",
+      "size_bytes": 1078,
+      "sha256": "a9b98a1e489b23f94305ebe539fafae0133c0d6e4878da275ab9c18aab674065"
+    },
+    {
+      "path": "tc_reg_rpt_exec_summary_status.log",
+      "size_bytes": 3099,
+      "sha256": "7762d0ef36e5bc0772a99ee4c23d70ee31f421039f07fd877a36402307202998"
+    },
+    {
+      "path": "tc_reg_rpt_exec_summary_status_a_baseline.log",
+      "size_bytes": 3475,
+      "sha256": "f09353be763dd8cf2c94b270683ddd126bc29cfaa35c10e2fcac9ad41ea8f3ec"
+    },
+    {
+      "path": "tc_reg_rpt_exec_summary_status_b_correct.log",
+      "size_bytes": 1210,
+      "sha256": "20a75b3d92b7b41c3d5bed2839a0171b3e1fe5377f8c0597e7809e913d2eb015"
+    },
+    {
+      "path": "tc_reg_rpt_exec_summary_status_c_naive.log",
+      "size_bytes": 3099,
+      "sha256": "7762d0ef36e5bc0772a99ee4c23d70ee31f421039f07fd877a36402307202998"
+    }
+  ]
+}

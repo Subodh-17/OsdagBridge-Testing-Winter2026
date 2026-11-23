@@ -1,0 +1,64 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-EQ-LOAD-CONSERVATION
+DEFECT IDENTIFIER:      DEF-18
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     1.007 s
+TIMESTAMP UTC:          2026-11-16T18:43:49.419728+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-18 Confirmed: Static equilibrium and spatial load distribution violated in FE grillage: Deck Slab (DD): force diff +39.4 kN (+3.1%); Wearing Course (1.0 DW): force diff +7.6 kN (+3.1%); Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=-0.000m; Left Barrier line: force=98.1kN (exp 157.0kN), along_span_ok=True; Right Barrier line: force=98.1kN (exp 157.0kN), along_span_ok=True; DD distribution deviates: shares_ok=False, along_span_ok=True (support_ratio=7.6%)
+
+EXECUTION DETAILS & TRACE:
+Static & Moment Equilibrium Audit (Support Reactions vs Applied Physical Loads):
+  [SW] Girder Self-Weight:
+      Applied Load:        169.819 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    169.819 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:     -0.000 kN ( -0.00%) -> Force OK: True
+      Centroid Shift:   dx=-0.000m, dz=-0.000m -> Centroid OK: True
+      Equilibrium OK:   True
+  [DD] Deck Slab:
+      Applied Load:       1275.000 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:   1314.375 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:    +39.375 kN ( +3.09%) -> Force OK: False
+      Centroid Shift:   dx=+0.000m, dz=+0.000m -> Centroid OK: True
+      Equilibrium OK:   False
+  [1.0 DW] Wearing Course:
+      Applied Load:        244.800 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    252.360 kN (x_bar=12.000m, z_bar=4.250m)
+      Force Difference:     +7.560 kN ( +3.09%) -> Force OK: False
+      Centroid Shift:   dx=+0.000m, dz=-0.000m -> Centroid OK: True
+      Equilibrium OK:   False
+  [Crash barrier load] Crash Barrier:
+      Applied Load:        313.920 kN (x_bar=12.000m, z_bar=4.250m)
+      Support Reaction:    196.200 kN (x_bar=12.750m, z_bar=4.250m)
+      Force Difference:   -117.720 kN (-37.50%) -> Force OK: False
+      Centroid Shift:   dx=+0.750m, dz=-0.000m -> Centroid OK: False
+      Equilibrium OK:   False
+  Total Dead Load Resultants:
+      Total Applied:      2003.539 kN
+      Total Reaction:     1932.754 kN
+      Net Shortfall:       -70.785 kN ( -3.53%)
+
+Individual Load Group, Transverse & Along-Span Distribution Audit:
+  [Left Barrier (z=0.250m)]:
+      Total Force:          98.100 kN (Expected: 156.960 kN) -> OK: False
+      Centroid (x, z):  x=12.750m, z=0.250m (Expected: x=12.000m, z=0.250m) -> OK: False
+      Line 0 (z=0.000m): 76.19% (Expected: 76.19%) -> OK: True
+      Line 1 (z=1.050m): 23.81% (Expected: 23.81%) -> OK: True
+      Along-Span Check: Support ratio=3.3%, Midspan ratio=60.0% -> OK: True
+      Overall Left Barrier Distribution OK: False
+  [Right Barrier (z=8.250m)]:
+      Total Force:          98.100 kN (Expected: 156.960 kN) -> OK: False
+      Centroid (x, z):  x=12.750m, z=8.250m (Expected: x=12.000m, z=8.250m) -> OK: False
+      Line 4 (z=7.450m): 23.81% (Expected: 23.81%) -> OK: True
+      Line 5 (z=8.500m): 76.19% (Expected: 76.19%) -> OK: True
+      Along-Span Check: Support ratio=3.3%, Midspan ratio=60.0% -> OK: True
+      Overall Right Barrier Distribution OK: False
+  [Concrete Deck Slab (DD) Distribution]:
+      Total Force:        1314.375 kN (Expected: 1275.000 kN)
+      Tributary Shares: Line 0 (z=0.000m): 6.74% (exp 6.18%) -> False; Line 1 (z=1.050m): 18.91% (exp 18.73%) -> True; Line 2 (z=3.183m): 24.35% (exp 25.10%) -> False; Line 3 (z=5.317m): 24.35% (exp 25.10%) -> False; Line 4 (z=7.450m): 18.91% (exp 18.73%) -> True; Line 5 (z=8.500m): 6.74% (exp 6.18%) -> False
+      Along-Span Check: Support ratio=7.6%, Midspan ratio=54.6% -> OK: True
+      Overall DD Distribution OK: False

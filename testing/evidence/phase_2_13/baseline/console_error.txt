@@ -1,0 +1,94 @@
+WARNING analysis Static - no Algorithm yet specified, 
+ NewtonRaphson default will be used
+WARNING analysis Static - no ConstraintHandler yet specified, 
+ PlainHandler default will be used
+WARNING analysis Static - no Numberer specified, 
+ RCM default will be used
+WARNING analysis Static - no Integrator specified, 
+ StaticIntegrator default will be used
+WARNING analysis Static - no LinearSOE specified, 
+ ProfileSPDLinSOE default will be used
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'wind_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'wind_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'wind_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'wind_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'wind_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'wind_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_1: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_2: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_3: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_1: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2392: UserWarning: SEISMIC_1: seismic load case not available.
+  warnings.warn(f"{prefix}_{seq}: seismic load case not available.")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_2: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2392: UserWarning: SEISMIC_2: seismic load case not available.
+  warnings.warn(f"{prefix}_{seq}: seismic load case not available.")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_3: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2392: UserWarning: SEISMIC_3: seismic load case not available.
+  warnings.warn(f"{prefix}_{seq}: seismic load case not available.")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_4: 'live_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_4: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2392: UserWarning: SEISMIC_4: seismic load case not available.
+  warnings.warn(f"{prefix}_{seq}: seismic load case not available.")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")

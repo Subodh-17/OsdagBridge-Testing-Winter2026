@@ -1,0 +1,127 @@
+# Phase 2.13 Evidence Manifest & Cryptographic Verification
+
+**Phase:** Phase 2.13 — Evidence Trust Architecture Redesign and Remaining Security Remediation  
+**Baseline Commit:** d74f56dd7f22925fb8148cabf5740ed8d1e39ff3  
+**Timestamp (UTC):** 2026-11-17T17:37:54.620312+00:00  
+**Trust Store:** ~/.osdagbridge_trust (C:\Users\Subodh\.osdagbridge_trust)  
+
+---
+
+## 1. Cryptographic Run Seals (HMAC-SHA256 Authenticated)
+
+| Subdirectory | Runner ID | Run UUID | Timestamp (UTC) | Files | Bytes | Manifest SHA-256 | HMAC-SHA256 Signature | Status |
+|:---|:---|:---|:---|:---:|:---:|:---|:---|:---:|
+| evidence/phase_2_13/baseline | baseline_runner | fb966e81-b715-4208-98c7-c258b7eb08fd | 2026-11-17T17:37:54.620312+00:00 | 19 | 71441 | b8711d3c777c2d53... | 5fbbcf4d1fcd75f5... | **VALID** |
+| evidence/phase_2_13/sensitivity | sensitivity_runner | 9aac2738-e753-49ab-84e6-7a2a61548a67 | 2026-11-17T17:41:09.878418+00:00 | 19 | 104183 | 0027c52b9028e70f... | 71d658711b228329... | **VALID** |
+| evidence/phase_2_13/candidates | candidates_runner | 867d222a-334a-4327-aaf2-d6cc7c633bed | 2026-11-17T17:41:10.080062+00:00 | 54 | 115299 | 465d3f1ef9d7b14b... | 8ef701fcfd1d3111... | **VALID** |
+
+---
+
+## 2. Directory File Manifests
+
+### 2.1 Subdirectory: aseline (19 files)
+
+| Relative Path | Size (Bytes) | SHA-256 Hash |
+|:---|:---:|:---|
+| baseline_exit_code.txt | 3 | 13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354 |
+| console_error.txt | 10673 | 6df59e10ce4fbf1d5c11ba680d222e6ebcb43cd9615bf6715431e2e2dbb759d8 |
+| console_output.txt | 12511 | fa6772ba16c1f5e4841cf048beff097cb219b5b1549e454d4a5c8bc58d959cc1 |
+| phase_2_13_baseline_summary.json | 15410 | c2abe015debc9950a7467d1e9d9c8d3d6e069c00d008a3b237baf47c09cb8ee5 |
+| tc_reg_a01_factor_scaling.log | 1079 | c35607518e5dfc39a07b1adb4008575f6a984a83ddd8dfe2380b5923f978df0c |
+| tc_reg_a02_uls_combination_sum.log | 3116 | efd8c07ca2ba04ccd5aae3acdd4d7b21d6321182f0b2bd327aeec922f4428870 |
+| tc_reg_b01_section_property_sync.log | 3806 | 9660d9289d0fb065ffe82cac09c17ed7293d01fd5b9249a2565b2ef615422d48 |
+| tc_reg_c01_sectional_stress_range.log | 2400 | 40affbb7148dd2bb65b29d740a3fc73b3e0e16e97993c6c0b59a1384dadd1cc8 |
+| tc_reg_c02_fatigue_vehicle_analysis.log | 1715 | a9bc87873d6810c81a0653c04fdb6545e6f4a912613a9fa030c7ffdec8d59cab |
+| tc_reg_cad_export_vs_screenshot.log | 963 | fea12c22d23114bf38304b1ecec955b2e2cbcd56963e5cfe93dc8cd69db3989d |
+| tc_reg_cap_stiffener_buckling.log | 1336 | ec48be93db3f2e5884c49457ee1ba5eb62d3939fe259f133dc7ef38e711a7cb1 |
+| tc_reg_d01_wind_speed_propagation.log | 1317 | 266527a9b0682e22100cf18173ab512b3f3fb1699512fce630bf582350fb8f50 |
+| tc_reg_d02_temperature_propagation.log | 1394 | 3dcb0997d843039026dd3693e51b5d9ba03ec4e2cf559fd1527e8a2f4304cb3f |
+| tc_reg_eq_load_conservation.log | 6232 | f7465067acc1ec5fd19efebe05cfeb772c32cdc2ab072066b11f4cfb1d3a54bc |
+| tc_reg_fs_clean_working_tree.log | 2445 | d2b243802203e6892f4c79004ab2889f57dbb1769964a0e13d30598098e7cb3b |
+| tc_reg_geo_girder_count_alignment.log | 996 | 147a0ab8d1b1d5770e4ccaf54d95bfff9df3b9e7fb93ef86b0392a58ca482474 |
+| tc_reg_geo_slab_section_properties.log | 1491 | c6969ab896f47ff71089d7f7ff22a4ae67b1ba970b87597785979d6e554b5e4f |
+| tc_reg_mat_density_consistency.log | 1078 | 87d4e50ecf26a7aa252184ad60e6e48278a4b97725d6b58d09e60caa524d7b47 |
+| tc_reg_rpt_exec_summary_status.log | 3476 | a5b4252db789c798c96f7b93b7addfe0be9dcfecb9eadbe73424fd5b13820002 |
+
+### 2.2 Subdirectory: sensitivity (19 files)
+
+| Relative Path | Size (Bytes) | SHA-256 Hash |
+|:---|:---:|:---|
+| console_error.txt | 30435 | 688addba5ec92c90e43db10a14a947005b5d2e0c0f1838a0c351bdc2b05a5fbe |
+| console_output.txt | 14097 | b7b8919345dc8444c2e0cf38160e09b365cec59bfb58c45a5184ba4fd08d7769 |
+| phase_2_13_sensitivity_matrix_summary.json | 31118 | 172faecb7289b3f2130a001d0daf623d4e23250842ed571ded63099ffbab6ddc |
+| sensitivity_exit_code.txt | 3 | 13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354 |
+| tc_reg_a01_factor_scaling_sensitivity.json | 1357 | 27ec00e7b76f7d8ddb810e3ac7fcc827fd07bda20aeaed917a3109ee95ad84f8 |
+| tc_reg_a02_uls_combination_sum_sensitivity.json | 2226 | 83f58152af904f434b3b0e1a51dcfea193b8c0ff377d7b28d7124b6f35d9d225 |
+| tc_reg_b01_section_property_sync_sensitivity.json | 1724 | 4e2ac078d3fb66d322283a91fd6c723714aa184ade22350e6a6329d9b67fa5ad |
+| tc_reg_c01_sectional_stress_range_sensitivity.json | 1719 | e29d1beebcecbc3b484a40b81779876a1b9ad4d5f7c2573e11305c7ce37f7e4b |
+| tc_reg_c02_fatigue_vehicle_analysis_sensitivity.json | 1348 | ae8f09809653c4629e0c0f3f998f62fa98c420c445e84abfb8a7c8fe5286a8d7 |
+| tc_reg_cad_export_vs_screenshot_sensitivity.json | 1308 | 2689073639bb10c8e31f6e6a07d22fd867616223fc164aa7b11f4a1fbe8cb87a |
+| tc_reg_cap_stiffener_buckling_sensitivity.json | 1571 | ec893788e9860be873ed9556ccf634830748d4cb501858162d7beff81347d665 |
+| tc_reg_d01_wind_speed_propagation_sensitivity.json | 1540 | df2fc40cd8b14bcb77958929536bfe88788a683d70acb6b42a59b5518895b469 |
+| tc_reg_d02_temperature_propagation_sensitivity.json | 1274 | 16d66aaac2d7a9b8ad529a7609c9614f012afdfd454e4bf8c03b7658b0bc7c31 |
+| tc_reg_eq_load_conservation_sensitivity.json | 2766 | 509f947fca28f7cb1dc5ac493618e67db489554f2bce061e3cb07ed5977586ba |
+| tc_reg_fs_clean_working_tree_sensitivity.json | 1692 | a3e810a55e3a738641fa9acbaef2da9c2e280fb6d8f01de20d141c5efefd0ee3 |
+| tc_reg_geo_girder_count_alignment_sensitivity.json | 1440 | 4b4f763719806c19a4f153f706920d32ae4403dde9818d2503cb3010b27b66f2 |
+| tc_reg_geo_slab_section_properties_sensitivity.json | 1365 | 4d14c9ab8f13fabcb4cd70de26bba13d2b24e09adac3e7c78e6df1ed9e67fcae |
+| tc_reg_mat_density_consistency_sensitivity.json | 1450 | d2618e7f2f99e49dde4eabecec3e95ac7f734e3099c3581282534d548cf1f839 |
+| tc_reg_rpt_exec_summary_status_sensitivity.json | 5750 | 88824cb042704b57160eb3b7c5e947b1b17219116e974165c7ed680c15d1b59f |
+
+### 2.3 Subdirectory: candidates (54 files)
+
+| Relative Path | Size (Bytes) | SHA-256 Hash |
+|:---|:---:|:---|
+| tc_reg_a01_factor_scaling.log | 1079 | 82344758d2d33c53623e64ab92e1445f974b5cba9c5cedb0d84fe75cffcc6f9a |
+| tc_reg_a01_factor_scaling_a_baseline.log | 1079 | 61aeb97687eca3fa9fde32858a3d691666e68a61308caddc147db564ff89117f |
+| tc_reg_a01_factor_scaling_b_correct.log | 1057 | 0dd84512585e19dc98b8263f0ebfca2f61e3b980c355e89cf2639fe81cb9a669 |
+| tc_reg_a01_factor_scaling_c_naive.log | 1079 | 82344758d2d33c53623e64ab92e1445f974b5cba9c5cedb0d84fe75cffcc6f9a |
+| tc_reg_a02_uls_combination_sum.log | 3118 | 52ce7d9538a31595441527bdb5c462339ef70584f2de0e2a4282218578c26374 |
+| tc_reg_a02_uls_combination_sum_a_baseline.log | 3116 | e51c0c492eb1e521491fa860ce1ad29fc4e95fd70bb8e90865ff67734795d379 |
+| tc_reg_a02_uls_combination_sum_b_correct.log | 2649 | 72d0b40975cd9f1331b6d365a470f04c6649415196af3250748572bb85da7a8c |
+| tc_reg_a02_uls_combination_sum_c_naive.log | 3118 | 52ce7d9538a31595441527bdb5c462339ef70584f2de0e2a4282218578c26374 |
+| tc_reg_b01_section_property_sync.log | 3806 | e1255157286a336a8c47bfe9ec45e9ba418e310458decff143600184a087f9f1 |
+| tc_reg_b01_section_property_sync_a_baseline.log | 3806 | 99039b0d50179b172992793274542666c2ec807c5366bb34712dcc50763f332b |
+| tc_reg_b01_section_property_sync_b_correct.log | 3578 | 657e93b4011acf8c20c0d6c998c75c4ccad8ca85c5f34fec250071c9b2866bfb |
+| tc_reg_b01_section_property_sync_c_naive.log | 3806 | e1255157286a336a8c47bfe9ec45e9ba418e310458decff143600184a087f9f1 |
+| tc_reg_c01_sectional_stress_range.log | 2390 | a4ae41a2e20e1527d0c59c35b19c614bb13a4f3d6b92fcfc9bdfa0fd783bae8a |
+| tc_reg_c01_sectional_stress_range_a_baseline.log | 2400 | a94e5fbc50909ab6befac3a8a7690654c407a70a74c8f80fc3bbc7a6342e7965 |
+| tc_reg_c01_sectional_stress_range_b_correct.log | 2376 | 7ade6263800a3d5011b60b3c59e4af9ea57142851d255ac102e9fa69c45163af |
+| tc_reg_c01_sectional_stress_range_c_naive.log | 2390 | a4ae41a2e20e1527d0c59c35b19c614bb13a4f3d6b92fcfc9bdfa0fd783bae8a |
+| tc_reg_c02_fatigue_vehicle_analysis.log | 1715 | 7bd1d0bae6d4e9b63368f04ddc117b3a47d1bc3456ed718738e83d1856daf327 |
+| tc_reg_c02_fatigue_vehicle_analysis_a_baseline.log | 1715 | 7bd1d0bae6d4e9b63368f04ddc117b3a47d1bc3456ed718738e83d1856daf327 |
+| tc_reg_cad_export_vs_screenshot.log | 942 | 3fd359dff42d68939044a2deaef111bf73ec0a10b35132c26b6cffe961b891ef |
+| tc_reg_cad_export_vs_screenshot_a_baseline.log | 963 | ffef47f49e39bc75ad678d097a747f3e750bdc82bdaa74491d30b8374ba43e6c |
+| tc_reg_cad_export_vs_screenshot_b_correct.log | 963 | bf07bd0579a1864084aa75e829be64c76fb5a341062c2e82e9fd5045ca4ad7e8 |
+| tc_reg_cad_export_vs_screenshot_c_naive.log | 942 | 3fd359dff42d68939044a2deaef111bf73ec0a10b35132c26b6cffe961b891ef |
+| tc_reg_cap_stiffener_buckling.log | 1328 | 4c88d524430f92d69410d2ed0f4988455e2666fccd65ec19c5eb408a30fb2bbe |
+| tc_reg_cap_stiffener_buckling_a_baseline.log | 1336 | 144b891489b4bbe2766d1bb93c2a4fdc820b11e8587f9c3b6742bd57b9eebb8f |
+| tc_reg_cap_stiffener_buckling_b_correct.log | 1226 | 721f0807879a5c81e977f9148e17ca3d0a905dde9fe08749aa79f405bb5c0c22 |
+| tc_reg_cap_stiffener_buckling_c_naive.log | 1328 | 4c88d524430f92d69410d2ed0f4988455e2666fccd65ec19c5eb408a30fb2bbe |
+| tc_reg_d01_wind_speed_propagation.log | 1317 | 3ebc86193fae28b094edfd051e9fe357cd8e68e10c9abb2316c4d3a89116e6c6 |
+| tc_reg_d01_wind_speed_propagation_a_baseline.log | 1317 | 900806e8b2661bca99ad646d43af2da04b0818fc190591b14c289ad6393cf311 |
+| tc_reg_d01_wind_speed_propagation_b_correct.log | 1188 | 93ce2ffd124e2f86877678c4971a677e715d93fd37f314fe5f28c4e684341b28 |
+| tc_reg_d01_wind_speed_propagation_c_naive.log | 1317 | 3ebc86193fae28b094edfd051e9fe357cd8e68e10c9abb2316c4d3a89116e6c6 |
+| tc_reg_d02_temperature_propagation.log | 1394 | fe91bb66bf2fee77ed888140464b81d44a2c27159a7378c0df4911ba51576b5d |
+| tc_reg_d02_temperature_propagation_a_baseline.log | 1394 | fe91bb66bf2fee77ed888140464b81d44a2c27159a7378c0df4911ba51576b5d |
+| tc_reg_eq_load_conservation.log | 6048 | eb2d43c3f9a8bc322f4ebeb8fe66c9afc60f864912d76f55a93110b9e493971a |
+| tc_reg_eq_load_conservation_a_baseline.log | 6232 | a0118b346875bd50804d0f37e029c2e1617175a43beb8ad59d73e08b8f375ca9 |
+| tc_reg_eq_load_conservation_b_correct.log | 5473 | 6935b0c7efbd5c8357c9c7110caabe629bb52b77c8be652b76a3a2759b09d329 |
+| tc_reg_eq_load_conservation_c_naive.log | 6048 | eb2d43c3f9a8bc322f4ebeb8fe66c9afc60f864912d76f55a93110b9e493971a |
+| tc_reg_fs_clean_working_tree.log | 1906 | ef6a199ebe28dda3d776e823b970518c1e4bbc2a5261b1a4e55b1726f6b77f0b |
+| tc_reg_fs_clean_working_tree_a_baseline.log | 2445 | e18a3e51bcbc0df75b17f09ec32859090457868daa885b25f64e864a00b89d45 |
+| tc_reg_fs_clean_working_tree_b_correct.log | 2027 | 7899d6b9161d182d9e2dae3ba8f7132df01d70fdbece7d057cf57f68ddf1419a |
+| tc_reg_fs_clean_working_tree_c_naive.log | 1906 | ef6a199ebe28dda3d776e823b970518c1e4bbc2a5261b1a4e55b1726f6b77f0b |
+| tc_reg_geo_girder_count_alignment.log | 996 | c15ff417fce7fe566ce0ca2cef8666488aeba86a2c562af314ea61a4ac1f55a3 |
+| tc_reg_geo_girder_count_alignment_a_baseline.log | 996 | d513a0bc456030c69f8c965c8cd9ab2c52360e01c9251a2c2a23f9e82aa5757b |
+| tc_reg_geo_girder_count_alignment_b_correct.log | 883 | fa2728053a6a394f6bef1b8522d6e75c995ec6c7733708e057199870cc44407b |
+| tc_reg_geo_girder_count_alignment_c_naive.log | 996 | c15ff417fce7fe566ce0ca2cef8666488aeba86a2c562af314ea61a4ac1f55a3 |
+| tc_reg_geo_slab_section_properties.log | 1491 | f69d630adbd1706622f9c314d40ceebb162daca1c075fd002729979c747613ca |
+| tc_reg_geo_slab_section_properties_a_baseline.log | 1491 | f69d630adbd1706622f9c314d40ceebb162daca1c075fd002729979c747613ca |
+| tc_reg_mat_density_consistency.log | 1078 | 1eca79d4b6459ddbb6cccc42db67896ec079041163319d085e232af9138e69bd |
+| tc_reg_mat_density_consistency_a_baseline.log | 1078 | 19b80cebead0699c3c2e465e3d51d3a13683d33608c10a13cee894b5c77bcb59 |
+| tc_reg_mat_density_consistency_b_correct.log | 1008 | c85cad558b3892cfc1536759b8e98ea6f19a26d5524a690da0a085c4522e0be2 |
+| tc_reg_mat_density_consistency_c_naive.log | 1078 | 1eca79d4b6459ddbb6cccc42db67896ec079041163319d085e232af9138e69bd |
+| tc_reg_rpt_exec_summary_status.log | 3100 | 516bd6471a429192986ae8103c1b10a49dde9dc4bfe6bd50281bbba02bdaa440 |
+| tc_reg_rpt_exec_summary_status_a_baseline.log | 3476 | 50caf351eca77663306fd901183ca3056edc48f808c94de079956e0814faa026 |
+| tc_reg_rpt_exec_summary_status_b_correct.log | 1211 | 749324bc4f07a3049a94a0cee6a0bd99b617e9394fa07e3af3c6397489dcb782 |
+| tc_reg_rpt_exec_summary_status_c_naive.log | 3100 | 516bd6471a429192986ae8103c1b10a49dde9dc4bfe6bd50281bbba02bdaa440 |

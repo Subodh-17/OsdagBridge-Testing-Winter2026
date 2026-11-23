@@ -1,0 +1,66 @@
+[
+  {
+    "file": "baseline/tc_reg_eq_load_conservation.log",
+    "status": "OVERWRITTEN",
+    "manifest_sha256": "054876a7116ce1c00b2a128406038af25f3e1fe69d2f32f1d29d37952d1e4b1d",
+    "disk_sha256": "cdcda56bd559dc332c641cd1f86dee67b411b5766b7fd53e55e1ce69effa2ad2",
+    "manifest_size": null,
+    "disk_size": 4359
+  },
+  {
+    "file": "baseline/tc_reg_fs_clean_working_tree.log",
+    "status": "OVERWRITTEN",
+    "manifest_sha256": "cd1e28d7e63e02d5c9b3f2a3ec9cca12b9c13208405f30c3e0dac1634d49acf1",
+    "disk_sha256": "ab1ecb30bb82506af612091527466345e51356e2821ac23ffbe9ef8708e02ea2",
+    "manifest_size": null,
+    "disk_size": 1987
+  },
+  {
+    "file": "candidates/tc_reg_a02_uls_combination_sum.log",
+    "status": "OVERWRITTEN",
+    "manifest_sha256": "6b69e668424146c26f53eafaa87e4de1e5106848536fa4f02ad02094d12b07b6",
+    "disk_sha256": "0fecf5570bb56d70be4a4cdd397fe12da5d53f8725937e23b1b613ae31d12eef",
+    "manifest_size": null,
+    "disk_size": 2486
+  },
+  {
+    "file": "candidates/tc_reg_b01_section_property_sync.log",
+    "status": "OVERWRITTEN",
+    "manifest_sha256": "8fd719ce84f38f246693586785586d8078d02320ec4ed6a297df861154dd207e",
+    "disk_sha256": "7fe4da64dfeae5b0bb4420aa735931bd54d93a8cabc8a87f75a0f8e37db64897",
+    "manifest_size": null,
+    "disk_size": 2140
+  },
+  {
+    "file": "candidates/tc_reg_c01_sectional_stress_range.log",
+    "status": "OVERWRITTEN",
+    "manifest_sha256": "ff2e7b532061c04332d681cc931328ee89769d3715539583c06724cfe5655763",
+    "disk_sha256": "83de7855dccf7a9d37764d7bc98cc5e6962e88fa2d89636c6b688d5acb4ff650",
+    "manifest_size": null,
+    "disk_size": 2363
+  },
+  {
+    "file": "candidates/tc_reg_eq_load_conservation.log",
+    "status": "OVERWRITTEN",
+    "manifest_sha256": "0d490c374931b3335aefdc1cf3396e10e027e197986879105b45bc1c8fdff54a",
+    "disk_sha256": "40092b80eabf0e5b19eb241534dcb458c50ffdae07d4043af2df3ea87d43c32b",
+    "manifest_size": null,
+    "disk_size": 3917
+  },
+  {
+    "file": "candidates/tc_reg_fs_clean_working_tree.log",
+    "status": "OVERWRITTEN",
+    "manifest_sha256": "ab361431ea2a3d87a434890cbd1884aec3425c485ef644e09bb14559e7103a8f",
+    "disk_sha256": "c966fe8ec07aa4974d50d8e3dd6a60c55373210b0ae19cb4c261b0d2abe66824",
+    "manifest_size": null,
+    "disk_size": 1685
+  },
+  {
+    "file": "candidates/tc_reg_rpt_exec_summary_status.log",
+    "status": "OVERWRITTEN",
+    "manifest_sha256": "89d3466d20aa00839f0d63b4aabbb1bbdbd52f5affbbc38ff0b7c2362d6d36ae",
+    "disk_sha256": "d7ca1f685f7c5b1fb293bbffb1207dc9b13bd17dc703d1fdbc6729d4fceaf35a",
+    "manifest_size": null,
+    "disk_size": 2114
+  }
+]

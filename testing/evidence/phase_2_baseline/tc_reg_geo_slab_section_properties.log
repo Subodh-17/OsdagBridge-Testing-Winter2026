@@ -1,0 +1,11 @@
+TEST IDENTIFIER: TC-REG-GEO-SLAB-SECTION-PROPERTIES
+DEFECT IDENTIFIER: DEF-14
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: DEF-14 Confirmed: plategirderbridge.py:1285 assigns exactly A/2 and Iz/2 of the steel girder to the transverse concrete deck slab.
+
+--- EXECUTION DETAILS ---
+Transverse Section Iz: 0.00367046 m4
+Girder Section Iz / 2: 0.00367046 m4
+Transverse Section A:  0.01126717 m2
+Girder Section A / 2:  0.01126717 m2

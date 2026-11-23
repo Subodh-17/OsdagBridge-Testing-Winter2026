@@ -1,0 +1,8 @@
+TEST IDENTIFIER: TC-REG-A02-ULS-COMBINATION-SUM
+DEFECT IDENTIFIER: DEF-01 / DEF-02
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: DEF-02 Confirmed: create_sidl_combination() was never invoked; sidl_combination is None in grillage model.
+
+--- EXECUTION DETAILS ---
+bridge.grillage_model.sidl_combination: None

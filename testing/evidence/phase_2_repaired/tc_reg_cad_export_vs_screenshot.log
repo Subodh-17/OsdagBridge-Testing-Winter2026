@@ -1,0 +1,10 @@
+TEST IDENTIFIER: TC-REG-CAD-EXPORT-VS-SCREENSHOT
+DEFECT IDENTIFIER: DEF-09 (Harness Flaw vs Application API)
+RESULT STATUS: PASS
+EXPECTED ON BASELINE: PASS
+REASON: Application CAD export API (Viewer3d.ExportToImage) produces fully rendered opaque geometry. (The 92.95% transparent PNG in Phase 1D was a test harness artifact).
+
+--- DETAILED EXECUTION LOG ---
+ExportToImage generated: True, File size: 4324 bytes
+Image format: PNG, Mode: RGB, Size: (656, 519)
+Opaque pixel ratio: 100.0%

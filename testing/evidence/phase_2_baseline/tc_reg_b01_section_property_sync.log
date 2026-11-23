@@ -1,0 +1,11 @@
+TEST IDENTIFIER: TC-REG-B01-SECTION-PROPERTY-SYNC
+DEFECT IDENTIFIER: DEF-03
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: Assigned Iz (0.00734091 m4) retains preliminary sizing and fails to match snapped Iz (0.00795392 m4, diff 7.71%).
+
+--- EXECUTION DETAILS ---
+Snapped Plate Dimensions: dw=1.306m, tw=0.0080m, bf=0.410m, tf=0.0180m
+Assigned to OpenSees (Preliminary): Iz=0.00734091 m4, A=0.02253434 m2
+Analytical Snapped Section:         Iz=0.00795392 m4, A=0.02520800 m2
+Discrepancy: Iz differs by 7.71%, A differs by 10.61%

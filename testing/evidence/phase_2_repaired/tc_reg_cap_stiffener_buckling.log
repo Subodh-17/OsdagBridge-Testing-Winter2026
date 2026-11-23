@@ -1,0 +1,10 @@
+TEST IDENTIFIER: TC-REG-CAP-STIFFENER-BUCKLING
+DEFECT IDENTIFIER: DEF-12
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-12 Confirmed: bs_Fcdw_wb_kN evaluates to 134083.2 kN (69.9x the maximum possible yield capacity of the web strip) due to unreduced Euler elastic stress using mixed stiffener inertia Iys.
+
+--- DETAILED EXECUTION LOG ---
+Web Buckling Capacity (bs_Fcdw_wb_kN): 134083.2 kN
+Maximum Physical Web Squash Bound ((fy/gm0)*Awb): 1918.8 kN
+Ratio Computed / Max Bound: 69.9x

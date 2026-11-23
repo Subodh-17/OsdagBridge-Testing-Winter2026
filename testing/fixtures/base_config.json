@@ -1,0 +1,33 @@
+{
+  "description": "OsdagBridge Canonical Test Fixture Configuration for Baseline Regression Suite",
+  "structure.type": "Highway Bridge",
+  "project.location": {
+    "method": "location_name",
+    "data": {
+      "state": "Maharashtra",
+      "district": "Ahmednagar"
+    },
+    "weather_data": {
+      "wind_speed": 39.0,
+      "zone": "III",
+      "z_value": 0.16,
+      "max_temp": 48.2,
+      "min_temp": 2.2,
+      "latitude": 19.0948,
+      "longitude": 74.748
+    },
+    "display_text": "Ahmednagar, Maharashtra",
+    "show_display": true
+  },
+  "geometry.span": 24.0,
+  "geometry.carriageway_width": 7.5,
+  "geometry.include_median": "No",
+  "geometry.footpath": "None",
+  "geometry.skew_angle": 0.0,
+  "geometry.design_mode": "Optimized",
+  "material.girder": "E 350A",
+  "material.cross_bracing": "E 350A",
+  "material.end_diaphragm": "E 350A",
+  "material.deck": "M40",
+  "typical_section.median.width": 0.0
+}

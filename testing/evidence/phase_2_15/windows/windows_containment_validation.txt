@@ -1,0 +1,65 @@
+﻿================================================================================
+WIN32 JOB OBJECT PROCESS CONTAINMENT EMPIRICAL VALIDATION
+Platform: Windows (win32) | Python: C:\Users\Subodh\AppData\Local\Programs\Python\Python311\python.exe
+================================================================================
+
+[CHECK 1] Suspended Process Creation & Assign-Before-Execute...
+  Spawned PID 27924 (Thread 28180) with CREATE_SUSPENDED.
+  Step 1: Marker exists while suspended before assign: False (Must be False)
+  Step 2: AssignProcessToJobObject success: 1 | Processes in Job: 1
+  Step 3: Marker exists after assign but before resume: False (Must be False)
+  Step 4: Primary thread resumed (Previous suspend count: 1)
+  Step 5: Marker exists after resume: True (Must be True)
+  Result: PASS
+
+[CHECK 2] Kill-On-Job-Close Enforcement...
+  Spawned long-running child PID 35540. Closing Job handle directly...
+  Child PID 35540 alive after Job handle closed: False -> Result: PASS
+
+[CHECK 3] Breakaway Restrictions (JOB_OBJECT_LIMIT_BREAKAWAY_OK Disallowed)...
+  Child Output: 'BREAKAWAY_DENIED' | Total Active in Job: 1
+  Result: PASS
+
+[CHECK 4] Descendant Inheritance (Nested Grandchildren)...
+  Spawned child PID 33784. Captured Active Processes in Job: 3 (Expected >= 2)
+  Result: PASS
+
+[CHECK 5] Delayed Writes Prevention at 3s, 8s, 15s, and 30s (with Uncontained Control)...
+  [5A] Executing Uncontained Positive Control Run (Proves delayed writes succeed without containment)...
+  [5A] Control writer PID 30272 started. Marker: 'STARTED: RUN_ID=1060bf5a-59ca-4536-a873-66ed202df180, PID=30272, TIME=1794943004.8246157' (Provenance verified: True)
+  [5A t=4.50s] Control 3s write:  exists=True (mtime=1794943007.83)
+  [5A t=9.50s] Control 8s write:  exists=True (mtime=1794943012.83)
+  [5A t=16.52s] Control 15s write: exists=True (mtime=1794943019.83)
+  [5A t=31.50s] Control 30s write: exists=True (mtime=1794943034.83)
+  [5A] Control file creation mtime progression verified: True
+  [5A] Control Run Result: PASS (All 4 delayed files created in order)
+  [5B] Executing Contained Run Under Win32 Job Object...
+  [5B] Contained writer spawned: PID 10804
+  [5B] Start marker verified: True (Provenance verified: True)
+  [5B] Active processes in Job before termination: 1 (Assert >= 1)
+  [5B] Process alive before termination: True (Assert True)
+  [5B] Termination triggered at t = 0.079s (Scheduled targets: 3s, 8s, 15s, 30s)
+  [5B] Commencing full 32-second post-termination observation horizon...
+  [5B t=4.50s] Check 3s write:  exists=False (Expected: False)
+  [5B t=9.50s] Check 8s write:  exists=False (Expected: False)
+  [5B t=16.50s] Check 15s write: exists=False (Expected: False)
+  [5B t=31.50s] Check 30s write: exists=False (Expected: False)
+  [5B] Total post-termination observation time: 32.00s (Assert >= 32.0s)
+  [5B] Final re-check after full horizon: files present=[] (Expected: empty)
+  [5B] Contained Run Result: PASS (All delayed writes prevented; provenance verified)
+  Check 5 Final Result: PASS
+
+[CHECK 6] Complete Workload Termination...
+  All terminated: True | Active Processes: 0 -> Result: PASS
+
+================================================================================
+WIN32 JOB OBJECT VALIDATION SUMMARY
+================================================================================
+  [PASS] Suspended Process Creation & Assign-Before-Execute
+  [PASS] Kill-On-Job-Close Enforcement
+  [PASS] Breakaway Restrictions
+  [PASS] Descendant Inheritance
+  [PASS] Delayed Writes Prevention (with uncontained positive control & 32s horizon)
+  [PASS] Complete Workload Termination
+================================================================================
+Overall Windows Containment Status: VERIFIED (100% Pass)

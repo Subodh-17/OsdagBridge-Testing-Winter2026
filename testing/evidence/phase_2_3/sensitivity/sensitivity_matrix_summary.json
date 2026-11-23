@@ -1,0 +1,431 @@
+{
+  "timestamp_utc": "2026-11-16T14:23:19.274254+00:00",
+  "total_duration_sec": 58.9,
+  "baseline_commit": "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
+  "actionable_tests_verified": 12,
+  "actionable_tests_total": 12,
+  "blocked_tests_count": 2,
+  "all_actionable_verified": true,
+  "matrix": [
+    {
+      "test_id": "TC-REG-A01-FACTOR-SCALING",
+      "defect_id": "DEF-01 (Upstream)",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 1.199,
+          "reason": "DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.00000 (expected 1.35000)."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 1.309,
+          "reason": "Load factor 1.35 correctly scaled linear grillage forces across line and patch loads."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.556,
+          "reason": "DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.09174 (expected 1.35000)."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-B01-SECTION-PROPERTY-SYNC",
+      "defect_id": "DEF-03",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.058,
+          "reason": "DEF-03 Confirmed: Dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm; Solver girder sections retain preliminary sizing: Iz gap ~7.40%, A gap ~10.55%; Analysed deflection 7.82mm deviates from snapped hand target 7.22mm"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.059,
+          "reason": "Solver-side sections and analysed stiffness response synchronize with snapped section."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.06,
+          "reason": "DEF-03 Confirmed: Dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm; Solver girder sections retain preliminary sizing: Iz gap ~7.40%, A gap ~10.55%; Analysed deflection 7.82mm deviates from snapped hand target 7.22mm"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-C01-SECTIONAL-STRESS-RANGE",
+      "defect_id": "DEF-07",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.065,
+          "reason": "DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 125.46 MPa (doubled from +M and -M end signs); Path (b) per-LC = 62.73 MPa (treats static moment Mz as range). Expected 0.0 MPa."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.061,
+          "reason": "Fatigue stress ranges correctly evaluate to 0.0 MPa on static load and 62.73 MPa on both envelope and per-LC cyclic paths."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.06,
+          "reason": "DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 0.00 MPa (doubled from +M and -M end signs); Path (b) per-LC = 62.73 MPa (treats static moment Mz as range). Expected 0.0 MPa."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-A02-ULS-COMBINATION-SUM",
+      "defect_id": "DEF-01 / DEF-02",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 6.299,
+          "reason": "DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=72392.5N, vs unfactored=4.65e-07N); Total reaction 1736.6kN does not match factored target 2710.2kN; Crash barrier load omitted from BASIC_1 combination"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 7.962,
+          "reason": "FE solver analyzed combination correctly scales component reactions and includes barrier load."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 9.044,
+          "reason": "DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=206667.2N, vs unfactored=1.34e+05N); Total reaction 1736.6kN does not match factored target 2710.2kN; Crash barrier load omitted from BASIC_1 combination"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-D01-WIND-SPEED-PROPAGATION",
+      "defect_id": "DEF-05",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.408,
+          "reason": "DEF-05 Confirmed: Wind arguments fell back to defaults (speed=33.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2), yielding Pz = 463.7 N/m2 instead of authentic 1039.6 N/m2."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.395,
+          "reason": "Wind parameters successfully propagated: Pz = 1039.6 N/m2 matches Table 12."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.398,
+          "reason": "DEF-05 Confirmed: Wind arguments fell back to defaults (speed=47.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2), yielding Pz = 940.6 N/m2 instead of authentic 1039.6 N/m2."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-D02-TEMPERATURE-PROPAGATION",
+      "defect_id": "DEF-06",
+      "is_blocked": true,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.001,
+          "reason": "DEC-015 Pending: Thermal load modeling (IRC 6 Cl. 215) is undecided in project specifications. add_temperature_load() reads unpopulated 'temperature_load_kN_m2' and leaves temperature_load_case as None."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-015 Pending: Thermal modeling undecided under IRC 6 Cl. 215"
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-015 Pending: Thermal modeling undecided under IRC 6 Cl. 215"
+        }
+      },
+      "sensitivity_verified": false,
+      "sensitivity_status": "BLOCKED / NOT DEMONSTRATED"
+    },
+    {
+      "test_id": "TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS",
+      "defect_id": "DEF-17",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 4.303,
+          "reason": "DEF-17 Confirmed: Moving vehicle cases generated 2 (Class A and 70R only); IRC 6 Cl. 204.6 fatigue vehicle missing"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 4.961,
+          "reason": "IRC 6 Cl. 204.6 fatigue vehicle moving load case generated (40t = 392.4 kN) and participates in analysis."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 6.059,
+          "reason": "DEF-17 Confirmed: Fatigue vehicle axle specifications do not match 40-tonne vehicle (12t/14t/14t)"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-RPT-EXEC-SUMMARY-STATUS",
+      "defect_id": "DEF-08",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.425,
+          "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally under Key Design Outcomes Summary despite a failing fatigue check (DCR = 1.9746)."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.371,
+          "reason": "Executive summary accurately derives and reports pass/fail status across all 4 components in all scenarios."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.333,
+          "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally under Key Design Outcomes Summary despite a failing fatigue check (DCR = 1.9746)."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-GEO-GIRDER-COUNT-ALIGNMENT",
+      "defect_id": "DEF-11",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.044,
+          "reason": "DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (6), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.045,
+          "reason": "Designer girder count (4) matches physical count (4)."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.048,
+          "reason": "DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (0), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-GEO-SLAB-SECTION-PROPERTIES",
+      "defect_id": "DEF-14",
+      "is_blocked": true,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-013 Pending: Transverse deck slab representation is undecided in project documentation. Baseline assigns girder/2 (Iz=0.00367 m4), which is mechanically invalid for concrete deck, but exact transformed vs concrete material and cracked/torsion model requires engineering sign-off."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-013 Pending: Transverse deck slab representation model undecided"
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-013 Pending: Transverse deck slab representation model undecided"
+        }
+      },
+      "sensitivity_verified": false,
+      "sensitivity_status": "BLOCKED / NOT DEMONSTRATED"
+    },
+    {
+      "test_id": "TC-REG-CAP-STIFFENER-BUCKLING",
+      "defect_id": "DEF-12",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.047,
+          "reason": "DEF-12 Confirmed: Geometry 1 (Baseline Snapped): capacity 214533.2kN (fails oracle 63.4kN, squash=1918.8kN); Geometry 2 (Alternate Section): capacity 370184.0kN (fails oracle 158.5kN, squash=1909.1kN)"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.047,
+          "reason": "Web buckling capacity satisfies positive IS 800 Cl. 8.7.3.1 slenderness oracle across multiple geometries."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.045,
+          "reason": "DEF-12 Confirmed: Geometry 1 (Baseline Snapped): capacity 1918.8kN (fails oracle 63.4kN, squash=1918.8kN); Geometry 2 (Alternate Section): capacity 1909.1kN (fails oracle 158.5kN, squash=1909.1kN)"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-MAT-DENSITY-CONSISTENCY",
+      "defect_id": "DEF-13",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.789,
+          "reason": "DEF-13 Confirmed: Self-weight resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN)."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.831,
+          "reason": "Self-weight load resultant (151.4 kN) correctly matches user input density 70.0 kN/m3."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.797,
+          "reason": "DEF-13 Confirmed: Self-weight resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN)."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-FS-CLEAN-WORKING-TREE",
+      "defect_id": "DEF-10",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 4.141,
+          "reason": "DEF-10 Confirmed: Production DB_PATH targets package tree (F:\\FOSSEE internship\\source\\OsdagBridge\\src\\osdagbridge\\core\\data\\project_location\\weather.sqlite) causing package mutation; Database() default constructor creates unanchored weather.sqlite in cwd"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 2.054,
+          "reason": "Database paths are cleanly anchored to user app data without package writes or cwd side effects."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 4.074,
+          "reason": "DEF-10 Confirmed: Database() default constructor creates unanchored weather.sqlite in cwd"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-CAD-EXPORT-VS-SCREENSHOT",
+      "defect_id": "DEF-09 (Harness)",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.766,
+          "reason": "Native OCC offscreen Viewer3d.ExportToImage renders opaque 3D geometry (std=66.6, 3 colors)."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.423,
+          "reason": "Native OCC offscreen Viewer3d.ExportToImage renders opaque 3D geometry (std=66.6, 3 colors)."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.357,
+          "reason": "ExportToImage produced blank/uniform image (std=0.0, 1 colors)."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-C01-SECTIONAL-STRESS-RANGE
+DEFECT IDENTIFIER:      DEF-07
+RESULT STATUS:          FAIL
+EXPECTED ON BASELINE:   FAIL
+EXECUTION DURATION:     0.050 s
+TIMESTAMP UTC:          2026-11-16T10:09:00.778140+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+OSDAGBRIDGE MODULE:     None
+REASON / SUMMARY:       DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 125.46 MPa (doubled from +M and -M end signs); Path (b) per-LC = 62.73 MPa (treats static moment Mz as range). Expected 0.0 MPa.
+================================================================================
+
+--- DETAILED EXECUTION LOG ---
+OpenSees simply supported beam sign convention:
+  Midspan Element 1 end j moment: +12500.0 N*m
+  Midspan Element 2 end i moment: -12500.0 N*m (opposite signs at shared node)
+Static test load: single load case SLS_FREQUENT_1 with sagging moment M0 = 1000.0 kNm
+Path (a) Envelope stress range (lines 2970-2988): 125.458 MPa
+Path (b) Per-load-case stress range (line 3082):    62.729 MPa

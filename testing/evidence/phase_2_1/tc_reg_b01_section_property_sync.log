@@ -1,0 +1,21 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-B01-SECTION-PROPERTY-SYNC
+DEFECT IDENTIFIER:      DEF-03
+RESULT STATUS:          FAIL
+EXPECTED ON BASELINE:   FAIL
+EXECUTION DURATION:     0.046 s
+TIMESTAMP UTC:          2026-11-16T10:09:00.726881+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+OSDAGBRIDGE MODULE:     None
+REASON / SUMMARY:       DEF-03 Confirmed: Grillage retains preliminary sizing across all 4 girders (Iz gap ~7.40%, A gap ~10.55%); Post-snapping dimensions inconsistent: D=1340.0mm != dw(1306.0) + 2*tf(36.0) = 1342.0mm
+================================================================================
+
+--- DETAILED EXECUTION LOG ---
+Designer checked section: D=1.340m, dw=1.3040m, tf=0.0180m, tw=0.0080m
+Geometric consistency check: D (1.3400m) == dw + tf_top + tf_bot (1.3420m): False
+Theoretical Snapped Section: A=0.025192 m2, Iz=0.00792758 m4, Iy=0.00020682 m4, J=0.00000182 m4
+Girder 0: A=0.022534 m2 (diff 10.55%), Iz=0.00734091 m4 (diff 7.40%)
+Girder 1: A=0.022534 m2 (diff 10.55%), Iz=0.00734091 m4 (diff 7.40%)
+Girder 2: A=0.022534 m2 (diff 10.55%), Iz=0.00734091 m4 (diff 7.40%)
+Girder 3: A=0.022534 m2 (diff 10.55%), Iz=0.00734091 m4 (diff 7.40%)

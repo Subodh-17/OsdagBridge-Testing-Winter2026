@@ -1,0 +1,496 @@
+{
+  "timestamp_utc": "2026-11-17T17:41:09.398541+00:00",
+  "total_duration_sec": 178.16,
+  "baseline_commit": "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
+  "provenance": {
+    "guard_self_hash": "8c249ca345749a5129b4cbe1d124141025003e6fb561ccada36e0d9667c612db",
+    "runner_self_hash": "7cc8293d0c7183af1cfbd6cc2a7d822354891bfad11a3d926505edb8f9ef0303",
+    "baseline_runner_self_hash": "33a5777d676fe8fb3e76a324a5bf77817e9bc86ae3c82778ab368cb0deba91a7"
+  },
+  "actionable_tests_verified": 12,
+  "actionable_tests_total": 12,
+  "blocked_tests_count": 3,
+  "all_actionable_verified": true,
+  "matrix": [
+    {
+      "test_id": "TC-REG-A01-FACTOR-SCALING",
+      "defect_id": "DEF-01 (Upstream)",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 1.267,
+          "reason": "DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.00000 (expected 1.35000)."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "8aea6bd94b289a469c3d989a9d9fae374335228b3e5ef064b390941c05dac0f1",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 1.209,
+          "reason": "Load factor 1.35 correctly scaled linear grillage forces across line and patch loads."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "4747fc79c5045bd7072ff1c7c11cae54830368b63778b7a9d1b3b76171a18fc8",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 1.236,
+          "reason": "DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.09174 (expected 1.35000)."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-B01-SECTION-PROPERTY-SYNC",
+      "defect_id": "DEF-03",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.327,
+          "reason": "DEF-03 Confirmed: Inconsistent depth geometry: D=1340.0 mm != dw+tf_top+tf_bot=1342.0 mm; Solver-side girder_sections out of sync with snapped plate geometry and fixed independent oracle; Solver girder sections deviate from dynamically derived snapped plate properties (Iz, A, Iy, J)"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "f68b30ff80562a2c76244fd7cfd2740a1de29e5f9e0c6995f9d1b97cecad9891",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.317,
+          "reason": "Solver-side sections and analysed stiffness response synchronize with snapped section."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "b564a14cef5a3958ea432b22716605401f773e4103ab5488fb13ffe6cd23f7ec",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.315,
+          "reason": "DEF-03 Confirmed: Inconsistent depth geometry: D=1340.0 mm != dw+tf_top+tf_bot=1342.0 mm; Solver-side girder_sections out of sync with snapped plate geometry and fixed independent oracle; Solver girder sections deviate from dynamically derived snapped plate properties (Iz, A, Iy, J)"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-C01-SECTIONAL-STRESS-RANGE",
+      "defect_id": "DEF-07",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.496,
+          "reason": "DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 125.46 MPa (doubled from +M and -M end signs); Path (b) per-LC = 62.73 MPa (treats static moment Mz as range). Expected 0.0 MPa."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "fed2e878b2a073584df241a5bb1542edf6ce631e0921ec8980f9c889cc95243f",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.566,
+          "reason": "Fatigue stress ranges correctly evaluate to 0.0 MPa on static load, 181.91 MPa on G1 End i, 200.73 MPa on G2 End j, 125.45 MPa on bidirectional sign reversal, and 0.0 MPa across extractor shared node envelope."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "3603a779d3a2fdc01c0f085c457d39fc3d0cf640e12117ba3aec8b83c131d67b",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.526,
+          "reason": "DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 0.00 MPa (doubled from +M and -M end signs); Path (b) per-LC = 0.00 MPa (treats static moment Mz as range). Expected 0.0 MPa."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-A02-ULS-COMBINATION-SUM",
+      "defect_id": "DEF-01 / DEF-02",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 23.808,
+          "reason": "DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=72392.5N, vs unfactored=1.60e-07N); Total reaction 1736.6kN does not match superposition target 2710.2kN; Crash barrier load omitted from BASIC_1 combination; Analyzed reaction 1736.6kN does not match theoretical applied resultant 2711.7kN; Component reaction deviations: SW reaction 169.8kN != oracle 165.3kN, DD reaction 1314.4kN != oracle 1249.5kN, DW reaction 252.4kN != oracle 216.0kN, CB reaction 196.2kN != oracle 313.9kN"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "a46aeb4db0f89b2a363ea1211f16202cc21973d62027688751891dad8a0f483e",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 2.742,
+          "reason": "FE solver analyzed combination correctly scales component reactions and includes barrier load."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "fd02171e9f08021b4690f39a6fa170d7f30acf9e087f0cdd9821731742b4016c",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 25.172,
+          "reason": "DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=206667.2N, vs unfactored=1.34e+05N); Total reaction 1736.6kN does not match superposition target 2710.2kN; Crash barrier load omitted from BASIC_1 combination; Analyzed reaction 1736.6kN does not match theoretical applied resultant 2711.7kN; Component reaction deviations: SW reaction 169.8kN != oracle 165.3kN, DD reaction 1314.4kN != oracle 1249.5kN, DW reaction 252.4kN != oracle 216.0kN, CB reaction 196.2kN != oracle 313.9kN"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-EQ-LOAD-CONSERVATION",
+      "defect_id": "DEF-18",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 4.596,
+          "reason": "DEF-18 Confirmed: Static equilibrium and spatial load distribution violated in FE grillage: SW definition deviates from input oracle: applied=169.8kN vs exp=165.3kN; DD definition deviates from input oracle: applied=1275.0kN vs exp=1249.5kN (mag=6250.0N/m2 vs exp=6125.0N/m2); DW definition deviates from input oracle: applied=244.8kN vs exp=216.0kN; Deck Slab (DD): force diff +39.4 kN (+3.1%); Wearing Course (1.0 DW): force diff +7.6 kN (+3.1%); Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=-0.000m; Left Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; Right Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; DD distribution deviates: shares_ok=False, vector_ok=False (rel_err=3.09%); DW distribution deviates: shares_ok=False, vector_ok=False (rel_err=19.43%)"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "6bba254e494373584ecf0654b8f6d8ae9d2c9a54d30435489fdda697e8f07687",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.763,
+          "reason": "Static equilibrium, transverse tributary line shares, and consistent tributary load vectors conserved across DD, DW, and barriers against input oracle."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "3e3aee4700eb8cc9db91ea7319550ff8e89cb8798a5696945ee8155d87d19ebf",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 5.705,
+          "reason": "DEF-18 Confirmed: Static equilibrium and spatial load distribution violated in FE grillage: SW definition deviates from input oracle: applied=169.8kN vs exp=165.3kN; DD definition deviates from input oracle: applied=1275.0kN vs exp=1249.5kN (mag=6250.0N/m2 vs exp=6125.0N/m2); DW definition deviates from input oracle: applied=244.8kN vs exp=216.0kN; Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=+0.000m; Left Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; Right Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; DW distribution deviates: shares_ok=False, vector_ok=False (rel_err=17.02%)"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-D01-WIND-SPEED-PROPAGATION",
+      "defect_id": "DEF-05",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.407,
+          "reason": "DEF-05 Confirmed: Wind arguments fell back to defaults (speed=33.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2), yielding Pz = 463.7 N/m2 instead of authentic 1039.6 N/m2."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "1aae54f8d09b29254d8140df2a61bb93d6237e40fe2fc0b23e5de5b4aa9fef47",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.416,
+          "reason": "Wind parameters successfully propagated: Pz = 1039.6 N/m2 matches Table 12."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "5f57a59399df274e87cb0a34741fb386ac360b504ecf6af5bad82396457af3ff",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.415,
+          "reason": "DEF-05 Confirmed: Wind arguments fell back to defaults (speed=47.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2), yielding Pz = 940.6 N/m2 instead of authentic 1039.6 N/m2."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-D02-TEMPERATURE-PROPAGATION",
+      "defect_id": "DEF-06",
+      "is_blocked": true,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.027,
+          "reason": "DEC-015 Pending: Thermal load modeling (IRC 6 Cl. 215) is undecided in project specifications. add_temperature_load() reads unpopulated 'temperature_load_kN_m2' and leaves temperature_load_case as None."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": null,
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-015 Pending: Thermal modeling undecided under IRC 6 Cl. 215"
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": null,
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-015 Pending: Thermal modeling undecided under IRC 6 Cl. 215"
+        }
+      },
+      "sensitivity_verified": false,
+      "sensitivity_status": "BLOCKED / NOT DEMONSTRATED"
+    },
+    {
+      "test_id": "TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS",
+      "defect_id": "DEF-17",
+      "is_blocked": true,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.028,
+          "reason": "DEC-018 Pending: OsdagBridge has no implementation linking the IRC 6 Cl. 204.6 fatigue vehicle moving load to grillage moving load analysis or designer.py fatigue demand/utilization extraction."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": null,
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-018 Pending: IRC 6 Cl. 204.6 fatigue vehicle moving load not implemented in analysis/design pipeline"
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": null,
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-018 Pending: IRC 6 Cl. 204.6 fatigue vehicle moving load not implemented in analysis/design pipeline"
+        }
+      },
+      "sensitivity_verified": false,
+      "sensitivity_status": "BLOCKED / NOT DEMONSTRATED"
+    },
+    {
+      "test_id": "TC-REG-RPT-EXEC-SUMMARY-STATUS",
+      "defect_id": "DEF-08",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 14.99,
+          "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 64/74 scenarios: Scenario 2 (G1 Moment Fail), Scenario 2 (G1 Shear Fail), Scenario 2 (G1 Stiffener Fail), Scenario 2 (G1 Fatigue Fail), Scenario 2 (G2 Moment Fail), Scenario 2 (G2 Shear Fail), Scenario 2 (G2 Stiffener Fail), Scenario 2 (G2 Fatigue Fail), Scenario 2 (G3 Moment Fail), Scenario 2 (G3 Shear Fail), Scenario 2 (G3 Stiffener Fail), Scenario 2 (G3 Fatigue Fail), Scenario 2 (G4 Moment Fail), Scenario 2 (G4 Shear Fail), Scenario 2 (G4 Stiffener Fail), Scenario 2 (G4 Fatigue Fail), Scenario 2 (G5 Moment Fail), Scenario 2 (G5 Shear Fail), Scenario 2 (G5 Stiffener Fail), Scenario 2 (G5 Fatigue Fail), Scenario 2 (G6 Moment Fail), Scenario 2 (G6 Shear Fail), Scenario 2 (G6 Stiffener Fail), Scenario 2 (G6 Fatigue Fail), Scenario 3 (G1 DCR Moment > 1.0), Scenario 3 (G1 DCR Shear > 1.0), Scenario 3 (G1 DCR Stiffener > 1.0), Scenario 3 (G1 DCR Fatigue > 1.0), Scenario 3 (G2 DCR Moment > 1.0), Scenario 3 (G2 DCR Shear > 1.0), Scenario 3 (G2 DCR Stiffener > 1.0), Scenario 3 (G2 DCR Fatigue > 1.0), Scenario 3 (G3 DCR Moment > 1.0), Scenario 3 (G3 DCR Shear > 1.0), Scenario 3 (G3 DCR Stiffener > 1.0), Scenario 3 (G3 DCR Fatigue > 1.0), Scenario 3 (G4 DCR Moment > 1.0), Scenario 3 (G4 DCR Shear > 1.0), Scenario 3 (G4 DCR Stiffener > 1.0), Scenario 3 (G4 DCR Fatigue > 1.0), Scenario 3 (G5 DCR Moment > 1.0), Scenario 3 (G5 DCR Shear > 1.0), Scenario 3 (G5 DCR Stiffener > 1.0), Scenario 3 (G5 DCR Fatigue > 1.0), Scenario 3 (G6 DCR Moment > 1.0), Scenario 3 (G6 DCR Shear > 1.0), Scenario 3 (G6 DCR Stiffener > 1.0), Scenario 3 (G6 DCR Fatigue > 1.0), Scenario 3B (DCR = 1.001 Boundary FAIL), Scenario 4 (CB P1/M1 First Member Fail), Scenario 4 (CB P1/M2 Middle Member Fail), Scenario 4 (CB P1/M3 Last Member Fail), Scenario 4 (CB P2/M1 Panel 2 Member Fail), Scenario 5 (ED P1/M1 First Member Fail), Scenario 5 (ED P1/M2 Middle Member Fail), Scenario 5 (ED P1/M3 Last Member Fail), Scenario 6 (Deck Moment-Only Fail), Scenario 6 (Deck Shear-Only Fail), Scenario 6 (Deck Moment & Shear Fail), Scenario 6B (Deck UR = 1.001 Boundary FAIL), Scenario 7 (Multi Fail: G3 Stiffener + CB P1/M3 + Deck Shear), Scenario 8 (CB eff = 1.001 Boundary FAIL), Scenario 9 (ED eff = 1.001 Boundary FAIL), Scenario 10A (Narrative Independence: Girder Fail with overall_status=PASS)."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "70020738b6c969d954421bf617ac574c9db112d742b61dcefc97eecf5df73217",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 14.999,
+          "reason": "Executive summary accurately derives and reports pass/fail status across all components, single girders G1-G6, DCR failures, panels, members, and agrees with Overall Design Status."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "6ddab2ca36563e83a811ec261fe3ae96f387e234e008cf7c159fe9850574b170",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 14.987,
+          "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 54/74 scenarios: Scenario 2 (G2 Moment Fail), Scenario 2 (G2 Shear Fail), Scenario 2 (G2 Stiffener Fail), Scenario 2 (G2 Fatigue Fail), Scenario 2 (G3 Moment Fail), Scenario 2 (G3 Shear Fail), Scenario 2 (G3 Stiffener Fail), Scenario 2 (G3 Fatigue Fail), Scenario 2 (G4 Moment Fail), Scenario 2 (G4 Shear Fail), Scenario 2 (G4 Stiffener Fail), Scenario 2 (G4 Fatigue Fail), Scenario 2 (G5 Moment Fail), Scenario 2 (G5 Shear Fail), Scenario 2 (G5 Stiffener Fail), Scenario 2 (G5 Fatigue Fail), Scenario 2 (G6 Moment Fail), Scenario 2 (G6 Shear Fail), Scenario 2 (G6 Stiffener Fail), Scenario 2 (G6 Fatigue Fail), Scenario 3 (G2 DCR Moment > 1.0), Scenario 3 (G2 DCR Shear > 1.0), Scenario 3 (G2 DCR Stiffener > 1.0), Scenario 3 (G2 DCR Fatigue > 1.0), Scenario 3 (G3 DCR Moment > 1.0), Scenario 3 (G3 DCR Shear > 1.0), Scenario 3 (G3 DCR Stiffener > 1.0), Scenario 3 (G3 DCR Fatigue > 1.0), Scenario 3 (G4 DCR Moment > 1.0), Scenario 3 (G4 DCR Shear > 1.0), Scenario 3 (G4 DCR Stiffener > 1.0), Scenario 3 (G4 DCR Fatigue > 1.0), Scenario 3 (G5 DCR Moment > 1.0), Scenario 3 (G5 DCR Shear > 1.0), Scenario 3 (G5 DCR Stiffener > 1.0), Scenario 3 (G5 DCR Fatigue > 1.0), Scenario 3 (G6 DCR Moment > 1.0), Scenario 3 (G6 DCR Shear > 1.0), Scenario 3 (G6 DCR Stiffener > 1.0), Scenario 3 (G6 DCR Fatigue > 1.0), Scenario 4 (CB P1/M1 First Member Fail), Scenario 4 (CB P1/M2 Middle Member Fail), Scenario 4 (CB P1/M3 Last Member Fail), Scenario 4 (CB P2/M1 Panel 2 Member Fail), Scenario 5 (ED P1/M1 First Member Fail), Scenario 5 (ED P1/M2 Middle Member Fail), Scenario 5 (ED P1/M3 Last Member Fail), Scenario 6 (Deck Moment-Only Fail), Scenario 6 (Deck Shear-Only Fail), Scenario 6 (Deck Moment & Shear Fail), Scenario 6B (Deck UR = 1.001 Boundary FAIL), Scenario 7 (Multi Fail: G3 Stiffener + CB P1/M3 + Deck Shear), Scenario 8 (CB eff = 1.001 Boundary FAIL), Scenario 9 (ED eff = 1.001 Boundary FAIL)."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-GEO-GIRDER-COUNT-ALIGNMENT",
+      "defect_id": "DEF-11",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.279,
+          "reason": "DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (6), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "9d60549b7c549fcba77d33c720f5e6ada33efbc30b6b73503feb1da9d757c561",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.258,
+          "reason": "Designer girder count (4) matches physical count (4)."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "546ed5285c58798de84b6c5b7c18891ebbd6edb71a516b1cf224fca235afec3f",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.282,
+          "reason": "DEF-11 Confirmed: designer.py:401 sets n_girders = geom.n_l (0), incorrectly counting 2 slab overhang edge lines as structural girders for a 4-girder bridge."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-GEO-SLAB-SECTION-PROPERTIES",
+      "defect_id": "DEF-14",
+      "is_blocked": true,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.026,
+          "reason": "DEC-013 Pending: Transverse deck slab representation is undecided in project documentation. Baseline assigns girder/2 (Iz=0.00367 m4), which is mechanically invalid for concrete deck, but exact transformed vs concrete material and cracked/torsion model requires engineering sign-off."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": null,
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-013 Pending: Transverse deck slab representation model undecided"
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": null,
+          "observed_status": "BLOCKED",
+          "expected_status": "BLOCKED",
+          "duration_sec": 0.0,
+          "reason": "DEC-013 Pending: Transverse deck slab representation model undecided"
+        }
+      },
+      "sensitivity_verified": false,
+      "sensitivity_status": "BLOCKED / NOT DEMONSTRATED"
+    },
+    {
+      "test_id": "TC-REG-CAP-STIFFENER-BUCKLING",
+      "defect_id": "DEF-12",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.271,
+          "reason": "DEF-12 Confirmed: Geometry 1 (Baseline Snapped): capacity 214533.2kN (fails oracle 63.4kN, squash=1918.8kN); Geometry 2 (Alternate Section): capacity 370184.0kN (fails oracle 158.5kN, squash=1909.1kN)"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "ee7d2205f4e3fac18f4f64b97f9067fb9ee39b1a81925f99b023ca7ab0264699",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 0.278,
+          "reason": "Web buckling capacity satisfies positive IS 800 Cl. 8.7.3.1 slenderness oracle across multiple geometries."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "d153f36a995395be7ab7359be96fb27344194732efef1e5dbd7f27b281a37124",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 0.276,
+          "reason": "DEF-12 Confirmed: Geometry 1 (Baseline Snapped): capacity 1918.8kN (fails oracle 63.4kN, squash=1918.8kN); Geometry 2 (Alternate Section): capacity 1909.1kN (fails oracle 158.5kN, squash=1909.1kN)"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-MAT-DENSITY-CONSISTENCY",
+      "defect_id": "DEF-13",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 3.183,
+          "reason": "DEF-13 Confirmed: Self-weight resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN)."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "27dcde31fcebf3a4b86a950fbe77428537a16067003af037db0cf7ea0ab4247c",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 3.094,
+          "reason": "Self-weight load resultant (151.4 kN) correctly matches user input density 70.0 kN/m3."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "e7ce2665803ab3767a2b503a4817b27677a61ffd87e5317df9d020fec1dbab2a",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 3.023,
+          "reason": "DEF-13 Confirmed: Self-weight resultant (169.8 kN) matches hardcoded 78.5 kN/m3 (169.8 kN) instead of user-specified density 70.0 kN/m3 (151.4 kN)."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-FS-CLEAN-WORKING-TREE",
+      "defect_id": "DEF-10",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 15.942,
+          "reason": "DEF-10 Confirmed: Production ui_loc.DB_PATH resolves inside the package tree; Database() default constructor creates unanchored weather.sqlite in cwd; Package tree mutated during production calls: created ['src/osdagbridge/core/data/project_location/weather.sqlite']; Production call vulnerable to read-only package installations (denied write causes OperationalError)"
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "294ae78d2763e207a7501e8437b8e45f1b0e03dfd496598de4ed21d489f87ed6",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 13.643,
+          "reason": "Database paths are cleanly anchored to user app data without package writes, cwd side effects, detached processes, or read-only package failures; queries validated."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "58e8686067e24da6c5dbb393e61fe560b12e7daeb79ead82f27148cd42253180",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 13.671,
+          "reason": "DEF-10 Confirmed: Database() default constructor creates unanchored weather.sqlite in cwd"
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    },
+    {
+      "test_id": "TC-REG-CAD-EXPORT-VS-SCREENSHOT",
+      "defect_id": "DEF-09 (Harness)",
+      "is_blocked": false,
+      "conditions": {
+        "a_baseline": {
+          "description": "Frozen baseline behavior",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 3.0,
+          "reason": "Native OCC offscreen Viewer3d.ExportToImage renders opaque 3D geometry (std=66.6, 3 colors)."
+        },
+        "b_minimal_correct": {
+          "description": "Minimal correct candidate implementation",
+          "candidate_sha256": "b488b1a3676bbfa2988617f4ef9ec47c138cb8922db887ebbc6b7c214b685ab2",
+          "observed_status": "PASS",
+          "expected_status": "PASS",
+          "duration_sec": 1.808,
+          "reason": "Native OCC offscreen Viewer3d.ExportToImage renders opaque 3D geometry (std=66.6, 3 colors)."
+        },
+        "c_plausible_wrong": {
+          "description": "Plausible incorrect / naive candidate implementation",
+          "candidate_sha256": "d9cd7ff8656bf6a3592aa4dce24dd3b2c40d89f05fccb14adf0a456238ae0616",
+          "observed_status": "BASELINE_FAIL",
+          "expected_status": "BASELINE_FAIL",
+          "duration_sec": 1.533,
+          "reason": "ExportToImage produced blank/uniform image (std=0.0, 1 colors)."
+        }
+      },
+      "sensitivity_verified": true,
+      "sensitivity_status": "VERIFIED"
+    }
+  ]
+}

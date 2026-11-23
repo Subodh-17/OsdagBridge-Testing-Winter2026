@@ -1,0 +1,111 @@
+﻿{
+    "manifest_schema_version":  "2.17.0",
+    "run_id":  "bb29f1a4-5089-4180-ad1c-96154bb405c8",
+    "operator":  {
+                     "operator_name":  "Subodh",
+                     "execution_mode":  "operator_execution",
+                     "host_name":  "HP",
+                     "user_profile":  "C:\\Users\\Subodh",
+                     "parent_process_id":  26676,
+                     "parent_process_name":  "cmd"
+                 },
+    "overall_status":  "PASS",
+    "test_suites_status":  "PASS",
+    "integrity_gates_status":  "PASS",
+    "timing":  {
+                   "overall_start_utc":  "2026-11-18T07:39:55.7856471Z",
+                   "overall_end_utc":  "2026-11-18T07:41:22.4659826Z",
+                   "overall_duration_s":  86.729,
+                   "containment_suite":  {
+                                             "start_utc":  "2026-11-18T07:39:56.7526123Z",
+                                             "end_utc":  "2026-11-18T07:41:04.5782457Z",
+                                             "duration_s":  67.826,
+                                             "exit_code":  0,
+                                             "passed":  true
+                                         },
+                   "governance_suite":  {
+                                            "start_utc":  "2026-11-18T07:41:04.5937929Z",
+                                            "end_utc":  "2026-11-18T07:41:22.3565463Z",
+                                            "duration_s":  17.762,
+                                            "exit_code":  0,
+                                            "passed":  true
+                                        }
+               },
+    "environment":  {
+                        "platform":  "win32",
+                        "os_caption":  "Microsoft Windows 11 Home Single Language",
+                        "os_version":  "10.0.26300",
+                        "os_build":  "26300",
+                        "powershell_edition":  "Desktop",
+                        "powershell_version":  "5.1.26100.9818",
+                        "python_executable_configured":  "C:\\Users\\Subodh\\miniconda3\\envs\\osdagbridge-py312\\python.exe",
+                        "python_executable_resolved":  "C:\\Users\\Subodh\\miniconda3\\envs\\osdagbridge-py312\\python.exe",
+                        "python_version":  "3.12.16 | packaged by conda-forge | (main, Oct 26 2026, 11:29:01) [MSC v.1944 64 bit (AMD64)]",
+                        "python_platform":  "win32",
+                        "python_architecture":  "64bit",
+                        "python_machine":  "AMD64",
+                        "python_version_enforced":  true,
+                        "python_platform_enforced":  true,
+                        "workspace_root":  "F:\\FOSSEE internship",
+                        "output_directory":  "F:\\FOSSEE internship\\testing\\evidence\\phase_2_17\\windows\\runs\\run_20261118_073955_bb29f1a4"
+                    },
+    "harness_script_hashes":  {
+                                  "evidence_guard_py":  "19e8223f6831c4ae5538fd622dd879a423f7314d15b3ca588accde9888663df4",
+                                  "test_evidence_governance_py":  "e1e67cbb53ccd5b66e8c54ad76a139fddcaaf256f5fd4c6ccdccee42db4330c7",
+                                  "validate_windows_containment_py":  "d55754deb1b4cb02d036e36a5f961bcbdbe5ef298eda0ad63b44308050cc2095",
+                                  "run_independent_validation_ps1":  "31f0ea498c7b929366a7897ab0b1693e6cc669d32673d9f60151b3e41760e183"
+                              },
+    "integrity_preflight":  {
+                                "git_branch":  "dev",
+                                "git_branch_match":  true,
+                                "git_head":  "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
+                                "git_head_match":  true,
+                                "git_clean":  true,
+                                "weather_db_sha256":  "1d767658099bef9da035cd8e4c4fdfa5f8e83794a6756a7832bc824b67cd7e98",
+                                "weather_db_match":  true,
+                                "intg_osdag_db_sha256":  "25f978575be64a11ce2e00562c7513c215a33ba26ea9da795171343c74d9ea91",
+                                "intg_osdag_db_match":  true,
+                                "trust_ledger_sha256":  "5a9b9273c26ed92f95a2012ec0b1f890cfee369b2099659da875c00e182f57f1",
+                                "trust_ledger_match":  true,
+                                "all_preflight_passed":  true
+                            },
+    "integrity_postflight":  {
+                                 "git_branch":  "dev",
+                                 "git_branch_match":  true,
+                                 "git_head":  "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
+                                 "git_head_match":  true,
+                                 "git_clean":  true,
+                                 "weather_db_sha256":  "1d767658099bef9da035cd8e4c4fdfa5f8e83794a6756a7832bc824b67cd7e98",
+                                 "weather_db_match":  true,
+                                 "intg_osdag_db_sha256":  "25f978575be64a11ce2e00562c7513c215a33ba26ea9da795171343c74d9ea91",
+                                 "intg_osdag_db_match":  true,
+                                 "trust_ledger_sha256":  "5a9b9273c26ed92f95a2012ec0b1f890cfee369b2099659da875c00e182f57f1",
+                                 "trust_ledger_match":  true,
+                                 "ledger_unchanged":  true,
+                                 "databases_unchanged":  true,
+                                 "git_unchanged":  true,
+                                 "all_postflight_passed":  true
+                             },
+    "artifacts":  {
+                      "containment_validation_txt":  {
+                                                         "path":  "F:\\FOSSEE internship\\testing\\evidence\\phase_2_17\\windows\\runs\\run_20261118_073955_bb29f1a4\\windows_containment_validation.txt",
+                                                         "sha256":  "c68cbc6caba388810872c77cba408b62bed217dd81e5577b6a95706666e4104f",
+                                                         "bytes":  7636
+                                                     },
+                      "containment_validation_log":  {
+                                                         "path":  "F:\\FOSSEE internship\\testing\\evidence\\phase_2_17\\windows\\runs\\run_20261118_073955_bb29f1a4\\windows_containment_validation.log",
+                                                         "sha256":  "c68cbc6caba388810872c77cba408b62bed217dd81e5577b6a95706666e4104f",
+                                                         "bytes":  7636
+                                                     },
+                      "governance_output_txt":  {
+                                                    "path":  "F:\\FOSSEE internship\\testing\\evidence\\phase_2_17\\windows\\runs\\run_20261118_073955_bb29f1a4\\governance_test_output.txt",
+                                                    "sha256":  "76998aebe527175ff236cbed14a674cfae937e4b9400a207e895a6dc754c4575",
+                                                    "bytes":  15230
+                                                },
+                      "governance_output_log":  {
+                                                    "path":  "F:\\FOSSEE internship\\testing\\evidence\\phase_2_17\\windows\\runs\\run_20261118_073955_bb29f1a4\\governance_test_output.log",
+                                                    "sha256":  "76998aebe527175ff236cbed14a674cfae937e4b9400a207e895a6dc754c4575",
+                                                    "bytes":  15230
+                                                }
+                  }
+}

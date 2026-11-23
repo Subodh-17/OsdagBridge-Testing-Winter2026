@@ -1,0 +1,12 @@
+{
+  "run_uuid": "867d222a-334a-4327-aaf2-d6cc7c633bed",
+  "phase_label": "Phase 2.13 Candidates",
+  "runner_id": "candidates_runner",
+  "timestamp_utc": "2026-11-17T17:41:10.080062+00:00",
+  "evidence_dir": "F:/FOSSEE internship/testing/evidence/phase_2_13/candidates",
+  "total_files": 54,
+  "total_bytes": 115299,
+  "manifest_path": "F:/FOSSEE internship/testing/evidence/phase_2_13/candidates/manifest_hashes.json",
+  "manifest_sha256": "465d3f1ef9d7b14bb3f4583827d56d50ab0dc808019c432e97347c6a99fe9200",
+  "signature": "8ef701fcfd1d3111d7198ef41b229602686fe0925c745297b3b744bcf1d681d6"
+}

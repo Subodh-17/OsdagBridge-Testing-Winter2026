@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-EQ-LOAD-CONSERVATION",
+  "defect_id": "DEF-18",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 4.596,
+      "reason": "DEF-18 Confirmed: Static equilibrium and spatial load distribution violated in FE grillage: SW definition deviates from input oracle: applied=169.8kN vs exp=165.3kN; DD definition deviates from input oracle: applied=1275.0kN vs exp=1249.5kN (mag=6250.0N/m2 vs exp=6125.0N/m2); DW definition deviates from input oracle: applied=244.8kN vs exp=216.0kN; Deck Slab (DD): force diff +39.4 kN (+3.1%); Wearing Course (1.0 DW): force diff +7.6 kN (+3.1%); Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=-0.000m; Left Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; Right Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; DD distribution deviates: shares_ok=False, vector_ok=False (rel_err=3.09%); DW distribution deviates: shares_ok=False, vector_ok=False (rel_err=19.43%)"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "6bba254e494373584ecf0654b8f6d8ae9d2c9a54d30435489fdda697e8f07687",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.763,
+      "reason": "Static equilibrium, transverse tributary line shares, and consistent tributary load vectors conserved across DD, DW, and barriers against input oracle."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "3e3aee4700eb8cc9db91ea7319550ff8e89cb8798a5696945ee8155d87d19ebf",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 5.705,
+      "reason": "DEF-18 Confirmed: Static equilibrium and spatial load distribution violated in FE grillage: SW definition deviates from input oracle: applied=169.8kN vs exp=165.3kN; DD definition deviates from input oracle: applied=1275.0kN vs exp=1249.5kN (mag=6250.0N/m2 vs exp=6125.0N/m2); DW definition deviates from input oracle: applied=244.8kN vs exp=216.0kN; Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=+0.000m; Left Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; Right Barrier line: force=98.1kN (exp 157.0kN), pos_ok=True, vector_ok=False; DW distribution deviates: shares_ok=False, vector_ok=False (rel_err=17.02%)"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

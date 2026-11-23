@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-A02-ULS-COMBINATION-SUM",
+  "defect_id": "DEF-01 / DEF-02",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 6.358,
+      "reason": "DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=72392.5N, vs unfactored=1.60e-07N); Total reaction 1736.6kN does not match superposition target 2710.2kN; Crash barrier load omitted from BASIC_1 combination; Analyzed reaction 1736.6kN does not match theoretical applied resultant 2711.7kN; Component reaction deviations: SW reaction 169.8kN != oracle 165.3kN, DD reaction 1314.4kN != oracle 1249.5kN, DW reaction 252.4kN != oracle 216.0kN, CB reaction 196.2kN != oracle 313.9kN"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "a46aeb4db0f89b2a363ea1211f16202cc21973d62027688751891dad8a0f483e",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.557,
+      "reason": "FE solver analyzed combination correctly scales component reactions and includes barrier load."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "fd02171e9f08021b4690f39a6fa170d7f30acf9e087f0cdd9821731742b4016c",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 6.706,
+      "reason": "DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=206667.2N, vs unfactored=1.34e+05N); Total reaction 1736.6kN does not match superposition target 2710.2kN; Crash barrier load omitted from BASIC_1 combination; Analyzed reaction 1736.6kN does not match theoretical applied resultant 2711.7kN; Component reaction deviations: SW reaction 169.8kN != oracle 165.3kN, DD reaction 1314.4kN != oracle 1249.5kN, DW reaction 252.4kN != oracle 216.0kN, CB reaction 196.2kN != oracle 313.9kN"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

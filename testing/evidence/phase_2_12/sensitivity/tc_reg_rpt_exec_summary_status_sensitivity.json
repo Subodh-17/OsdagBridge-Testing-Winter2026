@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-RPT-EXEC-SUMMARY-STATUS",
+  "defect_id": "DEF-08",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 4.249,
+      "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 64/74 scenarios: Scenario 2 (G1 Moment Fail), Scenario 2 (G1 Shear Fail), Scenario 2 (G1 Stiffener Fail), Scenario 2 (G1 Fatigue Fail), Scenario 2 (G2 Moment Fail), Scenario 2 (G2 Shear Fail), Scenario 2 (G2 Stiffener Fail), Scenario 2 (G2 Fatigue Fail), Scenario 2 (G3 Moment Fail), Scenario 2 (G3 Shear Fail), Scenario 2 (G3 Stiffener Fail), Scenario 2 (G3 Fatigue Fail), Scenario 2 (G4 Moment Fail), Scenario 2 (G4 Shear Fail), Scenario 2 (G4 Stiffener Fail), Scenario 2 (G4 Fatigue Fail), Scenario 2 (G5 Moment Fail), Scenario 2 (G5 Shear Fail), Scenario 2 (G5 Stiffener Fail), Scenario 2 (G5 Fatigue Fail), Scenario 2 (G6 Moment Fail), Scenario 2 (G6 Shear Fail), Scenario 2 (G6 Stiffener Fail), Scenario 2 (G6 Fatigue Fail), Scenario 3 (G1 DCR Moment > 1.0), Scenario 3 (G1 DCR Shear > 1.0), Scenario 3 (G1 DCR Stiffener > 1.0), Scenario 3 (G1 DCR Fatigue > 1.0), Scenario 3 (G2 DCR Moment > 1.0), Scenario 3 (G2 DCR Shear > 1.0), Scenario 3 (G2 DCR Stiffener > 1.0), Scenario 3 (G2 DCR Fatigue > 1.0), Scenario 3 (G3 DCR Moment > 1.0), Scenario 3 (G3 DCR Shear > 1.0), Scenario 3 (G3 DCR Stiffener > 1.0), Scenario 3 (G3 DCR Fatigue > 1.0), Scenario 3 (G4 DCR Moment > 1.0), Scenario 3 (G4 DCR Shear > 1.0), Scenario 3 (G4 DCR Stiffener > 1.0), Scenario 3 (G4 DCR Fatigue > 1.0), Scenario 3 (G5 DCR Moment > 1.0), Scenario 3 (G5 DCR Shear > 1.0), Scenario 3 (G5 DCR Stiffener > 1.0), Scenario 3 (G5 DCR Fatigue > 1.0), Scenario 3 (G6 DCR Moment > 1.0), Scenario 3 (G6 DCR Shear > 1.0), Scenario 3 (G6 DCR Stiffener > 1.0), Scenario 3 (G6 DCR Fatigue > 1.0), Scenario 3B (DCR = 1.001 Boundary FAIL), Scenario 4 (CB P1/M1 First Member Fail), Scenario 4 (CB P1/M2 Middle Member Fail), Scenario 4 (CB P1/M3 Last Member Fail), Scenario 4 (CB P2/M1 Panel 2 Member Fail), Scenario 5 (ED P1/M1 First Member Fail), Scenario 5 (ED P1/M2 Middle Member Fail), Scenario 5 (ED P1/M3 Last Member Fail), Scenario 6 (Deck Moment-Only Fail), Scenario 6 (Deck Shear-Only Fail), Scenario 6 (Deck Moment & Shear Fail), Scenario 6B (Deck UR = 1.001 Boundary FAIL), Scenario 7 (Multi Fail: G3 Stiffener + CB P1/M3 + Deck Shear), Scenario 8 (CB eff = 1.001 Boundary FAIL), Scenario 9 (ED eff = 1.001 Boundary FAIL), Scenario 10A (Narrative Independence: Girder Fail with overall_status=PASS)."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "70020738b6c969d954421bf617ac574c9db112d742b61dcefc97eecf5df73217",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 4.266,
+      "reason": "Executive summary accurately derives and reports pass/fail status across all components, single girders G1-G6, DCR failures, panels, members, and agrees with Overall Design Status."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "6ddab2ca36563e83a811ec261fe3ae96f387e234e008cf7c159fe9850574b170",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 4.229,
+      "reason": "DEF-08 Confirmed: executive_summary() emits literal '\\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 54/74 scenarios: Scenario 2 (G2 Moment Fail), Scenario 2 (G2 Shear Fail), Scenario 2 (G2 Stiffener Fail), Scenario 2 (G2 Fatigue Fail), Scenario 2 (G3 Moment Fail), Scenario 2 (G3 Shear Fail), Scenario 2 (G3 Stiffener Fail), Scenario 2 (G3 Fatigue Fail), Scenario 2 (G4 Moment Fail), Scenario 2 (G4 Shear Fail), Scenario 2 (G4 Stiffener Fail), Scenario 2 (G4 Fatigue Fail), Scenario 2 (G5 Moment Fail), Scenario 2 (G5 Shear Fail), Scenario 2 (G5 Stiffener Fail), Scenario 2 (G5 Fatigue Fail), Scenario 2 (G6 Moment Fail), Scenario 2 (G6 Shear Fail), Scenario 2 (G6 Stiffener Fail), Scenario 2 (G6 Fatigue Fail), Scenario 3 (G2 DCR Moment > 1.0), Scenario 3 (G2 DCR Shear > 1.0), Scenario 3 (G2 DCR Stiffener > 1.0), Scenario 3 (G2 DCR Fatigue > 1.0), Scenario 3 (G3 DCR Moment > 1.0), Scenario 3 (G3 DCR Shear > 1.0), Scenario 3 (G3 DCR Stiffener > 1.0), Scenario 3 (G3 DCR Fatigue > 1.0), Scenario 3 (G4 DCR Moment > 1.0), Scenario 3 (G4 DCR Shear > 1.0), Scenario 3 (G4 DCR Stiffener > 1.0), Scenario 3 (G4 DCR Fatigue > 1.0), Scenario 3 (G5 DCR Moment > 1.0), Scenario 3 (G5 DCR Shear > 1.0), Scenario 3 (G5 DCR Stiffener > 1.0), Scenario 3 (G5 DCR Fatigue > 1.0), Scenario 3 (G6 DCR Moment > 1.0), Scenario 3 (G6 DCR Shear > 1.0), Scenario 3 (G6 DCR Stiffener > 1.0), Scenario 3 (G6 DCR Fatigue > 1.0), Scenario 4 (CB P1/M1 First Member Fail), Scenario 4 (CB P1/M2 Middle Member Fail), Scenario 4 (CB P1/M3 Last Member Fail), Scenario 4 (CB P2/M1 Panel 2 Member Fail), Scenario 5 (ED P1/M1 First Member Fail), Scenario 5 (ED P1/M2 Middle Member Fail), Scenario 5 (ED P1/M3 Last Member Fail), Scenario 6 (Deck Moment-Only Fail), Scenario 6 (Deck Shear-Only Fail), Scenario 6 (Deck Moment & Shear Fail), Scenario 6B (Deck UR = 1.001 Boundary FAIL), Scenario 7 (Multi Fail: G3 Stiffener + CB P1/M3 + Deck Shear), Scenario 8 (CB eff = 1.001 Boundary FAIL), Scenario 9 (ED eff = 1.001 Boundary FAIL)."
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

@@ -1,0 +1,10 @@
+TEST IDENTIFIER: TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS
+DEFECT IDENTIFIER: DEF-17
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: DEF-17 Confirmed: cl_204_6_fatigue_load() is defined in irc6_2017.py but is never called in create_moving_vehicle_load_cases().
+
+--- EXECUTION DETAILS ---
+IRC6_2017.cl_204_6_fatigue_load() defined with keys: ['x', 'z', 'wheel_loads', 'fatigue_cycles']
+Wheel loads (t): [117720.0, 137340.0, 137340.0]
+PlateGirderBridge.create_moving_vehicle_load_cases references fatigue truck: False

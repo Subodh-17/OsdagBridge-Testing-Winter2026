@@ -1,0 +1,30 @@
+{
+  "test_id": "TC-REG-CAP-STIFFENER-BUCKLING",
+  "defect_id": "DEF-12",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.255,
+      "reason": "DEF-12 Confirmed: Geometry 1 (Baseline Snapped): capacity 134083.2kN (fails oracle 63.4kN, squash=1918.8kN); Geometry 2 (Alternate Section): capacity 231365.0kN (fails oracle 158.5kN, squash=1909.1kN)"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.259,
+      "reason": "Web buckling capacity satisfies positive IS 800 Cl. 8.7.3.1 slenderness oracle across multiple geometries."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.262,
+      "reason": "DEF-12 Confirmed: Geometry 2 (Alternate Section): capacity 63.4kN (fails oracle 158.5kN, squash=1909.1kN)"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

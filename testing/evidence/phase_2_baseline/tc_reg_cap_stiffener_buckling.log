@@ -1,0 +1,10 @@
+TEST IDENTIFIER: TC-REG-CAP-STIFFENER-BUCKLING
+DEFECT IDENTIFIER: DEF-12
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: DEF-12 Confirmed: bs_Fcdw_wb_kN (134083.2 kN) evaluates to 64.2x the stiffener column capacity due to unbounded Euler elastic stress.
+
+--- EXECUTION DETAILS ---
+Web Buckling Capacity (bs_Fcdw_wb_kN): 134083.2 kN
+Column Buckling Capacity (bs_Fcd_kN):    2087.3 kN
+Ratio Fcdw_wb / Fcd:                    64.2x

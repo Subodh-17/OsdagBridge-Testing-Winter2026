@@ -1,0 +1,42 @@
+{
+  "python_executable": "C:\\Users\\Subodh\\miniconda3\\envs\\osdagbridge-py312\\python.exe",
+  "python_version": "3.12.16 | packaged by conda-forge | (main, Oct 26 2026, 11:29:01) [MSC v.1944 64 bit (AMD64)]",
+  "osdag_dunder_version": "2025.01.a.2",
+  "osdag_file": "C:\\Users\\Subodh\\miniconda3\\envs\\osdagbridge-py312\\Lib\\site-packages\\osdag\\__init__.py",
+  "osdag_dist_metadata_version": "0.0.0",
+  "osdag_core_path": [
+    "C:\\Users\\Subodh\\miniconda3\\envs\\osdagbridge-py312\\Lib\\site-packages\\osdag_core"
+  ],
+  "conda_packages": {
+    "osdag": {
+      "base_url": "https://conda.anaconda.org/osdag",
+      "build_number": 0,
+      "build_string": "py_0",
+      "channel": "osdag",
+      "dist_name": "osdag-2026.04.0.0-py_0",
+      "name": "osdag",
+      "platform": "noarch",
+      "version": "2026.04.0.0"
+    },
+    "osdag_latex_env": {
+      "base_url": "https://conda.anaconda.org/osdag",
+      "build_number": 0,
+      "build_string": "py313_0",
+      "channel": "osdag",
+      "dist_name": "osdag_latex_env-1.0.2-py313_0",
+      "name": "osdag_latex_env",
+      "platform": "win-64",
+      "version": "1.0.2"
+    },
+    "osdagbridge": {
+      "base_url": "https://conda.anaconda.org/pypi",
+      "build_number": 0,
+      "build_string": "pypi_0",
+      "channel": "pypi",
+      "dist_name": "osdagbridge-1.0.0-pypi_0",
+      "name": "osdagbridge",
+      "platform": "pypi",
+      "version": "1.0.0"
+    }
+  }
+}

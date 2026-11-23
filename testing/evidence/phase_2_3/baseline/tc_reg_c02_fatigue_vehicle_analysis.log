@@ -1,0 +1,15 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS
+DEFECT IDENTIFIER:      DEF-17
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     7.338 s
+TIMESTAMP UTC:          2026-11-16T14:24:00.025718+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-17 Confirmed: Moving vehicle cases generated 2 (Class A and 70R only); IRC 6 Cl. 204.6 fatigue vehicle missing
+
+EXECUTION DETAILS & TRACE:
+Moving load cases generated: 2 (['Moving Case1', 'Moving Case2'])

@@ -1,0 +1,32 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-A02-ULS-COMBINATION-SUM
+DEFECT IDENTIFIER:      DEF-01 / DEF-02
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     25.068 s
+TIMESTAMP UTC:          2026-11-16T17:44:16.999442+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-01 / DEF-02 Confirmed: Solver ignored ULS factors: shears match un-factored 1.0DL+1.0DW (err=72392.5N, vs unfactored=1.60e-07N); Total reaction 1736.6kN does not match factored target 2710.2kN; Crash barrier load omitted from BASIC_1 combination
+
+EXECUTION DETAILS & TRACE:
+Identified ULS Combination Case: 'BASIC_1: 1.35DL + 1.75DW'
+  Component reaction [SW]: 169.819 kN
+  Component reaction [DD]: 1314.375 kN
+  Component reaction [Crash barrier load]: 196.200 kN
+  Component reaction [1.0 DW]: 252.360 kN
+Derived Applied ULS Resultant:       2802.70 kN (Physical target: 2802.70 kN)
+Reaction Superposition Target:       2710.16 kN (Linearity check from FE components)
+Total Support Vertical Reaction in BASIC_1:
+  Case-Specific Analyzed Reaction:     1736.55 kN
+  Run-Time Component Superposition:    2710.16 kN
+  Theoretical Applied Load Resultant:  2802.70 kN
+  Discrepancy vs Superposition Target: 973.61 kN
+Finite Element Shear Discrepancy vs Factored: 72392.5 N
+Finite Element Shear Error vs Un-factored:   1.60e-07 N
+Finite Element Moment Discrepancy vs Factored: 346620.2 N*m
+Crash Barrier Load Force Presence in BASIC_1:
+  Observed Barrier Contribution: -708.74 kN (Expected: 264.87 kN)
+  Barrier Presence Verified:     False

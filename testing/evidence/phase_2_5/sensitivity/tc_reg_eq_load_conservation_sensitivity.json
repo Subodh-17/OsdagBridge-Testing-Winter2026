@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-EQ-LOAD-CONSERVATION",
+  "defect_id": "DEF-18",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.835,
+      "reason": "DEF-18 Confirmed: Static equilibrium and moment/centroid violated in FE grillage load distribution: Deck Slab (DD): force diff +39.4 kN (+3.1%); Wearing Course (1.0 DW): force diff +7.6 kN (+3.1%); Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=-0.000m"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "e1e92b5ad5ced8935cd32404d38075bd33ed0b71defc0fd096eb2510e78c6384",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.107,
+      "reason": "Static equilibrium conserved: all support reactions and resultant centroids match applied physical dead loads within 0.05% and 0.05 m."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "3e3aee4700eb8cc9db91ea7319550ff8e89cb8798a5696945ee8155d87d19ebf",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 1.428,
+      "reason": "DEF-18 Confirmed: Static equilibrium and moment/centroid violated in FE grillage load distribution: Crash Barrier (Crash barrier load): force diff -117.7 kN (-37.5%), centroid shift dx=+0.750m, dz=+0.000m"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

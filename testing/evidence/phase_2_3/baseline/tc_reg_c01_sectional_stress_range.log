@@ -1,0 +1,24 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-C01-SECTIONAL-STRESS-RANGE
+DEFECT IDENTIFIER:      DEF-07
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.060 s
+TIMESTAMP UTC:          2026-11-16T14:23:31.214953+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-07 Confirmed: Static load case produces false cyclic stress ranges: Path (a) envelope = 125.46 MPa (doubled from +M and -M end signs); Path (b) per-LC = 62.73 MPa (treats static moment Mz as range). Expected 0.0 MPa.
+
+EXECUTION DETAILS & TRACE:
+OpenSees simply supported beam sign proof at shared Node 2:
+  Element 1 end j moment: +12500.0 N*m
+  Element 2 end i moment: -12500.0 N*m (opposite signs proved)
+Static Case (M0 = 1000 kNm):
+  Path (a) Envelope stress range: 125.458 MPa (expected 0.0 MPa)
+  Path (b) Per-LC stress range:    62.729 MPa (expected 0.0 MPa)
+Positive Cyclic Case (M_min = 500 kNm, M_max = 1500 kNm):
+  Path (a) Envelope Stress Range: 188.187 MPa (expected 62.729 MPa)
+  Path (b) Per-LC Stress Range:    0.000 MPa (expected 62.729 MPa)
+  Fatigue Utilization DCR:         5.9234 (expected ~1.9746)

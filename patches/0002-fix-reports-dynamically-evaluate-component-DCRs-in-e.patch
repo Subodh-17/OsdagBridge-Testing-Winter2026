@@ -1,0 +1,182 @@
+From 12493c9bdde9fe43fa23ee43d2f9f05d5e8736ab Mon Sep 17 00:00:00 2001
+From: Subodh Bansode <subodh171011@gmail.com>
+Date: Thu, 19 Nov 2026 13:03:44 +0530
+Subject: [PATCH 2/6] fix(reports): dynamically evaluate component DCRs in
+ executive summary (DEF-08)
+
+- Replace hardcoded unconditional "Pass" narrative with dynamic evaluation
+- Evaluate DCRs across G1-G6 girders, cross-bracing, end-diaphragms, and deck slab
+- Add _extract_osdag_efficiency_raw to parse nested and flat member result dicts
+- Update Table 1 Overall Design Status to report Fail when any component fails (DCR > 1.0)
+- Ensure narrative and summary table agree across all pass/fail states
+- Verified across 74 synthetic boundary scenarios and authentic production pipeline snapshot
+
+Accepted in Phase 3 Batch 1 audit P3-IA-001.
+---
+ .../core/reports/executive_summary.py         | 97 +++++++++++++------
+ 1 file changed, 65 insertions(+), 32 deletions(-)
+
+diff --git a/src/osdagbridge/core/reports/executive_summary.py b/src/osdagbridge/core/reports/executive_summary.py
+index 4e445a7..4603af8 100644
+--- a/src/osdagbridge/core/reports/executive_summary.py
++++ b/src/osdagbridge/core/reports/executive_summary.py
+@@ -27,11 +27,36 @@ def _max_float(values):
+     return out
+ 
+ 
++def _extract_osdag_efficiency_raw(raw):
++    """Safely extract efficiency/UR float from nested Osdag member result structure."""
++    if not isinstance(raw, dict):
++        return None
++    from osdagbridge.core.bridge_types.plate_girder.results_data import _extract_osdag_summary
++    candidates = []
++    if "Osdag" in raw and isinstance(raw["Osdag"], dict):
++        candidates.append(raw["Osdag"])
++    candidates.append(raw)
++    for c in candidates:
++        summary = _extract_osdag_summary(c)
++        eff = summary.get("efficiency")
++        if eff is not None:
++            try:
++                return float(eff)
++            except (TypeError, ValueError):
++                pass
++        for k in ("efficiency", "Member.efficiency", "Optimum.UR"):
++            if k in c and c[k] is not None:
++                try:
++                    return float(c[k])
++                except (TypeError, ValueError):
++                    pass
++    return None
++
++
+ def _max_member_efficiency(pair_designs):
+     """Maximum Osdag 'efficiency' (utilization ratio) over a cross-bracing or
+     end-diaphragm result dump (nested pair -> member -> force_type -> raw).
+     Reads already-computed results only; nothing is recalculated here."""
+-    from osdagbridge.core.bridge_types.plate_girder.results_data import _extract_osdag_summary
+     if not isinstance(pair_designs, dict):
+         return None
+     best = None
+@@ -42,15 +67,10 @@ def _max_member_efficiency(pair_designs):
+             if not isinstance(force_types, dict):
+                 continue
+             for raw in force_types.values():
+-                try:
+-                    val = _extract_osdag_summary(raw or {}).get("efficiency")
+-                    if val is None:
+-                        continue
+-                    f = float(val)
+-                except (TypeError, ValueError, AttributeError):
+-                    continue
+-                if best is None or f > best:
+-                    best = f
++                f = _extract_osdag_efficiency_raw(raw)
++                if f is not None:
++                    if best is None or f > best:
++                        best = f
+     return best
+ 
+ 
+@@ -74,38 +94,53 @@ def executive_summary(input_dict, output_dict, fig_paths) -> str:
+     cb_results     = output_dict.get("crossbracing_design_results", {}) or {}
+     ed_results     = output_dict.get("end_diaphragm_design_results", {}) or {}
+ 
+-    # Overall Design Status — girder checks only: Pass if every check passes,
+-    # otherwise Fail with the names of the failing checks. Each check carries a
+-    # pre-computed {name, dcr, status}.
+-    failing = []                        # failing check names (order-preserving, deduped)
++    # Overall Design Status — evaluated dynamically across all structural components:
++    # Girders, Cross Bracing, End Diaphragms, and Deck Slab.
++    failing = []                        # failing check/component names (order-preserving, deduped)
+     gov_name, gov_dcr = "", None
+     girder_max_ur = None
++    girder_failed = False
++
+     for g, gd in per_girder.items():
+         if str(g).startswith("EB"):     # skip edge-beam pseudo girders
+             continue
+         for chk in (gd.get("checks") or []):
+             try:
+                 _val = chk.get("dcr")
+-                if _val is None:
+-                    dcr = None
+-                else:
+-                    dcr = float(_val)
++                dcr = None if _val is None else float(_val)
+             except (TypeError, ValueError):
+                 dcr = None
+             name = str(chk.get("name", "")).strip()
+             is_fail = ("FAIL" in str(chk.get("status", "")).upper()) or (dcr is not None and dcr > 1.0)
+-            if is_fail and name and name not in failing:
+-                failing.append(name)
++            if is_fail:
++                girder_failed = True
++                if name and name not in failing:
++                    failing.append(name)
+             if dcr is not None:
+                 if gov_dcr is None or dcr > gov_dcr:
+                     gov_dcr, gov_name = dcr, name
+                 if girder_max_ur is None or dcr > girder_max_ur:
+                     girder_max_ur = dcr
+ 
+-    if not per_girder:
++    cb_max = _max_member_efficiency(cb_results)
++    cb_failed = (cb_max is not None and cb_max > 1.0)
++    if cb_failed and "Cross Bracing" not in failing:
++        failing.append("Cross Bracing")
++
++    ed_max = _max_member_efficiency(ed_results)
++    ed_failed = (ed_max is not None and ed_max > 1.0)
++    if ed_failed and "End Diaphragm" not in failing:
++        failing.append("End Diaphragm")
++
++    deck_max = _max_float([v for k, v in deck_results.items() if str(k).startswith("ur_")])
++    deck_failed = (deck_max is not None and deck_max > 1.0)
++    if deck_failed and "Deck Slab" not in failing:
++        failing.append("Deck Slab")
++
++    if not per_girder and not cb_results and not ed_results and not deck_results:
+         overall_design_status = ""
+-    elif failing:
+-        overall_design_status = "Fail (" + ", ".join(failing) + ")"
++    elif failing or girder_failed or cb_failed or ed_failed or deck_failed:
++        overall_design_status = "Fail (" + ", ".join(failing) + ")" if failing else "Fail"
+     else:
+         overall_design_status = "Pass"
+ 
+@@ -114,13 +149,11 @@ def executive_summary(input_dict, output_dict, fig_paths) -> str:
+     component_urs = []                  # (ur_value, component_label)
+     if girder_max_ur is not None:
+         component_urs.append((girder_max_ur, "Girder"))
+-    deck_max = _max_float([v for k, v in deck_results.items() if str(k).startswith("ur_")])
+     if deck_max is not None:
+         component_urs.append((deck_max, "Deck slab"))
+-    for results, label in ((cb_results, "Cross bracing"), (ed_results, "End diaphragm")):
+-        m = _max_member_efficiency(results)
+-        if m is not None:
+-            component_urs.append((m, label))
++    for m_val, label in ((cb_max, "Cross bracing"), (ed_max, "End diaphragm")):
++        if m_val is not None:
++            component_urs.append((m_val, label))
+     if component_urs:
+         max_ur, max_label = max(component_urs, key=lambda t: t[0])
+         overall_utilization_ratio = f"{max_ur:.2f} ({max_label})"
+@@ -230,10 +263,10 @@ This section provides a concise summary of the bridge design, key inputs, govern
+ \addcontentsline{toc}{section}{Key Design Outcomes Summary}
+ \label{sec:key-outcomes}
+ 
+-\noindent Girder design pass \\
+-Cross bracing design pass \\
+-End Diaphragm design pass \\
+-Deck design pass
++""" + (r"\noindent Girder design fail \\" if girder_failed else r"\noindent Girder design pass \\") + "\n" + \
++      (r"Cross bracing design fail \\" if cb_failed else r"Cross bracing design pass \\") + "\n" + \
++      (r"End Diaphragm design fail \\" if ed_failed else r"End Diaphragm design pass \\") + "\n" + \
++      (r"Deck design fail" if deck_failed else r"Deck design pass") + r"""
+ 
+ \section*{Design Assumptions and Limitations}
+ \addcontentsline{toc}{section}{Design Assumptions and Limitations}
+-- 
+2.34.1
+

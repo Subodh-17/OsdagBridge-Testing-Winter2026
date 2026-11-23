@@ -1,0 +1,21 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-CAP-STIFFENER-BUCKLING
+DEFECT IDENTIFIER:      DEF-12
+RESULT STATUS:          FAIL
+EXPECTED ON BASELINE:   FAIL
+EXECUTION DURATION:     0.046 s
+TIMESTAMP UTC:          2026-11-16T10:09:07.508141+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+OSDAGBRIDGE MODULE:     None
+REASON / SUMMARY:       DEF-12 Confirmed: capacity 134083.2 kN exceeds squash bound 1918.8 kN (69.9x); elastic stress 22233.9 MPa exceeds yield bound 318.2 MPa; capacity 134083.2 kN fails positive IS 800 oracle 63.4 kN
+================================================================================
+
+--- DETAILED EXECUTION LOG ---
+Web strip: tw=8.0mm, dw=1304.0mm, Awb=6030.6mm2
+Web strip slenderness: KL=912.8mm, ry=2.309mm, lambda=395.3
+IS 800 Curve c: f_cr=12.64MPa, lam_bar=5.263, chi=0.0330, fcd=10.51MPa
+True IS 800 Web Buckling Capacity (Positive Oracle): 63.4 kN
+Maximum Material Yield Squash Bound ((fy/gm0)*Awb):     1918.8 kN
+Computed bs_Fcdw_wb_kN:                             134083.2 kN
+Computed elastic stress fcc_wb_MPa:                 22233.9 MPa (Yield bound: 318.2 MPa)

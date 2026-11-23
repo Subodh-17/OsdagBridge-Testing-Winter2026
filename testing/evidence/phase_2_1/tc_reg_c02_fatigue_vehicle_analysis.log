@@ -1,0 +1,16 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS
+DEFECT IDENTIFIER:      DEF-17
+RESULT STATUS:          FAIL
+EXPECTED ON BASELINE:   FAIL
+EXECUTION DURATION:     0.085 s
+TIMESTAMP UTC:          2026-11-16T10:09:07.324424+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+OSDAGBRIDGE MODULE:     None
+REASON / SUMMARY:       DEF-17 Confirmed: add_vehicle_load_cases_from_combinations() generated 2 cases (Class A and 70R only); IRC 6 Cl. 204.6 fatigue vehicle case (12t/14t/14t) is completely missing.
+================================================================================
+
+--- DETAILED EXECUTION LOG ---
+IRC 6 Cl. 204.6 Vehicle: Wheel loads=[117720.0, 137340.0, 137340.0] N, Positions=[0, 4.5, 5.9] m
+Generated vehicle cases (2): ['Case1 2xClassA', 'Case2 1xClass70R']

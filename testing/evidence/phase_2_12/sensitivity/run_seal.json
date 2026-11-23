@@ -1,0 +1,12 @@
+{
+  "run_uuid": "09dca119-7acd-450d-8b6b-11c63cf9b5a8",
+  "phase_label": "Phase 2.12 Sensitivity",
+  "runner_id": "sensitivity_runner",
+  "timestamp_utc": "2026-11-17T14:44:26.939226+00:00",
+  "evidence_dir": "F:/FOSSEE internship/testing/evidence/phase_2_12/sensitivity",
+  "total_files": 19,
+  "total_bytes": 104166,
+  "manifest_path": "F:/FOSSEE internship/testing/evidence/phase_2_12/sensitivity/manifest_hashes.json",
+  "manifest_sha256": "111669b39db09c3bc8dce62e34b49acf9fc92ba322114e7fb516e74bb3137856",
+  "signature": "9dd1276cd4c0906b1fd48f213987a6ded6e61634334184a3632479bdf9a78c43"
+}

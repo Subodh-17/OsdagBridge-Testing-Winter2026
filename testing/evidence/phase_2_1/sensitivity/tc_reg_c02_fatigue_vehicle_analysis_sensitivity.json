@@ -1,0 +1,28 @@
+{
+  "test_id": "TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS",
+  "defect_id": "DEF-17",
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.085,
+      "reason": "DEF-17 Confirmed: add_vehicle_load_cases_from_combinations() generated 2 cases (Class A and 70R only); IRC 6 Cl. 204.6 fatigue vehicle case (12t/14t/14t) is completely missing."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.084,
+      "reason": "IRC 6 Cl. 204.6 fatigue vehicle moving load case generated and verified."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "observed_status": "FAIL",
+      "expected_status": "FAIL",
+      "duration_sec": 0.085,
+      "reason": "DEF-17 Confirmed: add_vehicle_load_cases_from_combinations() generated 2 cases (Class A and 70R only); IRC 6 Cl. 204.6 fatigue vehicle case (12t/14t/14t) is completely missing."
+    }
+  },
+  "sensitivity_verified": true
+}

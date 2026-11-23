@@ -1,0 +1,16 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-RPT-EXEC-SUMMARY-STATUS
+DEFECT IDENTIFIER:      DEF-08
+RESULT STATUS:          PASS
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     3.162 s
+TIMESTAMP UTC:          2026-11-17T06:33:34.793334+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        Executive summary accurately derives and reports pass/fail status across all components, single girders G1-G6, DCR failures, panels, members, and agrees with Overall Design Status.
+
+EXECUTION DETAILS & TRACE:
+Scenario 1 (All Pass): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS, Table=Pass -> Ok: True
+Scenario 2 (G1-G6 Moment, Shear, Stiffener Buckling & Fatigue Matrix): 24 sub-scenarios evaluated.

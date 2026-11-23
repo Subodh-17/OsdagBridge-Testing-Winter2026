@@ -1,0 +1,15 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS
+DEFECT IDENTIFIER:      DEF-17
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     8.882 s
+TIMESTAMP UTC:          2026-11-16T12:51:36.418795+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-17 Confirmed: Fatigue vehicle axle specifications do not match 40-tonne vehicle (12t/14t/14t)
+
+EXECUTION DETAILS & TRACE:
+Moving load cases generated: 3 (['Moving Case1', 'Moving Case2', 'IRC Cl. 204.6 Fatigue Vehicle'])

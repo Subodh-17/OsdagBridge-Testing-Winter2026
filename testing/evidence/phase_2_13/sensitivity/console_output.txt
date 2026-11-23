@@ -1,0 +1,213 @@
+================================================================================
+PHASE 2.11 SENSITIVITY MATRIX HARNESS — STRICT CANDIDATE VALIDATION
+Workspace Root:            F:\FOSSEE internship
+Sensitivity Dir:           F:\FOSSEE internship\testing\evidence\phase_2_13\sensitivity
+Candidates Dir:            F:\FOSSEE internship\testing\evidence\phase_2_13\candidates
+Baseline Commit:           d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+evidence_guard.py SHA256:  8c249ca345749a5129b4cbe1d124141025003e6fb561ccada36e0d9667c612db
+runner SHA256:             7cc8293d0c7183af1cfbd6cc2a7d822354891bfad11a3d926505edb8f9ef0303
+baseline runner SHA256:    33a5777d676fe8fb3e76a324a5bf77817e9bc86ae3c82778ab368cb0deba91a7
+================================================================================
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+[VERIFIED                  ] TC-REG-A01-FACTOR-SCALING            | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+[VERIFIED                  ] TC-REG-B01-SECTION-PROPERTY-SYNC     | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+[VERIFIED                  ] TC-REG-C01-SECTIONAL-STRESS-RANGE    | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+ULS Basic combinations:
+  Created: BASIC_1: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  live_load leading
+  Created: BASIC_2: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  wind_load leading
+  Created: BASIC_3: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  thermal_load leading
+  Created: BASIC_4: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  live_load leading
+  Created: BASIC_5: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  wind_load leading
+  Created: BASIC_6: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  thermal_load leading
+
+ULS Accidental combinations:
+  Created: ACCIDENTAL_1: 1.0DL + 1.0DW                    DL=1.0  vehicle_collision(no lc)  live_load leading
+  Created: ACCIDENTAL_2: 1.0DL + 1.0DW                    DL=1.0  barge_impact(no lc)  live_load leading
+  Created: ACCIDENTAL_3: 1.0DL + 1.0DW                    DL=1.0  floating_bodies(no lc)  live_load leading
+
+ULS Seismic combinations:
+  Created: SEISMIC_1: 1.35DL + 1.75DW                     DL=1.35(adding)  EL=1.5(service)
+  Created: SEISMIC_2: 1.35DL + 1.75DW                     DL=1.35(adding)  EL=0.75(construction)
+  Created: SEISMIC_3: 1.0DL + 1.0DW                       DL=1.0(relieving)  EL=1.5(service)
+  Created: SEISMIC_4: 1.0DL + 1.0DW                       DL=1.0(relieving)  EL=0.75(construction)
+
+Total ULS combinations created: 13
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1721.62 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1721.62 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1721.62 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1721.62 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6125.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+ULS Basic combinations:
+  Created: BASIC_1: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  live_load leading
+  Created: BASIC_2: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  wind_load leading
+  Created: BASIC_3: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  thermal_load leading
+  Created: BASIC_4: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  live_load leading
+  Created: BASIC_5: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  wind_load leading
+  Created: BASIC_6: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  thermal_load leading
+
+ULS Accidental combinations:
+  Created: ACCIDENTAL_1: 1.0DL + 1.0DW                    DL=1.0  vehicle_collision(no lc)  live_load leading
+  Created: ACCIDENTAL_2: 1.0DL + 1.0DW                    DL=1.0  barge_impact(no lc)  live_load leading
+  Created: ACCIDENTAL_3: 1.0DL + 1.0DW                    DL=1.0  floating_bodies(no lc)  live_load leading
+
+ULS Seismic combinations:
+  Created: SEISMIC_1: 1.35DL + 1.75DW                     DL=1.35(adding)  EL=1.5(service)
+  Created: SEISMIC_2: 1.35DL + 1.75DW                     DL=1.35(adding)  EL=0.75(construction)
+  Created: SEISMIC_3: 1.0DL + 1.0DW                       DL=1.0(relieving)  EL=1.5(service)
+  Created: SEISMIC_4: 1.0DL + 1.0DW                       DL=1.0(relieving)  EL=0.75(construction)
+
+Total ULS combinations created: 13
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+ULS Basic combinations:
+  Created: BASIC_1: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  live_load leading
+  Created: BASIC_2: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  wind_load leading
+  Created: BASIC_3: 1.35DL + 1.75DW                       DL=1.35(adding)  Surf=1.75  thermal_load leading
+  Created: BASIC_4: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  live_load leading
+  Created: BASIC_5: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  wind_load leading
+  Created: BASIC_6: 1.0DL + 1.0DW                         DL=1.0(relieving)  Surf=1.0  thermal_load leading
+
+ULS Accidental combinations:
+  Created: ACCIDENTAL_1: 1.0DL + 1.0DW                    DL=1.0  vehicle_collision(no lc)  live_load leading
+  Created: ACCIDENTAL_2: 1.0DL + 1.0DW                    DL=1.0  barge_impact(no lc)  live_load leading
+  Created: ACCIDENTAL_3: 1.0DL + 1.0DW                    DL=1.0  floating_bodies(no lc)  live_load leading
+
+ULS Seismic combinations:
+  Created: SEISMIC_1: 1.35DL + 1.75DW                     DL=1.35(adding)  EL=1.5(service)
+  Created: SEISMIC_2: 1.35DL + 1.75DW                     DL=1.35(adding)  EL=0.75(construction)
+  Created: SEISMIC_3: 1.0DL + 1.0DW                       DL=1.0(relieving)  EL=1.5(service)
+  Created: SEISMIC_4: 1.0DL + 1.0DW                       DL=1.0(relieving)  EL=0.75(construction)
+
+Total ULS combinations created: 13
+[VERIFIED                  ] TC-REG-A02-ULS-COMBINATION-SUM       | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1721.62 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1721.62 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1721.62 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1721.62 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6125.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+[VERIFIED                  ] TC-REG-EQ-LOAD-CONSERVATION          | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+Bridge width from layout: 8.5 m
+Wind loads (IRC:6-2017): Pz=463.7 N/m²  FT=12.00 kN  FT/m=0.500 kN/m  FL=14.7069 N/m²  FV=695.55 N/m²
+Bridge width from layout: 8.5 m
+Wind loads (IRC:6-2017): Pz=1039.6 N/m²  FT=150.67 kN  FT/m=6.278 kN/m  FL=184.6434 N/m²  FV=1559.38 N/m²
+Bridge width from layout: 8.5 m
+Wind loads (IRC:6-2017): Pz=940.6 N/m²  FT=19.47 kN  FT/m=0.811 kN/m  FL=23.8660 N/m²  FV=1410.90 N/m²
+[VERIFIED                  ] TC-REG-D01-WIND-SPEED-PROPAGATION    | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+[BLOCKED / NOT DEMONSTRATED] TC-REG-D02-TEMPERATURE-PROPAGATION   | (a) BLOCKED       | (b) BLOCKED | (c) BLOCKED      
+[BLOCKED / NOT DEMONSTRATED] TC-REG-C02-FATIGUE-VEHICLE-ANALYSIS  | (a) BLOCKED       | (b) BLOCKED | (c) BLOCKED      
+[VERIFIED                  ] TC-REG-RPT-EXEC-SUMMARY-STATUS       | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+[VERIFIED                  ] TC-REG-GEO-GIRDER-COUNT-ALIGNMENT    | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+[BLOCKED / NOT DEMONSTRATED] TC-REG-GEO-SLAB-SECTION-PROPERTIES   | (a) BLOCKED       | (b) BLOCKED | (c) BLOCKED      
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+Bridge width from layout: 8.5 m
+[VERIFIED                  ] TC-REG-CAP-STIFFENER-BUCKLING        | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1577.40 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1577.40 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1577.40 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1577.40 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+[VERIFIED                  ] TC-REG-MAT-DENSITY-CONSISTENCY       | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+[VERIFIED                  ] TC-REG-FS-CLEAN-WORKING-TREE         | (a) BASELINE_FAIL | (b) PASS    | (c) BASELINE_FAIL
+[VERIFIED                  ] TC-REG-CAD-EXPORT-VS-SCREENSHOT      | (a) PASS          | (b) PASS    | (c) BASELINE_FAIL
+
+================================================================================
+SENSITIVITY MATRIX EXECUTION COMPLETED (178.16 s)
+Actionable Tests Verified:       12 / 12
+Blocked (Undecided Specs):       3 / 15
+Overall Actionable Gate Status:  PASSED
+================================================================================
+Saved complete sensitivity summary to: F:\FOSSEE internship\testing\evidence\phase_2_13\sensitivity\phase_2_13_sensitivity_matrix_summary.json

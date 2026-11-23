@@ -1,0 +1,8 @@
+TEST IDENTIFIER: TC-REG-RPT-EXEC-SUMMARY-STATUS
+DEFECT IDENTIFIER: DEF-08
+BASELINE OUTCOME: FAIL (INTENDED DEFECT)
+EXPECTED ON BASELINE: FAIL (INTENDED DEFECT)
+INTENDED FAILURE REASON: DEF-08 Confirmed: executive_summary.py:233 hardcodes literal text 'Girder design pass' unconditionally.
+
+--- EXECUTION DETAILS ---
+Contains literal '\noindent Girder design pass': True

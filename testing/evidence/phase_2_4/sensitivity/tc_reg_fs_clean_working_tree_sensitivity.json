@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-FS-CLEAN-WORKING-TREE",
+  "defect_id": "DEF-10",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 14.815,
+      "reason": "DEF-10 Confirmed: Database.connect() writes weather.sqlite inside package tree when missing; Database() default constructor creates unanchored weather.sqlite in cwd"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "e6e0e8d8e987fefdf8b673849e368d108bb6cc8860eb819816fc4512146b89d5",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.198,
+      "reason": "Database paths are cleanly anchored to user app data without package writes or cwd side effects."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "06fe6694b196a51f59d23d742e499d882d16c5cfabf242bb0792db26f1179cee",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 15.169,
+      "reason": "DEF-10 Confirmed: Database.connect() writes weather.sqlite inside package tree when missing; Database() default constructor creates unanchored weather.sqlite in cwd"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

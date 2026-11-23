@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-FS-CLEAN-WORKING-TREE",
+  "defect_id": "DEF-10",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 7.48,
+      "reason": "DEF-10 Confirmed: Production ui_loc.DB_PATH resolves inside the package tree; Database() default constructor creates unanchored weather.sqlite in cwd; Package tree mutated during production calls: created ['core/data/project_location/weather.sqlite']; Production call vulnerable to read-only package installations (denied write causes OperationalError)"
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "294ae78d2763e207a7501e8437b8e45f1b0e03dfd496598de4ed21d489f87ed6",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 5.15,
+      "reason": "Database paths are cleanly anchored to user app data without package writes, cwd side effects, or read-only package failures; queries validated."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "58e8686067e24da6c5dbb393e61fe560b12e7daeb79ead82f27148cd42253180",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 5.093,
+      "reason": "DEF-10 Confirmed: Database() default constructor creates unanchored weather.sqlite in cwd"
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

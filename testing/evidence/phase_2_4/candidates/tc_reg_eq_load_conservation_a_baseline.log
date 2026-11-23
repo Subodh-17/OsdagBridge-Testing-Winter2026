@@ -1,0 +1,39 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-EQ-LOAD-CONSERVATION
+DEFECT IDENTIFIER:      DEF-18
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     3.246 s
+TIMESTAMP UTC:          2026-11-16T15:35:55.250184+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-18 Confirmed: Static equilibrium violated in FE grillage load distribution: Deck Slab (DD): applied 1275.0 kN vs reaction 1314.4 kN (+3.1%); Wearing Course (1.0 DW): applied 244.8 kN vs reaction 252.4 kN (+3.1%); Crash Barrier (Crash barrier load): applied 313.9 kN vs reaction 196.2 kN (-37.5%)
+
+EXECUTION DETAILS & TRACE:
+Static Equilibrium Audit (Sum of Support Reactions vs Applied Physical Load):
+  [SW] Girder Self-Weight:
+      Applied Load:        169.819 kN
+      Support Reaction:    169.819 kN
+      Difference:           -0.000 kN ( -0.00%)
+      Equilibrium OK:   True
+  [DD] Deck Slab:
+      Applied Load:       1275.000 kN
+      Support Reaction:   1314.375 kN
+      Difference:          +39.375 kN ( +3.09%)
+      Equilibrium OK:   False
+  [1.0 DW] Wearing Course:
+      Applied Load:        244.800 kN
+      Support Reaction:    252.360 kN
+      Difference:           +7.560 kN ( +3.09%)
+      Equilibrium OK:   False
+  [Crash barrier load] Crash Barrier:
+      Applied Load:        313.920 kN
+      Support Reaction:    196.200 kN
+      Difference:         -117.720 kN (-37.50%)
+      Equilibrium OK:   False
+  Total Dead Load Resultants:
+      Total Applied:      2003.539 kN
+      Total Reaction:     1932.754 kN
+      Net Shortfall:       -70.785 kN ( -3.53%)

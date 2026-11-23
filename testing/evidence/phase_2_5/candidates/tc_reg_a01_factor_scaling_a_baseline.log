@@ -1,0 +1,17 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-A01-FACTOR-SCALING
+DEFECT IDENTIFIER:      DEF-01 (Upstream ospgrillage)
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     1.335 s
+TIMESTAMP UTC:          2026-11-16T16:38:17.785482+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-01 Confirmed: ospgrillage ignored load_factor 1.35; force ratio is 1.00000 (expected 1.35000).
+
+EXECUTION DETAILS & TRACE:
+Unfactored Load Case (Line + Patch) max force: 26331.9016 N
+Factored Load Case (Line + Patch) max force:   26331.9016 N (Target ratio: 1.35000)
+Observed Force Ratio:                         1.00000

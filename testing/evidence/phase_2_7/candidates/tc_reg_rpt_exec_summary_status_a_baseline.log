@@ -1,0 +1,21 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-RPT-EXEC-SUMMARY-STATUS
+DEFECT IDENTIFIER:      DEF-08
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     4.999 s
+TIMESTAMP UTC:          2026-11-16T18:42:12.880300+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-08 Confirmed: executive_summary() emits literal '\noindent Girder design pass' unconditionally despite single-girder or component failures. Discrepancies in 23/24 scenarios: Scenario 2 (G1 Moment Fail), Scenario 2 (G1 Stiffener Fail), Scenario 2 (G1 Fatigue Fail), Scenario 2 (G2 Moment Fail), Scenario 2 (G2 Stiffener Fail), Scenario 2 (G2 Fatigue Fail), Scenario 2 (G3 Moment Fail), Scenario 2 (G3 Stiffener Fail), Scenario 2 (G3 Fatigue Fail), Scenario 2 (G4 Moment Fail), Scenario 2 (G4 Stiffener Fail), Scenario 2 (G4 Fatigue Fail), Scenario 2 (G5 Moment Fail), Scenario 2 (G5 Stiffener Fail), Scenario 2 (G5 Fatigue Fail), Scenario 2 (G6 Moment Fail), Scenario 2 (G6 Stiffener Fail), Scenario 2 (G6 Fatigue Fail), Scenario 3 (DCR-Only G5 Fail), Scenario 4 (CB Member P1/M2 Fail), Scenario 5 (ED Member P1/M2 Fail), Scenario 6 (Deck Fail), Scenario 7 (Multi Fail).
+
+EXECUTION DETAILS & TRACE:
+Scenario 1 (All Pass): Girder=PASS, CB=PASS, ED=PASS, Deck=PASS, Table=Pass -> Ok: True
+Scenario 2 (G1-G6 Moment, Stiffener Buckling & Fatigue Matrix): 18 sub-scenarios evaluated.
+Scenario 3 (DCR-Only G5 Fail): Girder=PASS, Table=Fail (Shear Capacity) -> Ok: False
+Scenario 4 (CB Member P1/M2 Fail): CB=PASS, Table=Pass -> Ok: False
+Scenario 5 (ED Member P1/M2 Fail): ED=PASS, Table=Pass -> Ok: False
+Scenario 6 (Deck Fail): Deck=PASS, Table=Pass -> Ok: False
+Scenario 7 (Multi Fail): Girder=PASS, CB=PASS, Deck=PASS, Table=Fail (Stiffener Buckling) -> Ok: False

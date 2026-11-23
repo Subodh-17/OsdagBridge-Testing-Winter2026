@@ -1,0 +1,43 @@
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=3.183 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=5.317 m: 1768.95 N/m (A=0.02253 m²)
+Self weight line load @ z=7.450 m: 1768.95 N/m (A=0.02253 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=24.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=24.000, z=8.250)
+Median line load magnitude: 4000.00 N/m
+test_tc_b2_07_patch_corner_dedup (__main__.TestBatch2PatchLoads.test_tc_b2_07_patch_corner_dedup)
+TC-B2-07: Uniform patch on rectangular deck eliminates corner duplication (A = 200 m2, P = 400 kN). ... ok
+test_tc_b2_08_patch_interior_partial (__main__.TestBatch2PatchLoads.test_tc_b2_08_patch_interior_partial)
+TC-B2-08: Partial interior patch bounded equilibrium and centroid (x in [6, 18], z in [2, 6.5]). ... ok
+test_tc_b2_11_fe_deck_slab_equil (__main__.TestBatch2PatchLoads.test_tc_b2_11_fe_deck_slab_equil)
+TC-B2-11: Full-bridge deck slab static equilibrium (P = 1275.000 kN, x_bar = 12 m, z_bar = 4.25 m). ... F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+ok
+test_tc_b2_12_fe_overlay_equil (__main__.TestBatch2PatchLoads.test_tc_b2_12_fe_overlay_equil)
+TC-B2-12: Full-bridge wearing course static equilibrium (P = 244.800 kN, x_bar = 12 m, z_bar = 4.25 m). ... ok
+test_tc_b2_16_patch_nonaligned (__main__.TestBatch2PatchLoads.test_tc_b2_16_patch_nonaligned)
+TC-B2-16: Non-grid-aligned patch load area and force conservation (A = 95.76 m2, P = 239.4 kN). ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 16.812s
+
+OK

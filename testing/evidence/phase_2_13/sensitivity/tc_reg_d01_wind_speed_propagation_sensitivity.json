@@ -1,0 +1,32 @@
+{
+  "test_id": "TC-REG-D01-WIND-SPEED-PROPAGATION",
+  "defect_id": "DEF-05",
+  "is_blocked": false,
+  "conditions": {
+    "a_baseline": {
+      "description": "Frozen baseline behavior",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.407,
+      "reason": "DEF-05 Confirmed: Wind arguments fell back to defaults (speed=33.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2), yielding Pz = 463.7 N/m2 instead of authentic 1039.6 N/m2."
+    },
+    "b_minimal_correct": {
+      "description": "Minimal correct candidate implementation",
+      "candidate_sha256": "1aae54f8d09b29254d8140df2a61bb93d6237e40fe2fc0b23e5de5b4aa9fef47",
+      "observed_status": "PASS",
+      "expected_status": "PASS",
+      "duration_sec": 0.416,
+      "reason": "Wind parameters successfully propagated: Pz = 1039.6 N/m2 matches Table 12."
+    },
+    "c_plausible_wrong": {
+      "description": "Plausible incorrect / naive candidate implementation",
+      "candidate_sha256": "5f57a59399df274e87cb0a34741fb386ac360b504ecf6af5bad82396457af3ff",
+      "observed_status": "BASELINE_FAIL",
+      "expected_status": "BASELINE_FAIL",
+      "duration_sec": 0.415,
+      "reason": "DEF-05 Confirmed: Wind arguments fell back to defaults (speed=47.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2), yielding Pz = 940.6 N/m2 instead of authentic 1039.6 N/m2."
+    }
+  },
+  "sensitivity_verified": true,
+  "sensitivity_status": "VERIFIED"
+}

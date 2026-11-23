@@ -1,0 +1,13 @@
+TEST IDENTIFIER: TC-REG-D01-WIND-SPEED-PROPAGATION
+DEFECT IDENTIFIER: DEF-05
+RESULT STATUS: FAIL
+EXPECTED ON BASELINE: FAIL
+REASON: DEF-05 Confirmed: Wind parameters dropped to fallbacks (speed=33.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2) because plategirderbridge.py:1381 reads un-prefixed bare keys.
+
+--- DETAILED EXECUTION LOG ---
+create_wind_load arguments received:
+  basic_wind_speed:     33.0 (Input: 47.0, Fallback: 33.0)
+  height_for_pz:        10.0 (Input: 15.0, Fallback: 10.0)
+  crash_barrier_height: 0.0 (Input: 1.1, Fallback: 0.0)
+  railing_height:       0.0 (Input: 1.2, Fallback: 0.0)
+IRC 6 Table 12 Wind Pressure: Input 47m/s@15m = 1039.6 N/m2 | Fallback 33m/s@10m = 463.7 N/m2

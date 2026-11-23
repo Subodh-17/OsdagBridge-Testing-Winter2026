@@ -1,0 +1,22 @@
+================================================================================
+TEST IDENTIFIER:        TC-REG-D01-WIND-SPEED-PROPAGATION
+DEFECT IDENTIFIER:      DEF-05
+RESULT STATUS:          BASELINE_FAIL
+EXPECTED ON BASELINE:   BASELINE_FAIL
+EXECUTION DURATION:     0.084 s
+TIMESTAMP UTC:          2026-11-16T12:51:19.610860+00:00
+BASELINE COMMIT:        d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+PYTHON EXECUTABLE:      C:\Users\Subodh\miniconda3\envs\osdagbridge-py312\python.exe
+CONCRETE MODULE:        F:\FOSSEE internship\source\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py
+================================================================================
+OUTCOME SUMMARY:        DEF-05 Confirmed: Wind arguments fell back to defaults (speed=47.0 vs 47.0, height=10.0 vs 15.0, barrier=0.0 vs 1.1, railing=0.0 vs 1.2), yielding Pz = 940.6 N/m2 instead of authentic 1039.6 N/m2.
+
+EXECUTION DETAILS & TRACE:
+create_wind_load arguments received:
+  basic_wind_speed:     47.0 (Input: 47.0, Fallback: 33.0)
+  height_for_pz:        10.0 (Input: 15.0, Fallback: 10.0)
+  crash_barrier_height: 0.0 (Input: 1.1, Fallback: 0.0)
+  railing_height:       0.0 (Input: 1.2, Fallback: 0.0)
+Table 12 Pressure Expected (47m/s @ 15m): 1039.59 N/m2
+Table 12 Pressure Fallback (33m/s @ 10m): 463.70 N/m2
+Table 12 Pressure from received args:     940.60 N/m2
