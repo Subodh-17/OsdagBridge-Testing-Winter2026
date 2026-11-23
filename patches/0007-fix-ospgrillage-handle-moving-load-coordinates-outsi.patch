@@ -1,0 +1,114 @@
+From bbfe14c7dfe1954bb890579f7e076edfbe180fd6 Mon Sep 17 00:00:00 2001
+From: Subodh Bansode <subodh171011@gmail.com>
+Date: Mon, 23 Nov 2026 19:41:30 +0530
+Subject: [PATCH 7/7] fix(ospgrillage): handle moving load coordinates outside mesh
+ and boundary edge tolerance (DEF-MOVING-LOAD-MESH)
+
+- Add allow_out_of_mesh flag to _assign_load_to_four_node (default False for Batch 2 fail-closed compatibility)
+- Return empty load list in _assign_load_to_four_node when allow_out_of_mesh=True and coordinate is outside grillage domain (off-bridge axles physically transmit 0 force to deck superstructure)
+- Enable allow_out_of_mesh=True in _distribute_load_types_to_model for point loads during moving vehicle analysis
+- Robustly unpack Point, LoadVertex, tuple, list, and ndarray types in _get_point_load_nodes
+- Add 1e-9 tolerance in check_point_in_grid to prevent boundary edge point rejection due to machine epsilon
+---
+ src/ospgrillage/osp_grillage.py | 28 +++++++++++++++++++---------
+ src/ospgrillage/utils.py        | 10 +++++-----
+ 2 files changed, 24 insertions(+), 14 deletions(-)
+
+diff --git a/src/ospgrillage/osp_grillage.py b/src/ospgrillage/osp_grillage.py
+index ecbae7d..030f540 100644
+--- a/src/ospgrillage/osp_grillage.py
++++ b/src/ospgrillage/osp_grillage.py
+@@ -1231,14 +1231,13 @@ class OspGrillage:
+         # extract points
+         loading_point = None
+         grid = None
+-        if type(point) is float or type(point) is list:
+-            x = point[0]
+-            y = point[1]  # default y = self.y_elevation = 0
+-            z = point[2]
+-            # set point to tuple
+-            loading_point = Point(x, y, z)
+-        elif isinstance(point, LoadVertex):
+-            loading_point = point
++        if hasattr(point, "x") and hasattr(point, "z"):
++            y_val = getattr(point, "y", self.y_elevation)
++            loading_point = Point(float(point.x), float(y_val), float(point.z))
++        elif hasattr(point, "__getitem__"):
++            loading_point = Point(float(point[0]), float(point[1]), float(point[2]))
++        else:
++            raise TypeError(f"Unsupported point type for grillage node mapping: {type(point)}")
+         for grid_tag, grid_nodes in self.Mesh_obj.grid_number_dict.items():
+             # get grid nodes coordinate as named tuple Point
+             point_list = []
+@@ -1568,13 +1567,22 @@ class OspGrillage:
+         return bounded_node, bounded_grids
+ 
+     # Setter for Point loads
+-    def _assign_load_to_four_node(self, point, mag, shape_func="linear"):
++    def _assign_load_to_four_node(
++        self, point, mag, shape_func="linear", allow_out_of_mesh: bool = False
++    ):
+         """Assign point load to four nodes in quadrilateral element or grid"""
+         node_mx = []
+         node_mz = []
+         # search grid where the point lies in
+         grid_nodes, _ = self._get_point_load_nodes(point=point)
+         if grid_nodes is None:
++            if allow_out_of_mesh:
++                # Physical domain boundary handling:
++                # For moving load analysis (vehicles entering/exiting bridge domain)
++                # or skewed geometry (axles extending past skewed abutments),
++                # points outside the mesh grid are physically on approach road/embankment.
++                # In structural mechanics, off-bridge axles transmit zero load to the superstructure.
++                return []
+             raise ValueError(
+                 f"Point load coordinate {point} does not lie within any mesh grid cell."
+             )
+@@ -1992,6 +2000,7 @@ class OspGrillage:
+                             point=list(nested_list_of_load.load_point_1)[:-1],
+                             mag=nested_list_of_load.load_point_1.p * factor,
+                             shape_func=nested_list_of_load.shape_function,
++                            allow_out_of_mesh=True,
+                         )
+                     elif isinstance(nested_list_of_load, LineLoading):
+                         if any(
+@@ -2034,6 +2043,7 @@ class OspGrillage:
+                         point=list(load_obj.load_point_1)[:-1],
+                         mag=load_obj.load_point_1.p * factor,
+                         shape_func=load_obj.shape_function,
++                        allow_out_of_mesh=True,
+                     )
+                 elif isinstance(load_obj, LineLoading):
+                     if any(
+diff --git a/src/ospgrillage/utils.py b/src/ospgrillage/utils.py
+index 000443a..1f30765 100644
+--- a/src/ospgrillage/utils.py
++++ b/src/ospgrillage/utils.py
+@@ -667,9 +667,9 @@ def check_point_in_grid(inside_point, point_list):
+         inside = False
+         return inside
+     # check if point is clockwise via sign of signed_area
+-    signed_area = check_points_direction(
+-        point_list
+-    )  # sign area < 0 means points are clockwise, and vice versa
++    signed_area = check_points_direction(point_list)  # sign area < 0 means points are clockwise, and vice versa
++
++    tol = 1e-9  # numerical tolerance to prevent boundary edge point rejection
+     for count, point0 in enumerate(pt0):
+         side = (inside_point.z - point0.z) * (pt1[count].x - point0.x) - (
+             inside_point.x - point0.x
+@@ -678,9 +678,9 @@ def check_point_in_grid(inside_point, point_list):
+         if any(
+             [
+                 side
+-                < 0
++                < -tol
+                 <= signed_area,  # side > 0 means left, side < 0 means right, side = 0 means on the line path
+-                side > 0 > signed_area,
++                side > tol > signed_area,
+             ]
+         ):  # nodes are counterclockwise and point to right (outside)
+             inside = False  # nodes are clockwise and point to the left (outside) these condition
+-- 
+2.34.1
+

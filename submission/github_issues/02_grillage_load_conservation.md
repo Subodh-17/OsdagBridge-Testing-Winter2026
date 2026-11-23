@@ -29,7 +29,7 @@ Default 24 m bridge. The two crash barriers are line loads of 6.54 kN/m each, so
 - Use force = mean intensity × segment length.
 - Place the resultant along the segment, from `p1` towards `p2`.
 - Use the z coordinate for interpolation.
-- Raise an error instead of returning `[]` when a load point falls outside the mesh.
+- For line-load equivalent points, raise an error instead of silently returning `[]` when the point falls outside the mesh. Vehicle axles that are genuinely off the deck are a different case: they should contribute zero force, not an error. My first version raised for every point load and broke moving-load analysis; that is corrected in commit `bbfe14c` (`patches/0007-*`).
 - For patches, track visited cells in a set so each cell is integrated once, and do not mutate the list while iterating.
 
-Patches with 17 equilibrium tests are in my submission repository: commits `34cd4bf` and `9e0b588`, files `patches/0004-*` and `0005-*`. The tests cover uniform, partial, trapezoidal, skewed and zero-crossing line loads, patches, the out-of-mesh error, and the full-bridge barrier at 313.920 kN. Reaction residuals are ≤ 1.2e-10 N.
+Patches with 17 equilibrium tests are in my submission repository: commits `34cd4bf` and `9e0b588`, files `patches/0004-*` and `0005-*` (plus `0007-*`). The tests cover uniform, partial, trapezoidal, skewed and zero-crossing line loads, patches, the out-of-mesh error, and the full-bridge barrier at 313.920 kN. Reaction residuals are ≤ 1.2e-10 N.

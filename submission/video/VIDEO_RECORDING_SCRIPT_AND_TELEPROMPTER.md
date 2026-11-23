@@ -11,14 +11,14 @@
    ```
    python "F:\FOSSEE internship\submission\video\automated_video_demo_runner.py" --no-gui --no-pause
    ```
-   Confirm that you see 17/17 OK, 15/15 OK and 27/27 OK.
+   Confirm that you see 17/17 OK, 15/15 OK, 10/10 OK and 27/27 OK.
 3. Set the display to 1920×1080 and turn on Do Not Disturb. Make the terminal font larger (Ctrl + scroll).
 4. Have the technical report PDF open in a second window.
 5. Note the values you will type into the custom-material dialog, for example:
    - steel: f<sub>y</sub> 350 MPa, f<sub>u</sub> 490 MPa, E 200,000 MPa;
    - concrete: f<sub>ck</sub> 35 MPa.
 
-The helper only **reads** the workspace evidence. It runs the tests from a fresh copy of the submission ZIP in a temporary folder, so recording cannot overwrite any evidence.
+The helper only **reads** the workspace evidence. On screen you will see each test's name and "ok". Solver chatter is saved to a log file in the temp folder. The governance suite prints five harmless OpenSees `WARNING analysis Static ... default will be used` lines: these are OpenSees defaults, not failures. It runs the tests from a fresh copy of the submission ZIP in a temporary folder, so recording cannot overwrite any evidence.
 
 To start recording, run the helper (it pauses before each step):
 
@@ -77,7 +77,7 @@ Close the window to continue.
 >
 > Each defect has a test with a hand-calculated expected value. I also checked that each test fails on a plausible but wrong fix.
 >
-> These six small commits fix five defects."
+> These six small commits fix five defects. Re-running the full design in the GUI then showed that my Batch 2 fix had broken moving-load analysis: vehicle axles off the deck raised an error. One more commit fixes that, with its own ten tests."
 
 ### 4. Proof from a clean copy (2:30–3:35) — helper Step 4
 
@@ -88,6 +88,8 @@ Close the window to continue.
 > Batch 2 checks force, centroid and reaction equilibrium for line and patch loads, including skewed lines and the full-bridge barrier: 17 out of 17.
 >
 > Batch 3 checks that load factors now reach the solver for every load type, against nine hand-calculated cases: 15 out of 15.
+>
+> The moving-load suite checks live-load generation on straight and skewed bridges, and that only on-deck axles load the bridge: 10 out of 10.
 >
 > The governance suite checks that the sealed evidence and the reference databases have not been altered."
 

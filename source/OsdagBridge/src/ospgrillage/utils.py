@@ -667,9 +667,9 @@ def check_point_in_grid(inside_point, point_list):
         inside = False
         return inside
     # check if point is clockwise via sign of signed_area
-    signed_area = check_points_direction(
-        point_list
-    )  # sign area < 0 means points are clockwise, and vice versa
+    signed_area = check_points_direction(point_list)  # sign area < 0 means points are clockwise, and vice versa
+
+    tol = 1e-9  # numerical tolerance to prevent boundary edge point rejection
     for count, point0 in enumerate(pt0):
         side = (inside_point.z - point0.z) * (pt1[count].x - point0.x) - (
             inside_point.x - point0.x
@@ -678,9 +678,9 @@ def check_point_in_grid(inside_point, point_list):
         if any(
             [
                 side
-                < 0
+                < -tol
                 <= signed_area,  # side > 0 means left, side < 0 means right, side = 0 means on the line path
-                side > 0 > signed_area,
+                side > tol > signed_area,
             ]
         ):  # nodes are counterclockwise and point to right (outside)
             inside = False  # nodes are clockwise and point to the left (outside) these condition

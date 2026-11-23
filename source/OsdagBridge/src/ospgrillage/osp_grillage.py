@@ -1231,14 +1231,13 @@ class OspGrillage:
         # extract points
         loading_point = None
         grid = None
-        if type(point) is float or type(point) is list:
-            x = point[0]
-            y = point[1]  # default y = self.y_elevation = 0
-            z = point[2]
-            # set point to tuple
-            loading_point = Point(x, y, z)
-        elif isinstance(point, LoadVertex):
-            loading_point = point
+        if hasattr(point, "x") and hasattr(point, "z"):
+            y_val = getattr(point, "y", self.y_elevation)
+            loading_point = Point(float(point.x), float(y_val), float(point.z))
+        elif hasattr(point, "__getitem__"):
+            loading_point = Point(float(point[0]), float(point[1]), float(point[2]))
+        else:
+            raise TypeError(f"Unsupported point type for grillage node mapping: {type(point)}")
         for grid_tag, grid_nodes in self.Mesh_obj.grid_number_dict.items():
             # get grid nodes coordinate as named tuple Point
             point_list = []
@@ -1568,13 +1567,22 @@ class OspGrillage:
         return bounded_node, bounded_grids
 
     # Setter for Point loads
-    def _assign_load_to_four_node(self, point, mag, shape_func="linear"):
+    def _assign_load_to_four_node(
+        self, point, mag, shape_func="linear", allow_out_of_mesh: bool = False
+    ):
         """Assign point load to four nodes in quadrilateral element or grid"""
         node_mx = []
         node_mz = []
         # search grid where the point lies in
         grid_nodes, _ = self._get_point_load_nodes(point=point)
         if grid_nodes is None:
+            if allow_out_of_mesh:
+                # Physical domain boundary handling:
+                # For moving load analysis (vehicles entering/exiting bridge domain)
+                # or skewed geometry (axles extending past skewed abutments),
+                # points outside the mesh grid are physically on approach road/embankment.
+                # In structural mechanics, off-bridge axles transmit zero load to the superstructure.
+                return []
             raise ValueError(
                 f"Point load coordinate {point} does not lie within any mesh grid cell."
             )
@@ -1992,6 +2000,7 @@ class OspGrillage:
                             point=list(nested_list_of_load.load_point_1)[:-1],
                             mag=nested_list_of_load.load_point_1.p * factor,
                             shape_func=nested_list_of_load.shape_function,
+                            allow_out_of_mesh=True,
                         )
                     elif isinstance(nested_list_of_load, LineLoading):
                         if any(
@@ -2034,6 +2043,7 @@ class OspGrillage:
                         point=list(load_obj.load_point_1)[:-1],
                         mag=load_obj.load_point_1.p * factor,
                         shape_func=load_obj.shape_function,
+                        allow_out_of_mesh=True,
                     )
                 elif isinstance(load_obj, LineLoading):
                     if any(
